@@ -13,7 +13,7 @@ def run():
 
 
 def _get_logger():
-    logging.basicConfig(filename="advent_bot.log",
+    logging.basicConfig(filename="transfermarkt_scraper.log",
                         filemode='a',
                         format='%(asctime)s,%(msecs)03d %(name)s %(levelname)s %(message)s',
                         datefmt='%H:%M:%S',
