@@ -7,6 +7,7 @@ from selenium.webdriver.chrome import webdriver
 def run():
     today = datetime.date.today().day
     logger = _get_logger()
+    # test
     driver = _get_driver()
     driver.close()
 
