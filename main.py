@@ -46,11 +46,32 @@ def scrape_player(driver, player_link):
     player['club'] = driver.find_element(By.CLASS_NAME, "data-header__club").text
 
     # todo: features to add:
-    # -
-    # -
-    # -
-    # -
-    # -
+    # - ligahöhe
+    # - im team seit
+    # - vertrag bis
+    # - alter
+    # - nationalität
+    # - groesse
+    # - position
+    # - nationalspieler
+    # - laenderspiele
+    # - tore in laenderspielen
+    # - marktwert in chf
+    # - torwart: gegentore & zu null
+    # - andere positionen: tore & vorlagen
+    # - gelbe karten
+    # - gelbrote karten
+    # - rote karten
+    # - startelf-quote
+    # - spielminuten
+    # - elfer abgewehrt (torwart)
+    # - torbeteiligungen (andere positionen)
+    # - fuss
+    # - spielerberater
+    # - ausrüster
+    # - erweiterte detaillierte leistungsdaten aus der vergangenen saison in der liga
+    # - insta-followers
+    # - fifa-score
 
     return player
 
