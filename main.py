@@ -17,11 +17,11 @@ leagues = [
 def run():
     logger = get_logger()
     driver = get_driver()
-    do_scraping(driver, logger)
+    do_scraping(driver)
     driver.close()
 
 
-def do_scraping(driver, logger):
+def do_scraping(driver):
     timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
     for league_link in leagues:
         for club_link in get_clubs_of_league(driver, league_link):
