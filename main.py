@@ -36,10 +36,22 @@ def do_scraping(driver):
 def scrape_player(driver, player_link):
     player = dict()
     driver.get(player_link)
+
     no_and_name = driver.find_element(By.CLASS_NAME, "data-header__headline-wrapper").text
     no, name = no_and_name.split(" ", 1)
     player['no'] = no[1:]
     player['name'] = name
+
+    player['league'] = driver.find_element(By.CLASS_NAME, "data-header__league").text
+    player['club'] = driver.find_element(By.CLASS_NAME, "data-header__club").text
+
+    # todo: features to add:
+    # -
+    # -
+    # -
+    # -
+    # -
+
     return player
 
 
@@ -58,7 +70,7 @@ def get_clubs_of_league(driver, league_link):
 
 
 def write_player(timestamp, player):
-    print(f"Scraped:\t\t{player['name']}")
+    print(f"Scraped:\t\t{player['league']}\t{player['name']}")
     filepath = f"data/players_{timestamp}.csv"
     exists = os.path.exists(filepath)
     with open(filepath, 'a') as f:
@@ -72,7 +84,7 @@ def log_scraping_error(timestamp, player_link):
     print(f"Error:\t\t{player_link}")
     filepath = f"data/errors_{timestamp}.csv"
     with open(filepath, 'a') as f:
-        f.write(player_link)
+        f.write(player_link + '\n')
 
 
 def get_logger():
