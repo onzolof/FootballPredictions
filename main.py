@@ -44,6 +44,7 @@ def scrape_player(driver, player_link):
 
     player['league'] = driver.find_element(By.CLASS_NAME, "data-header__league").text
     player['club'] = driver.find_element(By.CLASS_NAME, "data-header__club").text
+    # player['team_since'] = driver.find_element(By.XPATH, "//div[@class='large-6 large-pull-6 small-12 columns spielerdatenundfakten']//span[@class='info-table__content info-table__content--bold'][8]").text
 
     # todo: features to add:
     # - ligahöhe
@@ -91,7 +92,7 @@ def get_clubs_of_league(driver, league_link):
 
 
 def write_player(timestamp, player):
-    print(f"Scraped:\t\t{player['league']}\t{player['name']}")
+    print(f"Scraped:\t\t{player['league']}\t{player['name']}\t{player['no']}\t{player['club']}\t{player['team_since']}")
     filepath = f"data/players_{timestamp}.csv"
     exists = os.path.exists(filepath)
     with open(filepath, 'a') as f:
@@ -122,7 +123,7 @@ def get_driver():
     options = Options()
     if not show_browser_ui:
         options.add_argument("--headless")
-    driver = webdriver.Chrome('chromedriver_mac', options=options)
+    driver = webdriver.Chrome('chromedriver.exe', options=options)
     driver.implicitly_wait(30)
     driver.maximize_window()
     return driver
