@@ -32,7 +32,7 @@ def do_scraping(driver):
                     player['league_country'] = league_country
                     player['scraping_time'] = timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
                     write_player(timestamp, player)
-                except:
+                except BaseException as exception:
                     log_scraping_error(timestamp, player_link)
 
 
@@ -48,10 +48,12 @@ def scrape_player(driver, player_link):
     player['league'] = driver.find_element(By.CLASS_NAME, "data-header__league").text
     player['club'] = driver.find_element(By.CLASS_NAME, "data-header__club").text
 
-    player['league_level'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[3]/span").text
-    player['club_since'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[4]/span").text
-    player['contract_until'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[5]/span").text
+    # todo: fix this
+    # player['league_level'] = driver.find_element(By.XPATH, "//*[@id='main']/main/header/div[2]/div/span[3]/span").text
+    # player['club_since'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[4]/span").text
+    # player['contract_until'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[5]/span").text
 
+    # todo: find_element might return nothing -> fix this everywhere
     player['age'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[6]").get_attribute('innerText').strip()
     player['height'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[8]").get_attribute('innerText').strip()
     player['nationality'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[10]").get_attribute('innerText').strip()
@@ -93,11 +95,21 @@ def scrape_player(driver, player_link):
         player['clean_sheets'] = ''
         player['penalty_saves'] = ''
 
+    instagram_link = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[28]/div/a").get_attribute('href')
+    if instagram_link:
+        driver.get(instagram_link)
+        player['instagram_posts'] = driver.find_element(By.XPATH, '//main/div/header/section/ul/li[1]/button/span').get_attribute('innerText')
+        player['instagram_followers'] = driver.find_element(By.XPATH, '//main/div/header/section/ul/li[2]/button/span').get_attribute('title')
+    else:
+        player['instagram_posts'] = ''
+        player['instagram_followers'] = ''
 
     # todo: features to add:
     # - erweiterte detaillierte leistungsdaten aus der vergangenen saison in der liga
-    # - insta-followers
     # - fifa-score
+
+    for key, value in player.items():
+       player[key] = value.replace('\n', '')
 
     return player
 
@@ -119,7 +131,7 @@ def get_clubs_of_league(driver, league_link):
 
 
 def write_player(timestamp, player):
-    print(f"Scraped:\t\t{player['league']}\t{player['name']}\t{player['no']}\t{player['club']}\t{player['team_since']}")
+    print(f"Scraped:\t\t{player['league']}\t\t{player['club']}\t\t{player['name']}")
     filepath = f"data/players_{timestamp}.csv"
     exists = os.path.exists(filepath)
     with open(filepath, 'a') as f:
