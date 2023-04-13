@@ -109,7 +109,7 @@ def scrape_player(driver, player_link):
     # - fifa-score
 
     for key, value in player.items():
-       player[key] = value.replace('\n', '')
+        player[key] = value.replace('\n', '')
 
     return player
 
