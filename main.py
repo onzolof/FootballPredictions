@@ -52,52 +52,23 @@ def scrape_player(driver, player_link):
     player['club_since'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[4]/span").text
     player['contract_until'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[5]/span").text
 
-    player['age'] = driver.find_element(By.XPATH,
-                                        "//div[@class='row']/div/div[2]/div/div[2]/div/span[6]").get_attribute(
-        'innerText').strip()
-    player['height'] = driver.find_element(By.XPATH,
-                                           "//div[@class='row']/div/div[2]/div/div[2]/div/span[8]").get_attribute(
-        'innerText').strip()
-    player['nationality'] = driver.find_element(By.XPATH,
-                                                "//div[@class='row']/div/div[2]/div/div[2]/div/span[10]").get_attribute(
-        'innerText').strip()
-    player['position'] = driver.find_element(By.XPATH,
-                                             "//div[@class='row']/div/div[2]/div/div[2]/div/span[12]").get_attribute(
-        'innerText').strip()
-    player['foot'] = driver.find_element(By.XPATH,
-                                         "//div[@class='row']/div/div[2]/div/div[2]/div/span[14]").get_attribute(
-        'innerText').strip()
-    player['consultancy'] = driver.find_element(By.XPATH,
-                                                "//div[@class='row']/div/div[2]/div/div[2]/div/span[16]/a").get_attribute(
-        'innerText').strip()
-    player['supplier'] = driver.find_element(By.XPATH,
-                                             "//div[@class='row']/div/div[2]/div/div[2]/div/span[26]").get_attribute(
-        'innerText').strip()
+    player['age'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[6]").get_attribute('innerText').strip()
+    player['height'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[8]").get_attribute('innerText').strip()
+    player['nationality'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[10]").get_attribute('innerText').strip()
+    player['position'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[12]").get_attribute('innerText').strip()
+    player['foot'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[14]").get_attribute('innerText').strip()
+    player['consultancy'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[16]/a").get_attribute('innerText').strip()
+    player['supplier'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[26]").get_attribute('innerText').strip()
 
-    player['international'] = driver.find_element(By.XPATH,
-                                                  '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[1]/span/a').get_attribute(
-        'innerText').strip()
-    player['international_games'] = driver.find_element(By.XPATH,
-                                                        '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[1]').get_attribute(
-        'innerText').strip()
-    player['international_goals'] = driver.find_element(By.XPATH,
-                                                        '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[2]').get_attribute(
-        'innerText').strip()
+    player['international'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[1]/span/a').get_attribute('innerText').strip()
+    player['international_games'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[1]').get_attribute('innerText').strip()
+    player['international_goals'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[2]').get_attribute('innerText').strip()
 
-    player['market_value'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[6]/a').get_attribute(
-        'innerText').strip()
-    player['market_value_currency'] = driver.find_element(By.XPATH,
-                                                          '//*[@id="main"]/main/header/div[6]/a/span').get_attribute(
-        'innerText').strip()
-    player['market_value_latest_correction'] = driver.find_element(By.XPATH,
-                                                                   '//*[@id="main"]/main/header/div[6]/a/p').get_attribute(
-        'innerText').strip()
-    player['highest_market_value'] = driver.find_element(By.XPATH,
-                                                         '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[2]').get_attribute(
-        'innerText').strip()
-    player['highest_market_value_date'] = driver.find_element(By.XPATH,
-                                                              '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[3]').get_attribute(
-        'innerText').strip()
+    player['market_value'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[6]/a').get_attribute('innerText').strip()
+    player['market_value_currency'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[6]/a/span').get_attribute('innerText').strip()
+    player['market_value_latest_correction'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[6]/a/p').get_attribute('innerText').strip()
+    player['highest_market_value'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[2]').get_attribute('innerText').strip()
+    player['highest_market_value_date'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[3]').get_attribute('innerText').strip()
 
     # todo: features to add:
     # - torwart:
