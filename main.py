@@ -70,18 +70,31 @@ def scrape_player(driver, player_link):
     player['highest_market_value'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[2]').get_attribute('innerText').strip()
     player['highest_market_value_date'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[3]').get_attribute('innerText').strip()
 
+    player['games'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[1]/a').get_attribute('innerText').strip()
+    player['yellow_cards'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[1]/a').get_attribute('innerText').strip()
+    player['yellow_red_cards'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[2]/a').get_attribute('innerText').strip()
+    player['red_cards'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[3]/a').get_attribute('innerText').strip()
+
+    player['starting_eleven'] = driver.find_element(By.XPATH, '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[1]/div//span[1]').get_attribute('innerText').strip()
+    player['minutes'] = driver.find_element(By.XPATH, '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[2]/div//span[1]').get_attribute('innerText').strip()
+
+    if player['position'] == 'Torwart':
+        player['goals_conceded'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[2]/a').get_attribute('innerText').strip()
+        player['clean_sheets'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[3]/a').get_attribute('innerText').strip()
+        player['penalty_saves'] = driver.find_element(By.XPATH, '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[3]/div//span[1]').get_attribute('innerText').strip()
+        player['goals'] = ''
+        player['assists'] = ''
+        player['goal_participation'] = ''
+    else:
+        player['goals'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[2]/a').get_attribute('innerText').strip()
+        player['assists'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[3]/a').get_attribute('innerText').strip()
+        player['goal_participation'] = driver.find_element(By.XPATH, '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[3]/div//span[1]').get_attribute('innerText').strip()
+        player['goals_conceded'] = ''
+        player['clean_sheets'] = ''
+        player['penalty_saves'] = ''
+
+
     # todo: features to add:
-    # - torwart:
-    #   - gegentore & zu null
-    #   - elfer abgewehrt
-    # - andere positionen:
-    #   - tore & vorlagen
-    #   - torbeteiligungen
-    # - gelbe karten
-    # - gelbrote karten
-    # - rote karten
-    # - startelf-quote
-    # - spielminuten
     # - erweiterte detaillierte leistungsdaten aus der vergangenen saison in der liga
     # - insta-followers
     # - fifa-score
