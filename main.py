@@ -24,16 +24,17 @@ def run():
 def do_scraping(driver):
     timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
     for league_link in leagues:
-        for club_link in get_clubs_of_league(driver, league_link):
+        clubs, league_country = get_clubs_of_league(driver, league_link)
+        for club_link in clubs:
             for player_link in get_players_of_club(driver, club_link):
                 try:
-                    player = scrape_player(driver, player_link)
+                    player = scrape_player(driver, league_country, player_link)
                     write_player(timestamp, player)
                 except:
                     log_scraping_error(timestamp, player_link)
 
 
-def scrape_player(driver, player_link):
+def scrape_player(driver, league_country, player_link):
     player = dict()
     driver.get(player_link)
 
@@ -42,34 +43,44 @@ def scrape_player(driver, player_link):
     player['no'] = no[1:]
     player['name'] = name
 
+    player['league_country'] = league_country
     player['league'] = driver.find_element(By.CLASS_NAME, "data-header__league").text
     player['club'] = driver.find_element(By.CLASS_NAME, "data-header__club").text
-    # player['team_since'] = driver.find_element(By.XPATH, "//div[@class='large-6 large-pull-6 small-12 columns spielerdatenundfakten']//span[@class='info-table__content info-table__content--bold'][8]").text
+
+    player['league_level'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[3]/span").text
+    player['club_since'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[4]/span").text
+    player['contract_until'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[5]/span").text
+
+    player['age'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[6]").get_attribute('innerText').strip()
+    player['height'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[8]").get_attribute('innerText').strip()
+    player['nationality'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[10]").get_attribute('innerText').strip()
+    player['position'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[12]").get_attribute('innerText').strip()
+    player['foot'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[14]").get_attribute('innerText').strip()
+    player['consultancy'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[16]/a").get_attribute('innerText').strip()
+    player['supplier'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[26]").get_attribute('innerText').strip()
+
+    player['international'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[1]/span/a').get_attribute('innerText').strip()
+    player['international_games'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[1]').get_attribute('innerText').strip()
+    player['international_goals'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[2]').get_attribute('innerText').strip()
+
+    player['market_value'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[6]/a').get_attribute('innerText').strip()
+    player['market_value_currency'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[6]/a/span').get_attribute('innerText').strip()
+    player['market_value_latest_correction'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[6]/a/p').get_attribute('innerText').strip()
+    player['highest_market_value'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[2]').get_attribute('innerText').strip()
+    player['highest_market_value_date'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[3]').get_attribute('innerText').strip()
 
     # todo: features to add:
-    # - ligahöhe
-    # - im team seit
-    # - vertrag bis
-    # - alter
-    # - nationalität
-    # - groesse
-    # - position
-    # - nationalspieler
-    # - laenderspiele
-    # - tore in laenderspielen
-    # - marktwert in chf
-    # - torwart: gegentore & zu null
-    # - andere positionen: tore & vorlagen
+    # - torwart:
+    #   - gegentore & zu null
+    #   - elfer abgewehrt
+    # - andere positionen:
+    #   - tore & vorlagen
+    #   - torbeteiligungen
     # - gelbe karten
     # - gelbrote karten
     # - rote karten
     # - startelf-quote
     # - spielminuten
-    # - elfer abgewehrt (torwart)
-    # - torbeteiligungen (andere positionen)
-    # - fuss
-    # - spielerberater
-    # - ausrüster
     # - erweiterte detaillierte leistungsdaten aus der vergangenen saison in der liga
     # - insta-followers
     # - fifa-score
@@ -88,7 +99,8 @@ def get_clubs_of_league(driver, league_link):
     driver.get(league_link)
     clubs = driver.find_elements(By.XPATH, "//div[@id='yw1']/table/tbody//tr/td[3]/a")
     clubs = list(map(lambda c: c.get_attribute("href"), clubs))
-    return clubs
+    league_country = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[2]/div/span[1]/a').get_attribute('innerText').strip()
+    return clubs, league_country
 
 
 def write_player(timestamp, player):
