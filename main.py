@@ -4,6 +4,7 @@ import os
 from datetime import datetime
 
 from selenium import webdriver
+from selenium.common import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
@@ -33,73 +34,87 @@ def do_scraping(driver):
                     player['scraping_time'] = timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
                     write_player(timestamp, player)
                 except BaseException as exception:
-                    log_scraping_error(timestamp, player_link)
+                    log_scraping_error(timestamp, player_link, exception)
 
 
 def scrape_player(driver, player_link):
     player = dict()
+    lookup = HtmlLookup(driver)
+
     driver.get(player_link)
 
-    no_and_name = driver.find_element(By.CLASS_NAME, "data-header__headline-wrapper").text
+    no_and_name = lookup.from_text_by_class('data-header__headline-wrapper')
     no, name = no_and_name.split(" ", 1)
     player['no'] = no[1:]
     player['name'] = name
 
-    player['league'] = driver.find_element(By.CLASS_NAME, "data-header__league").text
-    player['club'] = driver.find_element(By.CLASS_NAME, "data-header__club").text
+    player['league'] = lookup.from_text_by_class('data-header__league')
+    player['club'] = lookup.from_text_by_class('data-header__club')
 
-    # todo: fix this
-    # player['league_level'] = driver.find_element(By.XPATH, "//*[@id='main']/main/header/div[2]/div/span[3]/span").text
-    # player['club_since'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[4]/span").text
-    # player['contract_until'] = driver.find_element(By.XPATH, "//main/header//div[3]//div//span[5]/span").text
+    player['league_level'] = lookup.from_text("//main/header/div[3]/div/span[3]/span")
+    player['club_since'] = lookup.from_text("//main/header//div[3]//div//span[4]/span")
+    player['contract_until'] = lookup.from_text("//main/header//div[3]//div//span[5]/span")
 
-    # todo: find_element might return nothing -> fix this everywhere
-    player['age'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[6]").get_attribute('innerText').strip()
-    player['height'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[8]").get_attribute('innerText').strip()
-    player['nationality'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[10]").get_attribute('innerText').strip()
-    player['position'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[12]").get_attribute('innerText').strip()
-    player['foot'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[14]").get_attribute('innerText').strip()
-    player['consultancy'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[16]/a").get_attribute('innerText').strip()
-    player['supplier'] = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[26]").get_attribute('innerText').strip()
+    player['age'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[6]")
+    player['height'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[8]")
+    player['nationality'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[10]")
+    player['position'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[12]")
+    player['foot'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[14]")
+    player['consultancy'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[16]/a")
+    player['supplier'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[26]")
 
-    player['international'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[1]/span/a').get_attribute('innerText').strip()
-    player['international_games'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[1]').get_attribute('innerText').strip()
-    player['international_goals'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[2]').get_attribute('innerText').strip()
+    player['international'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[1]/span/a')
+    player['international_games'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[1]')
+    player['international_goals'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[2]')
 
-    player['market_value'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[6]/a').get_attribute('innerText').strip()
-    player['market_value_currency'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[6]/a/span').get_attribute('innerText').strip()
-    player['market_value_latest_correction'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/header/div[6]/a/p').get_attribute('innerText').strip()
-    player['highest_market_value'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[2]').get_attribute('innerText').strip()
-    player['highest_market_value_date'] = driver.find_element(By.XPATH, '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[3]').get_attribute('innerText').strip()
+    player['market_value'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[6]/a')
+    player['market_value_currency'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[6]/a/span')
+    player['market_value_latest_correction'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[6]/a/p')
+    player['highest_market_value'] = lookup.from_inner_text(
+        '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[2]')
+    player['highest_market_value_date'] = lookup.from_inner_text(
+        '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[3]')
 
-    player['games'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[1]/a').get_attribute('innerText').strip()
-    player['yellow_cards'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[1]/a').get_attribute('innerText').strip()
-    player['yellow_red_cards'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[2]/a').get_attribute('innerText').strip()
-    player['red_cards'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[3]/a').get_attribute('innerText').strip()
+    player['games'] = lookup.from_inner_text(
+        '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[1]/a')
+    player['yellow_cards'] = lookup.from_inner_text(
+        '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[1]/a')
+    player['yellow_red_cards'] = lookup.from_inner_text(
+        '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[2]/a')
+    player['red_cards'] = lookup.from_inner_text(
+        '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[3]/a')
 
-    player['starting_eleven'] = driver.find_element(By.XPATH, '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[1]/div//span[1]').get_attribute('innerText').strip()
-    player['minutes'] = driver.find_element(By.XPATH, '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[2]/div//span[1]').get_attribute('innerText').strip()
+    player['starting_eleven'] = lookup.from_inner_text(
+        '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[1]/div//span[1]')
+    player['minutes'] = lookup.from_inner_text(
+        '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[2]/div//span[1]')
 
     if player['position'] == 'Torwart':
-        player['goals_conceded'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[2]/a').get_attribute('innerText').strip()
-        player['clean_sheets'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[3]/a').get_attribute('innerText').strip()
-        player['penalty_saves'] = driver.find_element(By.XPATH, '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[3]/div//span[1]').get_attribute('innerText').strip()
+        player['goals_conceded'] = lookup.from_inner_text(
+            '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[2]/a')
+        player['clean_sheets'] = lookup.from_inner_text(
+            '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[3]/a')
+        player['penalty_saves'] = lookup.from_inner_text(
+            '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[3]/div//span[1]')
         player['goals'] = ''
         player['assists'] = ''
         player['goal_participation'] = ''
     else:
-        player['goals'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[2]/a').get_attribute('innerText').strip()
-        player['assists'] = driver.find_element(By.XPATH, '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[3]/a').get_attribute('innerText').strip()
-        player['goal_participation'] = driver.find_element(By.XPATH, '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[3]/div//span[1]').get_attribute('innerText').strip()
+        player['goals'] = lookup.from_inner_text(
+            '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[2]/a')
+        player['assists'] = lookup.from_inner_text(
+            '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[3]/a')
+        player['goal_participation'] = lookup.from_inner_text(
+            '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[3]/div//span[1]')
         player['goals_conceded'] = ''
         player['clean_sheets'] = ''
         player['penalty_saves'] = ''
 
-    instagram_link = driver.find_element(By.XPATH, "//div[@class='row']/div/div[2]/div/div[2]/div/span[28]/div/a").get_attribute('href')
+    instagram_link = lookup.from_attribute("//div[@class='row']/div/div[2]/div/div[2]/div/span[28]/div/a", 'href')
     if instagram_link:
         driver.get(instagram_link)
-        player['instagram_posts'] = driver.find_element(By.XPATH, '//main/div/header/section/ul/li[1]/button/span').get_attribute('innerText')
-        player['instagram_followers'] = driver.find_element(By.XPATH, '//main/div/header/section/ul/li[2]/button/span').get_attribute('title')
+        player['instagram_posts'] = lookup.from_inner_text('//main/div/header/section/ul/li[1]/button/span')
+        player['instagram_followers'] = lookup.from_attribute('//main/div/header/section/ul/li[2]/button/span', 'title')
     else:
         player['instagram_posts'] = ''
         player['instagram_followers'] = ''
@@ -141,7 +156,7 @@ def write_player(timestamp, player):
         w.writerow(player)
 
 
-def log_scraping_error(timestamp, player_link):
+def log_scraping_error(timestamp, player_link, exception):
     print(f"Error:\t\t{player_link}")
     filepath = f"data/errors_{timestamp}.csv"
     with open(filepath, 'a') as f:
@@ -166,6 +181,36 @@ def get_driver():
     driver.implicitly_wait(30)
     driver.maximize_window()
     return driver
+
+
+class HtmlLookup:
+    def __init__(self, driver):
+        self._driver = driver
+
+    def from_attribute(self, xpath, attribute):
+        return self._try(lambda driver: driver.find_element(By.XPATH, xpath),
+                         lambda element: element.get_attribute(attribute))
+
+    def from_inner_text(self, xpath):
+        return self._try(lambda driver: driver.find_element(By.XPATH, xpath),
+                         lambda element: element.get_attribute('innerText'))
+
+    def from_text(self, xpath):
+        return self._try(lambda driver: driver.find_element(By.XPATH, xpath), lambda element: element.text)
+
+    def from_text_by_class(self, clazz):
+        return self._try(lambda driver: driver.find_element(By.CLASS_NAME, clazz), lambda element: element.text)
+
+    def _try(self, find_element_function, extracting_function):
+        try:
+            element = find_element_function(self._driver)
+            return self._clean(extracting_function(element))
+        except NoSuchElementException:
+            return ''
+
+    @staticmethod
+    def _clean(string):
+        return string.replace('\n', '').strip()
 
 
 if __name__ == '__main__':
