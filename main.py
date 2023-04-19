@@ -1,6 +1,7 @@
 import csv
 import logging
 import os
+import time
 from datetime import datetime
 
 from selenium import webdriver
@@ -46,12 +47,14 @@ def scrape_player(driver, player_link, player):
 
     driver.get(player_link)
 
-    # todo: fix name splitting
-    # todo: fix garcias von YB
     no_and_name = lookup.from_text_by_class('data-header__headline-wrapper')
-    no, name = no_and_name.split(" ", 1)
-    player['no'] = no[1:]
-    player['name'] = name
+    if no_and_name.startswith('#'):
+        no, name = no_and_name.split(" ", 1)
+        player['no'] = no[1:]
+        player['name'] = name
+    else:
+        player['no'] = ''
+        player['name'] = no_and_name
 
     player['league'] = lookup.from_text_by_class('data-header__league')
     player['club'] = lookup.from_text_by_class('data-header__club')
@@ -227,7 +230,7 @@ def get_driver():
         options.add_argument("--headless")
     driver = webdriver.Chrome('chromedriver.exe', options=options)
     # todo: overriding timeout necessary (reducing timeout speeds up scraping time significantly but might lead to missing data when having a bad internet connection)
-    # driver.implicitly_wait(30)
+    driver.implicitly_wait(5)
     driver.maximize_window()
     return driver
 
