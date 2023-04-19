@@ -9,6 +9,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
 show_browser_ui = False
+enable_instagram_scraping = False
 leagues = [
     'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C1',
     # 'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/L1',
@@ -87,51 +88,41 @@ def scrape_player(driver, player_link, player):
     player['highest_market_value'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[1]'))
     player['highest_market_value_date'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[2]'))
 
-    # todo: working from here?
-    # player['games'] = lookup.from_inner_text(
-    #     '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[1]/a')
-    # player['yellow_cards'] = lookup.from_inner_text(
-    #     '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[1]/a')
-    # player['yellow_red_cards'] = lookup.from_inner_text(
-    #     '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[2]/a')
-    # player['red_cards'] = lookup.from_inner_text(
-    #     '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[3]/a')
+    xpath_current_season = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/following-sibling::a"
+    player['games'] = lookup.from_inner_text(xpath_current_season('Spiele'))
+    player['yellow_cards'] = lookup.from_inner_text(xpath_current_season('Gelbe-Karten'))
+    player['yellow_red_cards'] = lookup.from_inner_text(xpath_current_season('Gelb-Rote Karten'))
+    player['red_cards'] = lookup.from_inner_text(xpath_current_season('Rote Karten'))
 
-    # player['starting_eleven'] = lookup.from_inner_text(
-    #     '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[1]/div//span[1]')
-    # player['minutes'] = lookup.from_inner_text(
-    #     '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[2]/div//span[1]')
-    #
-    # if player['position'] == 'Torwart':
-    #     player['goals_conceded'] = lookup.from_inner_text(
-    #         '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[2]/a')
-    #     player['clean_sheets'] = lookup.from_inner_text(
-    #         '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[3]/a')
-    #     player['penalty_saves'] = lookup.from_inner_text(
-    #         '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[3]/div//span[1]')
-    #     player['goals'] = ''
-    #     player['assists'] = ''
-    #     player['goal_participation'] = ''
-    # else:
-    #     player['goals'] = lookup.from_inner_text(
-    #         '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[2]/a')
-    #     player['assists'] = lookup.from_inner_text(
-    #         '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[3]/a')
-    #     player['goal_participation'] = lookup.from_inner_text(
-    #         '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[3]/div//span[1]')
-    #     player['goals_conceded'] = ''
-    #     player['clean_sheets'] = ''
-    #     player['penalty_saves'] = ''
+    xpath_circle = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/div[1]/span"
+    player['starting_eleven'] = lookup.from_inner_text(xpath_circle('Startelf-Quote'))
+    player['minutes'] = lookup.from_inner_text(xpath_circle('Spielminuten'))
+
+    if player['position'] == 'Torwart':
+        player['goals_conceded'] = lookup.from_inner_text(xpath_current_season('Gegentore'))
+        player['clean_sheets'] = lookup.from_inner_text(xpath_current_season('Zu Null'))
+        player['penalty_saves'] = lookup.from_inner_text(xpath_circle('Elfer abgewehrt'))
+        player['goals'] = ''
+        player['assists'] = ''
+        player['goal_participation'] = ''
+    else:
+        # todo: fix this
+        player['goals'] = lookup.from_inner_text(xpath_current_season('Tore'))
+        player['assists'] = lookup.from_inner_text(xpath_current_season('Vorlagen'))
+        player['goal_participation'] = lookup.from_inner_text(xpath_circle('Torbeteiligungen'))
+        player['goals_conceded'] = ''
+        player['clean_sheets'] = ''
+        player['penalty_saves'] = ''
 
     player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]', 'href')
-    # todo: instagram blocked me probably
-    if player['instagram']:
-        driver.get(player['instagram'])
-        player['instagram_posts'] = lookup.from_inner_text(f"//main/div/header/section/ul/li[1]/button/span")
-        player['instagram_followers'] = lookup.from_attribute(f"//main/div/header/section/ul/li[2]/button/span", 'title')
-    else:
-        player['instagram_posts'] = ''
-        player['instagram_followers'] = ''
+    if enable_instagram_scraping:
+        if player['instagram']:
+            driver.get(player['instagram'])
+            player['instagram_posts'] = lookup.from_inner_text(f"//main/div/header/section/ul/li[1]/button/span")
+            player['instagram_followers'] = lookup.from_attribute(f"//main/div/header/section/ul/li[2]/button/span", 'title')
+        else:
+            player['instagram_posts'] = ''
+            player['instagram_followers'] = ''
 
     # todo: features to add:
     # - erweiterte detaillierte leistungsdaten aus der vergangenen saison in der liga
