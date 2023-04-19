@@ -46,6 +46,8 @@ def scrape_player(driver, player_link, player):
 
     driver.get(player_link)
 
+    # todo: fix name splitting
+    # todo: fix garcias von YB
     no_and_name = lookup.from_text_by_class('data-header__headline-wrapper')
     no, name = no_and_name.split(" ", 1)
     player['no'] = no[1:]
@@ -123,14 +125,15 @@ def scrape_player(driver, player_link, player):
 
     if interactor.click('//*[@id="svelte-performance-data"]/div/main/div/div[2]/a'):
         if interactor.click('//*[@id="main"]/main/div[3]/div/div[1]/div[2]/a[2]/div'):
-            xpath_performance_data = lambda label: f"//*[@id='yw1']/table/tbody/tr/td[count(//th[@title='{label}']/preceding-sibling::th) + 1]"
-            player['points_per_game'] = lookup.from_inner_text(xpath_performance_data('Punkte pro Spiel'))
-            player['own_goals'] = lookup.from_inner_text(xpath_performance_data('Eigentore'))
-            player['ins'] = lookup.from_inner_text(xpath_performance_data('Einwechslungen'))
-            player['outs'] = lookup.from_inner_text(xpath_performance_data('Auswechslungen'))
-            player['penalty_goals'] = lookup.from_inner_text(xpath_performance_data('Elfmetertore'))
-            player['minutes_per_goal'] = lookup.from_inner_text(xpath_performance_data('Minuten pro Tor'))
-            player['minutes'] = lookup.from_inner_text(xpath_performance_data('Eingesetzte Minuten'))
+            # todo: handle goalio or not
+            xpath_performance_data = lambda id: f"//*[@id='yw1']/table/tbody/tr/td[count(//th[@id='{id}']/preceding-sibling::th) + 1]"
+            player['points_per_game'] = lookup.from_inner_text(xpath_performance_data('yw1_c5'))
+            player['own_goals'] = lookup.from_inner_text(xpath_performance_data('yw1_c8'))
+            player['ins'] = lookup.from_inner_text(xpath_performance_data('yw1_c9'))
+            player['outs'] = lookup.from_inner_text(xpath_performance_data('yw1_c10'))
+            player['penalty_goals'] = lookup.from_inner_text(xpath_performance_data('yw1_c14'))
+            player['minutes_per_goal'] = lookup.from_inner_text(xpath_performance_data('yw1_c15'))
+            player['minutes'] = lookup.from_inner_text(xpath_performance_data('yw1_c16'))
         else:
             player['points_per_game'] = ''
             player['own_goals'] = ''
@@ -178,7 +181,7 @@ def get_clubs_of_league(driver, league_link):
 
 
 def write_player(timestamp, player):
-    print(f"Scraped:\t\t{player['league']}\t\t{player['club']}\t\t{player['name']}")
+    print(f"Scraped:\t{player['league']}\t{player['club']}\t{player['name']}")
     filepath = f"data/players_{timestamp}.csv"
     exists = os.path.exists(filepath)
     with open(filepath, 'a') as f:
@@ -189,7 +192,7 @@ def write_player(timestamp, player):
 
 
 def log_scraping_error(timestamp, player_link, exception):
-    print(f"Error:\t\t{player_link}\t\t{str(exception)}")
+    print(f"Error:\t{player_link}\t{str(exception)}")
     filepath = f"data/errors_{timestamp}.csv"
     with open(filepath, 'a') as f:
         f.write(player_link + '\n')
