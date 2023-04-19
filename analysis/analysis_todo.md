@@ -1,0 +1,3 @@
+- check for duplicates
+  - ein spieler kann in zwei verschiedenen ligen spielen: wie sollen wir das handeln?
+- check for null values
