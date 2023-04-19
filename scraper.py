@@ -14,6 +14,7 @@ driver_implicitly_wait = 3  # in seconds
 leagues = [
     'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C1',  # CH
     'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C2',  # CH
+    'https://www.transfermarkt.ch/promotion-league/startseite/wettbewerb/CHPR',  # CH
     'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/L1',  # DE
     'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/L2',  # DE
     'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/A1',  # AT
