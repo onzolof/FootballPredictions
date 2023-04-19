@@ -72,19 +72,18 @@ def scrape_player(driver, player_link, player):
     player['consultancy'] = lookup.from_inner_text(xpath_player_data('Spielerberater:'))
     player['supplier'] = lookup.from_inner_text(xpath_player_data('Ausrüster:'))
 
+    player['international'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[1]/span/a')
+    player['international_games'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[1]')
+    player['international_goals'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[2]')
 
-    # player['international'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[1]/span/a')
-    # player['international_games'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[1]')
-    # player['international_goals'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[2]')
-    #
-    # player['market_value'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[6]/a')
-    # player['market_value_currency'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[6]/a/span')
-    # player['market_value_latest_correction'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[6]/a/p')
-    # player['highest_market_value'] = lookup.from_inner_text(
-    #     '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[2]')
-    # player['highest_market_value_date'] = lookup.from_inner_text(
-    #     '//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[3]')
-    #
+    player['market_value'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a')
+    player['market_value_currency'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/span')
+    player['market_value_latest_correction'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/p')
+    player['highest_market_value'] = lookup.from_inner_text(
+        f'//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[2]')
+    player['highest_market_value_date'] = lookup.from_inner_text(
+        f'//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[3]')
+
     # player['games'] = lookup.from_inner_text(
     #     '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[1]/a')
     # player['yellow_cards'] = lookup.from_inner_text(
