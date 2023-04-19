@@ -119,8 +119,35 @@ def scrape_player(driver, player_link, player):
         player['assists'] = lookup.from_inner_text(xpath_current_season('Vorlagen'))
         player['goal_participation_quote'] = lookup.from_inner_text(xpath_circle('Torbeteiligungen'))
 
-    player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]',
-                                                'href')
+    player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]', 'href')
+
+    if interactor.click('//*[@id="svelte-performance-data"]/div/main/div/div[2]/a'):
+        if interactor.click('//*[@id="main"]/main/div[3]/div/div[1]/div[2]/a[2]/div'):
+            xpath_performance_data = lambda label: f"//*[@id='yw1']/table/tbody/tr/td[count(//th[@title='{label}']/preceding-sibling::th) + 1]"
+            player['points_per_game'] = lookup.from_inner_text(xpath_performance_data('Punkte pro Spiel'))
+            player['own_goals'] = lookup.from_inner_text(xpath_performance_data('Eigentore'))
+            player['ins'] = lookup.from_inner_text(xpath_performance_data('Einwechslungen'))
+            player['outs'] = lookup.from_inner_text(xpath_performance_data('Auswechslungen'))
+            player['penalty_goals'] = lookup.from_inner_text(xpath_performance_data('Elfmetertore'))
+            player['minutes_per_goal'] = lookup.from_inner_text(xpath_performance_data('Minuten pro Tor'))
+            player['minutes'] = lookup.from_inner_text(xpath_performance_data('Eingesetzte Minuten'))
+        else:
+            player['points_per_game'] = ''
+            player['own_goals'] = ''
+            player['ins'] = ''
+            player['outs'] = ''
+            player['penalty_goals'] = ''
+            player['minutes_per_goal'] = ''
+            player['minutes'] = ''
+    else:
+        player['points_per_game'] = ''
+        player['own_goals'] = ''
+        player['ins'] = ''
+        player['outs'] = ''
+        player['penalty_goals'] = ''
+        player['minutes_per_goal'] = ''
+        player['minutes'] = ''
+
     if enable_instagram_scraping:
         if player['instagram']:
             driver.get(player['instagram'])
