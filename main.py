@@ -76,17 +76,14 @@ def scrape_player(driver, player_link, player):
 
     xpath_international = lambda label, element: f"//*[normalize-space(text()) = '" + label + "']//child::" + element
     player['international'] = lookup.from_inner_text(xpath_international('Nationalspieler:', 'span') + '/a')
-    if not player['international']:
-        player['international'] = lookup.from_inner_text(xpath_international('Akt. Nationalspieler:', 'span') + '/a')
-    player['former_international'] = lookup.from_inner_text(
-        xpath_international('Ehem. Nationalspieler:', 'span') + '/a')
+    if not player['international']: player['international'] = lookup.from_inner_text(xpath_international('Akt. Nationalspieler:', 'span') + '/a')
+    player['former_international'] = lookup.from_inner_text( xpath_international('Ehem. Nationalspieler:', 'span') + '/a')
     player['international_games'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[1]'))
     player['international_goals'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[2]'))
 
     player['market_value'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a')
     player['market_value_currency'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/span')
-    player['market_value_latest_correction'] = lookup.from_inner_text(
-        f'//*[@id="main"]/main/header/div[{5 + increment}]/a/p')
+    player['market_value_latest_correction'] = lookup.from_inner_text( f'//*[@id="main"]/main/header/div[{5 + increment}]/a/p')
     xpath_highest_value = lambda label, element: f"//*[normalize-space(text()) = '" + label + "']//following-sibling::" + element
     player['highest_market_value'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[1]'))
     player['highest_market_value_date'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[2]'))
@@ -97,10 +94,15 @@ def scrape_player(driver, player_link, player):
         player['yellow_cards'] = lookup.from_inner_text(xpath_current_season('Gelbe-Karten'))
         player['yellow_red_cards'] = lookup.from_inner_text(xpath_current_season('Gelb-Rote Karten'))
         player['red_cards'] = lookup.from_inner_text(xpath_current_season('Rote Karten'))
+    else:
+        player['games'] = ''
+        player['yellow_cards'] = ''
+        player['yellow_red_cards'] = ''
+        player['red_cards'] = ''
 
     xpath_circle = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/div[1]/span"
-    player['starting_eleven'] = lookup.from_inner_text(xpath_circle('Startelf-Quote'))
-    player['minutes'] = lookup.from_inner_text(xpath_circle('Spielminuten'))
+    player['starting_eleven_quote'] = lookup.from_inner_text(xpath_circle('Startelf-Quote'))
+    player['minutes_quote'] = lookup.from_inner_text(xpath_circle('Spielminuten'))
 
     if player['position'] == 'Torwart':
         player['goals_conceded'] = lookup.from_inner_text(xpath_current_season('Gegentore'))
@@ -108,14 +110,14 @@ def scrape_player(driver, player_link, player):
         player['penalty_saves'] = lookup.from_inner_text(xpath_circle('Elfer abgewehrt'))
         player['goals'] = ''
         player['assists'] = ''
-        player['goal_participation'] = ''
+        player['goal_participation_quote'] = ''
     else:
         player['goals_conceded'] = ''
         player['clean_sheets'] = ''
         player['penalty_saves'] = ''
         player['goals'] = lookup.from_inner_text(xpath_current_season('Tore'))
         player['assists'] = lookup.from_inner_text(xpath_current_season('Vorlagen'))
-        player['goal_participation'] = lookup.from_inner_text(xpath_circle('Torbeteiligungen'))
+        player['goal_participation_quote'] = lookup.from_inner_text(xpath_circle('Torbeteiligungen'))
 
     player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]',
                                                 'href')
@@ -128,10 +130,6 @@ def scrape_player(driver, player_link, player):
         else:
             player['instagram_posts'] = ''
             player['instagram_followers'] = ''
-
-    # todo: features to add:
-    # - erweiterte detaillierte leistungsdaten aus der vergangenen saison in der liga
-    # - fifa-score
 
     return player
 
