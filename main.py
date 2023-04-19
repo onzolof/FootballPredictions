@@ -51,8 +51,6 @@ leagues = [
     'https://www.transfermarkt.ch/eliteserien/startseite/wettbewerb/NO1',  # NO
 ]
 
-# todo: fix cavegn und bytyqi vom fcsg
-
 def run():
     logger = get_logger()
     driver = get_driver()
@@ -117,7 +115,8 @@ def scrape_player(driver, player_link, player):
 
     xpath_international = lambda label, element: f"//*[normalize-space(text()) = '" + label + "']//child::" + element
     player['international'] = lookup.from_inner_text(xpath_international('Nationalspieler:', 'span') + '/a')
-    if not player['international']: player['international'] = lookup.from_inner_text(xpath_international('Akt. Nationalspieler:', 'span') + '/a')
+    if not player['international']:
+        player['international'] = lookup.from_inner_text(xpath_international('Akt. Nationalspieler:', 'span') + '/a')
     player['former_international'] = lookup.from_inner_text( xpath_international('Ehem. Nationalspieler:', 'span') + '/a')
     player['international_games'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[1]'))
     player['international_goals'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[2]'))
