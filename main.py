@@ -60,21 +60,19 @@ def scrape_player(driver, player_link, player):
             increment = index - 2
             break
 
-    # todo: print just for testing
-    print(increment)
-
     player['club_since'] = lookup.from_text(f"//main/header/div[{2 + increment}]/div/span[4]/span")
     player['contract_until'] = lookup.from_text(f"//main/header/div[{2 + increment}]/div/span[5]/span")
 
-    # todo: fix ff and make it work for all players with all increments
-    player['age'] = lookup.from_inner_text(f"//div[@class='row']/div/div[2]/div/div[2]/div/span[6]")
-    # player['height'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[8]")
-    # player['nationality'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[10]")
-    # player['position'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[12]")
-    # player['foot'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[14]")
-    # player['consultancy'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[16]/a")
-    # player['supplier'] = lookup.from_inner_text("//div[@class='row']/div/div[2]/div/div[2]/div/span[26]")
-    #
+    xpath_player_data = lambda label: f"//*[normalize-space(text()) = '" + label + "']//following-sibling::span"
+    player['age'] = lookup.from_inner_text(xpath_player_data('Alter:'))
+    player['height'] = lookup.from_inner_text(xpath_player_data('Größe:'))
+    player['nationality'] = lookup.from_inner_text(xpath_player_data('Nationalität:'))
+    player['position'] = lookup.from_inner_text(xpath_player_data('Position:'))
+    player['foot'] = lookup.from_inner_text(xpath_player_data('Fuß:'))
+    player['consultancy'] = lookup.from_inner_text(xpath_player_data('Spielerberater:'))
+    player['supplier'] = lookup.from_inner_text(xpath_player_data('Ausrüster:'))
+
+
     # player['international'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[1]/span/a')
     # player['international_games'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[1]')
     # player['international_goals'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[2]')
@@ -122,14 +120,15 @@ def scrape_player(driver, player_link, player):
     #     player['clean_sheets'] = ''
     #     player['penalty_saves'] = ''
 
-    # instagram_link = lookup.from_attribute("//div[@class='row']/div/div[2]/div/div[2]/div/span[28]/div/a", 'href')
-    # if instagram_link:
-    #     driver.get(instagram_link)
-    #     player['instagram_posts'] = lookup.from_inner_text('//main/div/header/section/ul/li[1]/button/span')
-    #     player['instagram_followers'] = lookup.from_attribute('//main/div/header/section/ul/li[2]/button/span', 'title')
-    # else:
-    #     player['instagram_posts'] = ''
-    #     player['instagram_followers'] = ''
+    player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]', 'href')
+    # todo: instagram blocked me probably
+    if player['instagram']:
+        driver.get(player['instagram'])
+        player['instagram_posts'] = lookup.from_inner_text(f"//main/div/header/section/ul/li[1]/button/span")
+        player['instagram_followers'] = lookup.from_attribute(f"//main/div/header/section/ul/li[2]/button/span", 'title')
+    else:
+        player['instagram_posts'] = ''
+        player['instagram_followers'] = ''
 
     # todo: features to add:
     # - erweiterte detaillierte leistungsdaten aus der vergangenen saison in der liga
@@ -218,7 +217,7 @@ class HtmlLookup:
 
     @staticmethod
     def _clean(string):
-        return string.replace('\n', '').strip()
+        return string.replace('\n', '').strip() if string else ''
 
 
 if __name__ == '__main__':
