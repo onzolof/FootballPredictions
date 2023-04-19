@@ -109,6 +109,7 @@ def scrape_player(driver, player_link, player):
         player['goal_participation_quote'] = ''
 
     player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]', 'href')
+    player['injury'] = lookup.from_inner_text('//*[@class="verletzungsbox"]//div[2]')
 
     performance_data_link = lookup.from_attribute('//*[@id="svelte-performance-data"]/div/main/div/div[2]/a', 'href')
     has_extended_performance_data = False
