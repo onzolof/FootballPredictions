@@ -1,7 +1,6 @@
 import csv
 import logging
 import os
-import time
 from datetime import datetime
 
 from selenium import webdriver
@@ -93,11 +92,11 @@ def scrape_player(driver, player_link, player):
     player['highest_market_value'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[1]'))
     player['highest_market_value_date'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[2]'))
 
-    xpath_circle = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/div[1]/span"
-    player['starting_eleven_quote'] = lookup.from_inner_text(xpath_circle('Startelf-Quote'))
-    player['minutes_quote'] = lookup.from_inner_text(xpath_circle('Spielminuten'))
-
     if interactor.click(f"//*[@id='svelte-performance-data']/div/main/div/div[1]//div/img[@title='{player['league']}']/parent::div"):
+        xpath_circle = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/div[1]/span"
+        player['starting_eleven_quote'] = lookup.from_inner_text(xpath_circle('Startelf-Quote'))
+        player['minutes_quote'] = lookup.from_inner_text(xpath_circle('Spielminuten'))
+
         if player['position'] == 'Torwart':
             player['penalty_saves_quote'] = lookup.from_inner_text(xpath_circle('Elfer abgewehrt'))
             player['goal_participation_quote'] = ''
