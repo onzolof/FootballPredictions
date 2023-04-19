@@ -90,63 +90,76 @@ def scrape_player(driver, player_link, player):
     player['highest_market_value'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[1]'))
     player['highest_market_value_date'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[2]'))
 
-    xpath_current_season = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/following-sibling::a"
-    if interactor.click(f"//*[@id='svelte-performance-data']/div/main/div/div[1]//div/img[@title='{player['league']}']/parent::div"):
-        player['games'] = lookup.from_inner_text(xpath_current_season('Spiele'))
-        player['yellow_cards'] = lookup.from_inner_text(xpath_current_season('Gelbe-Karten'))
-        player['yellow_red_cards'] = lookup.from_inner_text(xpath_current_season('Gelb-Rote Karten'))
-        player['red_cards'] = lookup.from_inner_text(xpath_current_season('Rote Karten'))
-    else:
-        player['games'] = ''
-        player['yellow_cards'] = ''
-        player['yellow_red_cards'] = ''
-        player['red_cards'] = ''
-
     xpath_circle = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/div[1]/span"
     player['starting_eleven_quote'] = lookup.from_inner_text(xpath_circle('Startelf-Quote'))
     player['minutes_quote'] = lookup.from_inner_text(xpath_circle('Spielminuten'))
 
-    if player['position'] == 'Torwart':
-        player['goals_conceded'] = lookup.from_inner_text(xpath_current_season('Gegentore'))
-        player['clean_sheets'] = lookup.from_inner_text(xpath_current_season('Zu Null'))
-        player['penalty_saves'] = lookup.from_inner_text(xpath_circle('Elfer abgewehrt'))
-        player['goals'] = ''
-        player['assists'] = ''
-        player['goal_participation_quote'] = ''
+    if interactor.click(f"//*[@id='svelte-performance-data']/div/main/div/div[1]//div/img[@title='{player['league']}']/parent::div"):
+        if player['position'] == 'Torwart':
+            player['penalty_saves_quote'] = lookup.from_inner_text(xpath_circle('Elfer abgewehrt'))
+            player['goal_participation_quote'] = ''
+        else:
+            player['penalty_saves_quote'] = ''
+            player['goal_participation_quote'] = lookup.from_inner_text(xpath_circle('Torbeteiligungen'))
     else:
-        player['goals_conceded'] = ''
-        player['clean_sheets'] = ''
-        player['penalty_saves'] = ''
-        player['goals'] = lookup.from_inner_text(xpath_current_season('Tore'))
-        player['assists'] = lookup.from_inner_text(xpath_current_season('Vorlagen'))
-        player['goal_participation_quote'] = lookup.from_inner_text(xpath_circle('Torbeteiligungen'))
+        player['penalty_saves_quote'] = ''
+        player['goal_participation_quote'] = ''
 
     player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]', 'href')
 
-    if interactor.click('//*[@id="svelte-performance-data"]/div/main/div/div[2]/a'):
-        if interactor.click('//*[@id="main"]/main/div[3]/div/div[1]/div[2]/a[2]/div'):
-            # todo: handle goalio or not
+    performance_data_link = lookup.from_attribute('//*[@id="svelte-performance-data"]/div/main/div/div[2]/a', 'href')
+    has_advanced_performance_data = False
+    if performance_data_link:
+        driver.get(performance_data_link)
+        has_advanced_performance_data = interactor.click('//*[@id="main"]/main/div[3]/div/div[1]/div[2]/a[2]/div')
+        if has_advanced_performance_data:
             xpath_performance_data = lambda id: f"//*[@id='yw1']/table/tbody/tr/td[count(//th[@id='{id}']/preceding-sibling::th) + 1]"
-            player['points_per_game'] = lookup.from_inner_text(xpath_performance_data('yw1_c5'))
-            player['own_goals'] = lookup.from_inner_text(xpath_performance_data('yw1_c8'))
-            player['ins'] = lookup.from_inner_text(xpath_performance_data('yw1_c9'))
-            player['outs'] = lookup.from_inner_text(xpath_performance_data('yw1_c10'))
-            player['penalty_goals'] = lookup.from_inner_text(xpath_performance_data('yw1_c14'))
-            player['minutes_per_goal'] = lookup.from_inner_text(xpath_performance_data('yw1_c15'))
-            player['minutes'] = lookup.from_inner_text(xpath_performance_data('yw1_c16'))
-        else:
-            player['points_per_game'] = ''
-            player['own_goals'] = ''
-            player['ins'] = ''
-            player['outs'] = ''
-            player['penalty_goals'] = ''
-            player['minutes_per_goal'] = ''
-            player['minutes'] = ''
-    else:
+            if player['position'] == 'Torwart':
+                player['goals_conceded'] = lookup.from_inner_text(xpath_performance_data('yw1_c13'))
+                player['clean_sheets'] = lookup.from_inner_text(xpath_performance_data('yw1_c14'))
+                player['games'] = lookup.from_inner_text(xpath_performance_data('yw1_c4'))
+                player['points_per_game'] = lookup.from_inner_text(xpath_performance_data('yw1_c5'))
+                player['goals'] = lookup.from_inner_text(xpath_performance_data('yw1_c6'))
+                player['assists'] = ''
+                player['own_goals'] = lookup.from_inner_text(xpath_performance_data('yw1_c7'))
+                player['ins'] = lookup.from_inner_text(xpath_performance_data('yw1_c8'))
+                player['outs'] = lookup.from_inner_text(xpath_performance_data('yw1_c9'))
+                player['yellow_cards'] = lookup.from_inner_text(xpath_performance_data('yw1_c10'))
+                player['yellow_red_cards'] = lookup.from_inner_text(xpath_performance_data('yw1_c11'))
+                player['red_cards'] = lookup.from_inner_text(xpath_performance_data('yw1_c12'))
+                player['penalty_goals'] = ''
+                player['minutes_per_goal'] = ''
+                player['minutes'] = lookup.from_inner_text(xpath_performance_data('yw1_c15'))
+            else:
+                player['goals_conceded'] = ''
+                player['clean_sheets'] = ''
+                player['games'] = lookup.from_inner_text(xpath_performance_data('yw1_c4'))
+                player['points_per_game'] = lookup.from_inner_text(xpath_performance_data('yw1_c5'))
+                player['goals'] = lookup.from_inner_text(xpath_performance_data('yw1_c6'))
+                player['assists'] = lookup.from_inner_text(xpath_performance_data('yw1_c7'))
+                player['own_goals'] = lookup.from_inner_text(xpath_performance_data('yw1_c8'))
+                player['ins'] = lookup.from_inner_text(xpath_performance_data('yw1_c9'))
+                player['outs'] = lookup.from_inner_text(xpath_performance_data('yw1_c10'))
+                player['yellow_cards'] = lookup.from_inner_text(xpath_performance_data('yw1_c11'))
+                player['yellow_red_cards'] = lookup.from_inner_text(xpath_performance_data('yw1_c12'))
+                player['red_cards'] = lookup.from_inner_text(xpath_performance_data('yw1_c13'))
+                player['penalty_goals'] = lookup.from_inner_text(xpath_performance_data('yw1_c14'))
+                player['minutes_per_goal'] = lookup.from_inner_text(xpath_performance_data('yw1_c15'))
+                player['minutes'] = lookup.from_inner_text(xpath_performance_data('yw1_c16'))
+
+    if not performance_data_link or not has_advanced_performance_data:
+        player['goals_conceded'] = ''
+        player['clean_sheets'] = ''
+        player['games'] = ''
         player['points_per_game'] = ''
+        player['goals'] = ''
+        player['assists'] = ''
         player['own_goals'] = ''
         player['ins'] = ''
         player['outs'] = ''
+        player['yellow_cards'] = ''
+        player['yellow_red_cards'] = ''
+        player['red_cards'] = ''
         player['penalty_goals'] = ''
         player['minutes_per_goal'] = ''
         player['minutes'] = ''
