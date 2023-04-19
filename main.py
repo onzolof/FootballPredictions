@@ -88,6 +88,7 @@ def scrape_player(driver, player_link, player):
     player['highest_market_value'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[1]'))
     player['highest_market_value_date'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[2]'))
 
+    # todo: fix loading/clicking league
     xpath_current_season = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/following-sibling::a"
     player['games'] = lookup.from_inner_text(xpath_current_season('Spiele'))
     player['yellow_cards'] = lookup.from_inner_text(xpath_current_season('Gelbe-Karten'))
@@ -106,13 +107,12 @@ def scrape_player(driver, player_link, player):
         player['assists'] = ''
         player['goal_participation'] = ''
     else:
-        # todo: fix this
-        player['goals'] = lookup.from_inner_text(xpath_current_season('Tore'))
-        player['assists'] = lookup.from_inner_text(xpath_current_season('Vorlagen'))
-        player['goal_participation'] = lookup.from_inner_text(xpath_circle('Torbeteiligungen'))
         player['goals_conceded'] = ''
         player['clean_sheets'] = ''
         player['penalty_saves'] = ''
+        player['goals'] = lookup.from_inner_text(xpath_current_season('Tore'))
+        player['assists'] = lookup.from_inner_text(xpath_current_season('Vorlagen'))
+        player['goal_participation'] = lookup.from_inner_text(xpath_circle('Torbeteiligungen'))
 
     player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]', 'href')
     if enable_instagram_scraping:
