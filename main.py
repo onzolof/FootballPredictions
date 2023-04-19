@@ -108,11 +108,11 @@ def scrape_player(driver, player_link, player):
     player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]', 'href')
 
     performance_data_link = lookup.from_attribute('//*[@id="svelte-performance-data"]/div/main/div/div[2]/a', 'href')
-    has_advanced_performance_data = False
+    has_extended_performance_data = False
     if performance_data_link:
         driver.get(performance_data_link)
-        has_advanced_performance_data = interactor.click('//*[@id="main"]/main/div[3]/div/div[1]/div[2]/a[2]/div')
-        if has_advanced_performance_data:
+        has_extended_performance_data = interactor.click('//*[@id="main"]/main/div[3]/div/div[1]/div[2]/a[2]/div')
+        if has_extended_performance_data:
             xpath_performance_data = lambda id: f"//*[@id='yw1']/table/tbody/tr/td[count(//th[@id='{id}']/preceding-sibling::th) + 1]"
             if player['position'] == 'Torwart':
                 player['goals_conceded'] = lookup.from_inner_text(xpath_performance_data('yw1_c13'))
@@ -147,7 +147,7 @@ def scrape_player(driver, player_link, player):
                 player['minutes_per_goal'] = lookup.from_inner_text(xpath_performance_data('yw1_c15'))
                 player['minutes'] = lookup.from_inner_text(xpath_performance_data('yw1_c16'))
 
-    if not performance_data_link or not has_advanced_performance_data:
+    if not performance_data_link or not has_extended_performance_data:
         player['goals_conceded'] = ''
         player['clean_sheets'] = ''
         player['games'] = ''
