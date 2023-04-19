@@ -10,6 +10,7 @@ from selenium.webdriver.common.by import By
 
 show_browser_ui = False
 enable_instagram_scraping = False
+driver_implicitly_wait = 2  # in seconds
 leagues = [
     'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C1',
     # 'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/L1',
@@ -229,8 +230,7 @@ def get_driver():
     if not show_browser_ui:
         options.add_argument("--headless")
     driver = webdriver.Chrome('chromedriver.exe', options=options)
-    # todo: overriding timeout necessary (reducing timeout speeds up scraping time significantly but might lead to missing data when having a bad internet connection)
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(driver_implicitly_wait)
     driver.maximize_window()
     return driver
 
