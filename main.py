@@ -42,6 +42,7 @@ def do_scraping(driver):
 
 def scrape_player(driver, player_link, player):
     lookup = HtmlLookup(driver)
+    interactor = Interactor(driver)
 
     driver.get(player_link)
 
@@ -77,23 +78,25 @@ def scrape_player(driver, player_link, player):
     player['international'] = lookup.from_inner_text(xpath_international('Nationalspieler:', 'span') + '/a')
     if not player['international']:
         player['international'] = lookup.from_inner_text(xpath_international('Akt. Nationalspieler:', 'span') + '/a')
-    player['former_international'] = lookup.from_inner_text(xpath_international('Ehem. Nationalspieler:', 'span') + '/a')
+    player['former_international'] = lookup.from_inner_text(
+        xpath_international('Ehem. Nationalspieler:', 'span') + '/a')
     player['international_games'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[1]'))
     player['international_goals'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[2]'))
 
     player['market_value'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a')
     player['market_value_currency'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/span')
-    player['market_value_latest_correction'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/p')
+    player['market_value_latest_correction'] = lookup.from_inner_text(
+        f'//*[@id="main"]/main/header/div[{5 + increment}]/a/p')
     xpath_highest_value = lambda label, element: f"//*[normalize-space(text()) = '" + label + "']//following-sibling::" + element
     player['highest_market_value'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[1]'))
     player['highest_market_value_date'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[2]'))
 
-    # todo: fix loading/clicking league
     xpath_current_season = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/following-sibling::a"
-    player['games'] = lookup.from_inner_text(xpath_current_season('Spiele'))
-    player['yellow_cards'] = lookup.from_inner_text(xpath_current_season('Gelbe-Karten'))
-    player['yellow_red_cards'] = lookup.from_inner_text(xpath_current_season('Gelb-Rote Karten'))
-    player['red_cards'] = lookup.from_inner_text(xpath_current_season('Rote Karten'))
+    if interactor.click(f"//*[@id='svelte-performance-data']/div/main/div/div[1]//div/img[@title='{player['league']}']/parent::div"):
+        player['games'] = lookup.from_inner_text(xpath_current_season('Spiele'))
+        player['yellow_cards'] = lookup.from_inner_text(xpath_current_season('Gelbe-Karten'))
+        player['yellow_red_cards'] = lookup.from_inner_text(xpath_current_season('Gelb-Rote Karten'))
+        player['red_cards'] = lookup.from_inner_text(xpath_current_season('Rote Karten'))
 
     xpath_circle = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/div[1]/span"
     player['starting_eleven'] = lookup.from_inner_text(xpath_circle('Startelf-Quote'))
@@ -114,12 +117,14 @@ def scrape_player(driver, player_link, player):
         player['assists'] = lookup.from_inner_text(xpath_current_season('Vorlagen'))
         player['goal_participation'] = lookup.from_inner_text(xpath_circle('Torbeteiligungen'))
 
-    player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]', 'href')
+    player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]',
+                                                'href')
     if enable_instagram_scraping:
         if player['instagram']:
             driver.get(player['instagram'])
             player['instagram_posts'] = lookup.from_inner_text(f"//main/div/header/section/ul/li[1]/button/span")
-            player['instagram_followers'] = lookup.from_attribute(f"//main/div/header/section/ul/li[2]/button/span", 'title')
+            player['instagram_followers'] = lookup.from_attribute(f"//main/div/header/section/ul/li[2]/button/span",
+                                                                  'title')
         else:
             player['instagram_posts'] = ''
             player['instagram_followers'] = ''
@@ -191,7 +196,8 @@ class HtmlLookup:
         self._driver = driver
 
     def from_attribute(self, xpath, attribute):
-        return self._try(lambda driver: driver.find_element(By.XPATH, xpath), lambda element: element.get_attribute(attribute))
+        return self._try(lambda driver: driver.find_element(By.XPATH, xpath),
+                         lambda element: element.get_attribute(attribute))
 
     def from_inner_text(self, xpath):
         return self.from_attribute(xpath, 'innerText')
@@ -212,6 +218,20 @@ class HtmlLookup:
     @staticmethod
     def _clean(string):
         return string.replace('\n', '').strip() if string else ''
+
+
+class Interactor:
+
+    def __init__(self, driver):
+        self._driver = driver
+
+    def click(self, xpath):
+        try:
+            element = self._driver.find_element(By.XPATH, xpath)
+            self._driver.execute_script("arguments[0].click();", element)
+            return True
+        except NoSuchElementException:
+            return False
 
 
 if __name__ == '__main__':
