@@ -72,18 +72,20 @@ def scrape_player(driver, player_link, player):
     player['consultancy'] = lookup.from_inner_text(xpath_player_data('Spielerberater:'))
     player['supplier'] = lookup.from_inner_text(xpath_player_data('Ausrüster:'))
 
-    player['international'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[1]/span/a')
-    player['international_games'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[1]')
-    player['international_goals'] = lookup.from_inner_text('//*[@id="main"]/main/header/div[5]/div/ul[3]/li[2]/a[2]')
+    xpath_international = lambda label, element: f"//*[normalize-space(text()) = '" + label + "']//child::" + element
+    player['international'] = lookup.from_inner_text(xpath_international('Nationalspieler:', 'span') + '/a')
+    player['former_internation'] = lookup.from_inner_text(xpath_international('Ehem. Nationalspieler:', 'span') + '/a')
+    player['international_games'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[1]'))
+    player['international_goals'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[2]'))
 
     player['market_value'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a')
     player['market_value_currency'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/span')
     player['market_value_latest_correction'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/p')
-    player['highest_market_value'] = lookup.from_inner_text(
-        f'//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[2]')
-    player['highest_market_value_date'] = lookup.from_inner_text(
-        f'//*[@id="main"]/main/div[3]/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div[3]')
+    xpath_highest_value = lambda label, element: f"//*[normalize-space(text()) = '" + label + "']//following-sibling::" + element
+    player['highest_market_value'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[1]'))
+    player['highest_market_value_date'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[2]'))
 
+    # todo: working from here?
     # player['games'] = lookup.from_inner_text(
     #     '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[1]/li[1]/a')
     # player['yellow_cards'] = lookup.from_inner_text(
@@ -92,7 +94,7 @@ def scrape_player(driver, player_link, player):
     #     '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[2]/a')
     # player['red_cards'] = lookup.from_inner_text(
     #     '//*[@id="svelte-performance-data"]/div/main/div/div[2]/div[2]/ul[2]/li[3]/a')
-    #
+
     # player['starting_eleven'] = lookup.from_inner_text(
     #     '//div[@class="tm-player-performance__statistic-gauges svelte-1jbxbl0"]//div[1]/div//span[1]')
     # player['minutes'] = lookup.from_inner_text(
