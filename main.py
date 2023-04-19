@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 
 show_browser_ui = False
 enable_instagram_scraping = False
-driver_implicitly_wait = 2  # in seconds
+driver_implicitly_wait = 1  # in seconds
 leagues = [
     'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C1',
     # 'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/L1',
@@ -93,7 +93,8 @@ def scrape_player(driver, player_link, player):
     player['highest_market_value'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[1]'))
     player['highest_market_value_date'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[2]'))
 
-    if interactor.click(f"//*[@id='svelte-performance-data']/div/main/div/div[1]//div/img[@title='{player['league']}']/parent::div"):
+    league_found = interactor.click(f"//*[@id='svelte-performance-data']/div/main/div/div[1]//div/img[@title='{player['league']}']/parent::div")
+    if league_found:
         xpath_circle = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/div[1]/span"
         player['starting_eleven_quote'] = lookup.from_inner_text(xpath_circle('Startelf-Quote'))
         player['minutes_quote'] = lookup.from_inner_text(xpath_circle('Spielminuten'))
@@ -105,6 +106,8 @@ def scrape_player(driver, player_link, player):
             player['penalty_saves_quote'] = ''
             player['goal_participation_quote'] = lookup.from_inner_text(xpath_circle('Torbeteiligungen'))
     else:
+        player['starting_eleven_quote'] = ''
+        player['minutes_quote'] = ''
         player['penalty_saves_quote'] = ''
         player['goal_participation_quote'] = ''
 
@@ -113,7 +116,7 @@ def scrape_player(driver, player_link, player):
 
     performance_data_link = lookup.from_attribute('//*[@id="svelte-performance-data"]/div/main/div/div[2]/a', 'href')
     has_extended_performance_data = False
-    if performance_data_link:
+    if performance_data_link and league_found:
         driver.get(performance_data_link)
         has_extended_performance_data = interactor.click('//*[@id="main"]/main/div[3]/div/div[1]/div[2]/a[2]/div')
         if has_extended_performance_data:
