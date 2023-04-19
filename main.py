@@ -12,10 +12,46 @@ show_browser_ui = False
 enable_instagram_scraping = False
 driver_implicitly_wait = 1  # in seconds
 leagues = [
-    'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C1',
-    # 'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/L1',
+    'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C1',  # CH
+    'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C2',  # CH
+    'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/L1',  # DE
+    'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/L2',  # DE
+    'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/A1',  # AT
+    'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/A2',  # AT
+    'https://www.transfermarkt.ch/ligue-1/startseite/wettbewerb/FR1',  # FR
+    'https://www.transfermarkt.ch/ligue-1/startseite/wettbewerb/FR2',  # FR
+    'https://www.transfermarkt.ch/serie-a/startseite/wettbewerb/IT1',  # IT
+    'https://www.transfermarkt.ch/serie-a/startseite/wettbewerb/IT2',  # IT
+    'https://www.transfermarkt.ch/laliga/startseite/wettbewerb/ES1',  # ES
+    'https://www.transfermarkt.ch/laliga/startseite/wettbewerb/ES2',  # ES
+    'https://www.transfermarkt.ch/liga-nos/startseite/wettbewerb/PO1',  # PO
+    'https://www.transfermarkt.ch/liga-nos/startseite/wettbewerb/PO2',  # PO
+    'https://www.transfermarkt.ch/premier-league/startseite/wettbewerb/GB1',  # GB
+    'https://www.transfermarkt.ch/premier-league/startseite/wettbewerb/GB2',  # GB
+    'https://www.transfermarkt.ch/premier-league/startseite/wettbewerb/GB3',  # GB
+    'https://www.transfermarkt.ch/eredivisie/startseite/wettbewerb/NL1',  # NL
+    'https://www.transfermarkt.ch/super-lig/startseite/wettbewerb/TR1',  # TR
+    'https://www.transfermarkt.ch/super-lig/startseite/wettbewerb/TR2',  # TR
+    'https://www.transfermarkt.ch/jupiler-pro-league/startseite/wettbewerb/BE1',  # BE
+    'https://www.transfermarkt.ch/jupiler-pro-league/startseite/wettbewerb/BE2',  # BE
+    'https://www.transfermarkt.ch/premier-liga/startseite/wettbewerb/RU1',  # RU
+    'https://www.transfermarkt.ch/premier-liga/startseite/wettbewerb/RU2',  # RU
+    'https://www.transfermarkt.ch/super-league-1/startseite/wettbewerb/GR1',  # GR
+    'https://www.transfermarkt.ch/super-league-1/startseite/wettbewerb/GR2',  # GR
+    'https://www.transfermarkt.ch/scottish-premiership/startseite/wettbewerb/SC1',  # SC
+    'https://www.transfermarkt.ch/scottish-premiership/startseite/wettbewerb/SC2',  # SC
+    'https://www.transfermarkt.ch/premier-liga/startseite/wettbewerb/UKR1',  # UKR
+    'https://www.transfermarkt.ch/pko-ekstraklasa/startseite/wettbewerb/PL1',  # PL
+    'https://www.transfermarkt.ch/superligaen/startseite/wettbewerb/DK1',  # DK
+    'https://www.transfermarkt.ch/supersport-hnl/startseite/wettbewerb/KR1',  # KR
+    'https://www.transfermarkt.ch/super-liga-srbije/startseite/wettbewerb/SER1',  # SER
+    'https://www.transfermarkt.ch/fortuna-liga/startseite/wettbewerb/TS1',  # TS
+    'https://www.transfermarkt.ch/superliga/startseite/wettbewerb/RO1',  # RO
+    'https://www.transfermarkt.ch/allsvenskan/startseite/wettbewerb/SE1',  # SE
+    'https://www.transfermarkt.ch/eliteserien/startseite/wettbewerb/NO1',  # NO
 ]
 
+# todo: fix cavegn und bytyqi vom fcsg
 
 def run():
     logger = get_logger()
