@@ -74,7 +74,9 @@ def scrape_player(driver, player_link, player):
 
     xpath_international = lambda label, element: f"//*[normalize-space(text()) = '" + label + "']//child::" + element
     player['international'] = lookup.from_inner_text(xpath_international('Nationalspieler:', 'span') + '/a')
-    player['former_internation'] = lookup.from_inner_text(xpath_international('Ehem. Nationalspieler:', 'span') + '/a')
+    if not player['international']:
+        player['international'] = lookup.from_inner_text(xpath_international('Akt. Nationalspieler:', 'span') + '/a')
+    player['former_international'] = lookup.from_inner_text(xpath_international('Ehem. Nationalspieler:', 'span') + '/a')
     player['international_games'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[1]'))
     player['international_goals'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[2]'))
 
