@@ -1,67 +1,24 @@
 import csv
 import logging
 import os
+import yaml
 from datetime import datetime
-
 from selenium import webdriver
 from selenium.common import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-show_browser_ui = False
-enable_instagram_scraping = False
-driver_implicitly_wait = 2  # in seconds
-leagues = [
-    'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C1',  # CH
-    'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C2',  # CH
-    'https://www.transfermarkt.ch/promotion-league/startseite/wettbewerb/CHPR',  # CH
-    'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/L1',  # DE
-    'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/L2',  # DE
-    'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/A1',  # AT
-    'https://www.transfermarkt.ch/bundesliga/startseite/wettbewerb/A2',  # AT
-    'https://www.transfermarkt.ch/ligue-1/startseite/wettbewerb/FR1',  # FR
-    'https://www.transfermarkt.ch/ligue-1/startseite/wettbewerb/FR2',  # FR
-    'https://www.transfermarkt.ch/serie-a/startseite/wettbewerb/IT1',  # IT
-    'https://www.transfermarkt.ch/serie-a/startseite/wettbewerb/IT2',  # IT
-    'https://www.transfermarkt.ch/laliga/startseite/wettbewerb/ES1',  # ES
-    'https://www.transfermarkt.ch/laliga/startseite/wettbewerb/ES2',  # ES
-    'https://www.transfermarkt.ch/liga-nos/startseite/wettbewerb/PO1',  # PO
-    'https://www.transfermarkt.ch/liga-nos/startseite/wettbewerb/PO2',  # PO
-    'https://www.transfermarkt.ch/premier-league/startseite/wettbewerb/GB1',  # GB
-    'https://www.transfermarkt.ch/premier-league/startseite/wettbewerb/GB2',  # GB
-    'https://www.transfermarkt.ch/premier-league/startseite/wettbewerb/GB3',  # GB
-    'https://www.transfermarkt.ch/eredivisie/startseite/wettbewerb/NL1',  # NL
-    'https://www.transfermarkt.ch/super-lig/startseite/wettbewerb/TR1',  # TR
-    'https://www.transfermarkt.ch/super-lig/startseite/wettbewerb/TR2',  # TR
-    'https://www.transfermarkt.ch/jupiler-pro-league/startseite/wettbewerb/BE1',  # BE
-    'https://www.transfermarkt.ch/jupiler-pro-league/startseite/wettbewerb/BE2',  # BE
-    'https://www.transfermarkt.ch/premier-liga/startseite/wettbewerb/RU1',  # RU
-    'https://www.transfermarkt.ch/premier-liga/startseite/wettbewerb/RU2',  # RU
-    'https://www.transfermarkt.ch/super-league-1/startseite/wettbewerb/GR1',  # GR
-    'https://www.transfermarkt.ch/super-league-1/startseite/wettbewerb/GR2',  # GR
-    'https://www.transfermarkt.ch/scottish-premiership/startseite/wettbewerb/SC1',  # SC
-    'https://www.transfermarkt.ch/scottish-premiership/startseite/wettbewerb/SC2',  # SC
-    'https://www.transfermarkt.ch/premier-liga/startseite/wettbewerb/UKR1',  # UKR
-    'https://www.transfermarkt.ch/pko-ekstraklasa/startseite/wettbewerb/PL1',  # PL
-    'https://www.transfermarkt.ch/superligaen/startseite/wettbewerb/DK1',  # DK
-    'https://www.transfermarkt.ch/supersport-hnl/startseite/wettbewerb/KR1',  # KR
-    'https://www.transfermarkt.ch/super-liga-srbije/startseite/wettbewerb/SER1',  # SER
-    'https://www.transfermarkt.ch/fortuna-liga/startseite/wettbewerb/TS1',  # TS
-    'https://www.transfermarkt.ch/superliga/startseite/wettbewerb/RO1',  # RO
-    'https://www.transfermarkt.ch/allsvenskan/startseite/wettbewerb/SE1',  # SE
-    'https://www.transfermarkt.ch/eliteserien/startseite/wettbewerb/NO1',  # NO
-]
-
 
 def run():
-    logger = get_logger()
-    driver = get_driver()
-    do_scraping(driver)
+    config = load_config()
+    driver = get_driver(config)
+    init_logger()
+    timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
+    do_scraping(driver, timestamp, config['leagues'], config['enable_instagram_scraping'])
     driver.close()
 
 
-def do_scraping(driver):
-    timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
+def do_scraping(driver, timestamp, leagues, enable_insta_scraping):
     for league_link in leagues:
         clubs, league_country = get_clubs_of_league(driver, league_link)
         for club_link in clubs:
@@ -71,13 +28,14 @@ def do_scraping(driver):
                     player['league_country'] = league_country
                     player['scraping_time'] = datetime.now().strftime('%Y%m%d%H%M%S')
                     player['link'] = player_link
-                    player = scrape_player(driver, player_link, player)
+                    player = scrape_player(driver, player_link, player, enable_insta_scraping)
                     write_player(timestamp, player)
                 except BaseException as exception:
                     log_scraping_error(timestamp, player_link, exception)
+    print('Finished')
 
 
-def scrape_player(driver, player_link, player):
+def scrape_player(driver, player_link, player, enable_insta_scraping):
     lookup = HtmlLookup(driver)
     interactor = Interactor(driver)
 
@@ -208,7 +166,7 @@ def scrape_player(driver, player_link, player):
         player['minutes_per_goal'] = ''
         player['minutes'] = ''
 
-    if enable_instagram_scraping:
+    if enable_insta_scraping:
         if player['instagram']:
             driver.get(player['instagram'])
             player['instagram_posts'] = lookup.from_inner_text(f"//main/div/header/section/ul/li[1]/button/span")
@@ -219,6 +177,14 @@ def scrape_player(driver, player_link, player):
             player['instagram_followers'] = ''
 
     return player
+
+
+def load_config():
+    with open("scraping/config.yaml", "r") as stream:
+        try:
+            return yaml.safe_load(stream)
+        except yaml.YAMLError as exc:
+            print(exc)
 
 
 def get_players_of_club(driver, club_link):
@@ -255,7 +221,7 @@ def log_scraping_error(timestamp, player_link, exception):
         f.write(player_link + '\n')
 
 
-def get_logger():
+def init_logger():
     logging.basicConfig(filename="transfermarkt_scraper.log",
                         filemode='a',
                         format='%(asctime)s,%(msecs)03d %(name)s %(levelname)s %(message)s',
@@ -265,12 +231,12 @@ def get_logger():
     return logger
 
 
-def get_driver():
+def get_driver(config):
     options = Options()
-    if not show_browser_ui:
+    if not config['show_browser_ui']:
         options.add_argument("--headless")
     driver = webdriver.Chrome('chromedriver.exe', options=options)
-    driver.implicitly_wait(driver_implicitly_wait)
+    driver.implicitly_wait(config['driver_implicitly_wait'])
     driver.maximize_window()
     return driver
 
