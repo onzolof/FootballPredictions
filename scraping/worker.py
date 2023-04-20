@@ -1,6 +1,8 @@
 import csv
 import logging
 import os
+import sys
+
 import yaml
 from datetime import datetime
 from selenium import webdriver
@@ -13,12 +15,16 @@ def run():
     config = load_config()
     driver = get_driver(config)
     init_logger()
-    timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
-    do_scraping(driver, timestamp, config['leagues'], config['enable_instagram_scraping'])
+    worker_id = sys.argv[1]
+    index_start = int(sys.argv[2].split('-')[0])
+    index_end = int(sys.argv[2].split('-')[1])
+    leagues = config['leagues'][index_start:index_end + 1]
+    timestamp = sys.argv[3]
+    do_scraping(driver, worker_id, timestamp, leagues, config['enable_instagram_scraping'])
     driver.close()
 
 
-def do_scraping(driver, timestamp, leagues, enable_insta_scraping):
+def do_scraping(driver, worker_id, timestamp, leagues, enable_insta_scraping):
     for league_link in leagues:
         clubs, league_country = get_clubs_of_league(driver, league_link)
         for club_link in clubs:
@@ -29,9 +35,9 @@ def do_scraping(driver, timestamp, leagues, enable_insta_scraping):
                     player['scraping_time'] = datetime.now().strftime('%Y%m%d%H%M%S')
                     player['link'] = player_link
                     player = scrape_player(driver, player_link, player, enable_insta_scraping)
-                    write_player(timestamp, player)
+                    write_player(worker_id, timestamp, player)
                 except BaseException as exception:
-                    log_scraping_error(timestamp, player_link, exception)
+                    log_scraping_error(worker_id, timestamp, player_link, exception)
     print('Finished')
 
 
@@ -180,7 +186,7 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
 
 
 def load_config():
-    with open("scraping/config.yaml", "r") as stream:
+    with open("config.yaml", "r") as stream:
         try:
             return yaml.safe_load(stream)
         except yaml.YAMLError as exc:
@@ -203,9 +209,9 @@ def get_clubs_of_league(driver, league_link):
     return clubs, league_country
 
 
-def write_player(timestamp, player):
+def write_player(worker_id, timestamp, player):
     print(f"Scraped:\t{player['league']}\t{player['club']}\t{player['name']}")
-    filepath = f"data/players_{timestamp}.csv"
+    filepath = f"data/players_{timestamp}_{worker_id}.csv"
     exists = os.path.exists(filepath)
     with open(filepath, 'a') as f:
         w = csv.DictWriter(f, player.keys())
@@ -214,9 +220,9 @@ def write_player(timestamp, player):
         w.writerow(player)
 
 
-def log_scraping_error(timestamp, player_link, exception):
+def log_scraping_error(worker_id, timestamp, player_link, exception):
     print(f"Error:\t{player_link}\t{str(exception)}")
-    filepath = f"data/errors_{timestamp}.csv"
+    filepath = f"data/errors_{timestamp}_{worker_id}.csv"
     with open(filepath, 'a') as f:
         f.write(player_link + '\n')
 
