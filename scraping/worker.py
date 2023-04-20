@@ -67,9 +67,6 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
             increment = index - 2
             break
 
-    player['club_since'] = lookup.from_text(f"//main/header/div[{2 + increment}]/div/span[4]/span")
-    player['contract_until'] = lookup.from_text(f"//main/header/div[{2 + increment}]/div/span[5]/span")
-
     xpath_player_data = lambda label: f"//*[normalize-space(text()) = '" + label + "']//following-sibling::span"
     player['age'] = lookup.from_inner_text(xpath_player_data('Alter:'))
     player['height'] = lookup.from_inner_text(xpath_player_data('Größe:'))
@@ -78,6 +75,8 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
     player['foot'] = lookup.from_inner_text(xpath_player_data('Fuß:'))
     player['consultancy'] = lookup.from_inner_text(xpath_player_data('Spielerberater:'))
     player['supplier'] = lookup.from_inner_text(xpath_player_data('Ausrüster:'))
+    player['club_since'] = lookup.from_inner_text(xpath_player_data('Im Team seit:'))
+    player['contract_until'] = lookup.from_inner_text(xpath_player_data('Vertrag bis:'))
 
     xpath_international = lambda label, element: f"//*[normalize-space(text()) = '" + label + "']//child::" + element
     player['international'] = lookup.from_inner_text(xpath_international('Nationalspieler:', 'span') + '/a')
