@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 
 show_browser_ui = False
 enable_instagram_scraping = False
-driver_implicitly_wait = 3  # in seconds
+driver_implicitly_wait = 2  # in seconds
 leagues = [
     'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C1',  # CH
     'https://www.transfermarkt.ch/super-league/startseite/wettbewerb/C2',  # CH
