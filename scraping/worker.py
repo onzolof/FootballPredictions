@@ -210,7 +210,7 @@ def get_clubs_of_league(driver, league_link):
 
 def write_player(worker_id, timestamp, player):
     print(f"Scraped:\t{player['league']}\t{player['club']}\t{player['name']}")
-    filepath = f"data/players_{timestamp}_{worker_id}.csv"
+    filepath = f"scraped_data/players_{timestamp}_{worker_id}.csv"
     exists = os.path.exists(filepath)
     with open(filepath, 'a') as f:
         w = csv.DictWriter(f, player.keys())
@@ -221,7 +221,7 @@ def write_player(worker_id, timestamp, player):
 
 def log_scraping_error(worker_id, timestamp, player_link, exception):
     print(f"Error:\t{player_link}\t{str(exception)}")
-    filepath = f"data/errors_{timestamp}_{worker_id}.csv"
+    filepath = f"scraped_data/errors_{timestamp}_{worker_id}.csv"
     with open(filepath, 'a') as f:
         f.write(player_link + '\n')
 
