@@ -213,7 +213,7 @@ def write_player(worker_id, timestamp, player):
     filepath = f"scraped_data/players_{timestamp}_{worker_id}.csv"
     exists = os.path.exists(filepath)
     with open(filepath, 'a') as f:
-        w = csv.DictWriter(f, player.keys())
+        w = csv.DictWriter(f, player.keys(), delimiter=";")
         if not exists:
             w.writeheader()
         w.writerow(player)
