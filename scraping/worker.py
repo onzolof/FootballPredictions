@@ -70,7 +70,7 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
     if increment is not None:
         player['market_value'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a')
         player['market_value_currency'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/span')
-        player['market_value_latest_correction'] = lookup.from_inner_text( f'//*[@id="main"]/main/header/div[{5 + increment}]/a/p')
+        player['market_value_latest_correction'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/p')
     else:
         player['league_level'] = ''
         player['market_value'] = ''
@@ -94,8 +94,7 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
 
     xpath_international = lambda label, element: f"//*[normalize-space(text()) = '" + label + "']//child::" + element
     player['international'] = lookup.from_inner_text(xpath_international('Nationalspieler:', 'span') + '/a')
-    if not player['international']:
-        player['international'] = lookup.from_inner_text(xpath_international('Akt. Nationalspieler:', 'span') + '/a')
+    player['international_active'] = lookup.from_inner_text(xpath_international('Akt. Nationalspieler:', 'span') + '/a')
     player['former_international'] = lookup.from_inner_text( xpath_international('Ehem. Nationalspieler:', 'span') + '/a')
     player['international_games'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[1]'))
     player['international_goals'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[2]'))
@@ -119,7 +118,8 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
         player['goal_participation_quote'] = ''
 
     player['instagram'] = lookup.from_attribute(xpath_player_data('Social Media:') + '/div//a[@title="Instagram"]', 'href')
-    player['injury'] = lookup.from_inner_text('//*[@class="verletzungsbox"]//div[2]')
+    lookup_injury_image = lookup.from_attribute('//*[@class="verletzungsbox"]//div[1]/img', 'src')
+    player['injury'] = '1' if lookup_injury_image == 'https://www.transfermarkt.ch/images/icons/verletzt.png' else '0'
 
     performance_data_link = lookup.from_attribute('//*[@id="svelte-performance-data"]/div/main/div/div[2]/a', 'href')
     has_extended_performance_data = False

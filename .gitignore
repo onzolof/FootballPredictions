@@ -25,3 +25,5 @@ scraping/scraped_data/errors_20230411121416.csv
 scraping/scraped_data/errors_20230411121347.csv
 scraping/scraped_data/errors_20230411121241.csv
 /scraping/transfermarkt_scraper.log
+/scraping/scraped_data/players_test_1.csv
+/scraping/scraped_data/errors_test_1.csv
