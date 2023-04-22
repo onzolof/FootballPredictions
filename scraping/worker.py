@@ -59,13 +59,23 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
     player['league'] = lookup.from_text_by_class('data-header__league')
     player['club'] = lookup.from_text_by_class('data-header__club')
 
-    increment = 0
+    increment = None
     for index in range(2, 10):
         value = lookup.from_text(f"//main/header/div[{index}]/div/span[3]/span")
         if value:
             player['league_level'] = value
             increment = index - 2
             break
+
+    if increment is not None:
+        player['market_value'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a')
+        player['market_value_currency'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/span')
+        player['market_value_latest_correction'] = lookup.from_inner_text( f'//*[@id="main"]/main/header/div[{5 + increment}]/a/p')
+    else:
+        player['league_level'] = ''
+        player['market_value'] = ''
+        player['market_value_currency'] = ''
+        player['market_value_latest_correction'] = ''
 
     xpath_player_data = lambda label: f"//*[normalize-space(text()) = '" + label + "']//following-sibling::span"
     player['age'] = lookup.from_inner_text(xpath_player_data('Alter:'))
@@ -86,9 +96,7 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
     player['international_games'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[1]'))
     player['international_goals'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[2]'))
 
-    player['market_value'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a')
-    player['market_value_currency'] = lookup.from_inner_text(f'//*[@id="main"]/main/header/div[{5 + increment}]/a/span')
-    player['market_value_latest_correction'] = lookup.from_inner_text( f'//*[@id="main"]/main/header/div[{5 + increment}]/a/p')
+
     xpath_highest_value = lambda label, element: f"//*[normalize-space(text()) = '" + label + "']//following-sibling::" + element
     player['highest_market_value'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[1]'))
     player['highest_market_value_date'] = lookup.from_inner_text(xpath_highest_value('Höchster Marktwert:', 'div[2]'))
