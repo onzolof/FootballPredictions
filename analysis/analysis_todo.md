@@ -1,3 +1,6 @@
 - check for duplicates
   - ein spieler kann in zwei verschiedenen ligen spielen: wie sollen wir das handeln?
+    - ein und derselbe spieler wird nur einmal angezeigt, ansonsten handelt es sich um ein Dublikat
 - check for null values
+  - gemacht für Objekte
+  - Datenimputation test train split
