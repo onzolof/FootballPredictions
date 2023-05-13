@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pickle
 import pandas as pd
 from sklearn.feature_selection import RFECV
-from sklearn.metrics import make_scorer, mean_squared_error
+from sklearn.metrics import make_scorer, mean_squared_error, r2_score
 from sklearn.model_selection import RandomizedSearchCV
 
 
@@ -59,3 +59,7 @@ def save_model(model, model_name):
 def load_model(model_name):
     with open('../models/' + model_name + '.pkl', 'rb') as f:
         return pickle.load(f)
+
+
+def print_performance_measures(y, y_pred):
+    print(f"RMSE:\t{round(mean_squared_error(y, y_pred, squared=False), 4)}\nR^2:\t{round(r2_score(y, y_pred), 4)}")
