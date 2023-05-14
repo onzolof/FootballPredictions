@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pickle
 import pandas as pd
-from sklearn.feature_selection import RFECV
+from sklearn.feature_selection import RFE
 from sklearn.metrics import make_scorer, mean_squared_error, r2_score
 from sklearn.model_selection import RandomizedSearchCV
 
@@ -41,8 +41,8 @@ def optimise_model(model, params, X, y, scoring=get_rmse_scorer(), n_iter=100):
     return search.best_estimator_, cv_results
 
 
-def recursive_feature_elimination(estimator, X, y, scoring=get_rmse_scorer()):
-    selector = RFECV(estimator=estimator, step=1, cv=5, n_jobs=-1, scoring=scoring)
+def recursive_feature_elimination(estimator, X, y):
+    selector = RFE(estimator=estimator, step=1)
     selector.fit(X, y)
     df_features = pd.DataFrame(columns=['feature', 'support', 'ranking'])
     for i in range(len(X.columns)):
