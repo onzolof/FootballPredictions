@@ -6,14 +6,14 @@ from sklearn.metrics import make_scorer, mean_squared_error, r2_score
 from sklearn.model_selection import RandomizedSearchCV
 
 
-def plot_variable_importance(model, X, n=10):
-    imp = pd.DataFrame({"imp": model.feature_importances_, "names": X.columns})
-    imp = imp.sort_values("imp", ascending=True).tail(n)  # Select the top n rows
+def plot_variable_importance(model, X, n=10, inverse=False):
+    imp = pd.DataFrame({"imp": model.feature_importances_, "names": X.columns}).sort_values("imp", ascending=True)
+    imp = imp.head(n) if inverse else imp.tail(n)  # Select the top n rows
     fig, ax = plt.subplots(figsize=(imp.shape[0] / 2, imp.shape[0] / 2))  # Adjusted size for fewer variables
     ax.barh(imp["names"], imp["imp"], color="green")
     ax.set_xlabel('\nVariable Importance')
     ax.set_ylabel('Features\n')
-    ax.set_title('Top ' + str(n) + ' Variable Importance Plot\n')
+    ax.set_title(f"{'Flop' if inverse else 'Top'} {str(n)} Variable Importance")
     plt.show()
 
 
