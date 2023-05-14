@@ -76,5 +76,8 @@ def load_model(model_name):
         return pickle.load(f)
 
 
-def print_performance_measures(y, y_pred):
-    print(f"RMSE:\t{round(mean_squared_error(y, y_pred, squared=False), 4)}\nR^2:\t{round(r2_score(y, y_pred), 4)}")
+def print_performance_measures(X, y, y_pred):
+    r2 = r2_score(y, y_pred)
+    adj_r2 = 1-(1-r2)*(len(X.index)-1)/(len(X.index)-len(X.columns)-1)
+    rmse = mean_squared_error(y, y_pred, squared=False)
+    print(f"RMSE:\t\t{round(rmse, 4)}\nAdj. R^2:\t{round(adj_r2, 4)}")
