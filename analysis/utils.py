@@ -4,17 +4,32 @@ import pandas as pd
 from sklearn.feature_selection import RFE
 from sklearn.metrics import make_scorer, mean_squared_error, r2_score
 from sklearn.model_selection import RandomizedSearchCV
+import seaborn as sns
 
 
 def plot_variable_importance(model, X, n=10, inverse=False):
-    imp = pd.DataFrame({"imp": model.feature_importances_, "names": X.columns}).sort_values("imp", ascending=True)
+    imp = get_variable_importance(model, X).sort_values("importance", ascending=True)
     imp = imp.head(n) if inverse else imp.tail(n)  # Select the top n rows
     fig, ax = plt.subplots(figsize=(imp.shape[0] / 2, imp.shape[0] / 2))  # Adjusted size for fewer variables
-    ax.barh(imp["names"], imp["imp"], color="green")
+    ax.barh(imp["feature"], imp["importance"], color="green")
     ax.set_xlabel('\nVariable Importance')
     ax.set_ylabel('Features\n')
-    ax.set_title(f"{'Flop' if inverse else 'Top'} {str(n)} Variable Importance")
+    ax.set_title(f"{'Flop' if inverse else 'Top'} {str(n)} Variable Importance\n")
     plt.show()
+
+
+def plot_numeric_variable_importance(model, X):
+    variable_importances = get_variable_importance(model, X)
+    numeric_features = variable_importances[~variable_importances['feature'].str.contains('_')].sort_values('importance', ascending=False)
+    sns.barplot(x='importance', y='feature', data=numeric_features, palette='hls')
+    plt.gca().set_xlabel('\nVariable Importance')
+    plt.gca().set_ylabel('Features\n')
+    plt.gca().set_title(f"Numeric Variable Importance\n")
+    plt.show()
+
+
+def get_variable_importance(model, X):
+    return pd.DataFrame({"feature": X.columns, "importance": model.feature_importances_})
 
 
 def process_categorical(df, column, min_count=10):
