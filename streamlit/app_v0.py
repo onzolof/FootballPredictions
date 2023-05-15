@@ -128,6 +128,7 @@ elif page == "Einfaches Modell":
 
     # Filteroptionen
     unique_position_categories = df_simple_model['PositionCategory'].unique().tolist()
+    unique_position_categories.insert(0, 'Alle Positionen')
     position_category = st.selectbox('Wähle Position', options=unique_position_categories)
 
     min_value = int(df_simple_model['Value'].min())
@@ -140,11 +141,14 @@ elif page == "Einfaches Modell":
     age_range = st.slider('Wähle Alter', min_value=min_age, max_value=max_age, value=(min_age, max_age))
 
     # Filtern des DataFrames und Auswählen des Spielers mit dem höchsten Wert in 'DifferenceSimpleModelXGB'
-    mask = (df_simple_model['PositionCategory'] == position_category) & (
-        df_simple_model['Value'].between(*value_range)) & (df_simple_model['Age'].between(*age_range))
+    if position_category == 'Alle Positionen':
+        mask = (df_simple_model['Value'].between(*value_range)) & (df_simple_model['Age'].between(*age_range))
+    else:
+        mask = (df_simple_model['PositionCategory'] == position_category) & (
+            df_simple_model['Value'].between(*value_range)) & (df_simple_model['Age'].between(*age_range))
     top_player = df_simple_model.loc[
         mask, ['Name', 'Age', 'PositionCategory', 'Club', 'Value', 'PredictedValueSimpleModelXGB',
-               'PercentDifferenceSimpleModelXGB', 'Source']].nlargest(5, 'PercentDifferenceSimpleModelXGB')
+               'PercentDifferenceSimpleModelXGB']].nlargest(5, 'PercentDifferenceSimpleModelXGB')
     top_player.reset_index(drop=True, inplace=True)  # Reset index and remove index column
 
     # Filtern der Spalten 'Name' und 'Club'
