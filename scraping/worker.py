@@ -58,6 +58,7 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
 
     player['league'] = lookup.from_text_by_class('data-header__league')
     player['club'] = lookup.from_text_by_class('data-header__club')
+    player['image'] = lookup.from_attribute('//*[@id="fotoauswahlOeffnen"]/img', 'src')
 
     increment = None
     for index in range(2, 10):
