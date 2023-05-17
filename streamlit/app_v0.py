@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pickle
+
+# https://www.uefa.com/nationalassociations/uefarankings/country/#/yr/2023
 
 # Die App-Eigenschaften definieren
 st.set_page_config(
@@ -17,18 +20,26 @@ def load_data():
     return df
 
 
-# Add a selectbox to the sidebar:
-page = st.sidebar.selectbox("Wähle eine Seite", ("Hauptseite", "Metadaten", "Einfaches Modell"))
+@st.cache_data
+def load_model(position):
+    if position == 'Torwart':
+        return pickle.load(open('../models/simple-model-xgb-tw.pkl', 'rb'))
+    else:
+        return pickle.load(open('../models/simple-model-xgb.pkl', 'rb'))
+
+
+# Füge eine Seitenauswahl hinzu
+page = st.sidebar.selectbox("Wähle eine Seite", ("Hauptseite", "Metadaten", "Einfaches Modell", 'Einfaches Modell Prediction'))
 
 if page == "Hauptseite":
     # Titel der Streamlit-Seite
     st.title(
-        "Vorhersage der Unter- oder Uberbewertung von Fussballspielern")  # Der Titel der Streamlit-Seite ist "Vorhersage der Unter- oder Uberbewertung von Fussballspielern"
+        "Vorhersage der Unter- oder Überbewertung von Fussballspielern")
 
     # Daten laden
     df_clean = load_data()
 
-    # Create a new DataFrame for displaying and filtering
+    # Erstelle ein Dataframe für das Filtern
     df_display = df_clean.copy()
 
     # Ligen mit weniger als 100 Spielern in "Andere Ligen" zusammenfassen
@@ -63,13 +74,13 @@ if page == "Hauptseite":
         selected_data = selected_data.rename(columns={'Club': 'Klub', 'League': 'Liga',
                                                       'NationalLeagueLevel': 'Liga-Ebene',
                                                       'LeagueCountry': 'Liga Land', 'Value': 'Wert in €'})
-        selected_data.reset_index(drop=True, inplace=True)  # Reset index and remove index column
-        st.dataframe(selected_data)  # use st.dataframe() instead of st.write() to display the table
+        selected_data.reset_index(drop=True, inplace=True)
+        st.dataframe(selected_data)
     else:
         st.write("Keine Ligen ausgewählt.")
 
 elif page == "Metadaten":
-    st.title("Spieler Metadaten")  # Der Titel der Streamlit-Seite ist "Spieler Metadaten"
+    st.title("Spieler Metadaten")
 
     df_meta = load_data()
 
@@ -126,6 +137,26 @@ elif page == "Einfaches Modell":
 
     df_simple_model = load_data()
 
+    # Create a new DataFrame for displaying and filtering
+    df_display = df_simple_model.copy()
+
+    # Ligen mit weniger als 100 Spielern in "Andere Ligen" zusammenfassen
+    mask = df_display.groupby('League')['Name'].transform('count') < 100
+    df_display['DisplayLeague'] = df_display['League']
+    df_display['DisplayLeagueCountry'] = df_display['LeagueCountry']
+    df_display.loc[mask, 'DisplayLeague'] = 'Andere Ligen'
+    df_display.loc[mask, 'DisplayLeagueCountry'] = 'Andere Länder'
+    df_display['League_Country'] = df_display['DisplayLeague'] + '/' + df_display['DisplayLeagueCountry']
+
+    # Ligen für den Filter auswählen
+    leagues = df_display['League_Country'].unique()
+    selected_leagues = st.multiselect("Ligen auswählen", options=leagues)
+
+    # Spieler der ausgewählten Ligen anzeigen
+    if selected_leagues:
+        mask_leagues = df_display['League_Country'].isin(selected_leagues)
+        df_simple_model = df_simple_model.loc[mask_leagues]
+
     # Filteroptionen
     unique_position_categories = df_simple_model['PositionCategory'].unique().tolist()
     unique_position_categories.insert(0, 'Alle Positionen')
@@ -140,7 +171,7 @@ elif page == "Einfaches Modell":
     max_age = int(df_simple_model['Age'].max())
     age_range = st.slider('Wähle Alter', min_value=min_age, max_value=max_age, value=(min_age, max_age))
 
-    # Filtern des DataFrames und Auswählen des Spielers mit dem höchsten Wert in 'DifferenceSimpleModelXGB'
+    # Filtern des DataFrames und Auswählen des Spielers mit dem höchsten Wert in 'PercentDifferenceSimpleModelXGB'
     if position_category == 'Alle Positionen':
         mask = (df_simple_model['Value'].between(*value_range)) & (df_simple_model['Age'].between(*age_range))
     else:
@@ -148,14 +179,47 @@ elif page == "Einfaches Modell":
             df_simple_model['Value'].between(*value_range)) & (df_simple_model['Age'].between(*age_range))
     top_player = df_simple_model.loc[
         mask, ['Name', 'Age', 'PositionCategory', 'Club', 'Value', 'PredictedValueSimpleModelXGB',
-               'PercentDifferenceSimpleModelXGB']].nlargest(5, 'PercentDifferenceSimpleModelXGB')
+               'PercentDifferenceSimpleModelXGB']
+    ].nlargest(5, 'PercentDifferenceSimpleModelXGB')
     top_player.reset_index(drop=True, inplace=True)  # Reset index and remove index column
+
+    # Dropping the 'PercentDifferenceSimpleModelXGB' column
+    top_player = top_player.drop(columns=['PercentDifferenceSimpleModelXGB'])
 
     # Filtern der Spalten 'Name' und 'Club'
     top_player = top_player.rename(columns={'Age': 'Alter', 'PositionCategory': 'Position', 'Club': 'Klub',
                                             'Value': 'Wert in €',
-                                            'PredictedValueSimpleModelXGB': 'Vorausgesagter Wert Einfaches Modell',
-                                            'PercentDifferenceSimpleModelXGB': 'Prozentuale Differenz'})
+                                            'PredictedValueSimpleModelXGB': 'Vorausgesagter Wert in €'})
 
     # Zeige den Spieler in einem DataFrame an
     st.dataframe(top_player)
+
+elif page == "Einfaches Modell Prediction":
+    st.title("Einfaches Modell Prediction")
+
+    df_simple_model = load_data()
+
+    # Eingabefelder
+    league_country = st.text_input('LeagueCountry')
+    league = st.text_input('League')
+    national_league_level = st.number_input('NationalLeagueLevel', min_value=1)
+    club = st.text_input('Club')
+    age = st.number_input('Age', min_value=15, max_value=50)
+    nationality = st.text_input('Nationality')
+    # Get unique values from the "position_category" column
+    position_categories = df_simple_model['PositionCategory'].unique()
+
+    # Dropdown for position_category
+    position_category = st.selectbox('Position Category', position_categories)
+
+    # Eingabe zu Dataframe
+    if st.button('Predict'):
+        model = load_model(position_category)
+        input_data = pd.DataFrame({
+            'LeagueCountry': [league_country],
+            'League': [league],
+            'NationalLeagueLevel': [national_league_level],
+            'Club': [club],
+            'Age': [age],
+            'Nationality': [nationality]
+        })
