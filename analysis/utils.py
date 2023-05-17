@@ -95,4 +95,4 @@ def save_performance(file, X, r2, adj_r2, rmse):
             features.add(col)
 
     with open(file, "a") as f:
-        f.write(f"{rmse}; {r2}; {adj_r2}; {features}")
+        f.write(f"{rmse},{r2},{adj_r2},{features}\n")
