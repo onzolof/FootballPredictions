@@ -275,7 +275,7 @@ elif page == "Impressum":
     st.write("""
     Dieses Projekt ist eine interaktive Fussball-Analyse-Web-App, die mit Streamlit erstellt wurde. Sie ermöglicht es den Nutzern, detaillierte Spielerdaten aus verschiedenen Ligen zu analysieren. 
     Sie können auch spezifische Spielerprofile anzeigen und detaillierte Statistiken über Spielerleistungen einsehen. 
-    Dieses Projekt ist eine Initiative der Universität St. Gallen.
+    Dieses Projekt ist eine Initiative der Universität St. Gallen. TEXT NOCH ANPASSEN
     """)
 
     # Displaying the team members
