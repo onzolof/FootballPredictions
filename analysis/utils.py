@@ -76,8 +76,23 @@ def load_model(model_name):
         return pickle.load(f)
 
 
-def print_performance_measures(X, y, y_pred):
+def print_performance_measures(X, y, y_pred, file=None):
     r2 = r2_score(y, y_pred)
     adj_r2 = 1-(1-r2)*(len(X.index)-1)/(len(X.index)-len(X.columns)-1)
     rmse = mean_squared_error(y, y_pred, squared=False)
     print(f"RMSE:\t\t{round(rmse, 4)}\nR^2:\t\t{round(r2, 4)}\nAdj. R^2:\t{round(adj_r2, 4)}")
+    if file is not None:
+        save_performance(file, X, r2, adj_r2, rmse)
+
+
+def save_performance(file, X, r2, adj_r2, rmse):
+    features = set()
+
+    for col in X.columns:
+        if '_' in col:
+            features.add(col.split('_')[0])
+        else:
+            features.add(col)
+
+    with open(file, "a") as f:
+        f.write(f"{rmse}; {r2}; {adj_r2}; {features}")
