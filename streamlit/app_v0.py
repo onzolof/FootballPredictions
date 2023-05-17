@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
+import numpy as np
 
 # https://www.uefa.com/nationalassociations/uefarankings/country/#/yr/2023
 
@@ -28,8 +29,14 @@ def load_model(position):
         return pickle.load(open('../models/simple-model-xgb.pkl', 'rb'))
 
 
+st.sidebar.markdown("# Fussballspieler Prognose")
+st.sidebar.markdown("___")
+
 # Füge eine Seitenauswahl hinzu
-page = st.sidebar.selectbox("Wähle eine Seite", ("Hauptseite", "Metadaten", "Einfaches Modell", 'Einfaches Modell Prediction'))
+page = st.sidebar.radio("Navigiere zu:", ("Hauptseite", "Metadaten",
+                                          "Einfaches Modell", 'Einfaches Modell Prediction', 'Impressum'))
+
+st.sidebar.markdown("___")
 
 if page == "Hauptseite":
     # Titel der Streamlit-Seite
@@ -75,7 +82,7 @@ if page == "Hauptseite":
                                                       'NationalLeagueLevel': 'Liga-Ebene',
                                                       'LeagueCountry': 'Liga Land', 'Value': 'Wert in €'})
         selected_data.reset_index(drop=True, inplace=True)
-        st.dataframe(selected_data)
+        st.dataframe(selected_data, width=st.expander('use_column_width=True'))
     else:
         st.write("Keine Ligen ausgewählt.")
 
@@ -95,42 +102,52 @@ elif page == "Metadaten":
         mask = df_meta['NationalLeagueLevel'] == selected_level
         filtered_df = df_meta.loc[mask]
 
+    # Creating two columns for the first row
+    col1, col2 = st.columns(2)
+
     # 1. Verteilung der Füsse
-    st.subheader("Verteilung der Füsse")
+    col1.subheader("Verteilung der Füsse")
+    filtered_df['Foot'] = filtered_df['Foot'].replace('beidfüßig', 'beidfüssig')
     foot_counts = filtered_df['Foot'].value_counts()
+
+    # Define the color palette as a list
+    colors = plt.cm.Greens(np.linspace(0, 1, len(foot_counts)))
+
     fig, ax = plt.subplots()
-    ax.pie(foot_counts, labels=foot_counts.index, autopct='%1.1f%%', startangle=90)
+    ax.pie(foot_counts, labels=foot_counts.index, autopct='%1.1f%%', startangle=90, colors=colors)
     ax.axis('equal')
-    st.pyplot(fig)
+    col1.pyplot(fig)
 
     # 2. Verteilung der Positionskategorien
-    st.subheader("Verteilung der Positionskategorien")
+    col2.subheader("Verteilung der Positionskategorien")
     position_counts = filtered_df['PositionCategory'].value_counts()
     plt.figure(figsize=(12, 8))
     sns.barplot(x=position_counts.values, y=position_counts.index, palette="Greens_r")
     plt.xlabel('Anzahl der Spieler', fontsize=14)
     plt.ylabel('Positionskategorien', fontsize=14)
     plt.title('Verteilung der Positionskategorien', fontsize=16)
-    st.pyplot(plt.gcf())
+    col2.pyplot(plt.gcf())
+
+    # Creating two columns for the second row
+    col3, col4 = st.columns(2)
 
     # 3. Verteilung des Alters
-    st.subheader("Verteilung des Alters")
+    col3.subheader("Verteilung des Alters")
     plt.figure(figsize=(12, 8))
     sns.histplot(filtered_df['Age'], bins=30, kde=True, color='green')
     plt.xlabel('Alter', fontsize=14)
     plt.ylabel('Anzahl der Spieler', fontsize=14)
     plt.title('Verteilung des Alters', fontsize=16)
-    st.pyplot(plt.gcf())
+    col3.pyplot(plt.gcf())
 
     # 4. Verteilung der Werte
-    st.subheader("Verteilung der Werte")
+    col4.subheader("Verteilung der Werte")
     plt.figure(figsize=(12, 8))
     sns.histplot(filtered_df['Value'], bins=30, kde=True, color='green')
     plt.xlabel('Wert in €', fontsize=14)
     plt.ylabel('Anzahl der Spieler', fontsize=14)
     plt.title('Verteilung der Werte', fontsize=16)
-    st.pyplot(plt.gcf())
-
+    col4.pyplot(plt.gcf())
 
 elif page == "Einfaches Modell":
     st.title("Einfaches Modell")
@@ -157,18 +174,27 @@ elif page == "Einfaches Modell":
         mask_leagues = df_display['League_Country'].isin(selected_leagues)
         df_simple_model = df_simple_model.loc[mask_leagues]
 
+        # Recalculate min and max for sliders based on selected data subset
+        min_value = int(df_simple_model['Value'].min())
+        max_value = int(df_simple_model['Value'].max())
+        min_age = int(df_simple_model['Age'].min())
+        max_age = int(df_simple_model['Age'].max())
+
+    else:
+        # Default min and max for sliders based on full dataset
+        min_value = int(df_simple_model['Value'].min())
+        max_value = int(df_simple_model['Value'].max())
+        min_age = int(df_simple_model['Age'].min())
+        max_age = int(df_simple_model['Age'].max())
+
     # Filteroptionen
     unique_position_categories = df_simple_model['PositionCategory'].unique().tolist()
     unique_position_categories.insert(0, 'Alle Positionen')
     position_category = st.selectbox('Wähle Position', options=unique_position_categories)
 
-    min_value = int(df_simple_model['Value'].min())
-    max_value = int(df_simple_model['Value'].max())
     value_range = st.slider('Wähle Wert in €', min_value=min_value, max_value=max_value, value=(min_value, max_value),
                             step=10000)
 
-    min_age = int(df_simple_model['Age'].min())
-    max_age = int(df_simple_model['Age'].max())
     age_range = st.slider('Wähle Alter', min_value=min_age, max_value=max_age, value=(min_age, max_age))
 
     # Filtern des DataFrames und Auswählen des Spielers mit dem höchsten Wert in 'PercentDifferenceSimpleModelXGB'
@@ -179,12 +205,28 @@ elif page == "Einfaches Modell":
             df_simple_model['Value'].between(*value_range)) & (df_simple_model['Age'].between(*age_range))
     top_player = df_simple_model.loc[
         mask, ['Name', 'Age', 'PositionCategory', 'Club', 'Value', 'PredictedValueSimpleModelXGB',
-               'PercentDifferenceSimpleModelXGB']
+               'PercentDifferenceSimpleModelXGB', 'Image']  # Include 'Image' column
     ].nlargest(5, 'PercentDifferenceSimpleModelXGB')
     top_player.reset_index(drop=True, inplace=True)  # Reset index and remove index column
 
+    default_image_url = "https://img.a.transfermarkt.technology/portrait/big/13775-1662993749.jpg"
+
+    # Create 5 columns for player images
+    cols = st.columns(5)
+
+    for i in range(len(top_player)):
+        player_name = top_player.loc[i, 'Name']
+        player_image_url = top_player.loc[i, 'Image']
+
+        # Check if player_image_url is not NaN
+        if pd.notna(player_image_url):
+            # Streamlit code to display the player's image and name in a separate column
+            cols[i].image(player_image_url, caption=player_name, use_column_width=True)
+        else:
+            cols[i].image(default_image_url, caption=player_name, use_column_width=True)
+
     # Dropping the 'PercentDifferenceSimpleModelXGB' column
-    top_player = top_player.drop(columns=['PercentDifferenceSimpleModelXGB'])
+    top_player = top_player.drop(columns=['PercentDifferenceSimpleModelXGB', 'Image'])
 
     # Filtern der Spalten 'Name' und 'Club'
     top_player = top_player.rename(columns={'Age': 'Alter', 'PositionCategory': 'Position', 'Club': 'Klub',
@@ -193,6 +235,7 @@ elif page == "Einfaches Modell":
 
     # Zeige den Spieler in einem DataFrame an
     st.dataframe(top_player)
+
 
 elif page == "Einfaches Modell Prediction":
     st.title("Einfaches Modell Prediction")
@@ -223,3 +266,33 @@ elif page == "Einfaches Modell Prediction":
             'Age': [age],
             'Nationality': [nationality]
         })
+
+elif page == "Impressum":
+    st.title("Impressum")
+
+    # Description of the project
+    st.subheader("Projektbeschreibung")
+    st.write("""
+    Dieses Projekt ist eine interaktive Fussball-Analyse-Web-App, die mit Streamlit erstellt wurde. Sie ermöglicht es den Nutzern, detaillierte Spielerdaten aus verschiedenen Ligen zu analysieren. 
+    Sie können auch spezifische Spielerprofile anzeigen und detaillierte Statistiken über Spielerleistungen einsehen. 
+    Dieses Projekt ist eine Initiative der Universität St. Gallen. TEXT NOCH ANPASSEN
+    """)
+
+    # Displaying the team members
+    st.subheader("Teammitglieder")
+
+    # List of team members and their picture URLs
+    team_members = [
+        {"name": "Jonas Vogel", "image": "https://media.licdn.com/dms/image/C4D03AQGB-L6UZNlipg/profile-displayphoto-shrink_400_400/0/1605261553367?e=1689811200&v=beta&t=qBV4LqPDDk1Y69xKhSX-5AXnuz9f9Sgrj1BFFxpSrBE"},
+        {"name": "Marc Sieber", "image": "https://media.licdn.com/dms/image/D4E03AQHRC4BZfbzuKA/profile-displayphoto-shrink_400_400/0/1673692455616?e=1689811200&v=beta&t=tATRPN49y9-cSxJ6kw74YYhDTIb2jUmyJBMDnvzk0Kg"},
+        {"name": "Stella Sun", "image": "https://media.licdn.com/dms/image/C4D03AQEHwqW5NOHI4w/profile-displayphoto-shrink_400_400/0/1635084696283?e=1689811200&v=beta&t=jb0s9JrNN5rfVvxUa7c6Kzs1J3-Jmsl-YGsN2pYn0KE"},
+        {"name": "Linda Fuchs", "image": "https://media.licdn.com/dms/image/C4E03AQHrNegmSDQcrg/profile-displayphoto-shrink_400_400/0/1663147757767?e=1689811200&v=beta&t=4Q6nBQiJjz_o2zY-3PG2zsjoxs0lLJUJau-VNklrv00"},
+        {"name": "Eliane Elsässer", "image": "https://media.licdn.com/dms/image/C5603AQH3rBcv0YC-eg/profile-displayphoto-shrink_400_400/0/1639067508762?e=1689811200&v=beta&t=k0n7L3ypUEiHJITiHRweRXHalVpbhhu80HjCEqBPN38"}
+    ]
+
+    # Display the team members in a single row
+    cols = st.columns(5)
+    for i, member in enumerate(team_members):
+        cols[i].image(member["image"], use_column_width=True)
+        cols[i].write(member["name"])
+
