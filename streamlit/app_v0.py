@@ -28,8 +28,13 @@ def load_model(position):
         return pickle.load(open('../models/simple-model-xgb.pkl', 'rb'))
 
 
+st.sidebar.markdown("# Fussballspieler Prognose")
+st.sidebar.markdown("___")
+
 # Füge eine Seitenauswahl hinzu
-page = st.sidebar.selectbox("Wähle eine Seite", ("Hauptseite", "Metadaten", "Einfaches Modell", 'Einfaches Modell Prediction'))
+page = st.sidebar.radio("Navigiere zu:", ("Hauptseite", "Metadaten", "Einfaches Modell", 'Einfaches Modell Prediction'))
+
+st.sidebar.markdown("___")
 
 if page == "Hauptseite":
     # Titel der Streamlit-Seite
@@ -75,7 +80,7 @@ if page == "Hauptseite":
                                                       'NationalLeagueLevel': 'Liga-Ebene',
                                                       'LeagueCountry': 'Liga Land', 'Value': 'Wert in €'})
         selected_data.reset_index(drop=True, inplace=True)
-        st.dataframe(selected_data)
+        st.dataframe(selected_data, width=st.expander('use_column_width=True'))
     else:
         st.write("Keine Ligen ausgewählt.")
 
@@ -157,18 +162,27 @@ elif page == "Einfaches Modell":
         mask_leagues = df_display['League_Country'].isin(selected_leagues)
         df_simple_model = df_simple_model.loc[mask_leagues]
 
+        # Recalculate min and max for sliders based on selected data subset
+        min_value = int(df_simple_model['Value'].min())
+        max_value = int(df_simple_model['Value'].max())
+        min_age = int(df_simple_model['Age'].min())
+        max_age = int(df_simple_model['Age'].max())
+
+    else:
+        # Default min and max for sliders based on full dataset
+        min_value = int(df_simple_model['Value'].min())
+        max_value = int(df_simple_model['Value'].max())
+        min_age = int(df_simple_model['Age'].min())
+        max_age = int(df_simple_model['Age'].max())
+
     # Filteroptionen
     unique_position_categories = df_simple_model['PositionCategory'].unique().tolist()
     unique_position_categories.insert(0, 'Alle Positionen')
     position_category = st.selectbox('Wähle Position', options=unique_position_categories)
 
-    min_value = int(df_simple_model['Value'].min())
-    max_value = int(df_simple_model['Value'].max())
     value_range = st.slider('Wähle Wert in €', min_value=min_value, max_value=max_value, value=(min_value, max_value),
                             step=10000)
 
-    min_age = int(df_simple_model['Age'].min())
-    max_age = int(df_simple_model['Age'].max())
     age_range = st.slider('Wähle Alter', min_value=min_age, max_value=max_age, value=(min_age, max_age))
 
     # Filtern des DataFrames und Auswählen des Spielers mit dem höchsten Wert in 'PercentDifferenceSimpleModelXGB'
@@ -179,12 +193,28 @@ elif page == "Einfaches Modell":
             df_simple_model['Value'].between(*value_range)) & (df_simple_model['Age'].between(*age_range))
     top_player = df_simple_model.loc[
         mask, ['Name', 'Age', 'PositionCategory', 'Club', 'Value', 'PredictedValueSimpleModelXGB',
-               'PercentDifferenceSimpleModelXGB']
+               'PercentDifferenceSimpleModelXGB', 'Image']  # Include 'Image' column
     ].nlargest(5, 'PercentDifferenceSimpleModelXGB')
     top_player.reset_index(drop=True, inplace=True)  # Reset index and remove index column
 
+    default_image_url = "https://img.a.transfermarkt.technology/portrait/big/13775-1662993749.jpg"
+
+    # Create 5 columns for player images
+    cols = st.columns(5)
+
+    for i in range(len(top_player)):
+        player_name = top_player.loc[i, 'Name']
+        player_image_url = top_player.loc[i, 'Image']
+
+        # Check if player_image_url is not NaN
+        if pd.notna(player_image_url):
+            # Streamlit code to display the player's image and name in a separate column
+            cols[i].image(player_image_url, caption=player_name, use_column_width=True)
+        else:
+            cols[i].image(default_image_url, caption=player_name, use_column_width=True)
+
     # Dropping the 'PercentDifferenceSimpleModelXGB' column
-    top_player = top_player.drop(columns=['PercentDifferenceSimpleModelXGB'])
+    top_player = top_player.drop(columns=['PercentDifferenceSimpleModelXGB', 'Image'])
 
     # Filtern der Spalten 'Name' und 'Club'
     top_player = top_player.rename(columns={'Age': 'Alter', 'PositionCategory': 'Position', 'Club': 'Klub',
@@ -193,6 +223,7 @@ elif page == "Einfaches Modell":
 
     # Zeige den Spieler in einem DataFrame an
     st.dataframe(top_player)
+
 
 elif page == "Einfaches Modell Prediction":
     st.title("Einfaches Modell Prediction")
