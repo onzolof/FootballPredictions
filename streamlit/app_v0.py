@@ -292,26 +292,69 @@ elif page == "Modell Prediction":
     # Dropdown for position_category
     position_category = st.selectbox('Position Category', position_categories)
 
-    # Input to DataFrame
-    input_data = {
-        'LeagueCountry': [league_country, league_country],
-        'NationalLeagueLevel': [national_league_level, national_league_level],
-        'InternationalTeam': [selected_international_team, selected_international_team],
-        'League': [league, league],
-        'Club': [selected_club, league],
-        'Age': [age, age],
-        'ClubSince': [club_since,club_since],
-        'ActiveInternational': [active_international, active_international],
-        'FormerInternational': [former_international, active_international],
-        'InternationalGames': [0, 0],
-        'Trending': [1, 1],
-    }
+    df_model_fs_calc = load_data_fs()
 
-    # Convert input data to DataFrame
-    input_data_df = pd.DataFrame(input_data)
-    st.dataframe(input_data_df)
+    # Get unique values for nationality and position
+    unique_nationalities = df_model_fs_calc['Nationality'].dropna().unique()
+    unique_positions = df_model[df_model['PositionCategory'] == position_category]['Position'].unique()
+
+    # Dropdown for nationality
+    nationality = st.selectbox('Nationality', unique_nationalities)
+
+    # Dropdown for position
+    position = st.selectbox('Position', unique_positions)
+
+    # Get unique values for supplier
+    unique_suppliers = df_model_fs_calc['Supplier'].dropna().unique()
+
+    # Dropdown for supplier
+    supplier = st.selectbox('Supplier', unique_suppliers)
 
     if st.button('Predict'):
+        if position_category == "Torwart":
+            # Input to DataFrame
+            input_data = {
+                'LeagueCountry': [league_country, league_country],
+                'NationalLeagueLevel': [national_league_level, national_league_level],
+                'InternationalTeam': [selected_international_team, selected_international_team],
+                'League': [league, league],
+                'Club': [selected_club, league],
+                'Age': [age, age],
+                'ClubSince': [club_since, club_since],
+                'ActiveInternational': [active_international, active_international],
+                'FormerInternational': [former_international, active_international],
+                'InternationalGames': [0, 0],
+                'Trending': [1, 1],
+            }
+
+            # Convert input data to DataFrame
+            input_data_df = pd.DataFrame(input_data)
+            st.dataframe(input_data_df)
+        else:
+            # Input to DataFrame
+            input_data = {
+                'LeagueCountry': [league_country, league_country],
+                'League': [league, league],
+                'NationalLeagueLevel': [national_league_level, national_league_level],
+                'Club': [selected_club, league],
+                'Age': [age, age],
+                'ClubSince': [club_since, club_since],
+                'Nationality': [nationality, nationality],
+                'Position': [position, position],
+                'PositionCategory': [position_category, position_category],
+                'Supplier': [supplier, supplier],
+                'InternationalTeam': [selected_international_team, selected_international_team],
+                'ActiveInternational': [active_international, active_international],
+                'FormerInternational': [former_international, active_international],
+                'InternationalGames': [0, 0],
+                'InternationalGoals': [0, 0],
+                'Trending': [1, 1],
+            }
+
+            # Convert input data to DataFrame
+            input_data_df = pd.DataFrame(input_data)
+            st.dataframe(input_data_df)
+
         # Ensure categorical variables are processed correctly
         if position_category == "Torwart":
             df_model_tw = load_data_tw()
