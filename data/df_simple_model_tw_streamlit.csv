@@ -1,0 +1,2020 @@
+,LeagueCountry,NationalLeagueLevel,InternationalTeam,League,Club,Age,ClubSince,ActiveInternational,FormerInternational,InternationalGames,Trending,Value
+0,Schweiz,1.Liga,Schweiz,Super League,BSC Young Boys,28.0,3607.0,0,0,0.0,0,2500000.0
+1,Schweiz,1.Liga,Schweiz U21,Super League,BSC Young Boys,24.0,492.0,0,1,13.0,0,1300000.0
+2,Schweiz,1.Liga,Schweiz U21,Super League,BSC Young Boys,20.0,93.0,1,0,2.0,1,500000.0
+3,Schweiz,1.Liga,Schweiz U21,Super League,BSC Young Boys,26.0,313.0,0,1,0.0,0,100000.0
+4,Schweiz,1.Liga,Schweiz U15,Super League,BSC Young Boys,20.0,685.0,0,1,1.0,1,100000.0
+27,Schweiz,1.Liga,Schweiz,Super League,FC Basel,35.0,320.0,0,1,2.0,0,500000.0
+28,Schweiz,1.Liga,Schweiz U21,Super League,FC Basel,29.0,320.0,0,1,1.0,0,100000.0
+29,Schweiz,1.Liga,Schweiz U21,Super League,FC Basel,22.0,320.0,0,1,0.0,0,100000.0
+54,Schweiz,1.Liga,Schweiz U21,Super League,FC Zürich,29.0,4338.0,0,1,3.0,0,1000000.0
+55,Schweiz,1.Liga,Schweiz U20,Super League,FC Zürich,31.0,1017.0,0,1,0.0,0,300000.0
+56,Schweiz,1.Liga,Schweiz U19,Super League,FC Zürich,20.0,685.0,0,1,3.0,1,100000.0
+84,Schweiz,1.Liga,Ghana,Super League,FC St. Gallen,26.0,1209.0,1,0,14.0,1,3000000.0
+85,Schweiz,1.Liga,,Super League,FC St. Gallen,27.0,1000.0,0,0,0.0,1,200000.0
+86,Schweiz,1.Liga,,Super League,FC St. Gallen,19.0,320.0,0,0,0.0,1,100000.0
+116,Schweiz,1.Liga,Schweiz,Super League,Servette FC,30.0,2511.0,1,0,0.0,0,500000.0
+117,Schweiz,1.Liga,Schweiz U20,Super League,Servette FC,21.0,1050.0,1,0,1.0,1,300000.0
+118,Schweiz,1.Liga,Schweiz U21,Super League,Servette FC,33.0,672.0,0,1,1.0,0,100000.0
+146,Schweiz,1.Liga,Deutschland U21,Super League,FC Luzern,29.0,1412.0,0,1,0.0,0,1000000.0
+147,Schweiz,1.Liga,Schweiz U21,Super League,FC Luzern,19.0,685.0,1,0,1.0,1,200000.0
+148,Schweiz,1.Liga,Serbien U21,Super League,FC Luzern,33.0,685.0,0,1,5.0,0,200000.0
+177,Schweiz,1.Liga,Portugal U21,Super League,Grasshoppers,27.0,685.0,0,1,1.0,1,1200000.0
+178,Schweiz,1.Liga,Schweiz U21,Super League,Grasshoppers,22.0,320.0,1,0,3.0,1,500000.0
+179,Schweiz,1.Liga,Frankreich U19,Super League,Grasshoppers,22.0,495.0,0,1,0.0,1,300000.0
+203,Schweiz,1.Liga,Schweiz U21,Super League,FC Lugano,22.0,614.0,0,0,10.0,0,1000000.0
+204,Schweiz,1.Liga,Nigeria,Super League,FC Lugano,29.0,1000.0,0,1,0.0,1,400000.0
+205,Schweiz,1.Liga,Schweiz U20,Super League,FC Lugano,21.0,286.0,0,1,0.0,1,100000.0
+228,Schweiz,1.Liga,Österreich,Super League,FC Sion,32.0,320.0,1,0,36.0,0,800000.0
+229,Schweiz,1.Liga,,Super League,FC Sion,23.0,320.0,0,0,0.0,0,100000.0
+230,Schweiz,1.Liga,Schweiz U21,Super League,FC Sion,34.0,5068.0,0,1,5.0,0,100000.0
+256,Schweiz,1.Liga,DR Kongo,Super League,FC Winterthur,23.0,320.0,0,1,0.0,1,1200000.0
+257,Schweiz,1.Liga,Österreich,Super League,FC Winterthur,29.0,136.0,0,1,0.0,0,400000.0
+258,Schweiz,1.Liga,Kosovo,Super League,FC Winterthur,23.0,685.0,0,0,0.0,1,300000.0
+259,Schweiz,1.Liga,Schweiz U18,Super League,FC Winterthur,21.0,320.0,0,1,1.0,1,100000.0
+281,Schweiz,2.Liga,Schweiz U19,Challenge League,Lausanne-Sport,29.0,3972.0,0,1,0.0,0,300000.0
+282,Schweiz,2.Liga,Schweiz U21,Challenge League,Lausanne-Sport,30.0,320.0,0,1,3.0,0,300000.0
+283,Schweiz,2.Liga,,Challenge League,Lausanne-Sport,23.0,685.0,0,0,0.0,1,100000.0
+305,Schweiz,2.Liga,Schweiz U20,Challenge League,FC Thun,23.0,1781.0,0,1,1.0,1,350000.0
+306,Schweiz,2.Liga,Schweiz U21,Challenge League,FC Thun,27.0,261.0,0,1,2.0,0,300000.0
+307,Schweiz,2.Liga,Schweiz U18,Challenge League,FC Thun,30.0,1416.0,0,1,2.0,0,150000.0
+308,Schweiz,2.Liga,,Challenge League,FC Thun,21.0,685.0,0,0,0.0,1,50000.0
+334,Schweiz,2.Liga,,Challenge League,Stade-Lausanne,30.0,986.0,0,0,0.0,0,150000.0
+335,Schweiz,2.Liga,Schweiz U18,Challenge League,Stade-Lausanne,22.0,777.0,0,1,1.0,1,150000.0
+336,Schweiz,2.Liga,,Challenge League,Stade-Lausanne,21.0,630.0,0,0,0.0,1,50000.0
+361,Schweiz,2.Liga,Schweiz U21,Challenge League,FC Aarau,25.0,685.0,0,1,0.0,0,450000.0
+362,Schweiz,2.Liga,Schweiz U19,Challenge League,FC Aarau,22.0,307.0,0,1,6.0,0,50000.0
+386,Schweiz,2.Liga,Liechtenstein,Challenge League,FC Vaduz,33.0,1781.0,1,0,53.0,0,200000.0
+387,Schweiz,2.Liga,Mosambik,Challenge League,FC Vaduz,25.0,1416.0,1,0,1.0,1,100000.0
+388,Schweiz,2.Liga,Liechtenstein,Challenge League,FC Vaduz,20.0,320.0,0,1,0.0,1,50000.0
+414,Schweiz,2.Liga,,Challenge League,AC Bellinzona,22.0,310.0,0,0,0.0,1,200000.0
+415,Schweiz,2.Liga,DR Kongo,Challenge League,AC Bellinzona,31.0,310.0,1,0,25.0,0,200000.0
+416,Schweiz,2.Liga,Schweiz U19,Challenge League,AC Bellinzona,22.0,685.0,0,1,0.0,0,50000.0
+417,Schweiz,Jugendliga,,Swiss U18 Elite League,Team Ticino U18,18.0,685.0,0,0,0.0,1,50000.0
+446,Schweiz,2.Liga,,Challenge League,FC Schaffhausen,30.0,669.0,0,0,0.0,0,300000.0
+447,Schweiz,2.Liga,,Challenge League,FC Schaffhausen,19.0,295.0,0,0,0.0,1,100000.0
+448,Schweiz,2.Liga,,Challenge League,FC Schaffhausen,23.0,135.0,0,0,0.0,1,50000.0
+475,Schweiz,2.Liga,,Challenge League,Neuchâtel Xamax,27.0,680.0,0,0,0.0,0,300000.0
+476,Schweiz,2.Liga,,Challenge League,Neuchâtel Xamax,21.0,450.0,0,0,0.0,1,50000.0
+477,Schweiz,4.Liga,Schweiz U16,1. Liga Gr. 2,Xamax FCS U21,20.0,1232.0,0,1,2.0,1,50000.0
+507,Schweiz,2.Liga,Schweiz U21,Challenge League,FC Wil 1900,27.0,92.0,0,1,2.0,0,700000.0
+508,Schweiz,2.Liga,Schweiz U21,Challenge League,FC Wil 1900,22.0,320.0,0,1,0.0,0,100000.0
+509,Schweiz,2.Liga,Schweiz U15,Challenge League,FC Wil 1900,22.0,320.0,0,1,1.0,1,100000.0
+533,Schweiz,2.Liga,Schweiz U20,Challenge League,Yverdon Sport,27.0,1781.0,0,1,0.0,0,250000.0
+534,Schweiz,2.Liga,Schweiz U20,Challenge League,Yverdon Sport,19.0,319.0,1,0,1.0,1,50000.0
+535,Schweiz,2.Liga,,Challenge League,Yverdon Sport,23.0,320.0,0,0,0.0,1,50000.0
+563,Schweiz,3.Liga,Schweiz U18,Promotion League,FC Basel U21,17.0,320.0,0,0,3.0,1,50000.0
+564,Schweiz,3.Liga,,Promotion League,FC Basel U21,18.0,320.0,0,0,0.0,1,25000.0
+589,Schweiz,3.Liga,,Promotion League,Etoile Carouge,24.0,1781.0,0,0,0.0,0,100000.0
+590,Schweiz,3.Liga,,Promotion League,Etoile Carouge,22.0,685.0,0,0,0.0,1,25000.0
+591,Schweiz,3.Liga,,Promotion League,Etoile Carouge,22.0,665.0,0,0,0.0,1,25000.0
+615,Schweiz,3.Liga,,Promotion League,Stade Nyonnais,30.0,643.0,0,0,0.0,0,100000.0
+616,Schweiz,3.Liga,,Promotion League,Stade Nyonnais,21.0,320.0,0,0,0.0,1,25000.0
+638,Schweiz,3.Liga,,Promotion League,Rapperswil-Jona,34.0,6164.0,0,0,0.0,0,100000.0
+639,Schweiz,3.Liga,,Promotion League,Rapperswil-Jona,22.0,840.0,0,0,0.0,0,50000.0
+640,Schweiz,3.Liga,,Promotion League,Rapperswil-Jona,22.0,1416.0,0,0,0.0,1,25000.0
+664,Schweiz,3.Liga,,Promotion League,Luzern U21,18.0,320.0,0,0,0.0,1,100000.0
+665,Schweiz,3.Liga,Schweiz U18,Promotion League,Luzern U21,19.0,320.0,0,1,1.0,1,25000.0
+689,Schweiz,3.Liga,,Promotion League,FC Zürich U21,20.0,685.0,0,0,0.0,1,25000.0
+690,Schweiz,3.Liga,,Promotion League,FC Zürich U21,18.0,320.0,0,0,0.0,1,25000.0
+691,Schweiz,3.Liga,,Promotion League,FC Zürich U21,20.0,1050.0,0,0,0.0,1,25000.0
+716,Schweiz,3.Liga,,Promotion League,SC Kriens,24.0,1781.0,0,0,0.0,0,50000.0
+717,Schweiz,3.Liga,Schweiz U19,Promotion League,SC Kriens,23.0,302.0,0,1,6.0,0,50000.0
+718,Schweiz,3.Liga,,Promotion League,SC Kriens,23.0,320.0,0,0,0.0,1,25000.0
+740,Schweiz,3.Liga,,Promotion League,SC Brühl SG,21.0,1781.0,0,0,0.0,0,125000.0
+741,Schweiz,3.Liga,,Promotion League,SC Brühl SG,37.0,1050.0,0,0,0.0,0,25000.0
+742,Schweiz,3.Liga,,Promotion League,SC Brühl SG,21.0,866.0,0,0,0.0,1,25000.0
+767,Schweiz,3.Liga,,Promotion League,FC Bavois,29.0,2327.0,0,0,0.0,1,50000.0
+768,Schweiz,3.Liga,,Promotion League,FC Bavois,28.0,624.0,0,0,0.0,1,25000.0
+792,Schweiz,3.Liga,,Promotion League,St. Gallen U21,20.0,685.0,0,0,0.0,1,25000.0
+793,Schweiz,3.Liga,Schweiz U18,Promotion League,St. Gallen U21,19.0,320.0,0,1,1.0,1,25000.0
+819,Schweiz,3.Liga,,Promotion League,SC Cham,21.0,825.0,0,0,0.0,1,150000.0
+820,Schweiz,3.Liga,Schweiz U18,Promotion League,SC Cham,21.0,491.0,0,1,0.0,1,25000.0
+845,Schweiz,3.Liga,,Promotion League,FC Breitenrain,26.0,1781.0,0,0,0.0,0,100000.0
+846,Schweiz,3.Liga,,Promotion League,FC Breitenrain,34.0,1368.0,0,0,0.0,1,25000.0
+869,Schweiz,3.Liga,,Promotion League,FC Biel-Bienne,21.0,120.0,0,0,0.0,1,100000.0
+870,Schweiz,3.Liga,DR Kongo,Promotion League,FC Biel-Bienne,29.0,129.0,0,1,6.0,0,50000.0
+871,Schweiz,3.Liga,,Promotion League,FC Biel-Bienne,32.0,1781.0,0,0,0.0,1,25000.0
+894,Schweiz,3.Liga,Schweiz U20,Promotion League,BSC YB U21,20.0,685.0,0,1,0.0,1,100000.0
+895,Schweiz,3.Liga,Schweiz U19,Promotion League,BSC YB U21,19.0,320.0,0,0,0.0,1,25000.0
+896,Schweiz,3.Liga,Nicaragua U20,Promotion League,BSC YB U21,18.0,320.0,0,1,0.0,1,25000.0
+918,Schweiz,3.Liga,,Promotion League,FC Bulle,23.0,1050.0,0,0,0.0,1,50000.0
+946,Schweiz,3.Liga,,Promotion League,SC YF Juventus,21.0,456.0,0,0,0.0,1,50000.0
+947,Schweiz,3.Liga,Schweiz U20,Promotion League,SC YF Juventus,27.0,685.0,0,1,3.0,0,50000.0
+948,Schweiz,3.Liga,Schweiz U18,Promotion League,SC YF Juventus,21.0,841.0,0,1,1.0,1,50000.0
+976,Schweiz,3.Liga,Schweiz U20,Promotion League,FC Baden 1897,20.0,1013.0,0,0,3.0,0,75000.0
+1001,Deutschland,1.Liga,Deutschland,Bundesliga,Bayern München,37.0,4338.0,0,0,117.0,0,7000000.0
+1002,Deutschland,1.Liga,Schweiz,Bundesliga,Bayern München,34.0,118.0,1,0,82.0,0,5000000.0
+1003,Deutschland,1.Liga,Deutschland,Bundesliga,Bayern München,34.0,685.0,0,1,0.0,0,900000.0
+1004,Deutschland,1.Liga,,Bundesliga,Bayern München,20.0,320.0,0,0,0.0,1,300000.0
+1028,Deutschland,1.Liga,Schweiz,Bundesliga,Bor. Dortmund,25.0,685.0,0,0,4.0,1,35000000.0
+1029,Deutschland,1.Liga,Polen U21,Bundesliga,Bor. Dortmund,21.0,320.0,0,1,2.0,1,1300000.0
+1030,Deutschland,1.Liga,,Bundesliga,Bor. Dortmund,32.0,320.0,0,0,0.0,1,1000000.0
+1031,Deutschland,1.Liga,Deutschland U21,Bundesliga,Bor. Dortmund,22.0,1416.0,0,0,0.0,0,1000000.0
+1061,Deutschland,1.Liga,Ungarn,Bundesliga,RB Leipzig,33.0,2877.0,0,0,51.0,0,6000000.0
+1062,Deutschland,1.Liga,,Bundesliga,RB Leipzig,32.0,320.0,0,0,0.0,1,2000000.0
+1063,Deutschland,1.Liga,Norwegen,Bundesliga,RB Leipzig,32.0,220.0,1,0,44.0,0,600000.0
+1064,Deutschland,Jugendliga,Deutschland U19,U19-BL N/NO,RB Leipzig U19,18.0,685.0,1,0,1.0,1,200000.0
+1065,Deutschland,Jugendliga,Deutschland U17,U17-BL N/NO,RB Leipzig U17,17.0,685.0,0,0,4.0,1,200000.0
+1088,Deutschland,1.Liga,Finnland,Bundesliga,B. Leverkusen,33.0,1781.0,1,0,83.0,0,2500000.0
+1089,Deutschland,1.Liga,Österreich,Bundesliga,B. Leverkusen,26.0,110.0,1,0,4.0,0,1500000.0
+1090,Deutschland,1.Liga,Russland,Bundesliga,B. Leverkusen,31.0,676.0,0,1,7.0,0,1500000.0
+1091,Deutschland,1.Liga,,Bundesliga,B. Leverkusen,29.0,3972.0,0,0,0.0,0,250000.0
+1115,Deutschland,1.Liga,Deutschland,Bundesliga,E. Frankfurt,32.0,1379.0,1,0,6.0,0,8500000.0
+1116,Deutschland,1.Liga,Deutschland U20,Bundesliga,E. Frankfurt,21.0,685.0,0,1,3.0,1,750000.0
+1117,Deutschland,1.Liga,,Bundesliga,E. Frankfurt,34.0,667.0,0,0,0.0,0,200000.0
+1118,Deutschland,1.Liga,Albanien U21,Bundesliga,E. Frankfurt,18.0,136.0,1,0,6.0,0,200000.0
+1145,Deutschland,1.Liga,Schweiz,Bundesliga,Bor. M'gladbach,29.0,118.0,1,0,4.0,0,7000000.0
+1146,Deutschland,1.Liga,Deutschland U20,Bundesliga,Bor. M'gladbach,21.0,1038.0,0,1,1.0,1,500000.0
+1147,Deutschland,1.Liga,Deutschland,Bundesliga,Bor. M'gladbach,35.0,2877.0,0,1,0.0,0,400000.0
+1172,Deutschland,1.Liga,Belgien,Bundesliga,VfL Wolfsburg,30.0,3038.0,1,0,5.0,0,8000000.0
+1173,Deutschland,1.Liga,Österreich,Bundesliga,VfL Wolfsburg,35.0,1781.0,0,1,7.0,0,400000.0
+1174,Deutschland,1.Liga,Deutschland U18,Bundesliga,VfL Wolfsburg,20.0,685.0,0,1,1.0,1,200000.0
+1175,Deutschland,1.Liga,,Bundesliga,VfL Wolfsburg,27.0,1416.0,0,0,0.0,1,100000.0
+1197,Deutschland,1.Liga,Niederlande,Bundesliga,SC Freiburg,29.0,1781.0,1,0,4.0,1,7000000.0
+1198,Deutschland,1.Liga,Deutschland U21,Bundesliga,SC Freiburg,20.0,685.0,1,0,6.0,1,2000000.0
+1199,Deutschland,1.Liga,,Bundesliga,SC Freiburg,29.0,1015.0,0,0,0.0,0,500000.0
+1223,Deutschland,1.Liga,Deutschland,Bundesliga,TSG Hoffenheim,32.0,3242.0,0,0,0.0,0,4500000.0
+1224,Deutschland,1.Liga,,Bundesliga,TSG Hoffenheim,38.0,1416.0,0,0,0.0,0,300000.0
+1225,Deutschland,1.Liga,Deutschland U21,Bundesliga,TSG Hoffenheim,22.0,1020.0,0,0,4.0,1,300000.0
+1226,Deutschland,1.Liga,Deutschland U20,Bundesliga,TSG Hoffenheim,20.0,685.0,1,0,3.0,1,250000.0
+1254,Deutschland,1.Liga,Dänemark,Bundesliga,Union Berlin,30.0,666.0,1,0,8.0,1,3500000.0
+1255,Deutschland,1.Liga,Deutschland U21,Bundesliga,Union Berlin,24.0,320.0,0,1,7.0,0,1000000.0
+1256,Deutschland,1.Liga,Dänemark U21,Bundesliga,Union Berlin,29.0,2679.0,0,1,17.0,0,250000.0
+1281,Deutschland,1.Liga,Polen,Bundesliga,FC Augsburg,35.0,1050.0,0,1,0.0,0,1200000.0
+1282,Deutschland,1.Liga,Tschechien,Bundesliga,FC Augsburg,30.0,1380.0,0,0,12.0,0,1000000.0
+1283,Deutschland,1.Liga,Deutschland U19,Bundesliga,FC Augsburg,22.0,684.0,0,1,2.0,1,300000.0
+1284,Deutschland,1.Liga,,Bundesliga,FC Augsburg,24.0,1666.0,0,0,0.0,0,150000.0
+1313,Deutschland,1.Liga,Deutschland U21,Bundesliga,VfB Stuttgart,25.0,685.0,0,1,2.0,0,1500000.0
+1314,Deutschland,1.Liga,Deutschland U20,Bundesliga,VfB Stuttgart,28.0,1416.0,0,1,5.0,1,1500000.0
+1315,Deutschland,1.Liga,,Bundesliga,VfB Stuttgart,21.0,617.0,0,0,0.0,1,200000.0
+1342,Deutschland,1.Liga,Deutschland U17,Bundesliga,1.FSV Mainz 05,28.0,3242.0,0,1,1.0,1,5000000.0
+1343,Deutschland,1.Liga,Deutschland U21,Bundesliga,1.FSV Mainz 05,25.0,1781.0,0,1,8.0,0,1000000.0
+1344,Deutschland,1.Liga,,Bundesliga,1.FSV Mainz 05,21.0,685.0,0,0,0.0,1,200000.0
+1369,Deutschland,1.Liga,Deutschland U21,Bundesliga,1.FC Köln,28.0,685.0,0,1,4.0,1,5000000.0
+1370,Deutschland,1.Liga,Deutschland U21,Bundesliga,1.FC Köln,30.0,4338.0,0,1,4.0,0,1500000.0
+1371,Deutschland,4.Liga,,Regionalliga West,1.FC Köln II,22.0,122.0,0,0,0.0,1,100000.0
+1372,Deutschland,1.Liga,Deutschland U15,Bundesliga,1.FC Köln,25.0,435.0,0,1,3.0,0,25000.0
+1403,Deutschland,1.Liga,Dänemark,Bundesliga,Hertha BSC,24.0,629.0,0,0,1.0,1,4500000.0
+1404,Deutschland,1.Liga,Deutschland U20,Bundesliga,Hertha BSC,20.0,258.0,0,0,1.0,1,400000.0
+1405,Deutschland,1.Liga,Norwegen,Bundesliga,Hertha BSC,38.0,3423.0,0,1,72.0,0,300000.0
+1432,Deutschland,1.Liga,Tschechien,Bundesliga,Werder Bremen,31.0,2146.0,1,0,18.0,0,3000000.0
+1433,Deutschland,1.Liga,Deutschland U21,Bundesliga,Werder Bremen,27.0,3032.0,0,1,1.0,0,500000.0
+1434,Deutschland,Jugendliga,Deutschland U19,U19-BL N/NO,W. Bremen U19,19.0,685.0,0,0,2.0,1,300000.0
+1435,Deutschland,1.Liga,,Bundesliga,Werder Bremen,24.0,1050.0,0,0,0.0,0,200000.0
+1436,Deutschland,4.Liga,Deutschland U18,Regionalliga Nord,W. Bremen II,19.0,685.0,0,1,1.0,1,150000.0
+1458,Deutschland,1.Liga,Deutschland U20,Bundesliga,FC Schalke 04,30.0,320.0,0,1,7.0,0,900000.0
+1459,Deutschland,1.Liga,Deutschland U21,Bundesliga,FC Schalke 04,34.0,4338.0,0,1,1.0,0,400000.0
+1460,Deutschland,1.Liga,,Bundesliga,FC Schalke 04,22.0,320.0,0,0,0.0,1,250000.0
+1461,Deutschland,1.Liga,Österreich U21,Bundesliga,FC Schalke 04,38.0,2112.0,0,1,1.0,0,50000.0
+1490,Deutschland,1.Liga,Deutschland U17,Bundesliga,VfL Bochum,34.0,2877.0,0,1,0.0,1,1200000.0
+1491,Deutschland,1.Liga,Schweden U21,Bundesliga,VfL Bochum,24.0,258.0,0,1,1.0,0,500000.0
+1492,Deutschland,1.Liga,,Bundesliga,VfL Bochum,35.0,685.0,0,0,0.0,0,400000.0
+1493,Deutschland,1.Liga,,Bundesliga,VfL Bochum,22.0,1537.0,0,0,0.0,1,100000.0
+1518,Deutschland,2.Liga,Portugal U21,2. Bundesliga,Hamburger SV,30.0,1416.0,0,1,6.0,0,1200000.0
+1519,Deutschland,2.Liga,,2. Bundesliga,Hamburger SV,24.0,320.0,0,0,0.0,1,400000.0
+1520,Deutschland,2.Liga,,2. Bundesliga,Hamburger SV,21.0,685.0,0,0,0.0,1,200000.0
+1521,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,Hamburger SV,34.0,2511.0,0,1,3.0,0,150000.0
+1548,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,F. Düsseldorf,25.0,1416.0,0,1,0.0,0,1000000.0
+1549,Deutschland,2.Liga,,2. Bundesliga,F. Düsseldorf,34.0,2146.0,0,0,0.0,0,200000.0
+1550,Deutschland,2.Liga,,2. Bundesliga,F. Düsseldorf,21.0,1050.0,0,0,0.0,1,200000.0
+1577,Deutschland,2.Liga,Dänemark,2. Bundesliga,1.FC Nürnberg,25.0,136.0,0,0,0.0,0,650000.0
+1578,Deutschland,2.Liga,,2. Bundesliga,1.FC Nürnberg,31.0,1781.0,0,0,0.0,0,600000.0
+1579,Deutschland,2.Liga,Deutschland U19,2. Bundesliga,1.FC Nürnberg,29.0,685.0,0,1,0.0,0,200000.0
+1580,Deutschland,2.Liga,,2. Bundesliga,1.FC Nürnberg,21.0,320.0,0,0,0.0,1,150000.0
+1610,Deutschland,2.Liga,,2. Bundesliga,Darmstadt 98,30.0,1416.0,0,0,0.0,0,700000.0
+1611,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,Darmstadt 98,27.0,320.0,0,1,0.0,0,200000.0
+1612,Deutschland,2.Liga,,2. Bundesliga,Darmstadt 98,26.0,685.0,0,0,0.0,0,125000.0
+1637,Deutschland,2.Liga,Bosnien,2. Bundesliga,FC St. Pauli,27.0,685.0,1,0,6.0,0,800000.0
+1638,Deutschland,2.Liga,Deutschland U19,2. Bundesliga,FC St. Pauli,24.0,1018.0,0,1,1.0,0,200000.0
+1639,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,FC St. Pauli,33.0,282.0,0,1,2.0,0,200000.0
+1640,Deutschland,2.Liga,,2. Bundesliga,FC St. Pauli,25.0,624.0,0,0,0.0,0,50000.0
+1669,Deutschland,2.Liga,Deutschland,2. Bundesliga,Hannover 96,34.0,1416.0,0,1,6.0,0,700000.0
+1670,Deutschland,2.Liga,,2. Bundesliga,Hannover 96,26.0,1781.0,0,0,0.0,0,300000.0
+1671,Deutschland,2.Liga,Deutschland U18,2. Bundesliga,Hannover 96,23.0,320.0,0,1,1.0,1,125000.0
+1697,Deutschland,2.Liga,Österreich,2. Bundesliga,Arm. Bielefeld,30.0,266.0,0,0,0.0,0,600000.0
+1698,Deutschland,2.Liga,,2. Bundesliga,Arm. Bielefeld,28.0,110.0,0,0,0.0,0,100000.0
+1699,Deutschland,2.Liga,Deutschland U19,2. Bundesliga,Arm. Bielefeld,20.0,807.0,0,1,0.0,1,100000.0
+1700,Deutschland,2.Liga,,2. Bundesliga,Arm. Bielefeld,19.0,320.0,0,0,0.0,1,50000.0
+1724,Deutschland,2.Liga,Schweden,2. Bundesliga,Greuther Fürth,29.0,492.0,0,0,1.0,0,600000.0
+1725,Deutschland,2.Liga,Deutschland U19,2. Bundesliga,Greuther Fürth,24.0,1781.0,0,1,1.0,1,200000.0
+1726,Deutschland,2.Liga,Finnland U21,2. Bundesliga,Greuther Fürth,20.0,685.0,1,0,1.0,0,125000.0
+1752,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,1.FC Heidenheim,32.0,2877.0,0,1,7.0,0,600000.0
+1753,Deutschland,2.Liga,,2. Bundesliga,1.FC Heidenheim,32.0,2311.0,0,0,0.0,0,250000.0
+1754,Deutschland,2.Liga,Österreich U18,2. Bundesliga,1.FC Heidenheim,21.0,685.0,0,1,2.0,1,100000.0
+1779,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,Karlsruher SC,27.0,1416.0,0,1,0.0,1,800000.0
+1780,Deutschland,2.Liga,,2. Bundesliga,Karlsruher SC,27.0,320.0,0,0,0.0,0,200000.0
+1781,Deutschland,2.Liga,Deutschland U19,2. Bundesliga,Karlsruher SC,18.0,320.0,0,0,3.0,1,200000.0
+1809,Deutschland,2.Liga,Deutschland U21,2. Bundesliga,SC Paderborn,29.0,1416.0,0,1,2.0,0,700000.0
+1810,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,SC Paderborn,29.0,2146.0,0,1,1.0,0,400000.0
+1811,Deutschland,2.Liga,,2. Bundesliga,SC Paderborn,25.0,295.0,0,0,0.0,1,225000.0
+1812,Deutschland,2.Liga,,2. Bundesliga,SC Paderborn,22.0,1050.0,0,0,0.0,1,100000.0
+1835,Deutschland,2.Liga,Deutschland U18,2. Bundesliga,E. Braunschweig,24.0,320.0,0,1,2.0,0,400000.0
+1836,Deutschland,2.Liga,Bosnien,2. Bundesliga,E. Braunschweig,37.0,1591.0,0,1,1.0,0,250000.0
+1837,Deutschland,2.Liga,,2. Bundesliga,E. Braunschweig,21.0,685.0,0,0,0.0,1,50000.0
+1864,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,Holstein Kiel,21.0,320.0,0,1,2.0,1,600000.0
+1865,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,Holstein Kiel,29.0,1050.0,0,1,4.0,1,600000.0
+1866,Deutschland,2.Liga,,2. Bundesliga,Holstein Kiel,34.0,114.0,0,0,0.0,0,225000.0
+1867,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,Holstein Kiel,24.0,1781.0,0,1,1.0,0,100000.0
+1894,Deutschland,2.Liga,,2. Bundesliga,SV Sandhausen,30.0,685.0,0,0,0.0,1,600000.0
+1895,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,SV Sandhausen,26.0,609.0,0,1,2.0,1,200000.0
+1896,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,SV Sandhausen,26.0,208.0,0,1,1.0,0,175000.0
+1897,Deutschland,2.Liga,,2. Bundesliga,SV Sandhausen,23.0,1050.0,0,0,0.0,0,50000.0
+1924,Deutschland,2.Liga,Deutschland U21,2. Bundesliga,Jahn Regensburg,19.0,131.0,1,0,0.0,1,800000.0
+1925,Deutschland,2.Liga,Nordmazed. U21,2. Bundesliga,Jahn Regensburg,29.0,320.0,0,1,3.0,0,400000.0
+1926,Deutschland,2.Liga,Deutschland U21,2. Bundesliga,Jahn Regensburg,36.0,685.0,0,1,7.0,0,200000.0
+1927,Deutschland,2.Liga,,2. Bundesliga,Jahn Regensburg,25.0,1781.0,0,0,0.0,0,125000.0
+1952,Deutschland,2.Liga,Deutschland U20,2. Bundesliga,1.FC Magdeburg,25.0,685.0,0,1,2.0,1,500000.0
+1953,Deutschland,2.Liga,,2. Bundesliga,1.FC Magdeburg,29.0,320.0,0,0,0.0,0,200000.0
+1954,Deutschland,2.Liga,,2. Bundesliga,1.FC Magdeburg,19.0,493.0,0,0,0.0,1,100000.0
+1955,Deutschland,2.Liga,,2. Bundesliga,1.FC Magdeburg,20.0,1050.0,0,0,0.0,0,50000.0
+1986,Deutschland,2.Liga,,2. Bundesliga,Hansa Rostock,32.0,1416.0,0,0,0.0,1,500000.0
+1987,Deutschland,2.Liga,Deutschland U21,2. Bundesliga,Hansa Rostock,26.0,320.0,0,1,2.0,0,300000.0
+1988,Deutschland,2.Liga,,2. Bundesliga,Hansa Rostock,20.0,320.0,0,0,0.0,1,100000.0
+2016,Deutschland,2.Liga,,2. Bundesliga,1.FC K'lautern,36.0,320.0,0,0,0.0,0,500000.0
+2017,Deutschland,2.Liga,Deutschland U19,2. Bundesliga,1.FC K'lautern,23.0,320.0,0,1,1.0,0,200000.0
+2018,Deutschland,2.Liga,Bosnien U19,2. Bundesliga,1.FC K'lautern,26.0,1412.0,0,1,1.0,0,200000.0
+2019,Deutschland,2.Liga,,2. Bundesliga,1.FC K'lautern,22.0,1028.0,0,0,0.0,1,50000.0
+2045,Deutschland,3.Liga,Deutschland U20,3. Liga,B. Dortmund II,19.0,320.0,1,0,0.0,1,125000.0
+2046,Deutschland,3.Liga,,3. Liga,B. Dortmund II,23.0,320.0,0,0,0.0,0,25000.0
+2074,Deutschland,3.Liga,Deutschland U17,3. Liga,SC Freiburg II,20.0,685.0,0,1,1.0,1,200000.0
+2075,Deutschland,3.Liga,,3. Liga,SC Freiburg II,19.0,320.0,0,0,0.0,1,50000.0
+2104,Deutschland,3.Liga,,3. Liga,Dynamo Dresden,27.0,106.0,0,0,0.0,0,350000.0
+2105,Deutschland,3.Liga,,3. Liga,Dynamo Dresden,24.0,320.0,0,0,0.0,1,250000.0
+2106,Deutschland,3.Liga,Deutschland U15,3. Liga,Dynamo Dresden,27.0,320.0,0,1,1.0,0,175000.0
+2135,Deutschland,3.Liga,,3. Liga,1860 München,26.0,2146.0,0,0,0.0,1,325000.0
+2136,Deutschland,3.Liga,Deutschland U18,3. Liga,1860 München,24.0,1416.0,0,1,0.0,1,125000.0
+2137,Deutschland,3.Liga,Finnland U20,3. Liga,1860 München,21.0,320.0,0,1,1.0,1,75000.0
+2162,Deutschland,3.Liga,Deutschland U20,3. Liga,FC Ingolstadt,27.0,320.0,0,1,0.0,1,300000.0
+2163,Deutschland,3.Liga,,3. Liga,FC Ingolstadt,22.0,320.0,0,0,0.0,1,100000.0
+2190,Deutschland,3.Liga,,3. Liga,Wehen Wiesbaden,29.0,684.0,0,0,0.0,1,250000.0
+2191,Deutschland,3.Liga,,3. Liga,Wehen Wiesbaden,22.0,1416.0,0,0,0.0,1,175000.0
+2192,Deutschland,3.Liga,,3. Liga,Wehen Wiesbaden,34.0,163.0,0,0,0.0,0,150000.0
+2193,Deutschland,3.Liga,,3. Liga,Wehen Wiesbaden,21.0,685.0,0,0,0.0,1,25000.0
+2217,Deutschland,3.Liga,,3. Liga,SV Elversberg,23.0,685.0,0,0,0.0,1,300000.0
+2218,Deutschland,3.Liga,,3. Liga,SV Elversberg,34.0,2146.0,0,0,0.0,0,100000.0
+2244,Deutschland,3.Liga,,3. Liga,Viktoria Köln,22.0,320.0,0,0,0.0,1,250000.0
+2245,Deutschland,3.Liga,,3. Liga,Viktoria Köln,21.0,320.0,0,0,0.0,0,200000.0
+2246,Deutschland,3.Liga,,3. Liga,Viktoria Köln,33.0,471.0,0,0,0.0,0,75000.0
+2274,Deutschland,3.Liga,,3. Liga,Waldh. Mannheim,26.0,320.0,0,0,0.0,0,250000.0
+2275,Deutschland,3.Liga,,3. Liga,Waldh. Mannheim,24.0,1036.0,0,0,0.0,0,200000.0
+2276,Deutschland,3.Liga,,3. Liga,Waldh. Mannheim,22.0,663.0,0,0,0.0,1,25000.0
+2301,Deutschland,3.Liga,,3. Liga,VfL Osnabrück,30.0,1781.0,0,0,0.0,0,300000.0
+2302,Deutschland,3.Liga,,3. Liga,VfL Osnabrück,20.0,320.0,0,0,0.0,1,150000.0
+2303,Deutschland,3.Liga,,3. Liga,VfL Osnabrück,23.0,1416.0,0,0,0.0,0,50000.0
+2329,Deutschland,3.Liga,,3. Liga,Saarbrücken,32.0,2146.0,0,0,0.0,1,300000.0
+2330,Deutschland,3.Liga,,3. Liga,Saarbrücken,30.0,320.0,0,0,0.0,1,125000.0
+2331,Deutschland,3.Liga,,3. Liga,Saarbrücken,23.0,320.0,0,0,0.0,1,25000.0
+2357,Deutschland,3.Liga,,3. Liga,MSV Duisburg,22.0,320.0,0,0,0.0,1,500000.0
+2358,Deutschland,3.Liga,,3. Liga,MSV Duisburg,29.0,302.0,0,0,0.0,0,150000.0
+2359,Deutschland,3.Liga,,3. Liga,MSV Duisburg,19.0,469.0,0,0,0.0,1,100000.0
+2385,Deutschland,3.Liga,,3. Liga,Erzgebirge Aue,35.0,5433.0,0,0,0.0,0,250000.0
+2386,Deutschland,3.Liga,,3. Liga,Erzgebirge Aue,29.0,1008.0,0,0,0.0,0,200000.0
+2387,Deutschland,3.Liga,,3. Liga,Erzgebirge Aue,23.0,320.0,0,0,0.0,0,75000.0
+2410,Deutschland,3.Liga,,3. Liga,Hallescher FC,21.0,320.0,0,0,0.0,1,400000.0
+2411,Deutschland,3.Liga,,3. Liga,Hallescher FC,27.0,600.0,0,0,4.0,0,175000.0
+2412,Deutschland,3.Liga,,3. Liga,Hallescher FC,19.0,320.0,0,0,0.0,1,25000.0
+2439,Deutschland,3.Liga,,3. Liga,RW Essen,24.0,1416.0,0,0,0.0,1,200000.0
+2440,Deutschland,3.Liga,,3. Liga,RW Essen,20.0,320.0,0,0,0.0,1,100000.0
+2441,Deutschland,3.Liga,,3. Liga,RW Essen,34.0,685.0,0,0,0.0,0,50000.0
+2466,Deutschland,3.Liga,,3. Liga,SC Verl,24.0,320.0,0,0,2.0,1,275000.0
+2467,Deutschland,3.Liga,,3. Liga,SC Verl,26.0,313.0,0,0,0.0,0,75000.0
+2495,Deutschland,3.Liga,,3. Liga,FSV Zwickau,29.0,2511.0,0,0,0.0,0,250000.0
+2496,Deutschland,3.Liga,,3. Liga,FSV Zwickau,30.0,250.0,0,0,0.0,0,200000.0
+2497,Deutschland,3.Liga,,3. Liga,FSV Zwickau,22.0,2146.0,0,0,0.0,1,100000.0
+2498,Deutschland,3.Liga,,3. Liga,FSV Zwickau,23.0,320.0,0,0,0.0,0,50000.0
+2524,Deutschland,3.Liga,,3. Liga,SV Meppen,22.0,320.0,0,0,0.0,1,150000.0
+2525,Deutschland,3.Liga,,3. Liga,SV Meppen,23.0,1781.0,0,0,0.0,0,100000.0
+2526,Deutschland,3.Liga,,3. Liga,SV Meppen,37.0,2146.0,0,0,0.0,0,75000.0
+2558,Deutschland,3.Liga,,3. Liga,SpVgg Bayreuth,27.0,1781.0,0,0,0.0,1,125000.0
+2559,Deutschland,3.Liga,,3. Liga,SpVgg Bayreuth,21.0,306.0,0,0,0.0,1,75000.0
+2560,Deutschland,3.Liga,,3. Liga,SpVgg Bayreuth,22.0,1050.0,0,0,0.0,1,50000.0
+2585,Deutschland,3.Liga,,3. Liga,VfB Oldenburg,33.0,320.0,0,0,0.0,0,175000.0
+2586,Deutschland,3.Liga,,3. Liga,VfB Oldenburg,28.0,108.0,0,0,0.0,0,125000.0
+2587,Deutschland,3.Liga,,3. Liga,VfB Oldenburg,33.0,1781.0,0,0,0.0,0,25000.0
+2588,Deutschland,3.Liga,,3. Liga,VfB Oldenburg,19.0,320.0,0,0,0.0,1,10000.0
+2614,Österreich,1.Liga,,Bundesliga,RB Salzburg,25.0,1776.0,0,0,0.0,1,4000000.0
+2615,Österreich,1.Liga,,Bundesliga,RB Salzburg,21.0,320.0,0,0,0.0,1,325000.0
+2616,Österreich,1.Liga,,Bundesliga,RB Salzburg,19.0,136.0,0,0,0.0,1,300000.0
+2617,Österreich,1.Liga,,Bundesliga,RB Salzburg,39.0,4697.0,0,0,2.0,0,100000.0
+2645,Österreich,1.Liga,,Bundesliga,Sturm Graz,21.0,121.0,0,0,4.0,1,1500000.0
+2646,Österreich,1.Liga,,Bundesliga,Sturm Graz,33.0,2146.0,0,0,2.0,0,400000.0
+2647,Österreich,1.Liga,,Bundesliga,Sturm Graz,20.0,916.0,0,0,0.0,1,250000.0
+2648,Österreich,1.Liga,,Bundesliga,Sturm Graz,25.0,3242.0,0,0,0.0,1,250000.0
+2674,Österreich,1.Liga,,Bundesliga,LASK,27.0,2146.0,0,0,7.0,0,1000000.0
+2675,Österreich,1.Liga,,Bundesliga,LASK,22.0,1781.0,0,0,2.0,0,300000.0
+2676,Österreich,1.Liga,,Bundesliga,LASK,19.0,136.0,0,0,2.0,0,100000.0
+2677,Österreich,1.Liga,,Bundesliga,LASK,40.0,1778.0,0,0,0.0,0,75000.0
+2702,Österreich,1.Liga,,Bundesliga,Rapid Wien,22.0,866.0,0,0,1.0,1,1500000.0
+2703,Österreich,1.Liga,,Bundesliga,Rapid Wien,26.0,2511.0,0,0,5.0,0,350000.0
+2704,Österreich,1.Liga,,Bundesliga,Rapid Wien,24.0,1001.0,0,0,0.0,0,100000.0
+2733,Österreich,1.Liga,,Bundesliga,Austria Wien,23.0,320.0,0,0,0.0,1,1000000.0
+2734,Österreich,1.Liga,,Bundesliga,Austria Wien,26.0,2146.0,0,0,0.0,0,200000.0
+2735,Österreich,1.Liga,,Bundesliga,Austria Wien,27.0,624.0,0,0,0.0,0,75000.0
+2763,Österreich,1.Liga,,Bundesliga,Wolfsberger AC,29.0,320.0,0,0,0.0,1,400000.0
+2764,Österreich,1.Liga,,Bundesliga,Wolfsberger AC,22.0,320.0,0,0,0.0,0,400000.0
+2765,Österreich,1.Liga,,Bundesliga,Wolfsberger AC,21.0,685.0,0,0,0.0,1,75000.0
+2788,Österreich,1.Liga,,Bundesliga,SCR Altach,21.0,127.0,0,0,1.0,1,400000.0
+2789,Österreich,1.Liga,,Bundesliga,SCR Altach,27.0,1024.0,0,0,5.0,0,350000.0
+2790,Österreich,1.Liga,,Bundesliga,SCR Altach,21.0,1406.0,0,0,0.0,1,200000.0
+2817,Österreich,1.Liga,,Bundesliga,A. Klagenfurt,24.0,1019.0,0,0,1.0,1,700000.0
+2818,Österreich,1.Liga,,Bundesliga,A. Klagenfurt,36.0,320.0,0,0,5.0,0,150000.0
+2819,Österreich,1.Liga,,Bundesliga,A. Klagenfurt,21.0,685.0,0,0,0.0,1,75000.0
+2820,Österreich,1.Liga,,Bundesliga,A. Klagenfurt,19.0,685.0,0,0,0.0,1,25000.0
+2847,Österreich,1.Liga,,Bundesliga,A. Lustenau,28.0,1416.0,0,0,0.0,1,400000.0
+2848,Österreich,1.Liga,Österreich U21,Bundesliga,A. Lustenau,24.0,300.0,0,1,2.0,0,200000.0
+2849,Österreich,1.Liga,,Bundesliga,A. Lustenau,18.0,320.0,0,0,0.0,1,25000.0
+2872,Österreich,1.Liga,Österreich U20,Bundesliga,TSV Hartberg,27.0,1781.0,0,1,1.0,1,300000.0
+2873,Österreich,1.Liga,Österreich U21,Bundesliga,TSV Hartberg,24.0,117.0,0,1,9.0,0,250000.0
+2874,Österreich,1.Liga,,Bundesliga,TSV Hartberg,34.0,3242.0,0,0,0.0,0,100000.0
+2875,Österreich,1.Liga,,Bundesliga,TSV Hartberg,21.0,1019.0,0,0,0.0,1,25000.0
+2905,Österreich,1.Liga,Österreich U21,Bundesliga,SV Ried,30.0,1007.0,0,1,12.0,1,700000.0
+2906,Österreich,1.Liga,Österreich,Bundesliga,SV Ried,30.0,104.0,0,1,1.0,0,400000.0
+2907,Österreich,1.Liga,,Bundesliga,SV Ried,22.0,659.0,0,0,0.0,1,250000.0
+2908,Österreich,1.Liga,Österreich U19,Bundesliga,SV Ried,20.0,776.0,0,0,2.0,1,25000.0
+2937,Österreich,1.Liga,Deutschland U17,Bundesliga,WSG Tirol,32.0,3242.0,0,1,1.0,1,400000.0
+2938,Österreich,1.Liga,Österreich U19,Bundesliga,WSG Tirol,23.0,994.0,0,1,2.0,0,300000.0
+2939,Österreich,1.Liga,Österreich U18,Bundesliga,WSG Tirol,19.0,685.0,0,0,0.0,1,25000.0
+2940,Österreich,1.Liga,,Bundesliga,WSG Tirol,24.0,2146.0,0,0,0.0,1,25000.0
+2964,Österreich,2.Liga,Ungarn U19,2. Liga,FC Liefering,19.0,685.0,0,0,0.0,1,125000.0
+2965,Österreich,2.Liga,,2. Liga,FC Liefering,16.0,136.0,0,0,0.0,1,75000.0
+2966,Österreich,2.Liga,Österreich U18,2. Liga,FC Liefering,18.0,320.0,1,0,3.0,1,75000.0
+2997,Österreich,2.Liga,Österreich U19,2. Liga,Blau-Weiß Linz,26.0,1416.0,0,1,1.0,1,300000.0
+2998,Österreich,2.Liga,Österreich U18,2. Liga,Blau-Weiß Linz,26.0,1019.0,0,1,0.0,0,75000.0
+2999,Österreich,2.Liga,,2. Liga,Blau-Weiß Linz,20.0,320.0,0,0,0.0,1,10000.0
+3000,Österreich,2.Liga,,2. Liga,Blau-Weiß Linz,24.0,320.0,0,0,0.0,1,10000.0
+3024,Österreich,2.Liga,Österreich U21,2. Liga,SKN St. Pölten,22.0,685.0,0,0,1.0,1,300000.0
+3025,Österreich,2.Liga,,2. Liga,SKN St. Pölten,25.0,320.0,0,0,0.0,0,100000.0
+3026,Österreich,2.Liga,Österreich U21,2. Liga,SKN St. Pölten,32.0,860.0,0,1,2.0,0,50000.0
+3052,Österreich,2.Liga,,2. Liga,Grazer AK 1902,25.0,1019.0,0,0,0.0,1,200000.0
+3053,Österreich,2.Liga,,2. Liga,Grazer AK 1902,29.0,1232.0,0,0,0.0,0,125000.0
+3054,Österreich,2.Liga,China U21,2. Liga,Grazer AK 1902,19.0,102.0,1,0,0.0,1,100000.0
+3055,Österreich,2.Liga,,2. Liga,Grazer AK 1902,19.0,136.0,0,0,0.0,1,25000.0
+3083,Österreich,2.Liga,,2. Liga,Admira Wacker,30.0,320.0,0,0,0.0,1,175000.0
+3084,Österreich,2.Liga,Österreich U21,2. Liga,Admira Wacker,23.0,685.0,0,1,1.0,0,150000.0
+3085,Österreich,2.Liga,,2. Liga,Admira Wacker,21.0,320.0,0,0,0.0,1,25000.0
+3110,Österreich,2.Liga,Österreich U21,2. Liga,Young Violets,20.0,1416.0,0,0,0.0,1,225000.0
+3111,Österreich,2.Liga,Österreich U18,2. Liga,Young Violets,18.0,320.0,1,0,5.0,1,50000.0
+3138,Österreich,2.Liga,Österreich U19,2. Liga,Rapid Wien II,18.0,685.0,1,0,1.0,1,250000.0
+3139,Österreich,2.Liga,Österreich U18,2. Liga,Rapid Wien II,17.0,685.0,1,0,3.0,1,175000.0
+3140,Österreich,2.Liga,,2. Liga,Rapid Wien II,20.0,1050.0,0,0,0.0,1,50000.0
+3141,Österreich,2.Liga,,2. Liga,Rapid Wien II,17.0,320.0,0,0,0.0,1,25000.0
+3167,Österreich,2.Liga,Österreich,2. Liga,First Vienna FC,35.0,681.0,0,1,1.0,0,150000.0
+3168,Österreich,2.Liga,,2. Liga,First Vienna FC,24.0,1561.0,0,0,0.0,1,75000.0
+3169,Österreich,2.Liga,,2. Liga,First Vienna FC,20.0,320.0,0,0,0.0,1,25000.0
+3194,Österreich,2.Liga,Österreich U21,2. Liga,Vorwärts Steyr,20.0,120.0,1,0,5.0,0,200000.0
+3195,Österreich,2.Liga,,2. Liga,Vorwärts Steyr,24.0,320.0,0,0,0.0,1,175000.0
+3196,Österreich,2.Liga,Österreich U16,2. Liga,Vorwärts Steyr,22.0,866.0,0,1,8.0,1,75000.0
+3197,Österreich,2.Liga,,2. Liga,Vorwärts Steyr,20.0,665.0,0,0,0.0,0,10000.0
+3222,Österreich,2.Liga,Österreich U21,2. Liga,FAC,20.0,685.0,0,0,1.0,1,200000.0
+3223,Österreich,2.Liga,,2. Liga,FAC,23.0,313.0,0,0,0.0,0,100000.0
+3224,Österreich,2.Liga,,2. Liga,FAC,21.0,320.0,0,0,0.0,1,25000.0
+3245,Österreich,2.Liga,,2. Liga,SV Lafnitz,30.0,3423.0,0,0,0.0,0,200000.0
+3246,Österreich,2.Liga,,2. Liga,SV Lafnitz,27.0,3242.0,0,0,0.0,1,75000.0
+3247,Österreich,2.Liga,,2. Liga,SV Lafnitz,21.0,320.0,0,0,0.0,1,25000.0
+3275,Österreich,2.Liga,Österreich U17,2. Liga,Sturm Graz II,17.0,320.0,1,0,6.0,1,50000.0
+3276,Österreich,2.Liga,Österreich U17,2. Liga,Sturm Graz II,18.0,320.0,0,0,1.0,1,25000.0
+3296,Österreich,2.Liga,Österreich U21,2. Liga,SKU Amstetten,20.0,318.0,1,0,5.0,1,300000.0
+3297,Österreich,2.Liga,Österreich U19,2. Liga,SKU Amstetten,25.0,1416.0,0,1,1.0,0,150000.0
+3298,Österreich,2.Liga,,2. Liga,SKU Amstetten,24.0,320.0,0,0,0.0,1,10000.0
+3324,Österreich,2.Liga,Finnland U19,2. Liga,SV Horn,21.0,295.0,0,1,0.0,1,50000.0
+3325,Österreich,2.Liga,,2. Liga,SV Horn,20.0,1019.0,0,0,0.0,0,50000.0
+3326,Österreich,2.Liga,,2. Liga,SV Horn,18.0,136.0,0,0,0.0,1,10000.0
+3327,Österreich,2.Liga,,2. Liga,SV Horn,17.0,136.0,0,0,0.0,1,10000.0
+3345,Österreich,2.Liga,Österreich U21,2. Liga,SV Kapfenberg,24.0,119.0,0,1,1.0,1,200000.0
+3346,Österreich,2.Liga,,2. Liga,SV Kapfenberg,18.0,317.0,0,0,0.0,1,125000.0
+3347,Österreich,2.Liga,,2. Liga,SV Kapfenberg,22.0,317.0,0,0,0.0,0,25000.0
+3379,Österreich,2.Liga,Liechtenstein,2. Liga,FC Dornbirn,23.0,320.0,1,0,4.0,1,250000.0
+3380,Österreich,2.Liga,,2. Liga,FC Dornbirn,24.0,136.0,0,0,0.0,1,75000.0
+3381,Österreich,2.Liga,Österreich U17,2. Liga,FC Dornbirn,20.0,685.0,0,1,1.0,1,25000.0
+3400,Frankreich,1.Liga,Italien,Ligue 1,Paris SG,24.0,672.0,1,0,52.0,0,50000000.0
+3401,Frankreich,1.Liga,Spanien,Ligue 1,Paris SG,29.0,984.0,0,1,1.0,0,4000000.0
+3402,Frankreich,1.Liga,,Ligue 1,Paris SG,32.0,964.0,0,0,0.0,0,400000.0
+3403,Frankreich,5.Liga,Frankreich U20,N3 - Paris Île-de-Fr.,Paris SG B,20.0,320.0,1,0,0.0,1,150000.0
+3426,Frankreich,1.Liga,Deutschland U21,Ligue 1,AS Monaco,26.0,685.0,0,1,17.0,0,10000000.0
+3427,Frankreich,1.Liga,Frankreich U21,Ligue 1,AS Monaco,27.0,301.0,0,1,6.0,0,1200000.0
+3453,Frankreich,1.Liga,Türkei U21,Ligue 1,Rennes,20.0,628.0,1,0,4.0,1,4000000.0
+3454,Frankreich,1.Liga,Frankreich,Ligue 1,Rennes,38.0,315.0,0,1,35.0,0,1500000.0
+3455,Frankreich,1.Liga,,Ligue 1,Rennes,38.0,1416.0,0,0,0.0,0,300000.0
+3456,Frankreich,1.Liga,Tunesien,Ligue 1,Rennes,20.0,320.0,0,1,0.0,1,200000.0
+3481,Frankreich,1.Liga,Spanien,Ligue 1,Ol. Marseille,28.0,320.0,0,1,2.0,0,14000000.0
+3482,Frankreich,1.Liga,Spanien U21,Ligue 1,Ol. Marseille,27.0,301.0,0,1,2.0,0,4000000.0
+3483,Frankreich,1.Liga,Kamerun U23,Ligue 1,Ol. Marseille,20.0,1314.0,1,0,0.0,1,400000.0
+3503,Frankreich,1.Liga,Dänemark,Ligue 1,OGC Nizza,36.0,287.0,1,0,91.0,0,2500000.0
+3504,Frankreich,1.Liga,Polen U21,Ligue 1,OGC Nizza,23.0,320.0,0,1,1.0,1,2000000.0
+3505,Frankreich,1.Liga,Algerien U23,Ligue 1,OGC Nizza,22.0,1050.0,1,0,0.0,1,150000.0
+3530,Frankreich,1.Liga,Portugal,Ligue 1,Olympique Lyon,32.0,4338.0,0,1,14.0,0,9000000.0
+3531,Frankreich,1.Liga,Frankreich U21,Ligue 1,Olympique Lyon,35.0,320.0,0,1,6.0,0,400000.0
+3532,Frankreich,1.Liga,,Ligue 1,Olympique Lyon,21.0,320.0,0,0,0.0,0,200000.0
+3553,Frankreich,1.Liga,Frankreich U21,Ligue 1,LOSC Lille,21.0,1050.0,1,0,1.0,1,10000000.0
+3554,Frankreich,1.Liga,Frankreich,Ligue 1,LOSC Lille,35.0,111.0,0,1,1.0,0,1500000.0
+3555,Frankreich,1.Liga,Slowakei,Ligue 1,LOSC Lille,26.0,2121.0,0,1,1.0,0,400000.0
+3576,Frankreich,1.Liga,Frankreich,Ligue 1,RC Lens,29.0,316.0,1,0,0.0,1,10000000.0
+3577,Frankreich,1.Liga,Venezuela,Ligue 1,RC Lens,25.0,685.0,0,0,40.0,0,4000000.0
+3578,Frankreich,1.Liga,,Ligue 1,RC Lens,37.0,1781.0,0,0,0.0,0,300000.0
+3579,Frankreich,1.Liga,Komoren U20,Ligue 1,RC Lens,22.0,320.0,1,0,0.0,1,200000.0
+3606,Frankreich,1.Liga,Frankreich,Ligue 1,FC Nantes,24.0,685.0,0,0,0.0,1,20000000.0
+3607,Frankreich,1.Liga,Frankreich U21,Ligue 1,FC Nantes,26.0,685.0,0,1,0.0,0,800000.0
+3608,Frankreich,1.Liga,Slowenien U21,Ligue 1,FC Nantes,34.0,1385.0,0,1,1.0,0,200000.0
+3633,Frankreich,1.Liga,Frankreich,Ligue 1,Montpellier,32.0,111.0,0,1,0.0,0,4000000.0
+3634,Frankreich,1.Liga,Frankreich U21,Ligue 1,Montpellier,24.0,2146.0,0,1,1.0,1,1500000.0
+3635,Frankreich,1.Liga,Senegal,Ligue 1,Montpellier,26.0,258.0,0,1,2.0,0,800000.0
+3636,Frankreich,1.Liga,Portugal U19,Ligue 1,Montpellier,24.0,1416.0,0,1,0.0,1,300000.0
+3661,Frankreich,1.Liga,Belgien,Ligue 1,R. Straßburg,31.0,1756.0,1,0,2.0,1,8000000.0
+3662,Frankreich,1.Liga,Japan,Ligue 1,R. Straßburg,40.0,1722.0,0,0,95.0,0,200000.0
+3663,Frankreich,1.Liga,Haiti,Ligue 1,R. Straßburg,22.0,685.0,1,0,3.0,0,100000.0
+3687,Frankreich,1.Liga,Frankreich U21,Ligue 1,Stade Reims,23.0,1416.0,0,1,1.0,1,5000000.0
+3688,Frankreich,1.Liga,,Ligue 1,Stade Reims,27.0,106.0,0,0,0.0,1,700000.0
+3689,Frankreich,1.Liga,Frankreich U21,Ligue 1,Stade Reims,42.0,685.0,0,1,5.0,0,150000.0
+3690,Frankreich,4.Liga,,National 2 - Grp. B,Stade Reims B,22.0,685.0,0,0,0.0,1,100000.0
+3712,Frankreich,1.Liga,Schweiz,Ligue 1,FC Lorient,28.0,308.0,0,0,4.0,0,3500000.0
+3713,Frankreich,1.Liga,Deutschland U21,Ligue 1,FC Lorient,28.0,106.0,0,1,7.0,0,600000.0
+3714,Frankreich,1.Liga,Italien U21,Ligue 1,FC Lorient,35.0,258.0,0,1,8.0,0,300000.0
+3715,Frankreich,1.Liga,,Ligue 1,FC Lorient,25.0,1050.0,0,0,0.0,1,150000.0
+3738,Frankreich,1.Liga,Frankreich U20,Ligue 1,FC Toulouse,30.0,1050.0,0,1,0.0,1,2000000.0
+3739,Frankreich,1.Liga,Norwegen U21,Ligue 1,FC Toulouse,24.0,320.0,0,1,5.0,1,400000.0
+3740,Frankreich,1.Liga,,Ligue 1,FC Toulouse,22.0,685.0,0,0,0.0,1,150000.0
+3764,Frankreich,1.Liga,,Ligue 1,Troyes,30.0,1416.0,0,0,0.0,0,2000000.0
+3765,Frankreich,1.Liga,Polen U21,Ligue 1,Troyes,26.0,258.0,0,1,0.0,0,1000000.0
+3766,Frankreich,1.Liga,,Ligue 1,Troyes,37.0,667.0,0,0,0.0,0,250000.0
+3791,Frankreich,1.Liga,Niederlande,Ligue 1,Stade Brest 29,32.0,651.0,0,1,1.0,0,4000000.0
+3792,Frankreich,1.Liga,Argentinien U23,Ligue 1,Stade Brest 29,22.0,294.0,0,1,1.0,1,500000.0
+3793,Frankreich,1.Liga,Frankreich U19,Ligue 1,Stade Brest 29,24.0,681.0,0,1,0.0,1,200000.0
+3817,Frankreich,1.Liga,Frankreich U23,Ligue 1,Angers SCO,26.0,1050.0,0,1,1.0,0,3000000.0
+3818,Frankreich,1.Liga,Frankreich U21,Ligue 1,Angers SCO,22.0,320.0,0,0,0.0,1,2500000.0
+3819,Frankreich,1.Liga,Frankreich U20,Ligue 1,Angers SCO,21.0,320.0,0,0,5.0,1,100000.0
+3820,Frankreich,1.Liga,,Ligue 1,Angers SCO,20.0,320.0,0,0,0.0,1,100000.0
+3848,Frankreich,1.Liga,Rumänien,Ligue 1,AJ Auxerre,25.0,112.0,1,0,4.0,0,3500000.0
+3849,Frankreich,1.Liga,Fr. Guayana,Ligue 1,AJ Auxerre,30.0,1050.0,1,0,28.0,0,600000.0
+3850,Frankreich,1.Liga,Martinique,Ligue 1,AJ Auxerre,22.0,791.0,1,0,0.0,0,150000.0
+3851,Frankreich,1.Liga,,Ligue 1,AJ Auxerre,21.0,119.0,0,0,0.0,0,100000.0
+3881,Frankreich,1.Liga,Senegal,Ligue 1,Clermont Foot,29.0,320.0,1,0,0.0,1,1500000.0
+3882,Frankreich,1.Liga,,Ligue 1,Clermont Foot,25.0,1781.0,0,0,0.0,0,600000.0
+3883,Frankreich,1.Liga,,Ligue 1,Clermont Foot,22.0,1049.0,0,0,0.0,1,150000.0
+3906,Frankreich,1.Liga,,Ligue 1,AC Ajaccio,34.0,1781.0,0,0,0.0,0,600000.0
+3907,Frankreich,1.Liga,,Ligue 1,AC Ajaccio,29.0,1781.0,0,0,0.0,1,300000.0
+3908,Frankreich,1.Liga,,Ligue 1,AC Ajaccio,20.0,685.0,0,0,0.0,1,200000.0
+3936,Frankreich,2.Liga,Frankreich U21,Ligue 2,AS St.-Étienne,26.0,131.0,0,1,2.0,0,3000000.0
+3937,Frankreich,2.Liga,England U21,Ligue 2,AS St.-Étienne,22.0,866.0,0,1,2.0,0,3000000.0
+3938,Frankreich,2.Liga,Frankreich U21,Ligue 2,AS St.-Étienne,34.0,267.0,0,1,1.0,0,300000.0
+3939,Frankreich,2.Liga,Senegal U23,Ligue 2,AS St.-Étienne,22.0,862.0,1,0,2.0,0,200000.0
+3964,Frankreich,2.Liga,Frankreich U21,Ligue 2,G. Bordeaux,24.0,2146.0,0,1,0.0,1,1500000.0
+3965,Frankreich,2.Liga,Polen U18,Ligue 2,G. Bordeaux,24.0,320.0,0,1,1.0,0,700000.0
+3991,Frankreich,2.Liga,,Ligue 2,AC Le Havre,29.0,320.0,0,0,0.0,0,1500000.0
+3992,Frankreich,2.Liga,Frankreich U21,Ligue 2,AC Le Havre,32.0,1416.0,0,1,1.0,0,250000.0
+3993,Frankreich,2.Liga,Elfenbeink. U23,Ligue 2,AC Le Havre,21.0,320.0,1,0,0.0,1,50000.0
+4019,Frankreich,2.Liga,Frankreich U21,Ligue 2,FC Sochaux,26.0,2693.0,0,1,1.0,1,2000000.0
+4020,Frankreich,2.Liga,Algerien,Ligue 2,FC Sochaux,32.0,1216.0,0,1,0.0,0,250000.0
+4021,Frankreich,2.Liga,,Ligue 2,FC Sochaux,20.0,320.0,0,0,0.0,1,100000.0
+4044,Frankreich,2.Liga,Frankreich U18,Ligue 2,FC Metz,29.0,1031.0,0,1,1.0,0,700000.0
+4045,Frankreich,2.Liga,Algerien,Ligue 2,FC Metz,34.0,1781.0,1,0,6.0,0,600000.0
+4046,Frankreich,2.Liga,Senegal U23,Ligue 2,FC Metz,20.0,685.0,1,0,2.0,1,400000.0
+4065,Frankreich,2.Liga,Algerien,Ligue 2,SM Caen,26.0,320.0,1,0,3.0,1,1500000.0
+4066,Frankreich,2.Liga,Martinique,Ligue 2,SM Caen,25.0,833.0,1,0,4.0,0,250000.0
+4092,Frankreich,2.Liga,,Ligue 2,Amiens SC,36.0,2877.0,0,0,0.0,0,300000.0
+4093,Frankreich,2.Liga,Frankreich U20,Ligue 2,Amiens SC,29.0,320.0,0,1,0.0,0,200000.0
+4094,Frankreich,2.Liga,Frankreich U20,Ligue 2,Amiens SC,21.0,320.0,0,0,0.0,1,50000.0
+4116,Frankreich,2.Liga,,Ligue 2,EA Guingamp,28.0,1050.0,0,0,0.0,1,800000.0
+4117,Frankreich,2.Liga,Zentralafrika,Ligue 2,EA Guingamp,23.0,1416.0,1,0,2.0,0,300000.0
+4118,Frankreich,4.Liga,Frankreich U18,National 2 - Grp. A,EA Guingamp B,17.0,501.0,0,0,1.0,1,50000.0
+4144,Frankreich,2.Liga,Frankreich U21,Ligue 2,Dijon FCO,32.0,685.0,0,1,0.0,0,800000.0
+4145,Frankreich,2.Liga,Benin,Ligue 2,Dijon FCO,29.0,957.0,1,0,36.0,0,400000.0
+4146,Frankreich,2.Liga,Frankreich U17,Ligue 2,Dijon FCO,21.0,320.0,0,1,1.0,1,50000.0
+4173,Frankreich,2.Liga,Kroatien U21,Ligue 2,Paris FC,28.0,657.0,0,1,0.0,0,600000.0
+4174,Frankreich,5.Liga,Frankreich U20,N3 - Paris Île-de-Fr.,Paris FC B,20.0,1050.0,0,0,1.0,0,150000.0
+4175,Frankreich,2.Liga,,Ligue 2,Paris FC,40.0,5433.0,0,0,0.0,0,100000.0
+4176,Frankreich,2.Liga,,Ligue 2,Paris FC,22.0,270.0,0,0,0.0,1,50000.0
+4199,Frankreich,2.Liga,Frankreich U21,Ligue 2,FC Valenciennes,21.0,118.0,1,0,1.0,0,1500000.0
+4200,Frankreich,2.Liga,Burkina Faso,Ligue 2,FC Valenciennes,28.0,1781.0,1,0,1.0,1,250000.0
+4201,Frankreich,5.Liga,,N3 - Hauts-de-France,Valenciennes B,19.0,320.0,0,0,0.0,1,50000.0
+4227,Frankreich,2.Liga,,Ligue 2,Nîmes Olympique,29.0,320.0,0,0,0.0,0,400000.0
+4228,Frankreich,2.Liga,,Ligue 2,Nîmes Olympique,23.0,1416.0,0,0,0.0,0,300000.0
+4229,Frankreich,2.Liga,Marokko U23,Ligue 2,Nîmes Olympique,21.0,1050.0,1,0,1.0,0,150000.0
+4253,Frankreich,2.Liga,Frankreich U20,Ligue 2,Grenoble Foot,33.0,3242.0,0,1,0.0,0,450000.0
+4254,Frankreich,2.Liga,,Ligue 2,Grenoble Foot,29.0,1759.0,0,0,0.0,1,250000.0
+4255,Frankreich,2.Liga,,Ligue 2,Grenoble Foot,23.0,302.0,0,0,0.0,1,150000.0
+4278,Frankreich,2.Liga,Frankreich U21,Ligue 2,FC Annecy,27.0,685.0,0,1,1.0,1,600000.0
+4279,Frankreich,2.Liga,,Ligue 2,FC Annecy,24.0,119.0,0,0,0.0,1,150000.0
+4280,Frankreich,2.Liga,,Ligue 2,FC Annecy,21.0,274.0,0,0,0.0,1,150000.0
+4305,Frankreich,2.Liga,DR Kongo,Ligue 2,Rodez AF,28.0,2501.0,1,0,2.0,1,700000.0
+4306,Frankreich,2.Liga,,Ligue 2,Rodez AF,25.0,320.0,0,0,0.0,0,300000.0
+4307,Frankreich,2.Liga,,Ligue 2,Rodez AF,25.0,2511.0,0,0,0.0,0,150000.0
+4332,Frankreich,2.Liga,,Ligue 2,Chamois Niort,31.0,954.0,0,0,0.0,0,400000.0
+4333,Frankreich,2.Liga,,Ligue 2,Chamois Niort,26.0,672.0,0,0,0.0,0,150000.0
+4334,Frankreich,2.Liga,,Ligue 2,Chamois Niort,21.0,1050.0,0,0,0.0,1,100000.0
+4359,Frankreich,2.Liga,,Ligue 2,Pau FC,27.0,106.0,0,0,0.0,0,600000.0
+4360,Frankreich,2.Liga,Senegal U23,Ligue 2,Pau FC,21.0,650.0,1,0,1.0,1,400000.0
+4361,Frankreich,2.Liga,,Ligue 2,Pau FC,21.0,320.0,0,0,0.0,1,100000.0
+4386,Frankreich,2.Liga,Frankreich U23,Ligue 2,SC Bastia,31.0,491.0,0,1,0.0,0,300000.0
+4387,Frankreich,2.Liga,Haiti,Ligue 2,SC Bastia,35.0,685.0,0,0,57.0,0,250000.0
+4388,Frankreich,2.Liga,Frankreich U20,Ligue 2,SC Bastia,29.0,320.0,0,1,1.0,0,150000.0
+4411,Frankreich,2.Liga,,Ligue 2,Quevilly Rouen,26.0,685.0,0,0,0.0,1,700000.0
+4412,Frankreich,2.Liga,Guadeloupe,Ligue 2,Quevilly Rouen,34.0,288.0,0,1,10.0,0,250000.0
+4413,Frankreich,2.Liga,,Ligue 2,Quevilly Rouen,20.0,320.0,0,0,0.0,1,50000.0
+4434,Frankreich,2.Liga,,Ligue 2,Stade Laval,31.0,1050.0,0,0,0.0,1,400000.0
+4435,Frankreich,2.Liga,,Ligue 2,Stade Laval,32.0,678.0,0,0,0.0,0,200000.0
+4436,Frankreich,2.Liga,,Ligue 2,Stade Laval,23.0,685.0,0,0,0.0,1,50000.0
+4462,Italien,1.Liga,Italien,Serie A,SSC Neapel,26.0,1416.0,1,0,3.0,0,18000000.0
+4463,Italien,1.Liga,Italien,Serie A,SSC Neapel,28.0,112.0,0,0,1.0,0,5000000.0
+4464,Italien,1.Liga,Polen U19,Serie A,SSC Neapel,21.0,320.0,0,1,0.0,1,150000.0
+4465,Italien,1.Liga,,Serie A,SSC Neapel,23.0,636.0,0,0,0.0,0,50000.0
+4489,Italien,1.Liga,Frankreich,Serie A,AC Mailand,27.0,685.0,1,0,6.0,1,35000000.0
+4490,Italien,1.Liga,Rumänien,Serie A,AC Mailand,37.0,978.0,0,1,73.0,0,600000.0
+4491,Italien,1.Liga,Kolumbien,Serie A,AC Mailand,25.0,134.0,1,0,0.0,0,350000.0
+4492,Italien,1.Liga,Italien,Serie A,AC Mailand,39.0,581.0,0,1,0.0,0,300000.0
+4519,Italien,1.Liga,Kamerun,Serie A,Inter Mailand,27.0,320.0,0,1,34.0,0,20000000.0
+4520,Italien,1.Liga,Slowenien,Serie A,Inter Mailand,38.0,3964.0,0,1,81.0,0,1000000.0
+4521,Italien,1.Liga,,Serie A,Inter Mailand,40.0,685.0,0,0,0.0,0,300000.0
+4546,Italien,1.Liga,Polen,Serie A,Juventus Turin,33.0,2128.0,1,0,72.0,0,13000000.0
+4547,Italien,1.Liga,Italien,Serie A,Juventus Turin,30.0,1781.0,0,1,2.0,0,4000000.0
+4548,Italien,1.Liga,Italien U21,Serie A,Juventus Turin,33.0,3242.0,0,1,9.0,0,300000.0
+4574,Italien,1.Liga,Argentinien,Serie A,Atal. Bergamo,29.0,684.0,0,0,2.0,0,14000000.0
+4575,Italien,1.Liga,Italien U21,Serie A,Atal. Bergamo,31.0,3981.0,0,1,0.0,0,1500000.0
+4576,Italien,1.Liga,Italien U21,Serie A,Atal. Bergamo,32.0,5037.0,0,1,0.0,0,100000.0
+4600,Italien,1.Liga,Portugal,Serie A,AS Rom,35.0,673.0,1,0,107.0,0,5000000.0
+4601,Italien,1.Liga,Serbien,Serie A,AS Rom,23.0,320.0,0,1,1.0,0,1800000.0
+4602,Italien,1.Liga,,Serie A,AS Rom,21.0,685.0,0,0,0.0,1,150000.0
+4627,Italien,1.Liga,Italien,Serie A,Lazio Rom,29.0,282.0,0,0,0.0,1,12000000.0
+4628,Italien,1.Liga,Portugal U21,Serie A,Lazio Rom,24.0,308.0,0,1,2.0,0,8000000.0
+4629,Italien,1.Liga,Litauen,Serie A,Lazio Rom,26.0,2146.0,0,0,1.0,0,150000.0
+4653,Italien,1.Liga,,Serie A,AC Florenz,33.0,1410.0,0,0,0.0,1,2000000.0
+4654,Italien,1.Liga,Italien,Serie A,AC Florenz,36.0,112.0,0,1,28.0,0,600000.0
+4655,Italien,1.Liga,Italien U21,Serie A,AC Florenz,24.0,2146.0,0,1,2.0,0,300000.0
+4679,Italien,1.Liga,Italien,Serie A,US Sassuolo,36.0,3180.0,0,1,0.0,0,1500000.0
+4680,Italien,1.Liga,Italien U21,Serie A,US Sassuolo,22.0,1391.0,0,1,1.0,0,500000.0
+4681,Italien,1.Liga,Italien U21,Serie A,US Sassuolo,42.0,3544.0,0,1,3.0,0,100000.0
+4705,Italien,1.Liga,Serbien,Serie A,FC Turin,26.0,2146.0,1,0,12.0,0,3500000.0
+4706,Italien,1.Liga,Albanien,Serie A,FC Turin,34.0,320.0,1,0,74.0,0,600000.0
+4707,Italien,1.Liga,Italien U20,Serie A,FC Turin,22.0,1416.0,0,1,0.0,1,300000.0
+4708,Italien,1.Liga,,Serie A,FC Turin,19.0,320.0,0,0,0.0,1,25000.0
+4733,Italien,1.Liga,Italien,Serie A,Udinese Calcio,32.0,666.0,0,1,0.0,0,5000000.0
+4734,Italien,1.Liga,Italien,Serie A,Udinese Calcio,37.0,685.0,0,1,0.0,0,300000.0
+4735,Italien,1.Liga,,Serie A,Udinese Calcio,19.0,320.0,0,0,0.0,1,50000.0
+4760,Italien,1.Liga,Polen,Serie A,FC Bologna,32.0,1781.0,1,0,8.0,0,3000000.0
+4761,Italien,1.Liga,Italien U21,Serie A,FC Bologna,31.0,669.0,0,1,37.0,0,500000.0
+4762,Italien,1.Liga,,Serie A,FC Bologna,23.0,2146.0,0,0,0.0,0,450000.0
+4763,Italien,1.Liga,Italien U19,Serie A,FC Bologna,19.0,320.0,0,0,2.0,1,200000.0
+4791,Italien,1.Liga,Italien U17,Serie A,Monza,25.0,320.0,0,1,1.0,1,7000000.0
+4792,Italien,1.Liga,Italien,Serie A,Monza,28.0,320.0,0,0,2.0,0,4000000.0
+4793,Italien,1.Liga,Italien U21,Serie A,Monza,21.0,308.0,0,0,1.0,1,500000.0
+4794,Italien,1.Liga,,Serie A,Monza,33.0,1404.0,0,0,0.0,0,100000.0
+4821,Italien,1.Liga,Italien,Serie A,FC Empoli,26.0,320.0,0,0,0.0,1,16000000.0
+4822,Italien,1.Liga,Italien U20,Serie A,FC Empoli,25.0,320.0,0,1,2.0,0,700000.0
+4823,Italien,1.Liga,Kosovo,Serie A,FC Empoli,34.0,654.0,1,0,32.0,0,200000.0
+4824,Italien,1.Liga,Slowenien U19,Serie A,FC Empoli,18.0,320.0,1,0,3.0,1,200000.0
+4851,Italien,1.Liga,Mexiko,Serie A,US Salernitana,37.0,135.0,0,0,136.0,0,1200000.0
+4852,Italien,1.Liga,Italien U19,Serie A,US Salernitana,32.0,320.0,0,1,4.0,0,1000000.0
+4853,Italien,1.Liga,Italien U21,Serie A,US Salernitana,33.0,649.0,0,1,3.0,0,300000.0
+4878,Italien,1.Liga,Italien,Serie A,Lecce,28.0,304.0,1,0,0.0,1,5000000.0
+4879,Italien,1.Liga,,Serie A,Lecce,27.0,3758.0,0,0,0.0,0,200000.0
+4880,Italien,1.Liga,Italien U21,Serie A,Lecce,21.0,320.0,0,1,0.0,0,200000.0
+4881,Italien,1.Liga,,Serie A,Lecce,19.0,320.0,0,0,0.0,1,75000.0
+4909,Italien,1.Liga,Polen,Serie A,Spezia Calcio,25.0,280.0,1,0,2.0,0,4500000.0
+4910,Italien,1.Liga,Niederlande,Serie A,Spezia Calcio,32.0,981.0,0,1,11.0,0,500000.0
+4911,Italien,1.Liga,Bosnien U18,Serie A,Spezia Calcio,21.0,674.0,0,1,1.0,1,100000.0
+4912,Italien,1.Liga,Italien,Serie A,Spezia Calcio,40.0,116.0,0,1,11.0,0,50000.0
+4938,Italien,1.Liga,Italien U21,Serie A,Hellas Verona,27.0,320.0,0,1,1.0,0,4000000.0
+4939,Italien,1.Liga,Italien U16,Serie A,Hellas Verona,28.0,287.0,0,1,3.0,0,200000.0
+4940,Italien,1.Liga,,Serie A,Hellas Verona,32.0,1615.0,0,0,0.0,0,50000.0
+4967,Italien,1.Liga,Italien U21,Serie A,Sampdoria,26.0,1416.0,0,1,10.0,0,6000000.0
+4968,Italien,1.Liga,Slowenien U21,Serie A,Sampdoria,19.0,124.0,1,0,13.0,0,300000.0
+4969,Italien,1.Liga,,Serie A,Sampdoria,34.0,988.0,0,0,0.0,0,100000.0
+4996,Italien,1.Liga,Italien,Serie A,Cremonese,22.0,259.0,1,0,0.0,1,13000000.0
+4997,Italien,1.Liga,,Serie A,Cremonese,26.0,628.0,0,0,0.0,1,250000.0
+4998,Italien,1.Liga,,Serie A,Cremonese,22.0,278.0,0,0,0.0,0,200000.0
+4999,Italien,1.Liga,Polen U16,Serie A,Cremonese,22.0,656.0,0,1,0.0,1,100000.0
+5022,Italien,2.Liga,Spanien,Serie B,Genua CFC,24.0,320.0,0,1,1.0,0,1900000.0
+5023,Italien,2.Liga,Kroatien U21,Serie B,Genua CFC,25.0,644.0,0,1,13.0,0,1500000.0
+5024,Italien,2.Liga,,Serie B,Genua CFC,20.0,685.0,0,0,0.0,0,100000.0
+5025,Italien,2.Liga,Slowenien B,Serie B,Genua CFC,24.0,988.0,0,1,1.0,0,50000.0
+5053,Italien,2.Liga,Italien,Serie B,Parma Calcio,45.0,685.0,0,1,176.0,0,1000000.0
+5054,Italien,2.Liga,,Serie B,Parma Calcio,33.0,307.0,0,0,0.0,0,600000.0
+5055,Italien,2.Liga,Italien U19,Serie B,Parma Calcio,22.0,1050.0,0,1,0.0,1,300000.0
+5056,Italien,2.Liga,Italien U18,Serie B,Parma Calcio,17.0,320.0,0,0,4.0,1,150000.0
+5057,Italien,2.Liga,Dom. Rep.,Serie B,Parma Calcio,31.0,197.0,1,0,3.0,0,50000.0
+5083,Italien,2.Liga,Italien U21,Serie B,Frosinone,21.0,317.0,1,0,4.0,1,3500000.0
+5084,Italien,2.Liga,Italien U20,Serie B,Frosinone,24.0,292.0,0,1,3.0,0,275000.0
+5085,Italien,2.Liga,,Serie B,Frosinone,22.0,988.0,0,0,0.0,0,50000.0
+5112,Italien,2.Liga,Finnland,Serie B,Venezia FC,30.0,320.0,1,0,17.0,0,1200000.0
+5113,Italien,2.Liga,,Serie B,Venezia FC,20.0,629.0,0,0,0.0,1,250000.0
+5114,Italien,2.Liga,Brasilien U17,Serie B,Venezia FC,24.0,1567.0,0,1,2.0,1,200000.0
+5115,Italien,2.Liga,Finnland,Serie B,Venezia FC,38.0,821.0,0,1,27.0,0,100000.0
+5139,Italien,2.Liga,Serbien,Serie B,Cagliari Calcio,26.0,672.0,0,1,0.0,0,600000.0
+5140,Italien,2.Liga,,Serie B,Cagliari Calcio,21.0,685.0,0,0,0.0,1,300000.0
+5141,Italien,2.Liga,,Serie B,Cagliari Calcio,37.0,988.0,0,0,0.0,0,100000.0
+5142,Italien,2.Liga,Bosnien U19,Serie B,Cagliari Calcio,19.0,167.0,0,1,0.0,1,50000.0
+5167,Italien,2.Liga,,Serie B,Pisa,26.0,1348.0,0,0,0.0,1,350000.0
+5168,Italien,2.Liga,,Serie B,Pisa,35.0,685.0,0,0,0.0,0,300000.0
+5169,Italien,2.Liga,Schweden U19,Serie B,Pisa,20.0,132.0,0,1,0.0,1,100000.0
+5193,Italien,2.Liga,Italien U21,Serie B,SSC Bari,21.0,308.0,1,0,2.0,1,3000000.0
+5194,Italien,2.Liga,,Serie B,SSC Bari,37.0,1403.0,0,0,0.0,0,175000.0
+5195,Italien,2.Liga,,Serie B,SSC Bari,23.0,110.0,0,0,0.0,0,175000.0
+5221,Italien,2.Liga,Italien U21,Serie B,Palermo,29.0,299.0,0,1,1.0,0,1200000.0
+5222,Italien,2.Liga,,Serie B,Palermo,27.0,669.0,0,0,0.0,1,250000.0
+5223,Italien,2.Liga,,Serie B,Palermo,18.0,320.0,0,0,0.0,1,50000.0
+5249,Italien,2.Liga,Senegal,Serie B,Como,29.0,110.0,1,0,16.0,0,3000000.0
+5250,Italien,2.Liga,Italien U20,Serie B,Como,23.0,301.0,0,1,2.0,1,400000.0
+5251,Italien,2.Liga,,Serie B,Como,32.0,258.0,0,0,0.0,0,150000.0
+5252,Italien,2.Liga,,Serie B,Como,24.0,1358.0,0,0,0.0,0,50000.0
+5281,Italien,2.Liga,,Serie B,Reggina 1914,26.0,124.0,0,0,0.0,0,700000.0
+5282,Italien,2.Liga,Italien U21,Serie B,Reggina 1914,31.0,302.0,0,1,2.0,0,250000.0
+5283,Italien,2.Liga,,Serie B,Reggina 1914,23.0,623.0,0,0,0.0,1,100000.0
+5308,Italien,2.Liga,,Serie B,Brescia Calcio,28.0,320.0,0,0,0.0,0,500000.0
+5309,Italien,2.Liga,,Serie B,Brescia Calcio,28.0,320.0,0,0,0.0,0,150000.0
+5310,Italien,2.Liga,,Serie B,Brescia Calcio,18.0,286.0,0,0,0.0,1,50000.0
+5336,Italien,2.Liga,,Serie B,Benevento,30.0,320.0,0,0,0.0,0,1000000.0
+5337,Italien,2.Liga,,Serie B,Benevento,35.0,1398.0,0,0,0.0,0,125000.0
+5338,Italien,2.Liga,,Serie B,Benevento,19.0,320.0,0,0,0.0,1,100000.0
+5367,Italien,2.Liga,,Serie B,Ascoli,30.0,685.0,0,0,0.0,0,1100000.0
+5368,Italien,2.Liga,,Serie B,Ascoli,37.0,680.0,0,0,0.0,0,250000.0
+5369,Italien,2.Liga,,Serie B,Ascoli,18.0,988.0,0,0,0.0,1,200000.0
+5398,Italien,2.Liga,,Serie B,Modena FC,25.0,999.0,0,0,0.0,1,750000.0
+5399,Italien,2.Liga,,Serie B,Modena FC,32.0,320.0,0,0,0.0,0,200000.0
+5400,Italien,2.Liga,,Serie B,Modena FC,42.0,1401.0,0,0,0.0,0,25000.0
+5425,Italien,2.Liga,,Serie B,Südtirol,35.0,1008.0,0,0,0.0,1,400000.0
+5426,Italien,2.Liga,,Serie B,Südtirol,29.0,124.0,0,0,0.0,0,300000.0
+5427,Italien,2.Liga,,Serie B,Südtirol,17.0,320.0,0,0,0.0,1,50000.0
+5454,Italien,2.Liga,,Serie B,Ternana,32.0,1780.0,0,0,0.0,1,400000.0
+5455,Italien,2.Liga,,Serie B,Ternana,24.0,622.0,0,0,0.0,0,250000.0
+5456,Italien,2.Liga,,Serie B,Ternana,23.0,1781.0,0,0,0.0,0,50000.0
+5482,Italien,2.Liga,,Serie B,SPAL,22.0,106.0,0,0,0.0,0,500000.0
+5483,Italien,2.Liga,,Serie B,SPAL,35.0,473.0,0,0,0.0,0,150000.0
+5484,Italien,2.Liga,,Serie B,SPAL,19.0,320.0,0,0,0.0,1,50000.0
+5485,Italien,2.Liga,,Serie B,SPAL,42.0,628.0,0,0,0.0,0,25000.0
+5514,Italien,2.Liga,,Serie B,AS Cittadella,26.0,946.0,0,0,2.0,1,1400000.0
+5515,Italien,2.Liga,,Serie B,AS Cittadella,27.0,1779.0,0,0,0.0,0,450000.0
+5516,Italien,2.Liga,,Serie B,AS Cittadella,19.0,501.0,0,0,0.0,1,50000.0
+5542,Italien,2.Liga,,Serie B,AC Perugia,27.0,308.0,0,0,0.0,0,1500000.0
+5543,Italien,2.Liga,,Serie B,AC Perugia,30.0,279.0,0,0,0.0,0,250000.0
+5544,Italien,2.Liga,,Serie B,AC Perugia,26.0,195.0,0,0,0.0,0,50000.0
+5568,Italien,2.Liga,,Serie B,Cosenza,25.0,272.0,0,0,0.0,1,350000.0
+5569,Italien,2.Liga,,Serie B,Cosenza,29.0,135.0,0,0,0.0,0,300000.0
+5570,Italien,2.Liga,,Serie B,Cosenza,22.0,290.0,0,0,0.0,0,50000.0
+5598,Spanien,1.Liga,,LaLiga,Real Madrid,31.0,1742.0,0,0,101.0,0,60000000.0
+5599,Spanien,1.Liga,,LaLiga,Real Madrid,24.0,1781.0,0,0,9.0,0,5000000.0
+5600,Spanien,3.Liga,,Primera Federación - Gr. I,RM Castilla,22.0,993.0,0,0,2.0,1,300000.0
+5623,Spanien,1.Liga,,LaLiga,FC Barcelona,31.0,3242.0,0,0,32.0,0,40000000.0
+5624,Spanien,1.Liga,,LaLiga,FC Barcelona,24.0,472.0,0,0,0.0,0,4000000.0
+5625,Spanien,3.Liga,,Primera Federación - Gr. II,Barça Atlètic,21.0,1050.0,0,0,7.0,1,2000000.0
+5645,Spanien,1.Liga,,LaLiga,Atlético Madrid,30.0,3227.0,0,0,56.0,0,40000000.0
+5646,Spanien,1.Liga,,LaLiga,Atlético Madrid,27.0,1000.0,0,0,2.0,0,3500000.0
+5667,Spanien,1.Liga,,LaLiga,Real Sociedad,28.0,1416.0,0,0,0.0,1,25000000.0
+5668,Spanien,1.Liga,,LaLiga,Real Sociedad,26.0,320.0,0,0,0.0,1,300000.0
+5693,Spanien,1.Liga,,LaLiga,FC Villarreal,21.0,132.0,0,0,2.0,1,1500000.0
+5694,Spanien,1.Liga,,LaLiga,FC Villarreal,40.0,313.0,0,0,36.0,0,700000.0
+5716,Spanien,1.Liga,,LaLiga,Betis Sevilla,29.0,685.0,0,0,1.0,1,15000000.0
+5717,Spanien,1.Liga,,LaLiga,Betis Sevilla,24.0,1399.0,0,0,3.0,0,1500000.0
+5718,Spanien,1.Liga,,LaLiga,Betis Sevilla,40.0,990.0,0,0,144.0,0,1000000.0
+5742,Spanien,1.Liga,,LaLiga,Athletic Bilbao,25.0,1781.0,0,0,31.0,0,25000000.0
+5743,Spanien,1.Liga,,LaLiga,Athletic Bilbao,22.0,320.0,0,0,6.0,1,5000000.0
+5744,Spanien,1.Liga,,LaLiga,Athletic Bilbao,24.0,320.0,0,0,0.0,1,100000.0
+5767,Spanien,1.Liga,,LaLiga,FC Valencia,22.0,501.0,0,0,0.0,1,25000000.0
+5768,Spanien,1.Liga,,LaLiga,FC Valencia,32.0,2877.0,0,0,0.0,0,1500000.0
+5769,Spanien,1.Liga,,LaLiga,FC Valencia,35.0,231.0,0,0,0.0,0,500000.0
+5770,Spanien,1.Liga,,LaLiga,FC Valencia,25.0,1019.0,0,0,0.0,0,200000.0
+5793,Spanien,1.Liga,,LaLiga,FC Sevilla,32.0,985.0,0,0,52.0,0,12000000.0
+5794,Spanien,1.Liga,,LaLiga,FC Sevilla,31.0,682.0,0,0,19.0,0,4000000.0
+5817,Spanien,1.Liga,,LaLiga,Celta Vigo,35.0,289.0,0,0,0.0,0,3000000.0
+5818,Spanien,1.Liga,,LaLiga,Celta Vigo,25.0,1416.0,0,0,0.0,0,1200000.0
+5840,Spanien,1.Liga,,LaLiga,FC Getafe,30.0,1769.0,0,0,0.0,0,10000000.0
+5841,Spanien,1.Liga,,LaLiga,FC Getafe,36.0,280.0,0,0,0.0,0,400000.0
+5842,Spanien,1.Liga,,LaLiga,FC Getafe,24.0,658.0,0,0,0.0,0,300000.0
+5865,Spanien,1.Liga,,LaLiga,CA Osasuna,29.0,2135.0,0,0,0.0,1,8000000.0
+5866,Spanien,1.Liga,,LaLiga,CA Osasuna,32.0,319.0,0,0,3.0,0,3000000.0
+5887,Spanien,1.Liga,,LaLiga,FC Girona,31.0,258.0,0,0,1.0,0,2500000.0
+5888,Spanien,1.Liga,,LaLiga,FC Girona,35.0,1416.0,0,0,0.0,0,300000.0
+5889,Spanien,1.Liga,,LaLiga,FC Girona,22.0,258.0,0,0,0.0,1,300000.0
+5912,Spanien,1.Liga,,LaLiga,Esp. Barcelona,30.0,106.0,0,0,8.0,0,3000000.0
+5913,Spanien,1.Liga,,LaLiga,Esp. Barcelona,25.0,259.0,0,0,1.0,0,3000000.0
+5914,Spanien,1.Liga,,LaLiga,Esp. Barcelona,22.0,685.0,0,0,2.0,1,400000.0
+5939,Spanien,1.Liga,,LaLiga,Rayo Vallecano,29.0,1567.0,0,0,58.0,1,4000000.0
+5940,Spanien,1.Liga,,LaLiga,Rayo Vallecano,22.0,1019.0,0,0,2.0,1,600000.0
+5941,Spanien,1.Liga,,LaLiga,Rayo Vallecano,41.0,319.0,0,0,1.0,0,500000.0
+5964,Spanien,1.Liga,Serbien,LaLiga,RCD Mallorca,27.0,299.0,1,0,28.0,1,10000000.0
+5965,Spanien,1.Liga,Slowakei,LaLiga,RCD Mallorca,26.0,680.0,0,1,4.0,0,1500000.0
+5966,Spanien,1.Liga,Spanien U21,LaLiga,RCD Mallorca,22.0,320.0,1,0,1.0,1,300000.0
+5988,Spanien,1.Liga,Spanien U19,LaLiga,UD Almería,32.0,2142.0,0,1,1.0,1,2000000.0
+5989,Spanien,1.Liga,Spanien U23,LaLiga,UD Almería,33.0,111.0,0,1,3.0,0,300000.0
+5990,Spanien,1.Liga,,LaLiga,UD Almería,25.0,320.0,0,0,0.0,0,200000.0
+6014,Spanien,1.Liga,Spanien,LaLiga,Real Valladolid,33.0,314.0,0,1,1.0,0,1500000.0
+6015,Spanien,1.Liga,Spanien U17,LaLiga,Real Valladolid,34.0,2130.0,0,1,1.0,0,1000000.0
+6038,Spanien,1.Liga,Argentinien,LaLiga,FC Cádiz,30.0,685.0,0,1,0.0,1,10000000.0
+6039,Spanien,1.Liga,Spanien U18,LaLiga,FC Cádiz,29.0,1781.0,0,1,0.0,0,700000.0
+6067,Spanien,1.Liga,Spanien U20,LaLiga,FC Elche,31.0,1593.0,0,1,0.0,1,4000000.0
+6068,Spanien,1.Liga,Argentinien U20,LaLiga,FC Elche,27.0,623.0,0,1,0.0,0,800000.0
+6093,Spanien,2.Liga,Portugal U21,LaLiga2,FC Granada,26.0,301.0,0,1,0.0,0,800000.0
+6094,Spanien,2.Liga,,LaLiga2,FC Granada,35.0,303.0,0,0,0.0,0,300000.0
+6095,Spanien,4.Liga,Spanien U18,Segunda Federación - Gr. IV,Granada B,24.0,315.0,0,1,0.0,1,200000.0
+6121,Spanien,2.Liga,,LaLiga2,UD Levante,26.0,866.0,0,0,0.0,1,2000000.0
+6122,Spanien,2.Liga,,LaLiga2,UD Levante,26.0,320.0,0,0,0.0,1,800000.0
+6144,Spanien,2.Liga,Spanien U21,LaLiga2,Alavés,26.0,2128.0,0,1,10.0,0,1200000.0
+6145,Spanien,2.Liga,Äquat'guinea,LaLiga2,Alavés,22.0,320.0,1,0,17.0,1,200000.0
+6168,Spanien,2.Liga,,LaLiga2,Real Saragossa,30.0,2497.0,0,0,0.0,0,300000.0
+6169,Spanien,2.Liga,Argentinien,LaLiga2,Real Saragossa,37.0,2113.0,0,1,0.0,0,100000.0
+6195,Spanien,2.Liga,,LaLiga2,CD Leganés,33.0,471.0,0,0,0.0,1,400000.0
+6196,Spanien,2.Liga,,LaLiga2,CD Leganés,24.0,187.0,0,0,0.0,0,400000.0
+6197,Spanien,2.Liga,Spanien U21,LaLiga2,CD Leganés,39.0,981.0,0,1,9.0,0,100000.0
+6218,Spanien,2.Liga,Frankreich U20,LaLiga2,Real Oviedo,25.0,320.0,0,1,1.0,0,700000.0
+6219,Spanien,2.Liga,,LaLiga2,Real Oviedo,34.0,649.0,0,0,0.0,0,300000.0
+6245,Spanien,2.Liga,Uruguay,LaLiga2,Sporting Gijón,28.0,110.0,1,0,0.0,0,600000.0
+6246,Spanien,2.Liga,Spanien U21,LaLiga2,Sporting Gijón,38.0,626.0,0,1,1.0,0,100000.0
+6273,Spanien,2.Liga,,LaLiga2,UD Las Palmas,25.0,1416.0,0,0,0.0,1,800000.0
+6274,Spanien,2.Liga,Spanien U21,LaLiga2,UD Las Palmas,24.0,1019.0,0,1,0.0,0,300000.0
+6299,Spanien,2.Liga,Frankreich U20,LaLiga2,SD Eibar,25.0,258.0,0,1,1.0,1,2000000.0
+6300,Spanien,2.Liga,Spanien U19,LaLiga2,SD Eibar,28.0,661.0,0,1,4.0,0,600000.0
+6301,Spanien,2.Liga,Spanien U19,LaLiga2,SD Eibar,34.0,2146.0,0,1,1.0,0,600000.0
+6325,Spanien,2.Liga,,LaLiga2,SD Huesca,36.0,992.0,0,0,0.0,0,600000.0
+6326,Spanien,2.Liga,,LaLiga2,SD Huesca,26.0,117.0,0,0,0.0,1,600000.0
+6349,Spanien,2.Liga,Andorra,LaLiga2,FC Villarreal B,21.0,685.0,1,0,13.0,1,500000.0
+6350,Spanien,2.Liga,,LaLiga2,FC Villarreal B,31.0,630.0,0,0,0.0,0,100000.0
+6375,Spanien,2.Liga,Spanien U20,LaLiga2,FC Málaga,29.0,306.0,0,1,1.0,0,1000000.0
+6376,Spanien,2.Liga,,LaLiga2,FC Málaga,38.0,320.0,0,0,0.0,0,200000.0
+6402,Spanien,2.Liga,Spanien U21,LaLiga2,CD Teneriffa,25.0,685.0,0,1,1.0,0,1000000.0
+6403,Spanien,2.Liga,,LaLiga2,CD Teneriffa,26.0,314.0,0,0,0.0,1,500000.0
+6427,Spanien,2.Liga,,LaLiga2,FC Cartagena,27.0,319.0,0,0,0.0,1,1000000.0
+6428,Spanien,2.Liga,,LaLiga2,FC Cartagena,33.0,1409.0,0,0,0.0,1,400000.0
+6452,Spanien,2.Liga,,LaLiga2,FC Andorra,29.0,1590.0,0,0,0.0,1,400000.0
+6453,Spanien,2.Liga,,LaLiga2,FC Andorra,32.0,314.0,0,0,0.0,0,400000.0
+6454,Spanien,2.Liga,Spanien U19,LaLiga2,FC Andorra,23.0,312.0,0,1,1.0,1,100000.0
+6477,Spanien,2.Liga,Spanien U19,LaLiga2,CD Mirandés,29.0,307.0,0,1,3.0,1,500000.0
+6478,Spanien,2.Liga,Slowenien,LaLiga2,CD Mirandés,25.0,103.0,0,1,0.0,0,500000.0
+6479,Spanien,2.Liga,,LaLiga2,CD Mirandés,23.0,685.0,0,0,0.0,1,300000.0
+6500,Spanien,2.Liga,,LaLiga2,Burgos CF,29.0,308.0,0,0,0.0,1,1000000.0
+6501,Spanien,2.Liga,,LaLiga2,Burgos CF,36.0,320.0,0,0,0.0,0,200000.0
+6524,Spanien,2.Liga,Iran,LaLiga2,Ponferradina,30.0,678.0,0,0,11.0,1,1500000.0
+6525,Spanien,2.Liga,,LaLiga2,Ponferradina,25.0,117.0,0,0,0.0,0,500000.0
+6546,Spanien,2.Liga,,LaLiga2,Albacete,23.0,303.0,0,0,0.0,0,800000.0
+6547,Spanien,2.Liga,,LaLiga2,Albacete,30.0,1005.0,0,0,0.0,1,600000.0
+6569,Spanien,2.Liga,,LaLiga2,Rac. Santander,26.0,685.0,0,0,0.0,1,700000.0
+6570,Spanien,2.Liga,Spanien U19,LaLiga2,Rac. Santander,26.0,316.0,0,1,1.0,1,300000.0
+6595,Spanien,2.Liga,Brasilien,LaLiga2,UD Ibiza,25.0,320.0,0,1,0.0,1,1000000.0
+6596,Spanien,2.Liga,,LaLiga2,UD Ibiza,30.0,1416.0,0,0,0.0,1,300000.0
+6618,Spanien,2.Liga,Spanien U21,LaLiga2,CD Lugo,29.0,661.0,0,1,1.0,1,700000.0
+6619,Spanien,2.Liga,Costa Rica,LaLiga2,CD Lugo,24.0,317.0,1,0,2.0,1,200000.0
+6644,Portugal,1.Liga,Griechenland,Liga Portugal,Benfica,29.0,1781.0,1,0,31.0,0,16000000.0
+6645,Portugal,2.Liga,Portugal U21,Liga Sabseg,Benfica B,20.0,685.0,1,0,5.0,1,2000000.0
+6646,Portugal,2.Liga,Portugal U19,Liga Sabseg,Benfica B,18.0,136.0,1,0,12.0,1,2000000.0
+6668,Portugal,1.Liga,Portugal,Liga Portugal,FC Porto,23.0,1416.0,0,0,11.0,1,45000000.0
+6669,Portugal,1.Liga,Portugal,Liga Portugal,FC Porto,31.0,1006.0,0,1,1.0,0,1500000.0
+6670,Portugal,1.Liga,,Liga Portugal,FC Porto,29.0,258.0,0,0,0.0,1,1500000.0
+6696,Portugal,1.Liga,Spanien U21,Liga Portugal,Sporting,36.0,1000.0,0,1,1.0,0,1500000.0
+6697,Portugal,1.Liga,Uruguay U20,Liga Portugal,Sporting,23.0,316.0,0,1,14.0,1,1000000.0
+6698,Portugal,1.Liga,,Liga Portugal,Sporting,26.0,320.0,0,0,0.0,1,100000.0
+6729,Portugal,1.Liga,,Liga Portugal,SC Braga,31.0,3242.0,0,0,0.0,1,6000000.0
+6730,Portugal,Playoff/Relegation,Tschechien U20,3. Liga Aufstiegsrunde,SC Braga B,20.0,685.0,1,0,2.0,1,2000000.0
+6731,Portugal,1.Liga,Portugal U20,Liga Portugal,SC Braga,28.0,2877.0,0,1,3.0,0,800000.0
+6754,Portugal,1.Liga,Brasilien U20,Liga Portugal,Famalicão,22.0,927.0,0,1,0.0,1,4000000.0
+6755,Portugal,1.Liga,Russland U18,Liga Portugal,Famalicão,26.0,998.0,0,1,1.0,0,300000.0
+6784,Portugal,1.Liga,Portugal,Liga Portugal,Vit. Guimarães,28.0,1001.0,0,1,0.0,0,4000000.0
+6785,Portugal,1.Liga,Portugal,Liga Portugal,Vit. Guimarães,22.0,320.0,1,0,0.0,1,500000.0
+6813,Portugal,1.Liga,,Liga Portugal,Gil Vicente,21.0,666.0,0,0,0.0,1,2000000.0
+6814,Portugal,1.Liga,Russland,Liga Portugal,Gil Vicente,32.0,320.0,0,1,2.0,0,1500000.0
+6815,Portugal,1.Liga,Portugal U16,Liga Portugal,Gil Vicente,23.0,1416.0,0,1,1.0,1,200000.0
+6838,Portugal,1.Liga,Brasilien U17,Liga Portugal,Santa Clara,24.0,265.0,0,1,0.0,0,500000.0
+6839,Portugal,1.Liga,Portugal U20,Liga Portugal,Santa Clara,28.0,685.0,0,1,0.0,0,200000.0
+6840,Portugal,1.Liga,Portugal U19,Liga Portugal,Santa Clara,36.0,2146.0,0,1,1.0,0,200000.0
+6841,Portugal,1.Liga,,Liga Portugal,Santa Clara,37.0,125.0,0,0,0.0,0,100000.0
+6869,Portugal,1.Liga,Portugal U20,Liga Portugal,Estoril Praia,24.0,1416.0,0,1,1.0,1,1500000.0
+6870,Portugal,1.Liga,Portugal U21,Liga Portugal,Estoril Praia,26.0,279.0,0,1,0.0,0,400000.0
+6871,Portugal,1.Liga,Portugal U20,Liga Portugal,Estoril Praia,20.0,320.0,0,1,2.0,1,200000.0
+6898,Portugal,1.Liga,Brasilien U20,Liga Portugal,Boavista Porto,31.0,301.0,0,1,3.0,0,200000.0
+6899,Portugal,1.Liga,,Liga Portugal,Boavista Porto,42.0,1781.0,0,0,0.0,0,100000.0
+6900,Portugal,1.Liga,Portugal U21,Liga Portugal,Boavista Porto,22.0,685.0,0,1,1.0,1,100000.0
+6926,Portugal,1.Liga,Japan,Liga Portugal,Portimonense,28.0,855.0,0,1,6.0,0,600000.0
+6927,Portugal,1.Liga,,Liga Portugal,Portimonense,25.0,128.0,0,0,0.0,1,100000.0
+6928,Portugal,Playoff/Relegation,,Revelação U23 - Qualifikationsr.,Portimão U23,21.0,271.0,0,0,0.0,1,100000.0
+6958,Portugal,1.Liga,Georgien,Liga Portugal,CS Marítimo,33.0,126.0,0,1,17.0,0,700000.0
+6959,Portugal,1.Liga,Tschechien,Liga Portugal,CS Marítimo,24.0,297.0,0,0,0.0,0,700000.0
+6960,Portugal,1.Liga,Brasilien U17,Liga Portugal,CS Marítimo,33.0,136.0,0,1,0.0,1,250000.0
+6961,Portugal,1.Liga,Portugal U20,Liga Portugal,CS Marítimo,21.0,685.0,0,1,0.0,1,100000.0
+6987,Portugal,1.Liga,,Liga Portugal,Casa Pia,25.0,924.0,0,0,0.0,1,200000.0
+6988,Portugal,1.Liga,,Liga Portugal,Casa Pia,25.0,680.0,0,0,0.0,1,100000.0
+6989,Portugal,1.Liga,Portugal U21,Liga Portugal,Casa Pia,36.0,989.0,0,1,15.0,0,100000.0
+7015,Portugal,1.Liga,Slowenien,Liga Portugal,Paços Ferreira,25.0,624.0,0,0,0.0,1,300000.0
+7016,Portugal,1.Liga,Portugal U20,Liga Portugal,Paços Ferreira,21.0,685.0,0,1,3.0,1,200000.0
+7017,Portugal,1.Liga,Portugal,Liga Portugal,Paços Ferreira,36.0,133.0,0,1,1.0,0,125000.0
+7043,Portugal,1.Liga,Uruguay U23,Liga Portugal,FC Arouca,26.0,320.0,1,0,8.0,1,700000.0
+7044,Portugal,1.Liga,Brasilien U17,Liga Portugal,FC Arouca,26.0,136.0,0,1,2.0,0,200000.0
+7045,Portugal,1.Liga,Portugal U20,Liga Portugal,FC Arouca,23.0,317.0,0,1,2.0,0,100000.0
+7070,Portugal,1.Liga,Kroatien U19,Liga Portugal,Vizela,26.0,318.0,0,1,6.0,1,800000.0
+7071,Portugal,1.Liga,,Liga Portugal,Vizela,26.0,281.0,0,0,0.0,0,300000.0
+7072,Portugal,1.Liga,Guinea-Bissau,Liga Portugal,Vizela,20.0,320.0,1,0,4.0,1,100000.0
+7096,Portugal,1.Liga,,Liga Portugal,Rio Ave FC,32.0,320.0,0,0,0.0,0,800000.0
+7097,Portugal,Playoff/Relegation,,Revelação U23 - Qualifikationsr.,Rio Ave FC U23,23.0,954.0,0,0,0.0,1,100000.0
+7120,Portugal,1.Liga,,Liga Portugal,GD Chaves,34.0,1014.0,0,0,0.0,0,200000.0
+7121,Portugal,1.Liga,,Liga Portugal,GD Chaves,27.0,320.0,0,0,0.0,0,200000.0
+7122,Portugal,1.Liga,Portugal U19,Liga Portugal,GD Chaves,23.0,272.0,0,1,1.0,1,100000.0
+7149,Portugal,2.Liga,,Liga Sabseg,Benfica B,20.0,320.0,0,0,0.0,1,150000.0
+7150,Portugal,2.Liga,Japan U21,Liga Sabseg,Benfica B,22.0,1050.0,1,0,0.0,1,125000.0
+7179,Portugal,2.Liga,Portugal U21,Liga Sabseg,FC Porto B,21.0,1050.0,0,1,0.0,0,900000.0
+7180,Portugal,2.Liga,Portugal U17,Liga Sabseg,FC Porto B,17.0,320.0,1,0,9.0,1,400000.0
+7181,Portugal,2.Liga,Kroatien U20,Liga Sabseg,FC Porto B,21.0,471.0,0,1,0.0,0,125000.0
+7182,Portugal,2.Liga,Portugal U18,Liga Sabseg,FC Porto B,19.0,685.0,0,1,1.0,0,125000.0
+7212,Portugal,2.Liga,,Liga Sabseg,Moreirense FC,28.0,685.0,0,0,0.0,1,600000.0
+7213,Portugal,2.Liga,Portugal U20,Liga Sabseg,Moreirense FC,24.0,111.0,0,1,3.0,0,400000.0
+7214,Portugal,2.Liga,Portugal U18,Liga Sabseg,Moreirense FC,21.0,258.0,0,1,3.0,1,100000.0
+7237,Portugal,2.Liga,Slowenien U21,Liga Sabseg,Académico Viseu,21.0,312.0,0,1,2.0,1,475000.0
+7238,Portugal,2.Liga,Portugal U21,Liga Sabseg,Académico Viseu,22.0,320.0,0,1,0.0,0,100000.0
+7239,Portugal,2.Liga,Senegal U23,Liga Sabseg,Académico Viseu,25.0,685.0,0,1,0.0,0,75000.0
+7240,Portugal,2.Liga,Portugal U20,Liga Sabseg,Académico Viseu,36.0,1573.0,0,1,0.0,0,50000.0
+7269,Portugal,2.Liga,Portugal U17,Liga Sabseg,Farense,24.0,1020.0,0,1,0.0,1,425000.0
+7270,Portugal,2.Liga,,Liga Sabseg,Farense,26.0,499.0,0,0,0.0,1,100000.0
+7271,Portugal,2.Liga,,Liga Sabseg,Farense,39.0,1015.0,0,0,0.0,0,50000.0
+7297,Portugal,2.Liga,Mauretanien,Liga Sabseg,CD Tondela,26.0,1365.0,1,0,4.0,0,400000.0
+7298,Portugal,2.Liga,,Liga Sabseg,CD Tondela,24.0,639.0,0,0,0.0,1,100000.0
+7299,Portugal,2.Liga,Portugal U16,Liga Sabseg,CD Tondela,23.0,1416.0,0,1,0.0,0,75000.0
+7323,Portugal,2.Liga,,Liga Sabseg,Mafra,24.0,320.0,0,0,0.0,1,325000.0
+7324,Portugal,2.Liga,,Liga Sabseg,Mafra,25.0,679.0,0,0,0.0,1,275000.0
+7355,Portugal,2.Liga,,Liga Sabseg,Torreense,30.0,280.0,0,0,0.0,0,100000.0
+7356,Portugal,2.Liga,,Liga Sabseg,Torreense,29.0,685.0,0,0,0.0,0,100000.0
+7357,Portugal,2.Liga,,Liga Sabseg,Torreense,36.0,320.0,0,0,0.0,0,50000.0
+7358,Portugal,2.Liga,,Liga Sabseg,Torreense,22.0,1416.0,0,0,0.0,0,50000.0
+7388,Portugal,2.Liga,Portugal U19,Liga Sabseg,Trofense,28.0,300.0,0,1,0.0,1,300000.0
+7389,Portugal,2.Liga,Portugal U19,Liga Sabseg,Trofense,23.0,320.0,0,1,1.0,1,175000.0
+7413,Portugal,2.Liga,,Liga Sabseg,Oliveirense,33.0,293.0,0,0,0.0,0,200000.0
+7414,Portugal,2.Liga,,Liga Sabseg,Oliveirense,25.0,685.0,0,0,0.0,1,175000.0
+7415,Portugal,2.Liga,Guinea-Bissau,Liga Sabseg,Oliveirense,28.0,1004.0,0,1,2.0,0,50000.0
+7440,Portugal,2.Liga,Portugal U20,Liga Sabseg,Penafiel,26.0,1387.0,0,1,0.0,0,150000.0
+7441,Portugal,2.Liga,,Liga Sabseg,Penafiel,32.0,685.0,0,0,0.0,0,125000.0
+7442,Portugal,2.Liga,,Liga Sabseg,Penafiel,23.0,685.0,0,0,0.0,0,100000.0
+7468,Portugal,2.Liga,,Liga Sabseg,CD Feirense,23.0,677.0,0,0,0.0,1,325000.0
+7469,Portugal,2.Liga,,Liga Sabseg,CD Feirense,28.0,1050.0,0,0,0.0,0,150000.0
+7470,Portugal,2.Liga,Portugal U20,Liga Sabseg,CD Feirense,24.0,313.0,0,1,1.0,0,125000.0
+7492,Portugal,2.Liga,,Liga Sabseg,CF Estrela,32.0,307.0,0,0,0.0,0,175000.0
+7493,Portugal,2.Liga,Portugal U16,Liga Sabseg,CF Estrela,22.0,316.0,0,1,0.0,1,75000.0
+7494,Portugal,2.Liga,,Liga Sabseg,CF Estrela,25.0,320.0,0,0,0.0,1,75000.0
+7495,Portugal,2.Liga,,Liga Sabseg,CF Estrela,38.0,319.0,0,0,0.0,0,50000.0
+7521,Portugal,2.Liga,Portugal U21,Liga Sabseg,B SAD,22.0,281.0,1,0,1.0,1,550000.0
+7522,Portugal,2.Liga,Kap Verde,Liga Sabseg,B SAD,24.0,320.0,1,0,0.0,1,150000.0
+7523,Portugal,2.Liga,Portugal U16,Liga Sabseg,B SAD,24.0,685.0,0,1,0.0,0,125000.0
+7546,Portugal,2.Liga,Portugal U21,Liga Sabseg,Vilafranquense,35.0,320.0,0,1,4.0,0,200000.0
+7547,Portugal,2.Liga,Portugal U20,Liga Sabseg,Vilafranquense,25.0,320.0,0,1,3.0,0,75000.0
+7575,Portugal,2.Liga,,Liga Sabseg,CD Nacional,25.0,1000.0,0,0,0.0,1,200000.0
+7576,Portugal,2.Liga,,Liga Sabseg,CD Nacional,23.0,106.0,0,0,0.0,1,150000.0
+7577,Portugal,2.Liga,,Liga Sabseg,CD Nacional,27.0,320.0,0,0,0.0,0,75000.0
+7602,Portugal,2.Liga,Frankreich U20,Liga Sabseg,Leixões,29.0,685.0,0,1,3.0,0,375000.0
+7603,Portugal,2.Liga,Serbien U21,Liga Sabseg,Leixões,35.0,1411.0,0,1,2.0,0,50000.0
+7604,Portugal,2.Liga,,Liga Sabseg,Leixões,34.0,318.0,0,0,0.0,0,25000.0
+7629,Portugal,2.Liga,,Liga Sabseg,SC Covilhã,26.0,1781.0,0,0,0.0,1,250000.0
+7630,Portugal,2.Liga,,Liga Sabseg,SC Covilhã,30.0,320.0,0,0,0.0,0,100000.0
+7631,Portugal,2.Liga,Portugal U20,Liga Sabseg,SC Covilhã,36.0,6164.0,0,1,3.0,0,25000.0
+7655,England,1.Liga,Brasilien,Premier League,Manchester City,29.0,2146.0,1,0,19.0,0,45000000.0
+7656,England,1.Liga,Deutschland U19,Premier League,Manchester City,30.0,320.0,0,1,0.0,1,6000000.0
+7657,England,1.Liga,England,Premier League,Manchester City,37.0,666.0,0,1,4.0,0,250000.0
+7679,England,1.Liga,Senegal,Premier League,FC Chelsea,31.0,965.0,0,0,29.0,0,18000000.0
+7680,England,1.Liga,Spanien,Premier League,FC Chelsea,28.0,1743.0,1,0,13.0,0,15000000.0
+7681,England,1.Liga,USA U20,Premier League,FC Chelsea,19.0,288.0,1,0,5.0,1,8000000.0
+7682,England,1.Liga,England,Premier League,FC Chelsea,30.0,658.0,0,1,0.0,0,2000000.0
+7711,England,1.Liga,England,Premier League,FC Arsenal,25.0,635.0,1,0,3.0,1,38000000.0
+7712,England,1.Liga,USA,Premier League,FC Arsenal,28.0,320.0,0,0,25.0,1,5000000.0
+7734,England,1.Liga,Brasilien,Premier League,Liverpool,30.0,1763.0,0,0,61.0,0,45000000.0
+7735,England,1.Liga,Irland,Premier League,Liverpool,24.0,1416.0,1,0,10.0,1,8000000.0
+7736,England,1.Liga,Spanien,Premier League,Liverpool,36.0,1381.0,0,1,0.0,0,1000000.0
+7764,England,1.Liga,Spanien,Premier League,Manchester Utd.,32.0,4338.0,0,1,45.0,0,15000000.0
+7765,England,1.Liga,England,Premier League,Manchester Utd.,30.0,131.0,0,1,9.0,0,1500000.0
+7766,England,1.Liga,England,Premier League,Manchester Utd.,37.0,684.0,0,1,3.0,0,600000.0
+7796,England,1.Liga,Frankreich,Premier League,Tottenham,36.0,3911.0,0,1,145.0,0,4000000.0
+7797,England,1.Liga,England,Premier League,Tottenham,35.0,320.0,1,0,6.0,0,1500000.0
+7798,England,1.Liga,England U19,Premier League,Tottenham,24.0,1416.0,0,1,1.0,0,500000.0
+7799,England,1.Liga,England U21,Premier League,Tottenham,24.0,654.0,0,1,0.0,1,300000.0
+7821,England,1.Liga,England,Premier League,Newcastle Utd.,31.0,320.0,0,0,10.0,1,18000000.0
+7822,England,1.Liga,Slowakei,Premier League,Newcastle Utd.,34.0,1781.0,1,0,34.0,0,2500000.0
+7823,England,1.Liga,Deutschland U21,Premier League,Newcastle Utd.,29.0,247.0,0,1,1.0,0,1500000.0
+7824,England,1.Liga,,Premier League,Newcastle Utd.,31.0,1048.0,0,0,0.0,0,300000.0
+7850,England,1.Liga,Frankreich,Premier League,West Ham Utd.,30.0,320.0,1,0,5.0,0,8000000.0
+7851,England,1.Liga,Polen,Premier League,West Ham Utd.,38.0,1781.0,0,1,57.0,0,1000000.0
+7872,England,1.Liga,Wales,Premier League,Leicester City,29.0,1762.0,1,0,30.0,0,8000000.0
+7873,England,1.Liga,Dänemark,Premier League,Leicester City,25.0,1050.0,0,0,0.0,1,2000000.0
+7874,England,1.Liga,England U21,Premier League,Leicester City,33.0,278.0,0,1,0.0,0,600000.0
+7899,England,1.Liga,Argentinien,Premier League,Aston Villa,30.0,973.0,1,0,28.0,0,28000000.0
+7900,England,1.Liga,Schweden,Premier League,Aston Villa,33.0,320.0,1,0,65.0,0,2000000.0
+7901,England,1.Liga,England U19,Premier League,Aston Villa,30.0,3607.0,0,1,2.0,0,600000.0
+7902,England,1.Liga,Finnland,Premier League,Aston Villa,21.0,320.0,1,0,1.0,1,400000.0
+7922,England,1.Liga,Portugal,Premier League,Wolverhampton,30.0,671.0,1,0,0.0,1,18000000.0
+7923,England,1.Liga,,Premier League,Wolverhampton,29.0,112.0,0,0,0.0,0,1800000.0
+7924,England,1.Liga,England U20,Premier League,Wolverhampton,21.0,685.0,0,1,0.0,1,200000.0
+7950,England,1.Liga,Irland,Premier League,Southampton,21.0,320.0,1,0,13.0,1,18000000.0
+7951,England,1.Liga,England,Premier League,Southampton,33.0,2480.0,0,1,1.0,0,2000000.0
+7952,England,1.Liga,Argentinien,Premier League,Southampton,41.0,527.0,0,1,5.0,0,200000.0
+7980,England,1.Liga,Spanien,Premier League,Brighton,25.0,1050.0,1,0,2.0,1,32000000.0
+7981,England,1.Liga,England U21,Premier League,Brighton,32.0,1781.0,0,1,7.0,0,1000000.0
+7982,England,1.Liga,Kanada,Premier League,Brighton,23.0,292.0,1,0,0.0,1,200000.0
+8005,England,1.Liga,England,Premier League,FC Everton,29.0,2146.0,1,0,52.0,0,25000000.0
+8006,England,1.Liga,Bosnien,Premier League,FC Everton,35.0,666.0,0,1,63.0,0,1000000.0
+8007,England,1.Liga,England U21,Premier League,FC Everton,39.0,635.0,0,1,0.0,0,200000.0
+8030,England,1.Liga,England,Premier League,Nottm Forest,26.0,319.0,0,0,1.0,1,22000000.0
+8031,England,1.Liga,Costa Rica,Premier League,Nottm Forest,36.0,106.0,0,0,110.0,0,5000000.0
+8032,England,1.Liga,Wales,Premier League,Nottm Forest,36.0,306.0,0,0,109.0,0,500000.0
+8065,England,1.Liga,Spanien,Premier League,FC Brentford,27.0,1411.0,1,0,2.0,1,25000000.0
+8066,England,1.Liga,Albanien,Premier League,FC Brentford,28.0,307.0,1,0,22.0,0,4000000.0
+8067,England,1.Liga,England U20,Premier League,FC Brentford,20.0,320.0,1,0,2.0,1,500000.0
+8090,England,1.Liga,Frankreich U21,Premier League,Leeds United,23.0,1024.0,1,0,9.0,1,22000000.0
+8091,England,1.Liga,Norwegen U21,Premier League,Leeds United,22.0,655.0,1,0,18.0,1,2000000.0
+8092,England,1.Liga,Spanien U23,Premier League,Leeds United,32.0,281.0,0,1,1.0,0,1200000.0
+8114,England,1.Liga,England,Premier League,Crystal Palace,30.0,320.0,0,1,3.0,0,4000000.0
+8115,England,1.Liga,,Premier League,Crystal Palace,36.0,1781.0,0,0,0.0,0,1500000.0
+8116,England,1.Liga,England U19,Premier League,Crystal Palace,19.0,126.0,1,0,0.0,1,250000.0
+8139,England,1.Liga,Deutschland,Premier League,FC Fulham,31.0,288.0,1,0,9.0,0,10000000.0
+8140,England,1.Liga,Slowakei,Premier League,FC Fulham,26.0,1416.0,1,0,19.0,0,3500000.0
+8163,England,1.Liga,Brasilien,Premier League,Bournemouth,33.0,283.0,0,1,1.0,0,2500000.0
+8164,England,1.Liga,Irland,Premier League,Bournemouth,23.0,1050.0,1,0,3.0,0,2000000.0
+8165,England,1.Liga,Irland,Premier League,Bournemouth,36.0,111.0,0,1,50.0,0,500000.0
+8190,England,2.Liga,Kosovo,Championship,FC Burnley,24.0,299.0,1,0,28.0,1,6000000.0
+8191,England,2.Liga,Nordirland,Championship,FC Burnley,26.0,1384.0,1,0,25.0,0,900000.0
+8192,England,2.Liga,Italien U20,Championship,FC Burnley,20.0,264.0,0,1,1.0,1,250000.0
+8216,England,2.Liga,Österreich,Championship,FC Watford,28.0,2146.0,0,1,13.0,0,2500000.0
+8217,England,2.Liga,Nigeria,Championship,FC Watford,23.0,501.0,1,0,16.0,0,2500000.0
+8218,England,2.Liga,,Championship,FC Watford,35.0,302.0,0,0,0.0,0,250000.0
+8246,England,2.Liga,England U19,Championship,Sheff Utd,32.0,1024.0,0,1,3.0,1,700000.0
+8247,England,2.Liga,Wales,Championship,Sheff Utd,30.0,477.0,1,0,4.0,0,500000.0
+8273,England,2.Liga,Schottland,Championship,Norwich City,27.0,685.0,1,0,2.0,0,3000000.0
+8274,England,2.Liga,Niederlande,Championship,Norwich City,35.0,1758.0,0,1,15.0,0,1000000.0
+8275,England,2.Liga,Nordirland,Championship,Norwich City,38.0,2493.0,0,1,33.0,0,200000.0
+8298,England,2.Liga,USA,Championship,Middlesbrough,28.0,302.0,0,0,29.0,0,4500000.0
+8299,England,2.Liga,,Championship,Middlesbrough,28.0,320.0,0,0,0.0,1,300000.0
+8300,England,2.Liga,England U19,Championship,Middlesbrough,35.0,646.0,0,1,2.0,0,250000.0
+8323,England,2.Liga,Belgien,Championship,Blackburn,30.0,994.0,1,0,0.0,0,2500000.0
+8324,England,2.Liga,England U20,Championship,Blackburn,25.0,943.0,0,1,0.0,0,500000.0
+8325,England,2.Liga,,Championship,Blackburn,23.0,320.0,0,0,0.0,1,150000.0
+8351,England,2.Liga,England U16,Championship,West Brom,26.0,2146.0,0,1,4.0,1,500000.0
+8352,England,2.Liga,England U20,Championship,West Brom,34.0,984.0,0,1,1.0,0,350000.0
+8375,England,2.Liga,England U21,Championship,AFC Sunderland,23.0,685.0,1,0,0.0,1,2800000.0
+8376,England,2.Liga,,Championship,AFC Sunderland,25.0,295.0,0,0,0.0,1,200000.0
+8401,England,2.Liga,,Championship,Hull City,32.0,106.0,0,0,0.0,0,1200000.0
+8402,England,2.Liga,,Championship,Hull City,29.0,1416.0,0,0,0.0,1,1000000.0
+8403,England,2.Liga,,Championship,Hull City,24.0,685.0,0,0,0.0,1,600000.0
+8404,England,2.Liga,Frankreich U20,Championship,Hull City,20.0,281.0,1,0,1.0,0,600000.0
+8429,England,2.Liga,England U21,Championship,Preston NE,26.0,320.0,0,1,6.0,0,6000000.0
+8430,England,2.Liga,Wales,Championship,Preston NE,32.0,320.0,0,1,0.0,0,250000.0
+8453,England,2.Liga,Montenegro,Championship,Stoke City,25.0,112.0,1,0,6.0,1,2000000.0
+8454,England,2.Liga,Irland U17,Championship,Stoke City,29.0,685.0,0,1,5.0,1,500000.0
+8455,England,2.Liga,England,Championship,Stoke City,35.0,532.0,0,1,0.0,0,250000.0
+8456,England,2.Liga,Kamerun,Championship,Stoke City,21.0,1050.0,0,1,0.0,1,150000.0
+8477,England,2.Liga,Senegal,Championship,QPR,28.0,2455.0,1,0,4.0,1,1500000.0
+8478,England,2.Liga,Schottland,Championship,QPR,30.0,679.0,0,1,1.0,0,250000.0
+8479,England,2.Liga,,Championship,QPR,21.0,839.0,0,0,0.0,1,100000.0
+8503,England,2.Liga,Philippinen,Championship,Birmingham City,33.0,978.0,1,0,68.0,0,600000.0
+8504,England,2.Liga,England,Championship,Birmingham City,36.0,307.0,0,1,1.0,0,300000.0
+8529,England,2.Liga,,Championship,Swansea City,25.0,491.0,0,0,0.0,0,500000.0
+8530,England,2.Liga,,Championship,Swansea City,24.0,1781.0,0,0,0.0,1,400000.0
+8531,England,2.Liga,Dänemark U19,Championship,Swansea City,22.0,89.0,0,1,1.0,1,300000.0
+8551,England,2.Liga,,Championship,Cardiff City,30.0,320.0,0,0,0.0,1,900000.0
+8552,England,2.Liga,England U20,Championship,Cardiff City,29.0,320.0,0,1,0.0,0,400000.0
+8579,England,2.Liga,England U21,Championship,FC Millwall,29.0,685.0,0,1,0.0,0,600000.0
+8580,England,2.Liga,Polen,Championship,FC Millwall,35.0,1206.0,0,1,1.0,0,250000.0
+8581,England,2.Liga,,Championship,FC Millwall,27.0,286.0,0,0,0.0,0,200000.0
+8582,England,2.Liga,England U18,Championship,FC Millwall,24.0,320.0,0,1,2.0,1,150000.0
+8604,England,2.Liga,,Championship,Coventry City,30.0,1416.0,0,0,0.0,1,500000.0
+8605,England,2.Liga,,Championship,Coventry City,32.0,683.0,0,0,0.0,0,300000.0
+8629,England,2.Liga,USA,Championship,Luton Town,27.0,319.0,0,0,8.0,0,1000000.0
+8630,England,2.Liga,,Championship,Luton Town,25.0,107.0,0,0,0.0,0,400000.0
+8631,England,2.Liga,,Championship,Luton Town,31.0,2144.0,0,0,0.0,0,250000.0
+8656,England,2.Liga,,Championship,FC Reading,28.0,320.0,0,0,0.0,1,1000000.0
+8657,England,2.Liga,Australien U23,Championship,FC Reading,32.0,320.0,0,1,3.0,0,250000.0
+8683,England,2.Liga,,Championship,FC Blackpool,25.0,685.0,0,0,0.0,0,600000.0
+8684,England,2.Liga,Wales,Championship,FC Blackpool,32.0,1209.0,0,1,0.0,0,300000.0
+8685,England,2.Liga,,Championship,FC Blackpool,28.0,810.0,0,0,0.0,1,100000.0
+8713,England,2.Liga,Irland,Championship,Bristol City,26.0,2877.0,0,0,0.0,1,800000.0
+8735,England,2.Liga,Tschechien,Championship,Huddersfield,34.0,106.0,1,0,53.0,0,2500000.0
+8736,England,2.Liga,England U20,Championship,Huddersfield,30.0,685.0,0,1,0.0,1,900000.0
+8737,England,2.Liga,,Championship,Huddersfield,28.0,106.0,0,0,0.0,1,300000.0
+8738,England,2.Liga,Australien U23,Championship,Huddersfield,20.0,685.0,1,0,0.0,1,200000.0
+8768,England,2.Liga,Schweden,Championship,Rotherham,24.0,987.0,1,0,0.0,1,2000000.0
+8769,England,2.Liga,,Championship,Rotherham,27.0,922.0,0,0,0.0,0,300000.0
+8770,England,2.Liga,Schottland U17,Championship,Rotherham,21.0,257.0,0,1,0.0,1,100000.0
+8795,England,2.Liga,England U21,Championship,Wigan Athletic,33.0,685.0,0,1,3.0,0,350000.0
+8796,England,2.Liga,,Championship,Wigan Athletic,34.0,2109.0,0,0,0.0,0,150000.0
+8822,England,3.Liga,England U21,League One,Bolton,20.0,489.0,1,0,2.0,1,2500000.0
+8823,England,3.Liga,England C,League One,Bolton,29.0,685.0,0,1,0.0,0,200000.0
+8847,England,3.Liga,England U21,League One,Derby County,27.0,319.0,0,1,0.0,1,300000.0
+8848,England,3.Liga,England U17,League One,Derby County,27.0,108.0,0,1,1.0,1,200000.0
+8849,England,3.Liga,England,League One,Derby County,34.0,308.0,0,1,0.0,0,100000.0
+8870,England,3.Liga,,League One,Peterborough,29.0,131.0,0,0,0.0,0,350000.0
+8871,England,3.Liga,,League One,Peterborough,21.0,1013.0,0,0,0.0,1,150000.0
+8893,England,3.Liga,England U21,League One,Ipswich Town,27.0,483.0,0,1,1.0,1,1000000.0
+8894,England,3.Liga,,League One,Ipswich Town,27.0,194.0,0,0,0.0,0,250000.0
+8895,England,3.Liga,Tschechien U20,League One,Ipswich Town,32.0,685.0,0,1,1.0,0,250000.0
+8896,England,3.Liga,England U17,League One,Ipswich Town,24.0,471.0,0,1,3.0,1,100000.0
+8922,England,3.Liga,England U16,League One,FC Barnsley,26.0,1416.0,0,1,0.0,0,700000.0
+8923,England,3.Liga,,League One,FC Barnsley,26.0,107.0,0,0,0.0,1,400000.0
+8924,England,3.Liga,Neuseeland,League One,FC Barnsley,22.0,320.0,1,0,0.0,0,150000.0
+8951,England,3.Liga,,League One,FC Portsmouth,22.0,302.0,0,0,0.0,0,450000.0
+8952,England,3.Liga,,League One,FC Portsmouth,28.0,117.0,0,0,0.0,0,400000.0
+8979,England,3.Liga,,League One,Plymouth Argyle,23.0,2146.0,0,0,0.0,1,1000000.0
+8980,England,3.Liga,,League One,Plymouth Argyle,26.0,685.0,0,0,0.0,1,250000.0
+8981,England,3.Liga,,League One,Plymouth Argyle,23.0,223.0,0,0,0.0,1,150000.0
+9008,England,3.Liga,,League One,Sheff. Wed.,27.0,3607.0,0,0,0.0,0,450000.0
+9009,England,3.Liga,,League One,Sheff. Wed.,37.0,320.0,0,0,0.0,0,150000.0
+9032,England,3.Liga,,League One,MK Dons,23.0,312.0,0,0,0.0,1,1000000.0
+9033,England,3.Liga,,League One,MK Dons,25.0,685.0,0,0,0.0,1,200000.0
+9034,England,3.Liga,,League One,MK Dons,37.0,236.0,0,0,11.0,0,150000.0
+9059,England,3.Liga,,League One,Charlton Athl.,23.0,2146.0,0,0,0.0,1,400000.0
+9060,England,3.Liga,,League One,Charlton Athl.,26.0,320.0,0,0,11.0,1,300000.0
+9061,England,3.Liga,,League One,Charlton Athl.,23.0,685.0,0,0,0.0,1,100000.0
+9082,England,3.Liga,,League One,Bristol Rovers,23.0,118.0,0,0,0.0,1,300000.0
+9083,England,3.Liga,,League One,Bristol Rovers,32.0,663.0,0,0,0.0,1,250000.0
+9084,England,3.Liga,,League One,Bristol Rovers,36.0,1416.0,0,0,0.0,0,100000.0
+9110,England,3.Liga,,League One,Exeter City,29.0,295.0,0,0,0.0,0,400000.0
+9111,England,3.Liga,,League One,Exeter City,32.0,106.0,0,0,0.0,0,250000.0
+9112,England,3.Liga,,League One,Exeter City,18.0,685.0,0,0,0.0,1,150000.0
+9136,England,3.Liga,,League One,Lincoln City,21.0,313.0,0,0,0.0,1,900000.0
+9137,England,3.Liga,,League One,Lincoln City,24.0,481.0,0,0,0.0,1,150000.0
+9161,England,3.Liga,,League One,Oxford United,33.0,2511.0,0,0,1.0,0,150000.0
+9162,England,3.Liga,,League One,Oxford United,23.0,300.0,0,0,0.0,1,150000.0
+9186,England,3.Liga,,League One,Fleetwood Town,30.0,320.0,0,0,0.0,1,300000.0
+9187,England,3.Liga,,League One,Fleetwood Town,22.0,132.0,0,0,0.0,1,100000.0
+9211,England,3.Liga,,League One,Cambridge Utd.,26.0,2146.0,0,0,3.0,1,250000.0
+9212,England,3.Liga,,League One,Cambridge Utd.,25.0,652.0,0,0,0.0,1,150000.0
+9213,England,3.Liga,,League One,Cambridge Utd.,21.0,320.0,0,0,0.0,1,100000.0
+9214,England,3.Liga,,League One,Cambridge Utd.,20.0,320.0,0,0,0.0,1,50000.0
+9241,England,3.Liga,,League One,Wycombe Wand.,26.0,272.0,0,0,0.0,1,700000.0
+9242,England,3.Liga,,League One,Wycombe Wand.,21.0,111.0,0,0,0.0,1,200000.0
+9243,England,3.Liga,,League One,Wycombe Wand.,19.0,296.0,0,0,0.0,1,50000.0
+9266,England,3.Liga,,League One,Burton Albion,30.0,124.0,0,0,0.0,1,350000.0
+9267,England,3.Liga,,League One,Burton Albion,29.0,1307.0,0,0,0.0,0,300000.0
+9268,England,3.Liga,,League One,Burton Albion,21.0,131.0,0,0,0.0,0,300000.0
+9298,England,3.Liga,,League One,Forest Green,25.0,127.0,0,0,13.0,0,250000.0
+9299,England,3.Liga,,League One,Forest Green,25.0,1781.0,0,0,0.0,1,150000.0
+9300,England,3.Liga,,League One,Forest Green,20.0,320.0,0,0,0.0,1,50000.0
+9324,England,3.Liga,,League One,FC Morecambe,30.0,320.0,0,0,0.0,1,350000.0
+9325,England,3.Liga,,League One,FC Morecambe,30.0,467.0,0,0,0.0,0,200000.0
+9326,England,3.Liga,,League One,FC Morecambe,20.0,1050.0,0,0,0.0,1,50000.0
+9349,England,3.Liga,,League One,Shrewsbury Town,29.0,685.0,0,0,1.0,0,450000.0
+9350,England,3.Liga,,League One,Shrewsbury Town,26.0,1202.0,0,0,0.0,1,150000.0
+9351,England,3.Liga,,League One,Shrewsbury Town,20.0,685.0,0,0,0.0,1,50000.0
+9372,England,3.Liga,,League One,Port Vale,23.0,685.0,0,0,0.0,1,200000.0
+9373,England,3.Liga,,League One,Port Vale,25.0,279.0,0,0,0.0,1,200000.0
+9399,England,3.Liga,,League One,Cheltenham,25.0,299.0,0,0,0.0,1,500000.0
+9400,England,3.Liga,,League One,Cheltenham,26.0,313.0,0,0,0.0,1,50000.0
+9422,England,3.Liga,,League One,Accrington St.,22.0,1416.0,0,0,0.0,0,300000.0
+9423,England,3.Liga,,League One,Accrington St.,24.0,320.0,0,0,0.0,1,250000.0
+9424,England,3.Liga,,League One,Accrington St.,20.0,1050.0,0,0,0.0,1,100000.0
+9453,Niederlande,1.Liga,,Eredivisie,Ajax Amsterdam,30.0,131.0,0,0,0.0,0,10000000.0
+9454,Niederlande,1.Liga,,Eredivisie,Ajax Amsterdam,39.0,685.0,0,0,2.0,0,250000.0
+9455,Niederlande,1.Liga,,Eredivisie,Ajax Amsterdam,40.0,1019.0,0,0,63.0,0,100000.0
+9479,Niederlande,1.Liga,,Eredivisie,PSV Eindhoven,30.0,320.0,0,0,0.0,0,12000000.0
+9480,Niederlande,1.Liga,,Eredivisie,PSV Eindhoven,26.0,685.0,0,0,0.0,0,3000000.0
+9481,Niederlande,1.Liga,,Eredivisie,PSV Eindhoven,18.0,320.0,0,0,0.0,1,300000.0
+9482,Niederlande,1.Liga,,Eredivisie,PSV Eindhoven,39.0,320.0,0,0,14.0,0,100000.0
+9503,Niederlande,1.Liga,,Eredivisie,Feyenoord,25.0,2511.0,0,0,6.0,1,13000000.0
+9504,Niederlande,1.Liga,,Eredivisie,Feyenoord,27.0,274.0,0,0,0.0,0,1000000.0
+9505,Niederlande,1.Liga,,Eredivisie,Feyenoord,33.0,685.0,0,0,41.0,1,500000.0
+9506,Niederlande,1.Liga,,Eredivisie,Feyenoord,21.0,320.0,0,0,1.0,1,100000.0
+9530,Niederlande,1.Liga,,Eredivisie,AZ Alkmaar,31.0,128.0,0,0,79.0,0,4000000.0
+9531,Niederlande,1.Liga,,Eredivisie,AZ Alkmaar,30.0,1050.0,0,0,4.0,1,650000.0
+9532,Niederlande,1.Liga,,Eredivisie,AZ Alkmaar,20.0,320.0,0,0,0.0,1,500000.0
+9533,Niederlande,2.Liga,,Keuken Kampioen Divisie,AZ Alkmaar II,18.0,320.0,0,0,1.0,1,300000.0
+9558,Niederlande,1.Liga,,Eredivisie,FC Utrecht,28.0,320.0,0,0,0.0,0,3000000.0
+9559,Niederlande,1.Liga,,Eredivisie,FC Utrecht,23.0,1050.0,0,0,1.0,0,800000.0
+9560,Niederlande,1.Liga,,Eredivisie,FC Utrecht,24.0,1416.0,0,0,0.0,0,200000.0
+9561,Niederlande,1.Liga,,Eredivisie,FC Utrecht,21.0,320.0,0,0,0.0,1,200000.0
+9588,Niederlande,1.Liga,Deutschland U20,Eredivisie,Twente Enschede,32.0,685.0,0,1,2.0,0,2500000.0
+9589,Niederlande,1.Liga,Polen,Eredivisie,Twente Enschede,36.0,320.0,0,1,14.0,0,300000.0
+9590,Niederlande,1.Liga,Marokko U23,Eredivisie,Twente Enschede,23.0,295.0,0,1,1.0,0,75000.0
+9591,Niederlande,1.Liga,,Eredivisie,Twente Enschede,20.0,320.0,0,0,0.0,1,25000.0
+9612,Niederlande,1.Liga,Niederlande,Eredivisie,Vitesse Arnheim,23.0,274.0,1,0,0.0,0,2000000.0
+9613,Niederlande,1.Liga,Deutschland U21,Eredivisie,Vitesse Arnheim,24.0,672.0,0,1,6.0,0,600000.0
+9614,Niederlande,1.Liga,Niederlande U19,Eredivisie,Vitesse Arnheim,21.0,685.0,0,1,1.0,1,350000.0
+9615,Niederlande,1.Liga,Niederlande U19,Eredivisie,Vitesse Arnheim,27.0,2511.0,0,1,1.0,0,300000.0
+9616,Niederlande,1.Liga,,Eredivisie,Vitesse Arnheim,19.0,320.0,0,0,0.0,1,25000.0
+9640,Niederlande,1.Liga,Niederlande,Eredivisie,SC Heerenveen,29.0,320.0,0,0,5.0,1,5000000.0
+9641,Niederlande,1.Liga,,Eredivisie,SC Heerenveen,27.0,685.0,0,0,0.0,0,450000.0
+9642,Niederlande,1.Liga,,Eredivisie,SC Heerenveen,27.0,1050.0,0,0,0.0,0,50000.0
+9666,Niederlande,1.Liga,Niederlande U20,Eredivisie,FC Groningen,26.0,319.0,0,1,3.0,0,800000.0
+9667,Niederlande,1.Liga,Niederlande U20,Eredivisie,FC Groningen,29.0,685.0,0,1,3.0,0,500000.0
+9668,Niederlande,1.Liga,,Eredivisie,FC Groningen,22.0,1357.0,0,0,0.0,1,25000.0
+9695,Niederlande,1.Liga,Kroatien U21,Eredivisie,Fortuna Sittard,23.0,314.0,1,0,4.0,1,1500000.0
+9696,Niederlande,1.Liga,Niederlande U21,Eredivisie,Fortuna Sittard,26.0,1050.0,0,1,1.0,0,600000.0
+9697,Niederlande,1.Liga,,Eredivisie,Fortuna Sittard,21.0,685.0,0,0,0.0,1,50000.0
+9721,Niederlande,1.Liga,Niederlande,Eredivisie,NEC Nijmegen,34.0,282.0,1,0,65.0,0,3000000.0
+9722,Niederlande,1.Liga,,Eredivisie,NEC Nijmegen,29.0,1416.0,0,0,0.0,0,600000.0
+9723,Niederlande,1.Liga,Niederlande U19,Eredivisie,NEC Nijmegen,20.0,685.0,0,0,7.0,1,75000.0
+9724,Niederlande,Jugendliga,,U21 Div. 2 Frühling,NEC U21,21.0,320.0,0,0,0.0,1,25000.0
+9748,Niederlande,1.Liga,Niederlande U19,Eredivisie,Sparta R.,27.0,320.0,0,1,4.0,1,2000000.0
+9749,Niederlande,1.Liga,,Eredivisie,Sparta R.,31.0,237.0,0,0,0.0,1,225000.0
+9750,Niederlande,1.Liga,,Eredivisie,Sparta R.,32.0,1781.0,0,0,0.0,0,200000.0
+9751,Niederlande,1.Liga,,Eredivisie,Sparta R.,23.0,320.0,0,0,0.0,1,100000.0
+9772,Niederlande,1.Liga,Portugal U21,Eredivisie,SC Cambuur,23.0,313.0,0,1,2.0,0,700000.0
+9773,Niederlande,1.Liga,,Eredivisie,SC Cambuur,36.0,298.0,0,0,0.0,0,350000.0
+9774,Niederlande,1.Liga,,Eredivisie,SC Cambuur,21.0,1050.0,0,0,0.0,1,25000.0
+9802,Niederlande,1.Liga,,Eredivisie,Excelsior,26.0,685.0,0,0,0.0,1,850000.0
+9803,Niederlande,1.Liga,Niederlande U20,Eredivisie,Excelsior,28.0,259.0,0,1,1.0,0,275000.0
+9804,Niederlande,1.Liga,,Eredivisie,Excelsior,19.0,685.0,0,0,0.0,0,125000.0
+9830,Niederlande,1.Liga,Serbien U21,Eredivisie,FC Volendam,21.0,651.0,1,0,2.0,1,1000000.0
+9831,Niederlande,1.Liga,,Eredivisie,FC Volendam,23.0,1050.0,0,0,0.0,1,175000.0
+9832,Niederlande,1.Liga,,Eredivisie,FC Volendam,19.0,320.0,0,0,0.0,1,50000.0
+9862,Niederlande,1.Liga,,Eredivisie,RKC Waalwijk,27.0,2877.0,0,0,0.0,1,800000.0
+9863,Niederlande,1.Liga,Portugal U21,Eredivisie,RKC Waalwijk,26.0,681.0,0,1,16.0,0,300000.0
+9864,Niederlande,1.Liga,,Eredivisie,RKC Waalwijk,26.0,471.0,0,0,0.0,0,100000.0
+9865,Niederlande,1.Liga,Niederlande U18,Eredivisie,RKC Waalwijk,22.0,320.0,0,1,1.0,1,25000.0
+9890,Niederlande,1.Liga,Niederlande U21,Eredivisie,FC Emmen,28.0,266.0,0,1,13.0,0,600000.0
+9891,Niederlande,1.Liga,Deutschland,Eredivisie,FC Emmen,27.0,306.0,0,1,0.0,0,500000.0
+9892,Niederlande,1.Liga,,Eredivisie,FC Emmen,22.0,670.0,0,0,0.0,1,50000.0
+9893,Niederlande,1.Liga,,Eredivisie,FC Emmen,21.0,320.0,0,0,0.0,1,25000.0
+9920,Niederlande,1.Liga,Niederlande U20,Eredivisie,Go Ahead Eagles,25.0,320.0,0,1,2.0,1,650000.0
+9921,Niederlande,1.Liga,Niederlande B,Eredivisie,Go Ahead Eagles,34.0,288.0,0,1,1.0,0,300000.0
+9922,Niederlande,1.Liga,Deutschland U21,Eredivisie,Go Ahead Eagles,23.0,213.0,0,1,0.0,0,225000.0
+9923,Niederlande,1.Liga,,Eredivisie,Go Ahead Eagles,18.0,685.0,0,0,0.0,1,50000.0
+9947,Türkei,1.Liga,Uruguay,Süper Lig,Galatasaray,36.0,4297.0,0,0,133.0,0,1700000.0
+9948,Türkei,1.Liga,Türkei,Süper Lig,Galatasaray,27.0,1399.0,0,1,0.0,0,1000000.0
+9949,Türkei,1.Liga,Türkei U19,Süper Lig,Galatasaray,18.0,320.0,1,0,6.0,1,200000.0
+9976,Türkei,1.Liga,Türkei,Süper Lig,Fenerbahce,25.0,1407.0,1,0,5.0,0,13000000.0
+9977,Türkei,1.Liga,Türkei U23,Süper Lig,Fenerbahce,24.0,287.0,0,1,0.0,0,1200000.0
+9978,Türkei,1.Liga,Türkei U21,Süper Lig,Fenerbahce,20.0,776.0,1,0,3.0,1,150000.0
+10004,Türkei,1.Liga,Türkei,Süper Lig,Trabzonspor,27.0,3148.0,1,0,22.0,0,13000000.0
+10005,Türkei,1.Liga,Türkei U21,Süper Lig,Trabzonspor,22.0,1016.0,0,0,1.0,0,200000.0
+10006,Türkei,1.Liga,Türkei U21,Süper Lig,Trabzonspor,20.0,320.0,1,0,0.0,0,75000.0
+10007,Türkei,1.Liga,Türkei U18,Süper Lig,Trabzonspor,20.0,320.0,0,1,0.0,0,50000.0
+10034,Türkei,1.Liga,Türkei,Süper Lig,Besiktas,22.0,1781.0,0,1,0.0,0,6500000.0
+10035,Türkei,1.Liga,Türkei,Süper Lig,Besiktas,34.0,640.0,1,0,24.0,0,1000000.0
+10036,Türkei,1.Liga,Türkei U19,Süper Lig,Besiktas,19.0,1016.0,1,0,2.0,1,175000.0
+10037,Türkei,1.Liga,Türkei U23,Süper Lig,Besiktas,25.0,2115.0,0,1,0.0,0,75000.0
+10063,Türkei,1.Liga,Türkei,Süper Lig,Basaksehir,26.0,1353.0,0,1,0.0,0,700000.0
+10064,Türkei,1.Liga,Türkei,Süper Lig,Basaksehir,34.0,3232.0,0,1,36.0,0,500000.0
+10065,Türkei,1.Liga,,Süper Lig,Basaksehir,17.0,320.0,0,0,0.0,1,50000.0
+10066,Türkei,1.Liga,Türkei U18,Süper Lig,Basaksehir,17.0,684.0,1,0,0.0,1,50000.0
+10092,Türkei,1.Liga,,Süper Lig,Antalyaspor,32.0,117.0,0,0,0.0,0,1300000.0
+10093,Türkei,1.Liga,Türkei U21,Süper Lig,Antalyaspor,29.0,320.0,0,1,3.0,0,550000.0
+10094,Türkei,1.Liga,Türkei U23,Süper Lig,Antalyaspor,23.0,609.0,0,0,3.0,0,300000.0
+10123,Türkei,1.Liga,Türkei,Süper Lig,Adana Demirspor,33.0,320.0,0,1,0.0,1,700000.0
+10124,Türkei,1.Liga,Bosnien,Süper Lig,Adana Demirspor,26.0,311.0,0,1,0.0,0,150000.0
+10125,Türkei,1.Liga,,Süper Lig,Adana Demirspor,25.0,1209.0,0,0,0.0,0,50000.0
+10151,Türkei,1.Liga,Island,Süper Lig,Alanyaspor,28.0,275.0,1,0,22.0,0,1300000.0
+10152,Türkei,1.Liga,,Süper Lig,Alanyaspor,23.0,1416.0,0,0,0.0,1,100000.0
+10153,Türkei,1.Liga,,Süper Lig,Alanyaspor,25.0,2146.0,0,0,0.0,0,25000.0
+10154,Türkei,1.Liga,,Süper Lig,Alanyaspor,26.0,103.0,0,0,0.0,0,25000.0
+10181,Türkei,1.Liga,Türkei U23,Süper Lig,Kasimpasa,31.0,89.0,0,1,4.0,0,2200000.0
+10182,Türkei,1.Liga,,Süper Lig,Kasimpasa,22.0,972.0,0,0,0.0,1,250000.0
+10183,Türkei,1.Liga,Türkei,Süper Lig,Kasimpasa,33.0,985.0,0,1,0.0,0,200000.0
+10184,Türkei,1.Liga,Türkei U19,Süper Lig,Kasimpasa,20.0,320.0,0,1,1.0,1,50000.0
+10185,Türkei,1.Liga,,Süper Lig,Kasimpasa,22.0,1781.0,0,0,0.0,1,50000.0
+10214,Türkei,1.Liga,Bosnien,Süper Lig,Konyaspor,34.0,1007.0,1,0,48.0,0,1200000.0
+10215,Türkei,1.Liga,Türkei U23,Süper Lig,Konyaspor,27.0,320.0,0,1,0.0,0,350000.0
+10216,Türkei,1.Liga,Türkei U18,Süper Lig,Konyaspor,18.0,178.0,1,0,3.0,1,50000.0
+10217,Türkei,1.Liga,Türkei U19,Süper Lig,Konyaspor,18.0,320.0,1,0,2.0,1,50000.0
+10243,Türkei,1.Liga,Türkei U23,Süper Lig,Karagümrük,24.0,281.0,0,0,1.0,1,400000.0
+10244,Türkei,1.Liga,Italien,Süper Lig,Karagümrük,37.0,1000.0,0,1,6.0,0,150000.0
+10245,Türkei,1.Liga,Türkei U15,Süper Lig,Karagümrük,23.0,1402.0,0,1,2.0,0,50000.0
+10273,Türkei,1.Liga,Türkei,Süper Lig,Ankaragücü,28.0,251.0,0,1,1.0,0,1400000.0
+10274,Türkei,1.Liga,,Süper Lig,Ankaragücü,27.0,650.0,0,0,0.0,1,300000.0
+10275,Türkei,1.Liga,,Süper Lig,Ankaragücü,23.0,320.0,0,0,0.0,1,100000.0
+10276,Türkei,1.Liga,Türkei U19,Süper Lig,Ankaragücü,19.0,320.0,0,0,1.0,1,50000.0
+10304,Türkei,1.Liga,Türkei,Süper Lig,Sivasspor,32.0,2450.0,0,1,0.0,0,500000.0
+10305,Türkei,1.Liga,Türkei,Süper Lig,Sivasspor,32.0,1407.0,0,1,0.0,0,100000.0
+10306,Türkei,1.Liga,,Süper Lig,Sivasspor,20.0,320.0,0,0,0.0,1,75000.0
+10307,Türkei,1.Liga,,Süper Lig,Sivasspor,26.0,856.0,0,0,0.0,0,50000.0
+10335,Türkei,1.Liga,Niederlande U17,Süper Lig,Kayserispor,24.0,650.0,0,1,2.0,1,1700000.0
+10336,Türkei,1.Liga,,Süper Lig,Kayserispor,18.0,320.0,0,0,0.0,1,75000.0
+10337,Türkei,1.Liga,Türkei,Süper Lig,Kayserispor,35.0,631.0,0,1,2.0,0,50000.0
+10338,Türkei,1.Liga,,Süper Lig,Kayserispor,19.0,1016.0,0,0,0.0,1,50000.0
+10363,Türkei,1.Liga,Türkei U21,Süper Lig,Giresunspor,28.0,1216.0,0,1,1.0,0,700000.0
+10364,Türkei,1.Liga,Türkei U21,Süper Lig,Giresunspor,34.0,286.0,0,1,0.0,0,50000.0
+10365,Türkei,1.Liga,,Süper Lig,Giresunspor,20.0,685.0,0,0,0.0,1,50000.0
+10366,Türkei,1.Liga,,Süper Lig,Giresunspor,25.0,1781.0,0,0,0.0,1,25000.0
+10389,Türkei,1.Liga,Dänemark,Süper Lig,Istanbulspor,31.0,291.0,0,1,0.0,0,400000.0
+10390,Türkei,1.Liga,,Süper Lig,Istanbulspor,27.0,1003.0,0,0,0.0,0,75000.0
+10391,Türkei,1.Liga,Türkei U19,Süper Lig,Istanbulspor,25.0,88.0,0,1,1.0,1,50000.0
+10392,Türkei,1.Liga,,Süper Lig,Istanbulspor,18.0,483.0,0,0,0.0,0,25000.0
+10423,Türkei,1.Liga,Türkei,Süper Lig,Ümraniyespor,22.0,120.0,0,1,0.0,0,2000000.0
+10424,Türkei,1.Liga,,Süper Lig,Ümraniyespor,28.0,1013.0,0,0,0.0,1,300000.0
+10425,Türkei,1.Liga,Türkei,Süper Lig,Ümraniyespor,38.0,320.0,0,1,4.0,0,50000.0
+10426,Türkei,1.Liga,Türkei U18,Süper Lig,Ümraniyespor,26.0,680.0,0,1,6.0,1,50000.0
+10447,Türkei,1.Liga,Türkei U21,Süper Lig,Hatayspor,29.0,302.0,0,1,0.0,0,450000.0
+10448,Türkei,1.Liga,,Süper Lig,Hatayspor,24.0,980.0,0,0,0.0,1,50000.0
+10459,Türkei,1.Liga,Türkei U19,Süper Lig,Gaziantep FK,29.0,301.0,0,1,1.0,0,50000.0
+10466,Türkei,2.Liga,Polen U21,1.Lig,Samsunspor,31.0,320.0,0,1,10.0,0,300000.0
+10467,Türkei,2.Liga,Türkei U21,1.Lig,Samsunspor,30.0,672.0,0,1,6.0,0,100000.0
+10468,Türkei,2.Liga,Türkei U21,1.Lig,Samsunspor,23.0,111.0,0,1,0.0,0,25000.0
+10469,Türkei,2.Liga,,1.Lig,Samsunspor,18.0,320.0,0,0,0.0,1,25000.0
+10500,Türkei,2.Liga,Türkei U21,1.Lig,Eyüpspor,23.0,75.0,0,1,0.0,0,450000.0
+10501,Türkei,2.Liga,Türkei,1.Lig,Eyüpspor,33.0,319.0,0,1,2.0,0,150000.0
+10502,Türkei,2.Liga,,1.Lig,Eyüpspor,20.0,320.0,0,0,0.0,0,75000.0
+10503,Türkei,2.Liga,,1.Lig,Eyüpspor,35.0,974.0,0,0,0.0,0,25000.0
+10533,Türkei,2.Liga,Türkei U19,1.Lig,C. Rizespor,26.0,1393.0,0,1,0.0,1,550000.0
+10534,Türkei,2.Liga,Türkei U21,1.Lig,C. Rizespor,22.0,1568.0,0,1,0.0,0,200000.0
+10535,Türkei,2.Liga,Türkei U21,1.Lig,C. Rizespor,23.0,88.0,0,1,0.0,1,125000.0
+10565,Türkei,2.Liga,Griechenland U21,1.Lig,Bandirmaspor,31.0,320.0,0,1,5.0,0,200000.0
+10566,Türkei,2.Liga,,1.Lig,Bandirmaspor,24.0,685.0,0,0,0.0,0,100000.0
+10567,Türkei,2.Liga,,1.Lig,Bandirmaspor,19.0,616.0,0,0,0.0,1,25000.0
+10597,Türkei,2.Liga,Türkei U21,1.Lig,Göztepe,21.0,1781.0,0,0,0.0,1,275000.0
+10598,Türkei,2.Liga,,1.Lig,Göztepe,25.0,301.0,0,0,0.0,0,150000.0
+10599,Türkei,2.Liga,Türkei U16,1.Lig,Göztepe,18.0,306.0,0,1,1.0,1,50000.0
+10628,Türkei,2.Liga,,1.Lig,Bodrumspor,24.0,254.0,0,0,0.0,1,300000.0
+10629,Türkei,2.Liga,,1.Lig,Bodrumspor,20.0,650.0,0,0,0.0,1,50000.0
+10630,Türkei,2.Liga,,1.Lig,Bodrumspor,22.0,73.0,0,0,0.0,0,25000.0
+10631,Türkei,2.Liga,,1.Lig,Bodrumspor,35.0,1219.0,0,0,0.0,0,10000.0
+10658,Türkei,2.Liga,Türkei U19,1.Lig,A. Keciörengücü,32.0,490.0,0,1,0.0,0,175000.0
+10659,Türkei,2.Liga,,1.Lig,A. Keciörengücü,23.0,1355.0,0,0,0.0,1,75000.0
+10660,Türkei,2.Liga,,1.Lig,A. Keciörengücü,21.0,100.0,0,0,0.0,1,25000.0
+10685,Türkei,2.Liga,Türkei U19,1.Lig,Boluspor,28.0,310.0,0,1,0.0,0,500000.0
+10686,Türkei,2.Liga,,1.Lig,Boluspor,19.0,467.0,0,0,0.0,0,100000.0
+10687,Türkei,2.Liga,Türkei U21,1.Lig,Boluspor,28.0,98.0,0,1,1.0,0,25000.0
+10688,Türkei,2.Liga,,1.Lig,Boluspor,21.0,320.0,0,0,0.0,1,25000.0
+10715,Türkei,2.Liga,Türkei U23,1.Lig,Manisa FK,27.0,685.0,0,1,0.0,0,150000.0
+10716,Türkei,2.Liga,Türkei U23,1.Lig,Manisa FK,31.0,1370.0,0,1,0.0,0,150000.0
+10717,Türkei,2.Liga,,1.Lig,Manisa FK,21.0,1567.0,0,0,0.0,1,100000.0
+10749,Türkei,2.Liga,Türkei U19,1.Lig,Tuzlaspor,27.0,645.0,0,1,1.0,0,200000.0
+10750,Türkei,2.Liga,Türkei U18,1.Lig,Tuzlaspor,22.0,89.0,0,1,1.0,1,125000.0
+10751,Türkei,2.Liga,,1.Lig,Tuzlaspor,32.0,125.0,0,0,0.0,0,50000.0
+10752,Türkei,2.Liga,Türkei U21,1.Lig,Tuzlaspor,27.0,308.0,0,1,0.0,0,25000.0
+10753,Türkei,2.Liga,Türkei U16,1.Lig,Tuzlaspor,21.0,98.0,0,1,1.0,0,25000.0
+10782,Türkei,2.Liga,,1.Lig,Genclerbirligi,25.0,125.0,0,0,0.0,0,350000.0
+10783,Türkei,2.Liga,,1.Lig,Genclerbirligi,26.0,103.0,0,0,0.0,0,75000.0
+10784,Türkei,2.Liga,Türkei U19,1.Lig,Genclerbirligi,19.0,1016.0,0,1,1.0,1,50000.0
+10785,Türkei,2.Liga,,1.Lig,Genclerbirligi,22.0,111.0,0,0,0.0,0,25000.0
+10786,Türkei,2.Liga,,1.Lig,Genclerbirligi,22.0,125.0,0,0,0.0,0,25000.0
+10816,Türkei,2.Liga,Türkei U23,1.Lig,Sakaryaspor,29.0,681.0,0,1,0.0,0,200000.0
+10817,Türkei,2.Liga,,1.Lig,Sakaryaspor,31.0,320.0,0,0,0.0,0,100000.0
+10818,Türkei,2.Liga,,1.Lig,Sakaryaspor,20.0,501.0,0,0,0.0,1,25000.0
+10842,Türkei,2.Liga,,1.Lig,Pendikspor,33.0,320.0,0,0,0.0,0,200000.0
+10843,Türkei,2.Liga,Türkei U19,1.Lig,Pendikspor,21.0,266.0,0,1,0.0,1,50000.0
+10844,Türkei,2.Liga,,1.Lig,Pendikspor,32.0,2137.0,0,0,0.0,0,25000.0
+10845,Türkei,2.Liga,Türkei U23,1.Lig,Pendikspor,30.0,279.0,0,1,0.0,0,25000.0
+10869,Türkei,2.Liga,,1.Lig,Altinordu,25.0,2511.0,0,0,0.0,1,175000.0
+10870,Türkei,2.Liga,Türkei U18,1.Lig,Altinordu,18.0,825.0,0,0,1.0,1,100000.0
+10871,Türkei,2.Liga,Türkei U18,1.Lig,Altinordu,18.0,320.0,0,0,2.0,1,25000.0
+10872,Türkei,2.Liga,Türkei U18,1.Lig,Altinordu,17.0,320.0,0,0,2.0,1,25000.0
+10899,Türkei,2.Liga,,1.Lig,Altay SK,21.0,809.0,0,0,0.0,1,150000.0
+10900,Türkei,2.Liga,Türkei U23,1.Lig,Altay SK,30.0,954.0,0,1,0.0,0,75000.0
+10901,Türkei,2.Liga,Türkei U18,1.Lig,Altay SK,19.0,320.0,0,1,0.0,1,50000.0
+10930,Türkei,2.Liga,Türkei U21,1.Lig,Erzurumspor FK,26.0,839.0,0,1,0.0,0,250000.0
+10931,Türkei,2.Liga,,1.Lig,Erzurumspor FK,21.0,685.0,0,0,0.0,1,50000.0
+10932,Türkei,2.Liga,,1.Lig,Erzurumspor FK,19.0,320.0,0,0,0.0,1,25000.0
+10958,Türkei,2.Liga,,1.Lig,Denizlispor,22.0,1035.0,0,0,0.0,0,225000.0
+10959,Türkei,2.Liga,,1.Lig,Denizlispor,28.0,2146.0,0,0,0.0,1,150000.0
+10960,Türkei,2.Liga,,1.Lig,Denizlispor,21.0,685.0,0,0,0.0,1,50000.0
+10985,Türkei,2.Liga,Türkei U20,1.Lig,Adanaspor,22.0,125.0,0,1,1.0,0,100000.0
+10986,Türkei,2.Liga,,1.Lig,Adanaspor,23.0,645.0,0,0,0.0,1,25000.0
+10995,Türkei,2.Liga,Türkei U18,1.Lig,Y. Malatyaspor,24.0,629.0,0,1,0.0,0,25000.0
+11005,Belgien,1.Liga,Belgien,Jupiler Pro League,FC Brügge,35.0,1381.0,0,1,35.0,0,5000000.0
+11006,Belgien,1.Liga,England U21,Jupiler Pro League,FC Brügge,22.0,123.0,0,0,10.0,1,2000000.0
+11007,Belgien,1.Liga,Belgien U21,Jupiler Pro League,FC Brügge,20.0,1050.0,1,0,4.0,0,600000.0
+11008,Belgien,1.Liga,Belgien U21,Jupiler Pro League,FC Brügge,22.0,1416.0,0,1,0.0,1,300000.0
+11035,Belgien,1.Liga,Belgien U21,Jupiler Pro League,KRC Genk,21.0,1416.0,1,0,8.0,1,9000000.0
+11036,Belgien,1.Liga,Belgien U18,Jupiler Pro League,KRC Genk,21.0,1416.0,0,1,2.0,1,400000.0
+11037,Belgien,1.Liga,Belgien U20,Jupiler Pro League,KRC Genk,20.0,685.0,1,0,1.0,1,100000.0
+11063,Belgien,1.Liga,,Jupiler Pro League,Royal Antwerpen,27.0,1050.0,0,0,0.0,1,6000000.0
+11064,Belgien,1.Liga,Belgien U21,Jupiler Pro League,Royal Antwerpen,26.0,681.0,0,1,4.0,0,500000.0
+11065,Belgien,1.Liga,Belgien U21,Jupiler Pro League,Royal Antwerpen,35.0,320.0,0,1,1.0,0,100000.0
+11089,Belgien,1.Liga,Niederlande,Jupiler Pro League,RSC Anderlecht,20.0,994.0,1,0,0.0,1,5000000.0
+11090,Belgien,1.Liga,Belgien,Jupiler Pro League,RSC Anderlecht,30.0,1385.0,0,1,1.0,0,2500000.0
+11091,Belgien,1.Liga,Belgien U21,Jupiler Pro League,RSC Anderlecht,30.0,685.0,0,1,10.0,0,250000.0
+11115,Belgien,1.Liga,Frankreich U21,Jupiler Pro League,KAA Gent,28.0,258.0,0,1,3.0,0,2500000.0
+11116,Belgien,1.Liga,Belgien,Jupiler Pro League,KAA Gent,29.0,1050.0,0,1,0.0,0,2000000.0
+11117,Belgien,1.Liga,,Jupiler Pro League,KAA Gent,21.0,320.0,0,0,0.0,0,150000.0
+11118,Belgien,1.Liga,,Jupiler Pro League,KAA Gent,21.0,685.0,0,0,0.0,1,100000.0
+11140,Belgien,1.Liga,Luxemburg,Jupiler Pro League,Union SG,33.0,1021.0,1,0,55.0,1,1500000.0
+11141,Belgien,1.Liga,Belgien U21,Jupiler Pro League,Union SG,28.0,685.0,0,1,1.0,0,400000.0
+11142,Belgien,1.Liga,Schweden U20,Jupiler Pro League,Union SG,21.0,320.0,1,0,2.0,1,100000.0
+11164,Belgien,1.Liga,Belgien U21,Jupiler Pro League,Stand. Lüttich,25.0,2327.0,0,1,3.0,0,3500000.0
+11165,Belgien,1.Liga,,Jupiler Pro League,Stand. Lüttich,30.0,1050.0,0,0,0.0,0,400000.0
+11166,Belgien,1.Liga,Belgien U18,Jupiler Pro League,Stand. Lüttich,18.0,685.0,1,0,2.0,1,200000.0
+11189,Belgien,1.Liga,Burkina Faso,Jupiler Pro League,RSC Charleroi,26.0,680.0,1,0,48.0,0,1500000.0
+11190,Belgien,1.Liga,,Jupiler Pro League,RSC Charleroi,25.0,317.0,0,0,0.0,1,700000.0
+11191,Belgien,1.Liga,Belgien U19,Jupiler Pro League,RSC Charleroi,19.0,320.0,1,0,0.0,1,100000.0
+11192,Belgien,1.Liga,,Jupiler Pro League,RSC Charleroi,19.0,685.0,0,0,0.0,1,50000.0
+11214,Belgien,1.Liga,Polen,Jupiler Pro League,Cercle Brügge,23.0,301.0,0,1,1.0,0,2500000.0
+11215,Belgien,1.Liga,,Jupiler Pro League,Cercle Brügge,26.0,1196.0,0,0,0.0,1,500000.0
+11216,Belgien,1.Liga,Belgien U20,Jupiler Pro League,Cercle Brügge,34.0,880.0,0,1,0.0,0,100000.0
+11237,Belgien,1.Liga,Rumänien,Jupiler Pro League,OH Leuven,27.0,320.0,0,1,0.0,1,900000.0
+11238,Belgien,1.Liga,Belgien U21,Jupiler Pro League,OH Leuven,25.0,320.0,0,1,12.0,0,500000.0
+11239,Belgien,1.Liga,Belgien U15,Jupiler Pro League,OH Leuven,21.0,1050.0,0,1,1.0,1,50000.0
+11259,Belgien,1.Liga,Türkei,Jupiler Pro League,KVC Westerlo,34.0,320.0,0,1,12.0,0,1300000.0
+11260,Belgien,1.Liga,,Jupiler Pro League,KVC Westerlo,27.0,320.0,0,0,0.0,0,350000.0
+11261,Belgien,1.Liga,,Jupiler Pro League,KVC Westerlo,33.0,3607.0,0,0,0.0,0,100000.0
+11286,Belgien,1.Liga,Belgien,Jupiler Pro League,KV Mechelen,24.0,1050.0,0,1,0.0,0,1000000.0
+11287,Belgien,1.Liga,,Jupiler Pro League,KV Mechelen,32.0,1393.0,0,0,0.0,0,300000.0
+11288,Belgien,1.Liga,Marokko U20,Jupiler Pro League,KV Mechelen,18.0,320.0,1,0,2.0,1,50000.0
+11316,Belgien,1.Liga,,Jupiler Pro League,KV Oostende,27.0,294.0,0,0,0.0,0,600000.0
+11317,Belgien,1.Liga,Belgien U21,Jupiler Pro League,KV Oostende,29.0,1037.0,0,1,2.0,0,600000.0
+11318,Belgien,1.Liga,,Jupiler Pro League,KV Oostende,22.0,1416.0,0,0,0.0,1,100000.0
+11348,Belgien,1.Liga,,Jupiler Pro League,KV Kortrijk,30.0,320.0,0,0,0.0,1,575000.0
+11349,Belgien,1.Liga,Frankreich U21,Jupiler Pro League,KV Kortrijk,33.0,685.0,0,1,8.0,0,200000.0
+11350,Belgien,1.Liga,Belgien U19,Jupiler Pro League,KV Kortrijk,21.0,1416.0,0,1,3.0,1,50000.0
+11376,Belgien,1.Liga,,Jupiler Pro League,KAS Eupen,23.0,320.0,0,0,0.0,1,600000.0
+11377,Belgien,1.Liga,Ghana,Jupiler Pro League,KAS Eupen,24.0,2146.0,1,0,2.0,0,400000.0
+11378,Belgien,1.Liga,Haiti,Jupiler Pro League,KAS Eupen,23.0,258.0,1,0,1.0,0,200000.0
+11379,Belgien,1.Liga,,Jupiler Pro League,KAS Eupen,19.0,320.0,0,0,0.0,1,50000.0
+11380,Belgien,1.Liga,,Jupiler Pro League,KAS Eupen,22.0,685.0,0,0,0.0,1,25000.0
+11407,Belgien,1.Liga,,Jupiler Pro League,Zulte Waregem,29.0,3242.0,0,0,0.0,0,350000.0
+11408,Belgien,1.Liga,Belgien,Jupiler Pro League,Zulte Waregem,37.0,6164.0,0,1,1.0,0,100000.0
+11409,Belgien,1.Liga,Belgien U16,Jupiler Pro League,Zulte Waregem,20.0,320.0,0,1,2.0,1,50000.0
+11410,Belgien,1.Liga,,Jupiler Pro League,Zulte Waregem,20.0,685.0,0,0,0.0,1,50000.0
+11437,Belgien,1.Liga,Japan,Jupiler Pro League,VV St. Truiden,31.0,1399.0,1,0,13.0,1,1500000.0
+11438,Belgien,1.Liga,Belgien U21,Jupiler Pro League,VV St. Truiden,32.0,320.0,0,1,0.0,0,300000.0
+11439,Belgien,1.Liga,Belgien U19,Jupiler Pro League,VV St. Truiden,19.0,320.0,0,1,3.0,1,100000.0
+11460,Belgien,1.Liga,Frankreich U21,Jupiler Pro League,RFC Seraing,22.0,1050.0,0,0,1.0,1,900000.0
+11461,Belgien,1.Liga,Belgien U21,Jupiler Pro League,RFC Seraing,21.0,942.0,0,1,0.0,1,250000.0
+11462,Belgien,1.Liga,Luxemburg U21,Jupiler Pro League,RFC Seraing,22.0,279.0,1,0,4.0,1,100000.0
+11488,Belgien,2.Liga,Belgien U21,Challenger Pro League,RWDM,31.0,674.0,0,1,1.0,0,500000.0
+11489,Belgien,2.Liga,Belgien U19,Challenger Pro League,RWDM,22.0,835.0,0,1,3.0,0,100000.0
+11490,Belgien,2.Liga,Belgien U15,Challenger Pro League,RWDM,21.0,992.0,0,1,2.0,1,25000.0
+11519,Belgien,2.Liga,,Challenger Pro League,Lommel SK,23.0,1020.0,0,0,0.0,1,250000.0
+11520,Belgien,2.Liga,Montenegro U21,Challenger Pro League,Lommel SK,20.0,320.0,1,0,10.0,1,200000.0
+11521,Belgien,2.Liga,,Challenger Pro League,Lommel SK,36.0,320.0,0,0,0.0,0,50000.0
+11547,Belgien,2.Liga,,Challenger Pro League,SK Beveren,21.0,302.0,0,0,0.0,1,350000.0
+11548,Belgien,2.Liga,,Challenger Pro League,SK Beveren,29.0,310.0,0,0,0.0,0,150000.0
+11549,Belgien,2.Liga,Belgien U19,Challenger Pro League,SK Beveren,24.0,1416.0,0,1,3.0,0,75000.0
+11575,Belgien,2.Liga,Belgien U15,Challenger Pro League,Club NXT,19.0,320.0,0,1,0.0,1,100000.0
+11576,Belgien,2.Liga,Belgien U18,Challenger Pro League,Club NXT,19.0,685.0,0,1,1.0,1,50000.0
+11599,Belgien,2.Liga,,Challenger Pro League,Beerschot V.A.,23.0,320.0,0,0,0.0,1,300000.0
+11600,Belgien,2.Liga,Belgien U21,Challenger Pro League,Beerschot V.A.,33.0,1781.0,0,1,1.0,0,150000.0
+11601,Belgien,2.Liga,Kroatien U20,Challenger Pro League,Beerschot V.A.,23.0,270.0,0,1,1.0,0,100000.0
+11602,Belgien,2.Liga,Belgien U19,Challenger Pro League,Beerschot V.A.,24.0,173.0,0,1,2.0,0,50000.0
+11625,Belgien,2.Liga,Belgien U19,Challenger Pro League,RSCA Futures,19.0,1050.0,0,1,1.0,1,100000.0
+11626,Belgien,2.Liga,Belgien U16,Challenger Pro League,RSCA Futures,21.0,320.0,0,1,2.0,1,100000.0
+11627,Belgien,2.Liga,Belgien U17,Challenger Pro League,RSCA Futures,18.0,320.0,0,1,1.0,1,50000.0
+11647,Belgien,2.Liga,Belgien U18,Challenger Pro League,SL16 FC,17.0,685.0,1,0,2.0,1,200000.0
+11649,Belgien,2.Liga,Marokko U23,Challenger Pro League,SL16 FC,19.0,685.0,1,0,1.0,1,50000.0
+11650,Belgien,2.Liga,Belgien U18,Challenger Pro League,SL16 FC,19.0,1050.0,0,1,3.0,1,50000.0
+11674,Belgien,2.Liga,Belgien U18,Challenger Pro League,Jong Genk,17.0,320.0,1,0,2.0,0,150000.0
+11675,Belgien,2.Liga,Belgien U19,Challenger Pro League,Jong Genk,19.0,320.0,0,1,0.0,1,100000.0
+11676,Belgien,2.Liga,Belgien U17,Challenger Pro League,Jong Genk,18.0,320.0,0,1,1.0,1,50000.0
+11702,Belgien,2.Liga,,Challenger Pro League,KMSK Deinze,25.0,320.0,0,0,0.0,0,250000.0
+11703,Belgien,2.Liga,,Challenger Pro League,KMSK Deinze,34.0,1048.0,0,0,0.0,0,100000.0
+11704,Belgien,2.Liga,,Challenger Pro League,KMSK Deinze,20.0,320.0,0,0,0.0,1,25000.0
+11732,Belgien,2.Liga,,Challenger Pro League,RE Virton,29.0,306.0,0,0,0.0,0,300000.0
+11733,Belgien,2.Liga,,Challenger Pro League,RE Virton,34.0,649.0,0,0,0.0,0,100000.0
+11764,Belgien,2.Liga,Belgien U21,Challenger Pro League,KSK Lierse Kem.,21.0,286.0,1,0,2.0,1,400000.0
+11765,Belgien,2.Liga,Belgien,Challenger Pro League,KSK Lierse Kem.,25.0,320.0,0,1,0.0,0,300000.0
+11766,Belgien,2.Liga,Belgien U19,Challenger Pro League,KSK Lierse Kem.,24.0,1050.0,0,1,4.0,0,100000.0
+11767,Belgien,2.Liga,Belgien U16,Challenger Pro League,KSK Lierse Kem.,20.0,320.0,0,1,1.0,1,50000.0
+11790,Belgien,2.Liga,Belgien U18,Challenger Pro League,FCV Dender EH,26.0,2877.0,0,1,3.0,1,300000.0
+11791,Belgien,2.Liga,,Challenger Pro League,FCV Dender EH,24.0,1050.0,0,0,0.0,1,25000.0
+11817,Russland,1.Liga,Russland U21,Premier Liga,Zenit S-Pb,20.0,501.0,0,1,0.0,1,1200000.0
+11818,Russland,1.Liga,Russland,Premier Liga,Zenit S-Pb,36.0,2877.0,0,0,0.0,0,500000.0
+11819,Russland,1.Liga,Russland U21,Premier Liga,Zenit S-Pb,28.0,1394.0,0,1,0.0,0,400000.0
+11840,Russland,1.Liga,Russland,Premier Liga,Spartak Moskau,29.0,2327.0,1,0,1.0,0,2800000.0
+11841,Russland,1.Liga,Russland,Premier Liga,Spartak Moskau,25.0,1781.0,0,1,0.0,0,2000000.0
+11842,Russland,1.Liga,Russland U19,Premier Liga,Spartak Moskau,23.0,320.0,0,1,10.0,0,100000.0
+11866,Russland,1.Liga,Russland,Premier Liga,Dinamo Moskau,36.0,5980.0,0,0,15.0,0,900000.0
+11867,Russland,1.Liga,Russland U21,Premier Liga,Dinamo Moskau,27.0,1962.0,0,1,5.0,0,600000.0
+11868,Russland,1.Liga,Russland U21,Premier Liga,Dinamo Moskau,21.0,946.0,0,1,2.0,0,250000.0
+11889,Russland,1.Liga,Russland,Premier Liga,ZSKA Moskau,37.0,7441.0,0,1,111.0,0,2000000.0
+11890,Russland,1.Liga,Russland U21,Premier Liga,ZSKA Moskau,19.0,1014.0,1,0,1.0,1,500000.0
+11915,Russland,1.Liga,Russland,Premier Liga,FK Krasnodar,24.0,1597.0,1,0,9.0,0,15000000.0
+11916,Russland,1.Liga,Russland U21,Premier Liga,FK Krasnodar,21.0,501.0,1,0,4.0,1,600000.0
+11938,Russland,1.Liga,Russland U21,Premier Liga,Lok Moskau,19.0,685.0,1,0,2.0,1,2500000.0
+11939,Russland,1.Liga,Russland,Premier Liga,Lok Moskau,27.0,136.0,0,1,0.0,1,2000000.0
+11940,Russland,1.Liga,Russland,Premier Liga,Lok Moskau,37.0,5768.0,0,1,19.0,0,500000.0
+11941,Russland,1.Liga,Russland U20,Premier Liga,Lok Moskau,23.0,320.0,0,1,1.0,1,250000.0
+11967,Russland,1.Liga,Russland,Premier Liga,FK Rostov,34.0,2146.0,1,0,2.0,0,800000.0
+11968,Russland,1.Liga,Russland U21,Premier Liga,FK Rostov,28.0,300.0,0,1,0.0,0,300000.0
+11991,Russland,1.Liga,Russland,Premier Liga,KS Samara,24.0,1019.0,0,1,0.0,0,1500000.0
+11992,Russland,1.Liga,Russland U20,Premier Liga,KS Samara,24.0,1232.0,0,1,1.0,1,600000.0
+11993,Russland,1.Liga,Russland B,Premier Liga,KS Samara,35.0,1200.0,0,1,0.0,0,200000.0
+12016,Russland,1.Liga,Russland U21,Premier Liga,Sochi,25.0,811.0,0,1,0.0,0,800000.0
+12017,Russland,1.Liga,Russland,Premier Liga,Sochi,36.0,1403.0,0,1,3.0,0,500000.0
+12018,Russland,1.Liga,Russland U21,Premier Liga,Sochi,33.0,1781.0,0,1,24.0,0,400000.0
+12041,Russland,1.Liga,,Premier Liga,Akhmat Grozny,34.0,1019.0,0,0,0.0,0,500000.0
+12042,Russland,1.Liga,,Premier Liga,Akhmat Grozny,29.0,320.0,0,0,0.0,1,400000.0
+12071,Russland,1.Liga,Russland,Premier Liga,Ural,26.0,685.0,1,0,0.0,1,1800000.0
+12072,Russland,1.Liga,,Premier Liga,Ural,28.0,1962.0,0,0,0.0,0,200000.0
+12073,Russland,3.Liga,,2 Liga Gruppe 4,Ural 2,21.0,268.0,0,0,0.0,1,100000.0
+12099,Russland,1.Liga,,Premier Liga,FK Orenburg,24.0,1416.0,0,0,0.0,1,800000.0
+12100,Russland,1.Liga,Russland U21,Premier Liga,FK Orenburg,25.0,982.0,0,1,1.0,1,400000.0
+12101,Russland,1.Liga,Russland U20,Premier Liga,FK Orenburg,23.0,501.0,0,1,2.0,0,400000.0
+12124,Russland,1.Liga,Russland U20,Premier Liga,Pari NN,24.0,467.0,0,1,3.0,1,600000.0
+12125,Russland,1.Liga,Russland U21,Premier Liga,Pari NN,31.0,678.0,0,1,0.0,0,600000.0
+12126,Russland,1.Liga,,Premier Liga,Pari NN,30.0,2877.0,0,0,0.0,0,250000.0
+12150,Russland,1.Liga,Russland U21,Premier Liga,Khimki,28.0,311.0,0,1,1.0,0,600000.0
+12151,Russland,1.Liga,Russland U21,Premier Liga,Khimki,27.0,320.0,0,1,14.0,0,300000.0
+12177,Russland,1.Liga,Russland U21,Premier Liga,Torpedo Moskau,29.0,305.0,0,1,5.0,0,500000.0
+12178,Russland,1.Liga,Russland U21,Premier Liga,Torpedo Moskau,21.0,1199.0,0,1,0.0,0,500000.0
+12179,Russland,1.Liga,,Premier Liga,Torpedo Moskau,36.0,852.0,0,0,0.0,0,100000.0
+12206,Russland,1.Liga,,Premier Liga,Fakel Voronezh,22.0,320.0,0,0,0.0,1,600000.0
+12207,Russland,1.Liga,,Premier Liga,Fakel Voronezh,29.0,501.0,0,0,0.0,1,400000.0
+12231,Russland,2.Liga,Russland,1.Division,Rubin Kazan,35.0,1416.0,0,1,0.0,0,800000.0
+12232,Russland,2.Liga,Russland,1.Division,Rubin Kazan,36.0,300.0,0,1,0.0,0,400000.0
+12233,Russland,2.Liga,Russland U19,1.Division,Rubin Kazan,20.0,320.0,0,1,2.0,1,175000.0
+12264,Russland,2.Liga,Russland U16,1.Division,Alania Vl.,25.0,1010.0,0,1,4.0,1,900000.0
+12265,Russland,2.Liga,,1.Division,Alania Vl.,23.0,306.0,0,0,0.0,0,100000.0
+12266,Russland,2.Liga,,1.Division,Alania Vl.,32.0,679.0,0,0,0.0,0,50000.0
+12292,Russland,2.Liga,,1.Division,Arsenal Tula,31.0,2511.0,0,0,0.0,0,300000.0
+12293,Russland,2.Liga,Kirgisistan,1.Division,Arsenal Tula,36.0,653.0,1,0,0.0,0,275000.0
+12294,Russland,2.Liga,,1.Division,Arsenal Tula,28.0,1754.0,0,0,0.0,0,250000.0
+12319,Russland,2.Liga,Russland U20,1.Division,Rodina Moskau,22.0,316.0,0,1,2.0,0,225000.0
+12320,Russland,2.Liga,,1.Division,Rodina Moskau,24.0,483.0,0,0,0.0,1,200000.0
+12321,Russland,2.Liga,,1.Division,Rodina Moskau,24.0,1402.0,0,0,0.0,0,150000.0
+12352,Russland,2.Liga,Russland U21,1.Division,Baltika,23.0,1416.0,0,1,5.0,1,600000.0
+12353,Russland,2.Liga,Russland U16,1.Division,Baltika,24.0,1386.0,0,1,1.0,1,500000.0
+12354,Russland,2.Liga,,1.Division,Baltika,21.0,315.0,0,0,0.0,0,150000.0
+12376,Russland,2.Liga,,1.Division,SKA Khabarovsk,26.0,1027.0,0,0,0.0,1,450000.0
+12377,Russland,2.Liga,,1.Division,SKA Khabarovsk,22.0,320.0,0,0,0.0,1,250000.0
+12378,Russland,2.Liga,Russland B,1.Division,SKA Khabarovsk,34.0,320.0,0,1,2.0,0,150000.0
+12403,Russland,2.Liga,,1.Division,Neftekhimik,30.0,1781.0,0,0,0.0,0,500000.0
+12404,Russland,2.Liga,Russland U21,1.Division,Neftekhimik,26.0,320.0,0,1,3.0,1,400000.0
+12405,Russland,2.Liga,,1.Division,Neftekhimik,21.0,678.0,0,0,0.0,0,25000.0
+12425,Russland,2.Liga,,1.Division,Dinamo Makhach.,28.0,306.0,0,0,0.0,0,300000.0
+12426,Russland,2.Liga,,1.Division,Dinamo Makhach.,21.0,310.0,0,0,0.0,0,150000.0
+12427,Russland,2.Liga,Russland U16,1.Division,Dinamo Makhach.,22.0,127.0,0,1,2.0,0,50000.0
+12453,Russland,2.Liga,,1.Division,Enisey,28.0,311.0,0,0,0.0,1,300000.0
+12454,Russland,2.Liga,Team PFL,1.Division,Enisey,25.0,302.0,0,1,2.0,0,200000.0
+12455,Russland,2.Liga,Team PFL,1.Division,Enisey,25.0,1181.0,0,1,2.0,0,125000.0
+12456,Russland,2.Liga,Russland U17,1.Division,Enisey,22.0,41.0,0,1,0.0,1,50000.0
+12479,Russland,2.Liga,,1.Division,Akron Togliatti,28.0,1416.0,0,0,0.0,1,600000.0
+12480,Russland,2.Liga,Russland U18,1.Division,Akron Togliatti,23.0,301.0,0,1,1.0,0,125000.0
+12481,Russland,2.Liga,,1.Division,Akron Togliatti,20.0,320.0,0,0,0.0,0,50000.0
+12501,Russland,2.Liga,Team PFL,1.Division,KamAZ,24.0,1050.0,0,1,2.0,1,400000.0
+12502,Russland,2.Liga,,1.Division,KamAZ,29.0,306.0,0,0,0.0,0,250000.0
+12503,Russland,2.Liga,,1.Division,KamAZ,19.0,307.0,0,0,0.0,0,25000.0
+12526,Russland,2.Liga,,1.Division,Volga Uljanovsk,24.0,1199.0,0,0,0.0,0,250000.0
+12527,Russland,2.Liga,Belarus,1.Division,Volga Uljanovsk,34.0,266.0,0,1,2.0,0,200000.0
+12528,Russland,2.Liga,,1.Division,Volga Uljanovsk,17.0,685.0,0,0,0.0,1,25000.0
+12555,Russland,2.Liga,,1.Division,Volgar,32.0,685.0,0,0,0.0,0,300000.0
+12556,Russland,2.Liga,Team PFL,1.Division,Volgar,24.0,2511.0,0,1,2.0,0,200000.0
+12557,Russland,2.Liga,Team PFL,1.Division,Volgar,23.0,2146.0,0,1,2.0,0,100000.0
+12581,Russland,2.Liga,,1.Division,FK Ufa,29.0,93.0,0,0,0.0,1,450000.0
+12582,Russland,2.Liga,Russland U18,1.Division,FK Ufa,20.0,320.0,0,1,0.0,1,250000.0
+12583,Russland,2.Liga,Team PFL,1.Division,FK Ufa,24.0,286.0,0,1,3.0,0,75000.0
+12607,Russland,2.Liga,Russland U18,1.Division,Kuban,31.0,677.0,0,1,3.0,0,225000.0
+12608,Russland,2.Liga,Russland U19,1.Division,Kuban,22.0,320.0,0,1,2.0,0,200000.0
+12634,Russland,2.Liga,Russland U19,1.Division,Shinnik,30.0,685.0,0,1,2.0,0,350000.0
+12635,Russland,2.Liga,Team FNL,1.Division,Shinnik,28.0,671.0,0,1,1.0,0,200000.0
+12657,Russland,2.Liga,Russland U21,1.Division,Veles Moskau,26.0,285.0,0,1,1.0,0,400000.0
+12658,Russland,2.Liga,Russland U18,1.Division,Veles Moskau,24.0,1781.0,0,1,1.0,0,300000.0
+12659,Russland,2.Liga,,1.Division,Veles Moskau,23.0,306.0,0,0,0.0,0,150000.0
+12683,Russland,2.Liga,Russland U16,1.Division,Krasnodar 2,20.0,320.0,0,1,2.0,1,175000.0
+12684,Russland,2.Liga,Russland U17,1.Division,Krasnodar 2,20.0,685.0,0,1,0.0,0,175000.0
+12685,Russland,2.Liga,,1.Division,Krasnodar 2,20.0,320.0,0,0,0.0,0,50000.0
+12686,Russland,2.Liga,,1.Division,Krasnodar 2,20.0,685.0,0,0,0.0,0,50000.0
+12715,Griechenland,1.Liga,,Super League 1,Olymp. Piräus,20.0,1416.0,0,0,0.0,1,1500000.0
+12716,Griechenland,1.Liga,,Super League 1,Olymp. Piräus,33.0,230.0,0,0,0.0,0,1000000.0
+12717,Griechenland,1.Liga,,Super League 1,Olymp. Piräus,33.0,1017.0,0,0,0.0,0,300000.0
+12718,Griechenland,1.Liga,,Super League 1,Olymp. Piräus,19.0,320.0,0,0,0.0,1,200000.0
+12744,Griechenland,1.Liga,,Super League 1,PAOK Saloniki,23.0,319.0,0,0,0.0,1,2000000.0
+12745,Griechenland,1.Liga,,Super League 1,PAOK Saloniki,34.0,1416.0,0,0,0.0,0,450000.0
+12746,Griechenland,1.Liga,,Super League 1,PAOK Saloniki,22.0,1050.0,0,0,0.0,0,200000.0
+12774,Griechenland,1.Liga,,Super League 1,AEK Athen,30.0,685.0,0,0,0.0,0,2000000.0
+12775,Griechenland,1.Liga,,Super League 1,AEK Athen,30.0,1416.0,0,0,0.0,1,1800000.0
+12776,Griechenland,2.Liga,,Super League 2,AEK Athen B,23.0,685.0,0,0,0.0,1,200000.0
+12777,Griechenland,1.Liga,,Super League 1,AEK Athen,20.0,993.0,0,0,0.0,1,100000.0
+12805,Griechenland,1.Liga,,Super League 1,Panathinaikos,31.0,621.0,0,0,0.0,1,1500000.0
+12806,Griechenland,1.Liga,,Super League 1,Panathinaikos,32.0,320.0,0,0,11.0,0,500000.0
+12807,Griechenland,1.Liga,,Super League 1,Panathinaikos,24.0,2487.0,0,0,0.0,0,200000.0
+12835,Griechenland,1.Liga,,Super League 1,Aris Saloniki,32.0,1771.0,0,0,0.0,0,500000.0
+12836,Griechenland,1.Liga,,Super League 1,Aris Saloniki,23.0,954.0,0,0,0.0,0,350000.0
+12837,Griechenland,1.Liga,,Super League 1,Aris Saloniki,18.0,306.0,0,0,0.0,1,100000.0
+12865,Griechenland,1.Liga,,Super League 1,OFI Kreta,21.0,471.0,0,0,0.0,0,600000.0
+12866,Griechenland,1.Liga,,Super League 1,OFI Kreta,23.0,106.0,0,0,1.0,1,200000.0
+12867,Griechenland,1.Liga,,Super League 1,OFI Kreta,19.0,244.0,0,0,0.0,1,150000.0
+12868,Griechenland,1.Liga,,Super League 1,OFI Kreta,35.0,1781.0,0,0,0.0,0,100000.0
+12869,Griechenland,1.Liga,,Super League 1,OFI Kreta,21.0,1597.0,0,0,0.0,1,50000.0
+12896,Griechenland,1.Liga,,Super League 1,Atromitos Athen,30.0,607.0,0,0,0.0,0,600000.0
+12897,Griechenland,1.Liga,,Super League 1,Atromitos Athen,29.0,99.0,0,0,0.0,0,150000.0
+12898,Griechenland,1.Liga,,Super League 1,Atromitos Athen,21.0,854.0,0,0,0.0,1,50000.0
+12922,Griechenland,1.Liga,,Super League 1,Panetolikos,26.0,100.0,0,0,0.0,1,1000000.0
+12923,Griechenland,1.Liga,,Super League 1,Panetolikos,32.0,501.0,0,0,0.0,0,450000.0
+12924,Griechenland,1.Liga,,Super League 1,Panetolikos,24.0,320.0,0,0,5.0,0,300000.0
+12925,Griechenland,1.Liga,,Super League 1,Panetolikos,21.0,982.0,0,0,0.0,1,50000.0
+12953,Griechenland,1.Liga,,Super League 1,APO Levadiakos,26.0,483.0,0,0,0.0,1,350000.0
+12954,Griechenland,1.Liga,,Super League 1,APO Levadiakos,26.0,952.0,0,0,0.0,0,300000.0
+12955,Griechenland,1.Liga,,Super League 1,APO Levadiakos,34.0,106.0,0,0,0.0,0,250000.0
+12956,Griechenland,1.Liga,,Super League 1,APO Levadiakos,25.0,127.0,0,0,0.0,1,50000.0
+12984,Griechenland,1.Liga,,Super League 1,PAS Giannina,29.0,136.0,0,0,0.0,0,300000.0
+12985,Griechenland,1.Liga,,Super League 1,PAS Giannina,28.0,676.0,0,0,0.0,0,200000.0
+12986,Griechenland,1.Liga,,Super League 1,PAS Giannina,23.0,960.0,0,0,2.0,1,150000.0
+13015,Griechenland,1.Liga,,Super League 1,PAS Lamia,29.0,90.0,0,0,25.0,0,400000.0
+13016,Griechenland,1.Liga,,Super League 1,PAS Lamia,30.0,685.0,0,0,0.0,0,300000.0
+13017,Griechenland,1.Liga,,Super League 1,PAS Lamia,35.0,685.0,0,0,1.0,0,150000.0
+13018,Griechenland,1.Liga,,Super League 1,PAS Lamia,22.0,125.0,0,0,5.0,1,75000.0
+13019,Griechenland,1.Liga,,Super League 1,PAS Lamia,18.0,866.0,0,0,0.0,1,50000.0
+13048,Griechenland,1.Liga,,Super League 1,Asteras Tripoli,23.0,2146.0,0,0,3.0,0,500000.0
+13049,Griechenland,1.Liga,,Super League 1,Asteras Tripoli,33.0,1781.0,0,0,0.0,0,400000.0
+13050,Griechenland,1.Liga,,Super League 1,Asteras Tripoli,21.0,973.0,0,0,0.0,1,50000.0
+13081,Griechenland,1.Liga,,Super League 1,Volos NPS,32.0,1019.0,0,0,0.0,0,400000.0
+13082,Griechenland,1.Liga,,Super League 1,Volos NPS,32.0,685.0,0,0,0.0,0,150000.0
+13083,Griechenland,1.Liga,,Super League 1,Volos NPS,23.0,1012.0,0,0,0.0,1,150000.0
+13106,Griechenland,1.Liga,,Super League 1,Ionikos Nikeas,28.0,681.0,0,0,4.0,1,450000.0
+13107,Griechenland,1.Liga,,Super League 1,Ionikos Nikeas,31.0,105.0,0,0,0.0,0,350000.0
+13108,Griechenland,1.Liga,,Super League 1,Ionikos Nikeas,22.0,626.0,0,0,0.0,1,50000.0
+13134,Griechenland,2.Liga,Griechenland U21,Super League 2,PAOK Saloniki B,21.0,685.0,1,0,2.0,1,125000.0
+13135,Griechenland,2.Liga,Griechenld. U19,Super League 2,PAOK Saloniki B,19.0,320.0,1,0,6.0,1,50000.0
+13165,Griechenland,2.Liga,Griechenland U17,Super League 2,Panserraikos,30.0,320.0,0,1,2.0,0,250000.0
+13166,Griechenland,2.Liga,Griechenland U21,Super League 2,Panserraikos,24.0,649.0,0,1,1.0,0,125000.0
+13167,Griechenland,2.Liga,,Super League 2,Panserraikos,18.0,249.0,0,0,0.0,1,50000.0
+13168,Griechenland,2.Liga,Montenegro U19,Super League 2,Panserraikos,19.0,106.0,0,1,2.0,1,25000.0
+13199,Griechenland,2.Liga,Griechenld. U19,Super League 2,Kallithea,27.0,622.0,0,1,9.0,0,350000.0
+13200,Griechenland,2.Liga,,Super League 2,Kallithea,24.0,1020.0,0,0,0.0,0,125000.0
+13201,Griechenland,2.Liga,,Super League 2,Kallithea,33.0,607.0,0,0,0.0,0,100000.0
+13202,Griechenland,2.Liga,,Super League 2,Kallithea,21.0,293.0,0,0,0.0,1,50000.0
+13228,Griechenland,2.Liga,,Super League 2,AE Kifisias,28.0,489.0,0,0,0.0,0,300000.0
+13229,Griechenland,2.Liga,,Super League 2,AE Kifisias,30.0,301.0,0,0,0.0,0,100000.0
+13230,Griechenland,2.Liga,,Super League 2,AE Kifisias,19.0,245.0,0,0,0.0,1,25000.0
+13253,Griechenland,2.Liga,Griechenland U21,Super League 2,Apollon Smyrnis,26.0,975.0,0,1,15.0,0,350000.0
+13254,Griechenland,2.Liga,Griechenld. U19,Super League 2,Apollon Smyrnis,24.0,302.0,0,1,3.0,0,175000.0
+13255,Griechenland,2.Liga,Slowenien,Super League 2,Apollon Smyrnis,27.0,493.0,0,1,0.0,0,100000.0
+13280,Griechenland,2.Liga,,Super League 2,Olympiakos B,21.0,685.0,0,0,0.0,0,150000.0
+13281,Griechenland,2.Liga,,Super League 2,Olympiakos B,20.0,136.0,0,0,0.0,1,100000.0
+13282,Griechenland,2.Liga,,Super League 2,Olympiakos B,23.0,685.0,0,0,0.0,1,75000.0
+13312,Griechenland,2.Liga,,Super League 2,AE Larisa,33.0,685.0,0,0,0.0,0,250000.0
+13313,Griechenland,2.Liga,Griechenl. U18,Super League 2,AE Larisa,22.0,1934.0,0,1,1.0,1,100000.0
+13342,Griechenland,2.Liga,,Super League 2,AEK Athen B,24.0,685.0,0,0,0.0,1,150000.0
+13344,Griechenland,2.Liga,Griechenld. U19,Super League 2,AEK Athen B,20.0,663.0,0,1,3.0,1,25000.0
+13379,Griechenland,2.Liga,Griechenld. U19,Super League 2,PAE Chania,25.0,676.0,0,1,2.0,0,300000.0
+13380,Griechenland,2.Liga,,Super League 2,PAE Chania,31.0,136.0,0,0,0.0,1,200000.0
+13405,Griechenland,2.Liga,,Super League 2,PS Kalamata,33.0,989.0,0,0,0.0,0,200000.0
+13406,Griechenland,2.Liga,Guinea-Bissau,Super League 2,PS Kalamata,33.0,320.0,0,0,51.0,0,100000.0
+13407,Griechenland,2.Liga,,Super League 2,PS Kalamata,24.0,501.0,0,0,0.0,1,75000.0
+13408,Griechenland,2.Liga,Griechenl. U16,Super League 2,PS Kalamata,20.0,1050.0,0,1,2.0,1,25000.0
+13436,Griechenland,2.Liga,Griechenl. U18,Super League 2,Panathinaikos B,21.0,625.0,0,1,2.0,0,50000.0
+13437,Griechenland,2.Liga,,Super League 2,Panathinaikos B,21.0,625.0,0,0,0.0,1,25000.0
+13469,Griechenland,2.Liga,,Super League 2,Niki Volou,26.0,283.0,0,0,0.0,1,200000.0
+13470,Griechenland,2.Liga,,Super League 2,Niki Volou,35.0,664.0,0,0,0.0,0,150000.0
+13471,Griechenland,2.Liga,,Super League 2,Niki Volou,20.0,320.0,0,0,0.0,1,25000.0
+13472,Griechenland,2.Liga,,Super League 2,Niki Volou,22.0,259.0,0,0,0.0,1,25000.0
+13495,Griechenland,2.Liga,Griechenland U21,Super League 2,Anag. Karditsas,28.0,649.0,0,1,2.0,1,250000.0
+13496,Griechenland,2.Liga,Griechenld. U19,Super League 2,Anag. Karditsas,25.0,288.0,0,1,3.0,0,250000.0
+13520,Griechenland,2.Liga,Griechenland,Super League 2,Iraklis,36.0,308.0,0,1,1.0,0,150000.0
+13521,Griechenland,2.Liga,,Super League 2,Iraklis,27.0,645.0,0,0,0.0,0,150000.0
+13547,Griechenland,2.Liga,,Super League 2,Veria NPS,24.0,644.0,0,0,0.0,1,150000.0
+13548,Griechenland,2.Liga,Griechenl. U16,Super League 2,Veria NPS,22.0,277.0,0,1,1.0,0,50000.0
+13577,Griechenland,2.Liga,Griechenland U21,Super League 2,Proodeftiki,26.0,302.0,0,1,3.0,0,175000.0
+13578,Griechenland,2.Liga,Griechenland U17,Super League 2,Proodeftiki,20.0,294.0,0,1,4.0,1,150000.0
+13608,Griechenland,2.Liga,Griechenland U21,Super League 2,Panachaiki,26.0,300.0,0,1,4.0,0,250000.0
+13609,Griechenland,2.Liga,,Super League 2,Panachaiki,31.0,491.0,0,0,0.0,0,200000.0
+13610,Griechenland,2.Liga,,Super League 2,Panachaiki,20.0,1232.0,0,0,0.0,1,25000.0
+13635,Griechenland,2.Liga,Griechenl. U16,Super League 2,AO Egaleo,23.0,273.0,0,1,0.0,0,75000.0
+13636,Griechenland,2.Liga,Griechenland U21,Super League 2,AO Egaleo,37.0,1416.0,0,1,5.0,0,50000.0
+13662,Griechenland,2.Liga,Serbien U17,Super League 2,Almopos,23.0,607.0,0,1,1.0,0,150000.0
+13663,Griechenland,2.Liga,,Super League 2,Almopos,24.0,235.0,0,0,0.0,1,25000.0
+13664,Griechenland,2.Liga,,Super League 2,Almopos,20.0,83.0,0,0,0.0,1,25000.0
+13690,Griechenland,2.Liga,,Super League 2,Makedonikos,24.0,280.0,0,0,0.0,0,125000.0
+13691,Griechenland,2.Liga,,Super League 2,Makedonikos,32.0,657.0,0,0,0.0,0,100000.0
+13692,Griechenland,2.Liga,,Super League 2,Makedonikos,26.0,106.0,0,0,0.0,0,50000.0
+13721,Griechenland,2.Liga,,Super League 2,Diagoras,23.0,116.0,0,0,0.0,0,150000.0
+13722,Griechenland,2.Liga,,Super League 2,Diagoras,26.0,224.0,0,0,0.0,0,125000.0
+13723,Griechenland,2.Liga,,Super League 2,Diagoras,24.0,224.0,0,0,0.0,1,125000.0
+13753,Griechenland,2.Liga,Griechenland,Super League 2,GS Ilioupolis,31.0,273.0,0,1,0.0,0,175000.0
+13754,Griechenland,2.Liga,,Super League 2,GS Ilioupolis,28.0,267.0,0,0,0.0,1,150000.0
+13755,Griechenland,2.Liga,,Super League 2,GS Ilioupolis,22.0,227.0,0,0,0.0,1,25000.0
+13778,Griechenland,2.Liga,,Super League 2,OF Ierapetras,25.0,268.0,0,0,0.0,1,200000.0
+13779,Griechenland,2.Liga,Griechenland U17,Super League 2,OF Ierapetras,23.0,255.0,0,1,1.0,1,100000.0
+13802,Griechenland,2.Liga,,Super League 2,Iraklis Larisas,29.0,134.0,0,0,0.0,1,75000.0
+13803,Griechenland,2.Liga,,Super League 2,Iraklis Larisas,29.0,1382.0,0,0,0.0,0,25000.0
+13831,Griechenland,2.Liga,,Super League 2,Apollon Pontou,22.0,110.0,0,0,0.0,1,50000.0
+13832,Griechenland,2.Liga,Griechenld. U19,Super League 2,Apollon Pontou,39.0,604.0,0,1,1.0,0,50000.0
+13833,Griechenland,2.Liga,,Super League 2,Apollon Pontou,19.0,238.0,0,0,0.0,1,25000.0
+13855,Griechenland,2.Liga,Griechenl. U18,Super League 2,Thesprotos,22.0,263.0,0,1,0.0,1,75000.0
+13856,Griechenland,2.Liga,,Super League 2,Thesprotos,22.0,258.0,0,0,0.0,1,25000.0
+13912,Griechenland,2.Liga,,Super League 2,AO Episkopi,25.0,607.0,0,0,0.0,0,75000.0
+13913,Griechenland,2.Liga,,Super League 2,AO Episkopi,22.0,243.0,0,0,0.0,1,25000.0
+13933,Griechenland,2.Liga,,Super League 2,PASA Irodotos,24.0,116.0,0,0,0.0,0,25000.0
+13954,Griechenland,2.Liga,,Super League 2,Ap. Larisas,24.0,320.0,0,0,0.0,1,25000.0
+13970,Schottland,1.Liga,Schottland,Premiership,Glasgow Rangers,41.0,1781.0,0,1,42.0,0,400000.0
+13971,Schottland,1.Liga,Schottland,Premiership,Glasgow Rangers,25.0,685.0,0,0,0.0,1,400000.0
+13972,Schottland,1.Liga,Schottland,Premiership,Glasgow Rangers,35.0,1050.0,0,1,2.0,0,350000.0
+13973,Schottland,1.Liga,Schottland U21,Premiership,Glasgow Rangers,23.0,685.0,0,1,1.0,1,50000.0
+14002,Schottland,1.Liga,England,Premiership,Celtic Glasgow,36.0,652.0,0,1,75.0,0,1700000.0
+14003,Schottland,1.Liga,Schweiz U21,Premiership,Celtic Glasgow,31.0,320.0,0,1,1.0,1,800000.0
+14004,Schottland,1.Liga,Schottland,Premiership,Celtic Glasgow,31.0,1781.0,0,1,3.0,0,650000.0
+14005,Schottland,1.Liga,Nordirland,Premiership,Celtic Glasgow,25.0,1050.0,1,0,3.0,1,600000.0
+14028,Schottland,1.Liga,Schottland,Premiership,Heart of Midl.,30.0,257.0,1,0,0.0,1,550000.0
+14029,Schottland,1.Liga,Schottland,Premiership,Heart of Midl.,40.0,1050.0,0,0,74.0,0,450000.0
+14030,Schottland,1.Liga,Schottland U19,Premiership,Heart of Midl.,28.0,685.0,0,1,1.0,1,200000.0
+14057,Schottland,1.Liga,Schottland,Premiership,Hibernian FC,38.0,320.0,0,0,46.0,0,250000.0
+14058,Schottland,1.Liga,Polen U18,Premiership,Hibernian FC,24.0,1050.0,0,1,1.0,1,150000.0
+14082,Schottland,1.Liga,Niederlande U21,Premiership,Aberdeen FC,22.0,106.0,1,0,2.0,0,1300000.0
+14083,Schottland,1.Liga,Niederlande U15,Premiership,Aberdeen FC,30.0,320.0,0,1,2.0,0,450000.0
+14084,Schottland,1.Liga,England,Premiership,Aberdeen FC,35.0,2511.0,0,1,0.0,0,350000.0
+14106,Schottland,1.Liga,,Premiership,St. Johnstone,29.0,294.0,0,0,0.0,1,350000.0
+14107,Schottland,1.Liga,England U20,Premiership,St. Johnstone,32.0,1416.0,0,1,3.0,0,225000.0
+14108,Schottland,1.Liga,Schottland U21,Premiership,St. Johnstone,22.0,1019.0,0,0,1.0,1,50000.0
+14133,Schottland,1.Liga,Schottland,Premiership,Motherwell FC,27.0,681.0,1,0,0.0,0,600000.0
+14134,Schottland,1.Liga,England U17,Premiership,Motherwell FC,25.0,277.0,0,1,4.0,1,150000.0
+14135,Schottland,1.Liga,Schottland U16,Premiership,Motherwell FC,20.0,320.0,0,1,1.0,1,50000.0
+14162,Schottland,1.Liga,Nordirland,Premiership,St. Mirren,35.0,320.0,0,0,7.0,0,350000.0
+14163,Schottland,1.Liga,Slowakei U19,Premiership,St. Mirren,23.0,1206.0,0,1,0.0,1,75000.0
+14185,Schottland,1.Liga,,Premiership,Ross County,30.0,1416.0,0,0,0.0,1,400000.0
+14186,Schottland,1.Liga,Schottland U21,Premiership,Ross County,23.0,1781.0,0,1,0.0,1,100000.0
+14211,Schottland,1.Liga,,Premiership,Livingston FC,25.0,298.0,0,0,0.0,1,325000.0
+14212,Schottland,1.Liga,Schottland,Premiership,Livingston FC,29.0,271.0,0,1,0.0,0,250000.0
+14234,Schottland,1.Liga,,Premiership,Kilmarnock FC,31.0,680.0,0,0,0.0,1,400000.0
+14235,Schottland,1.Liga,,Premiership,Kilmarnock FC,23.0,320.0,0,0,0.0,1,300000.0
+14261,Schottland,1.Liga,Australien,Premiership,Dundee United,32.0,300.0,0,1,1.0,0,375000.0
+14262,Schottland,1.Liga,Schottland U21,Premiership,Dundee United,21.0,1041.0,1,0,1.0,1,150000.0
+14284,Schottland,2.Liga,Schottland U21,Championship,Inverness CT,32.0,2144.0,0,1,5.0,0,325000.0
+14285,Schottland,2.Liga,,Championship,Inverness CT,26.0,2511.0,0,0,0.0,1,150000.0
+14310,Schottland,2.Liga,,Championship,Dundee FC,36.0,915.0,0,0,0.0,0,100000.0
+14311,Schottland,2.Liga,Irland,Championship,Dundee FC,28.0,667.0,0,1,0.0,1,100000.0
+14312,Schottland,2.Liga,Schottland U21,Championship,Dundee FC,22.0,1050.0,0,0,0.0,1,100000.0
+14337,Schottland,2.Liga,,Championship,Partick Thistle,25.0,2146.0,0,0,0.0,1,350000.0
+14338,Schottland,2.Liga,,Championship,Partick Thistle,33.0,320.0,0,0,0.0,1,150000.0
+14356,Schottland,2.Liga,Schottland U21,Championship,Hamilton Acad.,26.0,2129.0,0,1,11.0,0,350000.0
+14357,Schottland,2.Liga,Schottland U17,Championship,Hamilton Acad.,21.0,1050.0,0,1,3.0,1,75000.0
+14383,Schottland,2.Liga,Schottland U19,Championship,Ayr United,24.0,685.0,0,1,2.0,0,225000.0
+14384,Schottland,2.Liga,,Championship,Ayr United,26.0,678.0,0,0,0.0,1,175000.0
+14385,Schottland,2.Liga,Schottland U16,Championship,Ayr United,16.0,78.0,1,0,1.0,1,25000.0
+14411,Schottland,2.Liga,Schottland,Championship,Raith Rovers,37.0,1035.0,0,1,0.0,0,250000.0
+14412,Schottland,2.Liga,Schottland U21,Championship,Raith Rovers,30.0,1781.0,0,1,0.0,0,100000.0
+14413,Schottland,2.Liga,,Championship,Raith Rovers,22.0,265.0,0,0,0.0,1,50000.0
+14434,Schottland,2.Liga,,Championship,Morton,21.0,320.0,0,0,0.0,1,200000.0
+14435,Schottland,2.Liga,,Championship,Morton,19.0,303.0,0,0,0.0,1,50000.0
+14455,Schottland,2.Liga,,Championship,Queen's Park,24.0,683.0,0,0,0.0,1,200000.0
+14456,Schottland,2.Liga,Schottland U18,Championship,Queen's Park,20.0,1049.0,0,1,1.0,1,75000.0
+14479,Schottland,2.Liga,,Championship,Arbroath,36.0,1416.0,0,0,0.0,0,150000.0
+14480,Schottland,2.Liga,Schottland U20,Championship,Arbroath,25.0,320.0,0,1,1.0,1,50000.0
+14502,Schottland,2.Liga,Schottland,Championship,Cove Rangers,35.0,120.0,0,1,0.0,0,200000.0
+14503,Schottland,2.Liga,,Championship,Cove Rangers,24.0,685.0,0,0,0.0,0,125000.0
+14525,Ukraine,1.Liga,Ukraine,Premier Liga,Shakhtar D.,21.0,1232.0,1,0,4.0,1,18000000.0
+14526,Ukraine,1.Liga,Ukraine,Premier Liga,Shakhtar D.,24.0,96.0,0,0,2.0,1,2500000.0
+14527,Ukraine,1.Liga,Ukraine,Premier Liga,Shakhtar D.,38.0,5980.0,0,1,102.0,0,500000.0
+14528,Ukraine,1.Liga,Ukraine,Premier Liga,Shakhtar D.,31.0,1781.0,0,1,0.0,0,400000.0
+14556,Ukraine,1.Liga,Ukraine,Premier Liga,Dynamo Kiew,28.0,2327.0,0,0,15.0,1,10000000.0
+14557,Ukraine,1.Liga,Ukraine U21,Premier Liga,Dynamo Kiew,21.0,1017.0,1,0,8.0,1,2000000.0
+14558,Ukraine,1.Liga,Ukraine,Premier Liga,Dynamo Kiew,35.0,1781.0,0,1,7.0,0,1000000.0
+14586,Ukraine,1.Liga,,Premier Liga,SK Dnipro-1,29.0,283.0,0,0,0.0,1,1000000.0
+14587,Ukraine,1.Liga,,Premier Liga,SK Dnipro-1,21.0,292.0,0,0,0.0,1,200000.0
+14615,Ukraine,1.Liga,Ukraine U21,Premier Liga,Zorya Lugansk,23.0,685.0,0,1,0.0,1,1500000.0
+14616,Ukraine,1.Liga,Ukraine U21,Premier Liga,Zorya Lugansk,24.0,127.0,0,1,2.0,0,250000.0
+14617,Ukraine,1.Liga,,Premier Liga,Zorya Lugansk,19.0,320.0,0,0,0.0,1,200000.0
+14618,Ukraine,1.Liga,Ukraine U21,Premier Liga,Zorya Lugansk,21.0,230.0,0,1,2.0,1,200000.0
+14619,Ukraine,1.Liga,Ukraine U17,Premier Liga,Zorya Lugansk,20.0,501.0,0,1,0.0,1,100000.0
+14645,Ukraine,1.Liga,Ukraine U19,Premier Liga,Vorskla Poltava,19.0,685.0,0,1,0.0,0,300000.0
+14646,Ukraine,1.Liga,,Premier Liga,Vorskla Poltava,25.0,82.0,0,0,0.0,1,150000.0
+14675,Ukraine,1.Liga,Ukraine,Premier Liga,FK Oleksandriya,30.0,124.0,1,0,0.0,0,800000.0
+14676,Ukraine,1.Liga,Ukraine U21,Premier Liga,FK Oleksandriya,22.0,664.0,0,1,0.0,1,100000.0
+14677,Ukraine,1.Liga,,Premier Liga,FK Oleksandriya,21.0,307.0,0,0,0.0,1,50000.0
+14702,Ukraine,1.Liga,Ukraine,Premier Liga,Kolos Kovalivka,29.0,2141.0,0,0,0.0,0,700000.0
+14703,Ukraine,1.Liga,Ukraine U21,Premier Liga,Kolos Kovalivka,25.0,685.0,0,1,3.0,1,200000.0
+14704,Ukraine,1.Liga,Ukraine U21,Premier Liga,Kolos Kovalivka,20.0,623.0,1,0,4.0,1,200000.0
+14726,Ukraine,1.Liga,Kasachstan,Premier Liga,Chornomorets,35.0,309.0,0,1,12.0,0,300000.0
+14727,Ukraine,1.Liga,,Premier Liga,Chornomorets,21.0,1005.0,0,0,0.0,1,100000.0
+14728,Ukraine,1.Liga,Ukraine U21,Premier Liga,Chornomorets,35.0,492.0,0,1,1.0,0,100000.0
+14751,Ukraine,1.Liga,Ukraine U21,Premier Liga,Kryvbas,28.0,315.0,0,1,4.0,0,300000.0
+14752,Ukraine,1.Liga,,Premier Liga,Kryvbas,30.0,317.0,0,0,0.0,0,100000.0
+14753,Ukraine,1.Liga,Ukraine U16,Premier Liga,Kryvbas,20.0,295.0,0,1,0.0,1,50000.0
+14778,Ukraine,1.Liga,Ukraine U21,Premier Liga,Ingulets,25.0,118.0,0,1,7.0,1,600000.0
+14779,Ukraine,1.Liga,,Premier Liga,Ingulets,31.0,301.0,0,0,0.0,1,150000.0
+14780,Ukraine,1.Liga,Ukraine U21,Premier Liga,Ingulets,28.0,238.0,0,1,10.0,0,100000.0
+14781,Ukraine,1.Liga,,Premier Liga,Ingulets,19.0,259.0,0,0,0.0,1,50000.0
+14806,Ukraine,1.Liga,Ukraine U19,Premier Liga,Metalist 1925,27.0,281.0,0,1,5.0,1,400000.0
+14807,Ukraine,1.Liga,Ukraine U21,Premier Liga,Metalist 1925,34.0,1776.0,0,1,0.0,0,150000.0
+14808,Ukraine,1.Liga,,Premier Liga,Metalist 1925,19.0,320.0,0,0,0.0,1,50000.0
+14833,Ukraine,1.Liga,Ukraine,Premier Liga,Rukh Lviv,38.0,685.0,0,1,0.0,0,200000.0
+14834,Ukraine,1.Liga,Ukraine U19,Premier Liga,Rukh Lviv,19.0,320.0,0,0,1.0,1,100000.0
+14860,Ukraine,1.Liga,,Premier Liga,Veres Rivne,35.0,1195.0,0,0,0.0,1,300000.0
+14861,Ukraine,1.Liga,,Premier Liga,Veres Rivne,23.0,1353.0,0,0,0.0,1,50000.0
+14862,Ukraine,1.Liga,,Premier Liga,Veres Rivne,20.0,320.0,0,0,0.0,1,50000.0
+14882,Ukraine,1.Liga,,Premier Liga,Metalist,24.0,281.0,0,0,0.0,0,300000.0
+14883,Ukraine,1.Liga,,Premier Liga,Metalist,22.0,86.0,0,0,0.0,1,100000.0
+14884,Ukraine,1.Liga,Ukraine U21,Premier Liga,Metalist,21.0,275.0,0,1,1.0,1,50000.0
+14908,Ukraine,1.Liga,,Premier Liga,PFK Lviv,33.0,85.0,0,0,0.0,0,300000.0
+14909,Ukraine,1.Liga,Ukraine,Premier Liga,PFK Lviv,36.0,127.0,0,1,2.0,0,150000.0
+14910,Ukraine,1.Liga,,Premier Liga,PFK Lviv,19.0,320.0,0,0,0.0,1,50000.0
+14935,Ukraine,1.Liga,Ukraine,Premier Liga,FK Minaj,36.0,469.0,0,1,0.0,0,200000.0
+14936,Ukraine,1.Liga,Ukraine U21,Premier Liga,FK Minaj,28.0,659.0,0,1,0.0,0,100000.0
+14937,Ukraine,1.Liga,,Premier Liga,FK Minaj,20.0,659.0,0,0,0.0,1,50000.0
+14961,Polen,1.Liga,Bosnien,Ekstraklasa,Rakow,25.0,685.0,0,1,0.0,1,8000000.0
+14962,Polen,1.Liga,Polen U20,Ekstraklasa,Rakow,19.0,1363.0,1,0,1.0,1,700000.0
+14963,Polen,1.Liga,Polen U18,Ekstraklasa,Rakow,18.0,300.0,1,0,2.0,1,25000.0
+14987,Polen,1.Liga,Polen U21,Ekstraklasa,Lech Posen,30.0,1050.0,0,1,1.0,1,800000.0
+14988,Polen,1.Liga,Slowakei,Ekstraklasa,Lech Posen,28.0,134.0,0,1,1.0,0,500000.0
+14989,Polen,1.Liga,Ukraine,Ekstraklasa,Lech Posen,31.0,319.0,0,1,0.0,0,300000.0
+15016,Polen,1.Liga,Polen,Ekstraklasa,Legia Warschau,20.0,952.0,0,0,0.0,1,4000000.0
+15017,Polen,1.Liga,Polen U19,Ekstraklasa,Legia Warschau,27.0,320.0,0,1,0.0,0,500000.0
+15018,Polen,1.Liga,Polen U21,Ekstraklasa,Legia Warschau,21.0,1597.0,0,0,8.0,0,400000.0
+15019,Polen,1.Liga,,Ekstraklasa,Legia Warschau,21.0,194.0,0,0,0.0,1,50000.0
+15046,Polen,1.Liga,,Ekstraklasa,Pogon Stettin,31.0,1416.0,0,0,0.0,0,800000.0
+15047,Polen,1.Liga,,Ekstraklasa,Pogon Stettin,21.0,685.0,0,0,0.0,1,300000.0
+15048,Polen,1.Liga,,Ekstraklasa,Pogon Stettin,20.0,309.0,0,0,0.0,1,25000.0
+15075,Polen,1.Liga,,Ekstraklasa,Cracovia,23.0,1007.0,0,0,0.0,0,1200000.0
+15076,Polen,1.Liga,,Ekstraklasa,Cracovia,36.0,1416.0,0,0,0.0,0,50000.0
+15077,Polen,1.Liga,,Ekstraklasa,Cracovia,26.0,250.0,0,0,0.0,0,25000.0
+15078,Polen,1.Liga,,Ekstraklasa,Cracovia,18.0,666.0,0,0,0.0,1,25000.0
+15109,Polen,1.Liga,,Ekstraklasa,Zaglebie Lubin,20.0,1532.0,0,0,0.0,1,1000000.0
+15110,Polen,1.Liga,,Ekstraklasa,Zaglebie Lubin,30.0,110.0,0,0,0.0,0,750000.0
+15111,Polen,1.Liga,,Ekstraklasa,Zaglebie Lubin,36.0,499.0,0,0,0.0,0,50000.0
+15112,Polen,1.Liga,,Ekstraklasa,Zaglebie Lubin,19.0,664.0,0,0,0.0,1,25000.0
+15113,Polen,1.Liga,,Ekstraklasa,Zaglebie Lubin,17.0,309.0,0,0,0.0,1,25000.0
+15144,Polen,1.Liga,,Ekstraklasa,Górnik Zabrze,24.0,1882.0,0,0,0.0,1,500000.0
+15145,Polen,1.Liga,,Ekstraklasa,Górnik Zabrze,25.0,84.0,0,0,0.0,0,300000.0
+15146,Polen,1.Liga,,Ekstraklasa,Górnik Zabrze,23.0,685.0,0,0,0.0,0,50000.0
+15177,Polen,1.Liga,,Ekstraklasa,Jagiellonia,31.0,501.0,0,0,0.0,0,350000.0
+15178,Polen,1.Liga,,Ekstraklasa,Jagiellonia,25.0,286.0,0,0,0.0,0,25000.0
+15179,Polen,1.Liga,,Ekstraklasa,Jagiellonia,18.0,632.0,0,0,0.0,1,25000.0
+15180,Polen,1.Liga,,Ekstraklasa,Jagiellonia,17.0,306.0,0,0,0.0,1,25000.0
+15211,Polen,1.Liga,,Ekstraklasa,Widzew Lodz,25.0,414.0,0,0,0.0,1,1500000.0
+15212,Polen,1.Liga,,Ekstraklasa,Widzew Lodz,26.0,685.0,0,0,0.0,0,300000.0
+15213,Polen,1.Liga,,Ekstraklasa,Widzew Lodz,31.0,407.0,0,0,0.0,0,50000.0
+15240,Polen,1.Liga,,Ekstraklasa,Warta Posen,30.0,2146.0,0,0,0.0,1,550000.0
+15241,Polen,1.Liga,,Ekstraklasa,Warta Posen,21.0,685.0,0,0,0.0,1,300000.0
+15242,Polen,1.Liga,,Ekstraklasa,Warta Posen,20.0,667.0,0,0,0.0,1,25000.0
+15270,Polen,1.Liga,,Ekstraklasa,Piast Gliwice,31.0,1953.0,0,0,0.0,0,600000.0
+15271,Polen,1.Liga,,Ekstraklasa,Piast Gliwice,29.0,1019.0,0,0,0.0,0,100000.0
+15272,Polen,1.Liga,,Ekstraklasa,Piast Gliwice,21.0,307.0,0,0,0.0,1,25000.0
+15299,Polen,1.Liga,,Ekstraklasa,Slask Wroclaw,31.0,320.0,0,0,0.0,1,400000.0
+15300,Polen,1.Liga,,Ekstraklasa,Slask Wroclaw,30.0,1019.0,0,0,0.0,0,300000.0
+15301,Polen,1.Liga,,Ekstraklasa,Slask Wroclaw,20.0,685.0,0,0,0.0,0,50000.0
+15302,Polen,1.Liga,,Ekstraklasa,Slask Wroclaw,23.0,684.0,0,0,0.0,1,25000.0
+15303,Polen,1.Liga,,Ekstraklasa,Slask Wroclaw,19.0,308.0,0,0,0.0,1,25000.0
+15337,Polen,1.Liga,,Ekstraklasa,Wisla Plock,23.0,2137.0,0,0,0.0,0,400000.0
+15338,Polen,1.Liga,,Ekstraklasa,Wisla Plock,32.0,1196.0,0,0,0.0,0,350000.0
+15341,Polen,1.Liga,,Ekstraklasa,Wisla Plock,18.0,309.0,0,0,0.0,1,25000.0
+15372,Polen,1.Liga,,Ekstraklasa,Lechia Gdansk,37.0,2294.0,0,0,0.0,0,100000.0
+15373,Polen,1.Liga,,Ekstraklasa,Lechia Gdansk,34.0,501.0,0,0,0.0,0,75000.0
+15399,Polen,1.Liga,,Ekstraklasa,Radomiak,21.0,319.0,0,0,0.0,1,500000.0
+15427,Polen,1.Liga,,Ekstraklasa,Stal Mielec,23.0,370.0,0,0,0.0,1,600000.0
+15428,Polen,1.Liga,,Ekstraklasa,Stal Mielec,22.0,320.0,0,0,2.0,0,200000.0
+15429,Polen,1.Liga,,Ekstraklasa,Stal Mielec,20.0,1398.0,0,0,0.0,0,25000.0
+15453,Polen,1.Liga,,Ekstraklasa,Miedz Legnica,29.0,115.0,0,0,9.0,0,350000.0
+15454,Polen,1.Liga,,Ekstraklasa,Miedz Legnica,30.0,663.0,0,0,0.0,1,200000.0
+15455,Polen,1.Liga,,Ekstraklasa,Miedz Legnica,28.0,866.0,0,0,0.0,0,150000.0
+15456,Polen,1.Liga,,Ekstraklasa,Miedz Legnica,17.0,810.0,0,0,0.0,1,50000.0
+15483,Polen,1.Liga,,Ekstraklasa,Korona Kielce,22.0,842.0,0,0,0.0,1,350000.0
+15484,Polen,1.Liga,,Ekstraklasa,Korona Kielce,30.0,672.0,0,0,0.0,0,150000.0
+15485,Polen,1.Liga,,Ekstraklasa,Korona Kielce,18.0,1007.0,0,0,0.0,0,25000.0
+15486,Polen,1.Liga,,Ekstraklasa,Korona Kielce,19.0,289.0,0,0,0.0,1,25000.0
+15511,Dänemark,1.Liga,,Superligaen,FC Kopenhagen,24.0,683.0,0,0,1.0,1,5000000.0
+15512,Dänemark,1.Liga,,Superligaen,FC Kopenhagen,33.0,1405.0,0,0,9.0,0,500000.0
+15513,Dänemark,1.Liga,,Superligaen,FC Kopenhagen,17.0,320.0,0,0,0.0,1,200000.0
+15539,Dänemark,1.Liga,,Superligaen,Bröndby IF,22.0,1416.0,0,0,0.0,1,2000000.0
+15540,Dänemark,1.Liga,,Superligaen,Bröndby IF,21.0,835.0,0,0,0.0,1,150000.0
+15541,Dänemark,1.Liga,,Superligaen,Bröndby IF,39.0,685.0,0,0,0.0,0,50000.0
+15565,Dänemark,1.Liga,,Superligaen,FC Midtjylland,23.0,1019.0,0,0,4.0,1,700000.0
+15566,Dänemark,1.Liga,,Superligaen,FC Midtjylland,34.0,835.0,0,0,1.0,0,600000.0
+15567,Dänemark,1.Liga,,Superligaen,FC Midtjylland,19.0,257.0,0,0,0.0,1,100000.0
+15592,Dänemark,1.Liga,,Superligaen,Nordsjaelland,27.0,320.0,0,0,1.0,1,500000.0
+15593,Dänemark,1.Liga,,Superligaen,Nordsjaelland,28.0,115.0,0,0,1.0,0,500000.0
+15594,Dänemark,1.Liga,,Superligaen,Nordsjaelland,20.0,996.0,0,0,6.0,1,150000.0
+15621,Dänemark,1.Liga,,Superligaen,Aalborg BK,23.0,136.0,0,0,4.0,0,1000000.0
+15622,Dänemark,1.Liga,,Superligaen,Aalborg BK,18.0,475.0,0,0,0.0,1,400000.0
+15623,Dänemark,1.Liga,,Superligaen,Aalborg BK,27.0,320.0,0,0,16.0,0,350000.0
+15647,Dänemark,1.Liga,,Superligaen,Aarhus GF,27.0,265.0,0,0,1.0,0,400000.0
+15648,Dänemark,1.Liga,,Superligaen,Aarhus GF,38.0,685.0,0,0,1.0,0,200000.0
+15670,Dänemark,1.Liga,Schweden,Superligaen,Randers FC,31.0,1774.0,0,1,1.0,0,1000000.0
+15671,Dänemark,1.Liga,Dänemark U20,Superligaen,Randers FC,28.0,480.0,0,1,1.0,0,200000.0
+15672,Dänemark,1.Liga,,Superligaen,Randers FC,27.0,263.0,0,0,0.0,1,100000.0
+15693,Dänemark,1.Liga,Dänemark,Superligaen,Silkeborg IF,32.0,685.0,0,1,0.0,0,500000.0
+15694,Dänemark,1.Liga,Dänemark U20,Superligaen,Silkeborg IF,24.0,2146.0,0,1,0.0,0,200000.0
+15695,Dänemark,Jugendliga,Dänemark U18,U19 Drenge Ligaen,Silkeborg U19,17.0,501.0,1,0,6.0,1,150000.0
+15718,Dänemark,1.Liga,Dänemark U21,Superligaen,Odense BK,32.0,289.0,0,1,1.0,0,400000.0
+15719,Dänemark,1.Liga,Dänemark U21,Superligaen,Odense BK,22.0,1416.0,0,1,0.0,0,350000.0
+15720,Dänemark,1.Liga,Dänemark U19,Superligaen,Odense BK,18.0,593.0,0,0,2.0,1,100000.0
+15744,Dänemark,1.Liga,Dänemark U21,Superligaen,Viborg FF,23.0,1781.0,0,0,1.0,1,700000.0
+15745,Dänemark,1.Liga,Dänemark U23,Superligaen,Viborg FF,34.0,624.0,0,1,1.0,0,200000.0
+15746,Dänemark,Jugendliga,,U19 Drenge Divisionen,Viborg FF U19,17.0,685.0,0,0,0.0,1,150000.0
+15768,Dänemark,1.Liga,Schweden U21,Superligaen,AC Horsens,22.0,121.0,0,0,11.0,1,1000000.0
+15769,Dänemark,1.Liga,Kroatien,Superligaen,AC Horsens,30.0,1781.0,0,1,0.0,0,350000.0
+15770,Dänemark,1.Liga,,Superligaen,AC Horsens,25.0,685.0,0,0,0.0,1,200000.0
+15791,Dänemark,1.Liga,Dänemark U19,Superligaen,Lyngby BK,23.0,646.0,0,1,4.0,0,250000.0
+15792,Dänemark,1.Liga,,Superligaen,Lyngby BK,26.0,685.0,0,0,0.0,0,200000.0
+15793,Dänemark,1.Liga,,Superligaen,Lyngby BK,30.0,114.0,0,0,0.0,1,150000.0
+15794,Dänemark,Jugendliga,,U19 Drenge Ligaen,Lyngby BK U19,18.0,654.0,0,0,0.0,1,50000.0
+15821,Kroatien,1.Liga,Kroatien,SuperSport HNL,Dinamo Zagreb,28.0,2816.0,1,0,43.0,0,14000000.0
+15822,Kroatien,1.Liga,Kroatien U21,SuperSport HNL,Dinamo Zagreb,24.0,839.0,0,1,1.0,0,1500000.0
+15823,Kroatien,1.Liga,,SuperSport HNL,Dinamo Zagreb,36.0,2501.0,0,0,0.0,0,200000.0
+15844,Kroatien,1.Liga,Kroatien,SuperSport HNL,Hajduk Split,33.0,313.0,0,0,19.0,0,1500000.0
+15845,Kroatien,1.Liga,Kroatien U21,SuperSport HNL,Hajduk Split,21.0,685.0,0,0,1.0,1,550000.0
+15846,Kroatien,1.Liga,Österreich U21,SuperSport HNL,Hajduk Split,28.0,119.0,0,1,1.0,0,400000.0
+15847,Kroatien,1.Liga,Kroatien,SuperSport HNL,Hajduk Split,38.0,602.0,0,1,44.0,0,50000.0
+15874,Kroatien,1.Liga,Kroatien,SuperSport HNL,HNK Rijeka,23.0,685.0,1,0,0.0,1,2000000.0
+15875,Kroatien,1.Liga,Kroatien U20,SuperSport HNL,HNK Rijeka,20.0,286.0,1,0,1.0,1,250000.0
+15876,Kroatien,1.Liga,Bosnien U21,SuperSport HNL,HNK Rijeka,24.0,670.0,0,1,2.0,0,150000.0
+15877,Kroatien,1.Liga,,SuperSport HNL,HNK Rijeka,27.0,3058.0,0,0,0.0,0,50000.0
+15909,Kroatien,1.Liga,Kroatien U21,SuperSport HNL,NK Lokomotiva,20.0,292.0,1,0,1.0,1,400000.0
+15910,Kroatien,1.Liga,,SuperSport HNL,NK Lokomotiva,25.0,254.0,0,0,0.0,0,250000.0
+15911,Kroatien,1.Liga,,SuperSport HNL,NK Lokomotiva,34.0,2085.0,0,0,0.0,0,50000.0
+15912,Kroatien,1.Liga,,SuperSport HNL,NK Lokomotiva,36.0,867.0,0,0,0.0,0,50000.0
+15937,Kroatien,1.Liga,Kroatien U19,SuperSport HNL,NK Osijek,29.0,3775.0,0,1,2.0,0,400000.0
+15938,Kroatien,1.Liga,Kroatien U19,SuperSport HNL,NK Osijek,24.0,685.0,0,1,1.0,0,50000.0
+15960,Kroatien,1.Liga,Kroatien U17,SuperSport HNL,HNK Gorica,28.0,1018.0,0,1,12.0,0,400000.0
+15961,Kroatien,1.Liga,Kroatien U19,SuperSport HNL,HNK Gorica,22.0,303.0,0,1,5.0,0,50000.0
+15962,Kroatien,1.Liga,,SuperSport HNL,HNK Gorica,23.0,944.0,0,0,0.0,0,50000.0
+15963,Kroatien,1.Liga,Kroatien U18,SuperSport HNL,HNK Gorica,34.0,104.0,0,1,0.0,0,50000.0
+15990,Kroatien,1.Liga,Kroatien,SuperSport HNL,NK Varazdin,30.0,1199.0,0,1,0.0,0,150000.0
+15991,Kroatien,1.Liga,,SuperSport HNL,NK Varazdin,23.0,91.0,0,0,0.0,1,100000.0
+15992,Kroatien,1.Liga,,SuperSport HNL,NK Varazdin,23.0,307.0,0,0,0.0,1,50000.0
+16020,Kroatien,1.Liga,,SuperSport HNL,NK Istra,23.0,1752.0,0,0,0.0,1,300000.0
+16021,Kroatien,1.Liga,,SuperSport HNL,NK Istra,28.0,119.0,0,0,0.0,1,100000.0
+16022,Kroatien,1.Liga,,SuperSport HNL,NK Istra,21.0,1016.0,0,0,0.0,1,50000.0
+16049,Kroatien,1.Liga,,SuperSport HNL,HNK Sibenik,27.0,1758.0,0,0,0.0,1,350000.0
+16076,Kroatien,1.Liga,Kroatien,SuperSport HNL,Slaven Belupo,30.0,673.0,0,1,0.0,0,250000.0
+16077,Kroatien,1.Liga,,SuperSport HNL,Slaven Belupo,25.0,672.0,0,0,0.0,1,200000.0
+16078,Kroatien,1.Liga,Kroatien U21,SuperSport HNL,Slaven Belupo,32.0,1008.0,0,1,0.0,0,50000.0
+16103,Serbien,1.Liga,Kanada,Super liga Srbije,Roter Stern,35.0,2123.0,1,0,73.0,0,1200000.0
+16104,Serbien,1.Liga,Serbien,Super liga Srbije,Roter Stern,26.0,1416.0,0,1,0.0,0,500000.0
+16131,Serbien,1.Liga,Serbien,Super liga Srbije,Partizan,23.0,1962.0,0,1,1.0,1,1800000.0
+16132,Serbien,1.Liga,Serbien U21,Super liga Srbije,Partizan,31.0,2483.0,0,1,0.0,0,700000.0
+16133,Serbien,1.Liga,Serbien,Super liga Srbije,Partizan,37.0,651.0,0,1,1.0,0,50000.0
+16159,Serbien,1.Liga,,Super liga Srbije,Čukarički,34.0,100.0,0,0,0.0,0,100000.0
+16160,Serbien,1.Liga,,Super liga Srbije,Čukarički,36.0,2108.0,0,0,0.0,0,50000.0
+16188,Serbien,1.Liga,Montenegro,Super liga Srbije,Vojvodina,24.0,320.0,1,0,1.0,1,800000.0
+16189,Serbien,1.Liga,,Super liga Srbije,Vojvodina,26.0,1764.0,0,0,0.0,0,300000.0
+16190,Serbien,1.Liga,,Super liga Srbije,Vojvodina,23.0,485.0,0,0,0.0,1,50000.0
+16216,Serbien,1.Liga,Serbien U21,Super liga Srbije,FK TSC,19.0,685.0,1,0,3.0,1,800000.0
+16217,Serbien,1.Liga,Serbien U21,Super liga Srbije,FK TSC,36.0,1781.0,0,1,0.0,0,50000.0
+16218,Serbien,1.Liga,,Super liga Srbije,FK TSC,35.0,3018.0,0,0,0.0,0,50000.0
+16245,Serbien,1.Liga,,Super liga Srbije,Vozdovac,26.0,980.0,0,0,0.0,1,700000.0
+16246,Serbien,1.Liga,Serbien U21,Super liga Srbije,Vozdovac,21.0,320.0,0,0,1.0,1,300000.0
+16247,Serbien,Jugendliga,Bosnien U18,Omladinska liga,Vozdovac U19,19.0,309.0,0,1,1.0,1,50000.0
+16275,Serbien,1.Liga,Serbien,Super liga Srbije,Novi Pazar,32.0,320.0,0,1,1.0,0,400000.0
+16276,Serbien,1.Liga,Serbien U21,Super liga Srbije,Novi Pazar,21.0,286.0,0,1,1.0,1,100000.0
+16277,Serbien,1.Liga,,Super liga Srbije,Novi Pazar,19.0,320.0,0,0,0.0,1,50000.0
+16300,Serbien,1.Liga,Serbien,Super liga Srbije,Spartak,27.0,650.0,0,1,1.0,0,400000.0
+16301,Serbien,1.Liga,Montenegro U19,Super liga Srbije,Spartak,23.0,1559.0,0,1,0.0,0,150000.0
+16302,Serbien,1.Liga,,Super liga Srbije,Spartak,21.0,96.0,0,0,0.0,0,100000.0
+16332,Serbien,1.Liga,Serbien U21,Super liga Srbije,Napredak,32.0,320.0,0,1,2.0,1,500000.0
+16333,Serbien,1.Liga,,Super liga Srbije,Napredak,27.0,481.0,0,0,0.0,1,100000.0
+16360,Serbien,1.Liga,,Super liga Srbije,Radnicki 1923,21.0,672.0,0,0,0.0,1,500000.0
+16361,Serbien,1.Liga,,Super liga Srbije,Radnicki 1923,25.0,2511.0,0,0,0.0,0,200000.0
+16386,Serbien,1.Liga,,Super liga Srbije,Radnik,24.0,1781.0,0,0,0.0,0,350000.0
+16387,Serbien,1.Liga,,Super liga Srbije,Radnik,35.0,107.0,0,0,0.0,0,100000.0
+16415,Serbien,1.Liga,Serbien U21,Super liga Srbije,Mladost GAT,23.0,485.0,0,1,2.0,1,300000.0
+16416,Serbien,1.Liga,Serbien U19,Super liga Srbije,Mladost GAT,34.0,280.0,0,1,19.0,0,100000.0
+16417,Serbien,1.Liga,Serbien U19,Super liga Srbije,Mladost GAT,21.0,477.0,0,1,0.0,1,50000.0
+16440,Serbien,1.Liga,Serbien,Super liga Srbije,Radnicki Nis,26.0,252.0,1,0,1.0,0,500000.0
+16441,Serbien,1.Liga,Serbien U19,Super liga Srbije,Radnicki Nis,18.0,320.0,1,0,1.0,1,200000.0
+16468,Serbien,1.Liga,,Super liga Srbije,Kolubara,28.0,1002.0,0,0,0.0,1,500000.0
+16469,Serbien,1.Liga,Montenegro U21,Super liga Srbije,Kolubara,22.0,485.0,0,1,2.0,1,100000.0
+16470,Serbien,1.Liga,,Super liga Srbije,Kolubara,20.0,275.0,0,0,0.0,1,50000.0
+16496,Serbien,1.Liga,,Super liga Srbije,Javor-Matis,21.0,320.0,0,0,0.0,1,400000.0
+16497,Serbien,1.Liga,Bosnien U19,Super liga Srbije,Javor-Matis,20.0,113.0,0,1,4.0,1,200000.0
+16498,Serbien,1.Liga,Serbien U21,Super liga Srbije,Javor-Matis,30.0,270.0,0,1,1.0,0,50000.0
+16525,Serbien,1.Liga,Serbien U20,Super liga Srbije,Mladost,20.0,320.0,0,1,0.0,1,300000.0
+16526,Serbien,1.Liga,Montenegro U19,Super liga Srbije,Mladost,24.0,1355.0,0,1,3.0,0,50000.0
+16559,Tschechien,1.Liga,Tschechien,Fortuna Liga,Slavia Prag,28.0,1941.0,0,1,1.0,0,2000000.0
+16560,Tschechien,1.Liga,Tschechien,Fortuna Liga,Slavia Prag,31.0,674.0,0,0,3.0,0,2000000.0
+16561,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Slavia Prag,26.0,853.0,0,1,4.0,0,250000.0
+16587,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Sparta Prag,22.0,251.0,1,0,10.0,1,900000.0
+16588,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Sparta Prag,26.0,3242.0,0,1,4.0,0,500000.0
+16589,Tschechien,1.Liga,Tschechien,Fortuna Liga,Sparta Prag,32.0,1781.0,0,1,0.0,0,350000.0
+16617,Tschechien,1.Liga,Tschechien,Fortuna Liga,Viktoria Pilsen,27.0,864.0,1,0,5.0,1,4500000.0
+16618,Tschechien,1.Liga,,Fortuna Liga,Viktoria Pilsen,28.0,672.0,0,0,0.0,1,350000.0
+16619,Tschechien,1.Liga,Tschechien U19,Fortuna Liga,Viktoria Pilsen,22.0,129.0,0,1,1.0,1,200000.0
+16643,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Banik Ostrau,24.0,308.0,0,1,0.0,0,250000.0
+16644,Tschechien,3.Liga,Tschechien U19,MSFL,Banik Ostrau B,19.0,320.0,1,0,0.0,1,75000.0
+16645,Tschechien,1.Liga,Tschechien,Fortuna Liga,Banik Ostrau,40.0,1937.0,0,1,3.0,0,75000.0
+16671,Tschechien,1.Liga,Tschechien,Fortuna Liga,1.FC Slovacko,30.0,320.0,0,1,0.0,0,700000.0
+16672,Tschechien,1.Liga,Tschechien U20,Fortuna Liga,1.FC Slovacko,35.0,499.0,0,1,1.0,0,125000.0
+16673,Tschechien,3.Liga,Tschechien U21,MSFL,Slovacko B,20.0,1050.0,0,0,0.0,1,100000.0
+16696,Tschechien,1.Liga,,Fortuna Liga,Sigma Olmütz,29.0,859.0,0,0,0.0,0,350000.0
+16697,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Sigma Olmütz,22.0,275.0,0,0,0.0,1,300000.0
+16698,Tschechien,1.Liga,,Fortuna Liga,Sigma Olmütz,26.0,320.0,0,0,0.0,0,200000.0
+16699,Tschechien,1.Liga,,Fortuna Liga,Sigma Olmütz,32.0,274.0,0,0,0.0,0,150000.0
+16727,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Jablonec,35.0,1962.0,0,1,6.0,0,250000.0
+16728,Tschechien,1.Liga,,Fortuna Liga,Jablonec,24.0,320.0,0,0,0.0,1,225000.0
+16729,Tschechien,1.Liga,Slowakei U21,Fortuna Liga,Jablonec,20.0,492.0,1,0,1.0,1,50000.0
+16753,Tschechien,1.Liga,,Fortuna Liga,Zbrojovka Brünn,34.0,842.0,0,0,0.0,0,250000.0
+16754,Tschechien,1.Liga,Tschechien U19,Fortuna Liga,Zbrojovka Brünn,28.0,320.0,0,1,0.0,1,200000.0
+16755,Tschechien,1.Liga,,Fortuna Liga,Zbrojovka Brünn,38.0,310.0,0,0,0.0,0,25000.0
+16781,Tschechien,1.Liga,Belgien U17,Fortuna Liga,Slovan Liberec,24.0,1597.0,0,1,0.0,1,350000.0
+16782,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Slovan Liberec,23.0,128.0,0,1,0.0,0,200000.0
+16808,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Bohemians 1905,25.0,136.0,0,1,13.0,0,450000.0
+16809,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Bohemians 1905,33.0,1781.0,0,1,3.0,0,200000.0
+16810,Tschechien,1.Liga,,Fortuna Liga,Bohemians 1905,24.0,2146.0,0,0,0.0,0,75000.0
+16811,Tschechien,3.Liga,,CFL,Bohemians B,28.0,453.0,0,0,0.0,0,25000.0
+16836,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Pardubice,21.0,685.0,0,0,0.0,1,400000.0
+16837,Tschechien,1.Liga,Rumänien,Fortuna Liga,Pardubice,35.0,110.0,1,0,19.0,0,300000.0
+16838,Tschechien,1.Liga,Slowakei U21,Fortuna Liga,Pardubice,30.0,314.0,0,1,1.0,0,225000.0
+16839,Tschechien,1.Liga,Tschechien U20,Fortuna Liga,Pardubice,24.0,2511.0,0,1,0.0,0,75000.0
+16865,Tschechien,1.Liga,Tschechien U18,Fortuna Liga,Mlada Boleslav,24.0,1010.0,0,1,4.0,0,150000.0
+16866,Tschechien,1.Liga,,Fortuna Liga,Mlada Boleslav,37.0,1953.0,0,0,0.0,0,100000.0
+16867,Tschechien,3.Liga,Tschechien U16,CFL,Ml. Boleslav B,22.0,999.0,0,1,1.0,1,50000.0
+16893,Tschechien,1.Liga,Tschechien U21,Fortuna Liga,Hradec Kralove,30.0,828.0,0,1,1.0,0,250000.0
+16894,Tschechien,1.Liga,Slowakei,Fortuna Liga,Hradec Kralove,31.0,319.0,0,1,0.0,0,200000.0
+16895,Tschechien,1.Liga,,Fortuna Liga,Hradec Kralove,30.0,2133.0,0,0,0.0,0,150000.0
+16917,Tschechien,1.Liga,,Fortuna Liga,FK Teplice,30.0,499.0,0,0,0.0,1,250000.0
+16918,Tschechien,1.Liga,,Fortuna Liga,FK Teplice,24.0,1781.0,0,0,0.0,0,75000.0
+16919,Tschechien,1.Liga,Tschechien,Fortuna Liga,FK Teplice,40.0,5249.0,0,1,2.0,0,50000.0
+16944,Tschechien,1.Liga,Slowakei U21,Fortuna Liga,C. Budejovice,24.0,685.0,0,1,6.0,0,250000.0
+16945,Tschechien,1.Liga,Tschechien U17,Fortuna Liga,C. Budejovice,22.0,320.0,0,1,2.0,1,250000.0
+16973,Tschechien,1.Liga,Slowakei U21,Fortuna Liga,Trinity Zlin,33.0,1568.0,0,1,3.0,1,250000.0
+16974,Tschechien,1.Liga,,Fortuna Liga,Trinity Zlin,31.0,5433.0,0,0,0.0,0,150000.0
+16975,Tschechien,1.Liga,Tschechien U20,Fortuna Liga,Trinity Zlin,25.0,1781.0,0,1,2.0,0,100000.0
+17000,Rumänien,1.Liga,Rumänien U21,SuperLiga,FCSB,23.0,1232.0,1,0,1.0,1,1500000.0
+17001,Rumänien,1.Liga,Rumänien,SuperLiga,FCSB,24.0,2138.0,0,1,1.0,0,600000.0
+17027,Rumänien,1.Liga,Italien,SuperLiga,CFR Cluj,26.0,304.0,0,1,0.0,0,1500000.0
+17028,Rumänien,1.Liga,Rumänien,SuperLiga,CFR Cluj,35.0,1050.0,0,1,1.0,0,400000.0
+17029,Rumänien,1.Liga,Rumänien U20,SuperLiga,CFR Cluj,20.0,474.0,1,0,5.0,1,200000.0
+17030,Rumänien,1.Liga,,SuperLiga,CFR Cluj,22.0,320.0,0,0,0.0,0,50000.0
+17059,Rumänien,1.Liga,Rumänien,SuperLiga,CS U Craiova,31.0,685.0,0,1,1.0,0,500000.0
+17060,Rumänien,1.Liga,Rumänien U18,SuperLiga,CS U Craiova,26.0,2693.0,0,1,1.0,1,400000.0
+17089,Rumänien,1.Liga,Rumänien,SuperLiga,FC Rapid 1923,25.0,861.0,1,0,1.0,1,1800000.0
+17090,Rumänien,1.Liga,Rumänien U21,SuperLiga,FC Rapid 1923,32.0,1717.0,0,1,1.0,0,200000.0
+17121,Rumänien,1.Liga,Rumänien,SuperLiga,FCV Farul,23.0,685.0,0,0,0.0,1,1500000.0
+17122,Rumänien,1.Liga,Rumänien,SuperLiga,FCV Farul,29.0,320.0,0,1,0.0,0,150000.0
+17158,Rumänien,1.Liga,Rumänien U21,SuperLiga,Sepsi OSK,27.0,2511.0,0,1,0.0,1,1400000.0
+17159,Rumänien,1.Liga,Rumänien U21,SuperLiga,Sepsi OSK,26.0,685.0,0,1,0.0,1,200000.0
+17160,Rumänien,1.Liga,,SuperLiga,Sepsi OSK,18.0,320.0,0,0,0.0,1,25000.0
+17161,Rumänien,1.Liga,,SuperLiga,Sepsi OSK,19.0,685.0,0,0,0.0,1,25000.0
+17189,Rumänien,1.Liga,Bulgarien,SuperLiga,U Cluj,31.0,254.0,0,1,19.0,0,400000.0
+17190,Rumänien,1.Liga,Rumänien U21,SuperLiga,U Cluj,21.0,1222.0,1,0,0.0,1,400000.0
+17191,Rumänien,1.Liga,,SuperLiga,U Cluj,22.0,474.0,0,0,0.0,0,50000.0
+17228,Rumänien,1.Liga,Rumänien U21,SuperLiga,FC U Craiova,20.0,1232.0,0,0,0.0,0,600000.0
+17229,Rumänien,1.Liga,,SuperLiga,FC U Craiova,24.0,320.0,0,0,0.0,1,500000.0
+17230,Rumänien,1.Liga,,SuperLiga,FC U Craiova,30.0,1944.0,0,0,0.0,0,50000.0
+17261,Rumänien,1.Liga,Rumänien U21,SuperLiga,FC Voluntari,22.0,643.0,1,0,8.0,1,1000000.0
+17262,Rumänien,1.Liga,,SuperLiga,FC Voluntari,34.0,236.0,0,0,0.0,0,150000.0
+17263,Rumänien,1.Liga,,SuperLiga,FC Voluntari,33.0,1416.0,0,0,0.0,0,100000.0
+17264,Rumänien,1.Liga,,SuperLiga,FC Voluntari,20.0,1050.0,0,0,0.0,1,25000.0
+17293,Rumänien,1.Liga,Rumänien,SuperLiga,UTA Arad,29.0,1416.0,0,1,0.0,0,600000.0
+17294,Rumänien,1.Liga,Ukraine U20,SuperLiga,UTA Arad,26.0,93.0,0,1,1.0,1,350000.0
+17295,Rumänien,1.Liga,,SuperLiga,UTA Arad,33.0,1185.0,0,0,0.0,0,200000.0
+17296,Rumänien,1.Liga,,SuperLiga,UTA Arad,21.0,862.0,0,0,0.0,0,25000.0
+17324,Rumänien,1.Liga,Kroatien,SuperLiga,FC Hermannstadt,26.0,217.0,0,1,0.0,0,650000.0
+17325,Rumänien,1.Liga,Rumänien U19,SuperLiga,FC Hermannstadt,28.0,685.0,0,1,0.0,0,200000.0
+17326,Rumänien,1.Liga,,SuperLiga,FC Hermannstadt,19.0,320.0,0,0,0.0,1,25000.0
+17352,Rumänien,1.Liga,Rumänien U18,SuperLiga,Petrolul,26.0,301.0,0,1,0.0,0,700000.0
+17353,Rumänien,1.Liga,Österreich U21,SuperLiga,Petrolul,29.0,245.0,0,1,2.0,0,600000.0
+17354,Rumänien,1.Liga,Rumänien U16,SuperLiga,Petrolul,18.0,685.0,0,1,0.0,0,25000.0
+17383,Rumänien,1.Liga,Rumänien U21,SuperLiga,Chindia,26.0,685.0,0,1,3.0,0,650000.0
+17384,Rumänien,1.Liga,Rumänien U21,SuperLiga,Chindia,33.0,1416.0,0,1,5.0,0,150000.0
+17385,Rumänien,1.Liga,Rumänien U21,SuperLiga,Chindia,24.0,271.0,0,1,0.0,0,150000.0
+17386,Rumänien,1.Liga,,SuperLiga,Chindia,17.0,320.0,0,0,0.0,1,25000.0
+17413,Rumänien,1.Liga,Rumänien U21,SuperLiga,FC Arges,33.0,320.0,0,1,1.0,0,350000.0
+17414,Rumänien,1.Liga,,SuperLiga,FC Arges,21.0,112.0,0,0,0.0,1,150000.0
+17415,Rumänien,1.Liga,Rumänien U21,SuperLiga,FC Arges,21.0,1266.0,0,1,0.0,0,100000.0
+17445,Rumänien,1.Liga,Rumänien U21,SuperLiga,FC Botosani,28.0,2146.0,0,1,0.0,0,550000.0
+17446,Rumänien,1.Liga,Rumänien U21,SuperLiga,FC Botosani,22.0,117.0,0,1,1.0,0,250000.0
+17447,Rumänien,1.Liga,,SuperLiga,FC Botosani,19.0,320.0,0,0,0.0,1,25000.0
+17475,Rumänien,1.Liga,Rumänien U21,SuperLiga,CS Mioveni,30.0,123.0,0,1,0.0,0,500000.0
+17476,Rumänien,1.Liga,Rumänien U21,SuperLiga,CS Mioveni,30.0,320.0,0,1,0.0,0,150000.0
+17477,Rumänien,1.Liga,,SuperLiga,CS Mioveni,28.0,3303.0,0,0,0.0,0,25000.0
+17504,Schweden,1.Liga,Mali,Allsvenskan,Malmö FF,28.0,644.0,1,0,3.0,1,750000.0
+17505,Schweden,1.Liga,Schweden,Allsvenskan,Malmö FF,36.0,2132.0,0,1,4.0,0,300000.0
+17506,Schweden,1.Liga,Schweden U19,Allsvenskan,Malmö FF,19.0,866.0,0,1,0.0,1,100000.0
+17533,Schweden,1.Liga,Schweden,Allsvenskan,BK Häcken,34.0,3416.0,0,1,2.0,0,400000.0
+17534,Schweden,1.Liga,Schweden U20,Allsvenskan,BK Häcken,26.0,821.0,0,1,0.0,1,250000.0
+17561,Schweden,1.Liga,Schweden,Allsvenskan,Djurgården,24.0,791.0,0,0,1.0,1,1000000.0
+17562,Schweden,1.Liga,Schweden U17,Allsvenskan,Djurgården,34.0,2320.0,0,1,2.0,0,200000.0
+17563,Schweden,1.Liga,Schweden U19,Allsvenskan,Djurgården,19.0,105.0,1,0,0.0,1,100000.0
+17586,Schweden,1.Liga,Schweden U21,Allsvenskan,Hammarby IF,20.0,1225.0,1,0,2.0,0,800000.0
+17587,Schweden,1.Liga,Schweden U21,Allsvenskan,Hammarby IF,30.0,1918.0,0,1,0.0,0,400000.0
+17588,Schweden,1.Liga,Schweden U19,Allsvenskan,Hammarby IF,20.0,494.0,0,1,3.0,1,150000.0
+17616,Schweden,1.Liga,Schweden,Allsvenskan,AIK,33.0,646.0,1,0,16.0,0,600000.0
+17617,Schweden,1.Liga,Serbien U21,Allsvenskan,AIK,33.0,1962.0,0,1,1.0,0,150000.0
+17640,Schweden,1.Liga,Schweden,Allsvenskan,IFK Norrköping,32.0,859.0,0,1,1.0,0,500000.0
+17641,Schweden,1.Liga,Schweden U21,Allsvenskan,IFK Norrköping,21.0,807.0,1,0,0.0,1,125000.0
+17668,Schweden,1.Liga,Island,Allsvenskan,Elfsborg,21.0,670.0,1,0,4.0,1,600000.0
+17669,Schweden,1.Liga,Schweden U21,Allsvenskan,Elfsborg,24.0,1962.0,0,1,0.0,0,600000.0
+17670,Schweden,1.Liga,,Allsvenskan,Elfsborg,21.0,61.0,0,0,0.0,1,25000.0
+17694,Schweden,1.Liga,Schweden,Allsvenskan,IFK Göteborg,24.0,279.0,0,1,2.0,0,1000000.0
+17695,Schweden,1.Liga,Island U21,Allsvenskan,IFK Göteborg,20.0,544.0,1,0,2.0,1,200000.0
+17718,Schweden,1.Liga,,Allsvenskan,Kalmar FF,30.0,494.0,0,0,0.0,1,1000000.0
+17719,Schweden,1.Liga,,Allsvenskan,Kalmar FF,29.0,494.0,0,0,0.0,1,100000.0
+17720,Schweden,1.Liga,Schweden U18,Allsvenskan,Kalmar FF,17.0,446.0,0,0,0.0,1,100000.0
+17742,Schweden,1.Liga,Nordmazedonien,Allsvenskan,IK Sirius,32.0,859.0,0,1,1.0,0,300000.0
+17743,Schweden,1.Liga,Schweden U21,Allsvenskan,IK Sirius,22.0,105.0,0,0,0.0,1,150000.0
+17744,Schweden,1.Liga,Schweden U20,Allsvenskan,IK Sirius,21.0,1225.0,1,0,1.0,1,150000.0
+17769,Schweden,1.Liga,Schweden U21,Allsvenskan,Mjällby AIF,21.0,1225.0,1,0,2.0,1,250000.0
+17770,Schweden,1.Liga,Schweden U21,Allsvenskan,Mjällby AIF,30.0,105.0,0,1,0.0,0,50000.0
+17771,Schweden,1.Liga,,Allsvenskan,Mjällby AIF,19.0,320.0,0,0,0.0,1,25000.0
+17772,Schweden,1.Liga,,Allsvenskan,Mjällby AIF,19.0,456.0,0,0,0.0,1,25000.0
+17799,Schweden,1.Liga,Belarus U23,Allsvenskan,IFK Värnamo,33.0,1512.0,0,1,0.0,1,350000.0
+17800,Schweden,1.Liga,,Allsvenskan,IFK Värnamo,31.0,295.0,0,0,0.0,0,150000.0
+17828,Schweden,1.Liga,,Allsvenskan,Degerfors IF,27.0,112.0,0,0,0.0,0,300000.0
+17829,Schweden,1.Liga,,Allsvenskan,Degerfors IF,28.0,114.0,0,0,0.0,1,300000.0
+17830,Schweden,1.Liga,,Allsvenskan,Degerfors IF,19.0,501.0,0,0,0.0,1,25000.0
+17853,Schweden,1.Liga,,Allsvenskan,Halmstads BK,29.0,3788.0,0,0,0.0,0,500000.0
+17854,Schweden,1.Liga,,Allsvenskan,Halmstads BK,23.0,1597.0,0,0,0.0,1,100000.0
+17881,Schweden,1.Liga,,Allsvenskan,Varbergs BoIS,34.0,494.0,0,0,0.0,0,200000.0
+17882,Schweden,1.Liga,,Allsvenskan,Varbergs BoIS,19.0,806.0,0,0,0.0,1,25000.0
+17883,Schweden,1.Liga,,Allsvenskan,Varbergs BoIS,43.0,255.0,0,0,0.0,0,25000.0
+17919,Schweden,1.Liga,,Allsvenskan,Brommapojkarna,26.0,129.0,0,0,0.0,0,300000.0
+17942,Norwegen,1.Liga,,Eliteserien,Bodø/Glimt,27.0,47.0,0,0,0.0,1,1500000.0
+17943,Norwegen,1.Liga,,Eliteserien,Bodø/Glimt,23.0,289.0,0,0,0.0,1,400000.0
+17944,Norwegen,1.Liga,,Eliteserien,Bodø/Glimt,18.0,161.0,0,0,0.0,1,100000.0
+17945,Norwegen,1.Liga,,Eliteserien,Bodø/Glimt,16.0,58.0,0,0,0.0,1,50000.0
+17973,Norwegen,1.Liga,,Eliteserien,Molde,26.0,494.0,0,0,0.0,1,800000.0
+17974,Norwegen,1.Liga,,Eliteserien,Molde,21.0,1746.0,0,0,0.0,1,200000.0
+17975,Norwegen,1.Liga,,Eliteserien,Molde,18.0,489.0,0,0,2.0,1,50000.0
+18002,Norwegen,1.Liga,,Eliteserien,Rosenborg,33.0,3058.0,0,0,11.0,0,500000.0
+18003,Norwegen,1.Liga,,Eliteserien,Rosenborg,20.0,804.0,0,0,0.0,1,200000.0
+18026,Norwegen,1.Liga,,Eliteserien,Lillestrøm,22.0,1735.0,0,0,3.0,1,1300000.0
+18027,Norwegen,1.Liga,,Eliteserien,Lillestrøm,27.0,644.0,0,0,0.0,1,200000.0
+18048,Norwegen,1.Liga,,Eliteserien,Vålerenga,21.0,866.0,0,0,2.0,1,900000.0
+18049,Norwegen,1.Liga,,Eliteserien,Vålerenga,26.0,111.0,0,0,0.0,0,300000.0
+18050,Norwegen,1.Liga,,Eliteserien,Vålerenga,19.0,516.0,0,0,5.0,1,100000.0
+18051,Norwegen,1.Liga,,Eliteserien,Vålerenga,17.0,103.0,0,0,0.0,1,25000.0
+18076,Norwegen,1.Liga,,Eliteserien,Viking,22.0,485.0,0,0,3.0,1,700000.0
+18077,Norwegen,1.Liga,,Eliteserien,Viking,32.0,1224.0,0,0,0.0,0,200000.0
+18078,Norwegen,1.Liga,,Eliteserien,Viking,19.0,501.0,0,0,6.0,1,50000.0
+18100,Norwegen,1.Liga,,Eliteserien,Brann,27.0,490.0,0,0,0.0,1,600000.0
+18101,Norwegen,1.Liga,,Eliteserien,Brann,30.0,1589.0,0,0,0.0,0,100000.0
+18120,Norwegen,1.Liga,,Eliteserien,Aalesund,33.0,456.0,0,0,5.0,0,500000.0
+18121,Norwegen,1.Liga,,Eliteserien,Aalesund,28.0,852.0,0,0,0.0,0,200000.0
+18122,Norwegen,1.Liga,,Eliteserien,Aalesund,24.0,440.0,0,0,0.0,1,50000.0
+18148,Norwegen,1.Liga,,Eliteserien,Odd,23.0,852.0,0,0,1.0,1,1400000.0
+18149,Norwegen,1.Liga,,Eliteserien,Odd,20.0,313.0,0,0,0.0,1,50000.0
+18172,Norwegen,1.Liga,,Eliteserien,Strømsgodset,26.0,1586.0,0,0,0.0,0,450000.0
+18173,Norwegen,1.Liga,,Eliteserien,Strømsgodset,25.0,3269.0,0,0,0.0,0,100000.0
+18198,Norwegen,1.Liga,,Eliteserien,Stabæk,25.0,103.0,0,0,1.0,0,500000.0
+18199,Norwegen,1.Liga,,Eliteserien,Stabæk,20.0,1597.0,0,0,0.0,1,150000.0
+18200,Norwegen,1.Liga,,Eliteserien,Stabæk,16.0,468.0,0,0,1.0,1,50000.0
+18224,Norwegen,1.Liga,,Eliteserien,Sarpsborg 08,33.0,852.0,0,0,0.0,0,300000.0
+18225,Norwegen,1.Liga,,Eliteserien,Sarpsborg 08,18.0,540.0,0,0,0.0,1,50000.0
+18226,Norwegen,1.Liga,,Eliteserien,Sarpsborg 08,19.0,625.0,0,0,0.0,1,50000.0
+18254,Norwegen,1.Liga,,Eliteserien,HamKam,24.0,3058.0,0,0,0.0,1,300000.0
+18255,Norwegen,1.Liga,,Eliteserien,HamKam,32.0,70.0,0,0,0.0,0,300000.0
+18256,Norwegen,1.Liga,,Eliteserien,HamKam,26.0,654.0,0,0,0.0,1,300000.0
+18257,Norwegen,1.Liga,,Eliteserien,HamKam,19.0,61.0,0,0,0.0,1,25000.0
+18281,Norwegen,1.Liga,,Eliteserien,Haugesund,25.0,852.0,0,0,0.0,1,700000.0
+18282,Norwegen,1.Liga,,Eliteserien,Haugesund,26.0,93.0,0,0,0.0,0,150000.0
+18306,Norwegen,1.Liga,,Eliteserien,Tromsø,31.0,129.0,0,0,2.0,0,300000.0
+18307,Norwegen,1.Liga,,Eliteserien,Tromsø,33.0,736.0,0,0,0.0,0,100000.0
+18308,Norwegen,1.Liga,,Eliteserien,Tromsø,23.0,412.0,0,0,0.0,1,50000.0
+18333,Norwegen,1.Liga,,Eliteserien,Sandefjord,25.0,478.0,0,0,0.0,1,200000.0
+18334,Norwegen,1.Liga,,Eliteserien,Sandefjord,24.0,68.0,0,0,0.0,0,100000.0
+18335,Norwegen,1.Liga,,Eliteserien,Sandefjord,18.0,449.0,0,0,2.0,1,50000.0
+18336,Norwegen,1.Liga,,Eliteserien,Sandefjord,18.0,50.0,0,0,0.0,1,25000.0

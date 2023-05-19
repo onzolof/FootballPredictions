@@ -29,6 +29,15 @@ def load_data():
     df = pd.read_csv('../data/df_model_full_merge.csv', index_col=0)
     return df
 
+@st.cache_data
+def load_data_fs():
+    df = pd.read_csv('../data/df_simple_model_fs_streamlit.csv', index_col=0)
+    return df
+
+@st.cache_data
+def load_data_tw():
+    df = pd.read_csv('../data/df_simple_model_tw_streamlit.csv', index_col=0)
+    return df
 
 @st.cache_data
 def load_model(position):
@@ -285,64 +294,59 @@ elif page == "Modell Prediction":
 
     # Input to DataFrame
     input_data = {
-        'Club': [selected_club],
-        'Age': [age],
-        'FormerInternational': [former_international],
-        'ActiveInternational': [active_international],
-        'ClubSince': [club_since],
-        'InternationalTeam': [selected_international_team],
-        'LeagueCountry': [league_country],
-        'League': [league],
-        'NationalLeagueLevel': [national_league_level],
-        'PositionCategory': [position_category]
+        'LeagueCountry': [league_country, league_country],
+        'NationalLeagueLevel': [national_league_level, national_league_level],
+        'InternationalTeam': [selected_international_team, selected_international_team],
+        'League': [league, league],
+        'Club': [selected_club, league],
+        'Age': [age, age],
+        'ClubSince': [club_since,club_since],
+        'ActiveInternational': [active_international, active_international],
+        'FormerInternational': [former_international, active_international],
+        'InternationalGames': [0, 0],
+        'Trending': [1, 1],
     }
-
-    # If 'fs' model, add additional fields
-    if position_category != "Torwart":
-        nationality = df_model[df_model['InternationalTeam'] == selected_international_team]['Nationality'].values[0]
-        position = df_model[df_model['PositionCategory'] == position_category]['Position'].values[0]
-        supplier = 'Nike'
-        input_data.update({
-            'Nationality': [nationality],
-            'Position': [position],
-            'Supplier': [supplier]
-        })
 
     # Convert input data to DataFrame
     input_data_df = pd.DataFrame(input_data)
-
-    # Create a temporary DataFrame to hold the full data
-    full_data_df = pd.concat([df_model, input_data_df], ignore_index=True, sort=False)
-
-    # Ensure categorical variables are processed correctly
-    if position_category == "Torwart":
-        full_data_df = process_categorical(full_data_df, 'InternationalTeam', 5)
-        full_data_df = process_categorical(full_data_df, 'League')
-        full_data_df = process_categorical(full_data_df, 'Club')
-        full_data_df = process_categorical(full_data_df, 'LeagueCountry', 5)
-        full_data_df = process_categorical(full_data_df, 'NationalLeagueLevel', 5)
-    else:
-        full_data_df = process_categorical(full_data_df, 'Supplier')
-        full_data_df = process_categorical(full_data_df, 'InternationalTeam', 5)
-        full_data_df = process_categorical(full_data_df, 'League')
-        full_data_df = process_categorical(full_data_df, 'Club')
-        full_data_df = process_categorical(full_data_df, 'LeagueCountry', 5)
-        full_data_df = process_categorical(full_data_df, 'NationalLeagueLevel', 5)
-        full_data_df = process_categorical(full_data_df, 'Nationality')
-        full_data_df = process_categorical(full_data_df, 'Position', 5)
-        full_data_df = process_categorical(full_data_df, 'PositionCategory', 5)
-
+    st.dataframe(input_data_df)
 
     if st.button('Predict'):
+        # Ensure categorical variables are processed correctly
+        if position_category == "Torwart":
+            df_model_tw = load_data_tw()
+            full_data_df = pd.concat([df_model_tw, input_data_df], ignore_index=True, sort=False)
+            full_data_df = process_categorical(full_data_df, 'InternationalTeam', 5)
+            full_data_df = process_categorical(full_data_df, 'League')
+            full_data_df = process_categorical(full_data_df, 'Club')
+            full_data_df = process_categorical(full_data_df, 'LeagueCountry', 5)
+            full_data_df = process_categorical(full_data_df, 'NationalLeagueLevel', 5)
+        else:
+            df_model_fs = load_data_fs()
+            full_data_df = pd.concat([df_model_fs, input_data_df], ignore_index=True, sort=False)
+            full_data_df = process_categorical(full_data_df, 'Supplier')
+            full_data_df = process_categorical(full_data_df, 'InternationalTeam', 5)
+            full_data_df = process_categorical(full_data_df, 'League')
+            full_data_df = process_categorical(full_data_df, 'Club')
+            full_data_df = process_categorical(full_data_df, 'LeagueCountry', 5)
+            full_data_df = process_categorical(full_data_df, 'NationalLeagueLevel', 5)
+            full_data_df = process_categorical(full_data_df, 'Nationality')
+            full_data_df = process_categorical(full_data_df, 'Position', 5)
+            full_data_df = process_categorical(full_data_df, 'PositionCategory', 5)
+
+        input_row = full_data_df.iloc[-2:, :]
+        input_row_df = pd.DataFrame(input_row)
+        input_row_df = input_row_df.drop('Value', axis=1)
+        input_row_df.reset_index(drop=True, inplace=True)
+        input_row_df.to_csv('../data/new.csv')
+        st.dataframe(input_row_df)
+
         # Load the model based on the position category
         model = load_model(position_category)
 
-        # Isolate the last row (the input data for prediction)
-        input_row = full_data_df.iloc[-1, :]
-
         # Pass input_data to the model for prediction
-        prediction = model.predict(input_row)
-        st.write('Prediction:', prediction)
+        prediction = model.predict(input_row_df)
+        st.write('Prediction in €:', prediction[0])
 
 
 elif page == "Impressum":
@@ -372,4 +376,3 @@ elif page == "Impressum":
     for i, member in enumerate(team_members):
         cols[i].image(member["image"], use_column_width=True)
         cols[i].write(member["name"])
-
