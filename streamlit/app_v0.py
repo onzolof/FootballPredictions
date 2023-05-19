@@ -52,7 +52,7 @@ st.sidebar.markdown("___")
 
 # Füge eine Seitenauswahl hinzu
 page = st.sidebar.radio("Navigiere zu:", ("Datenpool", "Deskriptive Analyse",
-                                          "Talentsuche", 'Prediction', 'Impressum'))
+                                          "Talentsuche", 'Prediction', 'Impressum ©'))
 
 st.sidebar.markdown("___")
 
@@ -401,8 +401,8 @@ elif page == "Prediction":
             st.write('Prediction:', prediction_str + ' €')
 
 
-elif page == "Impressum":
-    st.title("Impressum")
+elif page == "Impressum ©":
+    st.title("Impressum ©")
 
     # Description of the project
     st.subheader("Projektbeschreibung")
@@ -411,7 +411,11 @@ elif page == "Impressum":
     den Nutzern, detaillierte Spielerdaten aus verschiedenen Ligen zu analysieren. Zudem lassen sich
     unter- und überbewertete Spieler identifizieren sowie Vorhersagen über den Wert neuer Spieler treffen. 
     Dieses Projekt wurde im Rahmen des Kurses Methoden: 
-    Big Data und Data Science der Universität St.Gallen erstellt.""")
+    Big Data und Data Science der Universität St.Gallen erstellt.
+    
+    The contents and materials available on this platform are copyright protected. 
+    All rights, including but not limited to copyright, in the content 
+    of this platform are owned and controlled by the project team 2023©.""")
 
     # Displaying the team members
     st.subheader("Teammitglieder")
