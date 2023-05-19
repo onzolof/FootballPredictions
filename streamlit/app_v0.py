@@ -26,25 +26,25 @@ def process_categorical(df, column, min_count=10):
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('../data/df_model_full_merge.csv', index_col=0)
+    df = pd.read_csv('data/df_model_full_merge.csv', index_col=0)
     return df
 
 @st.cache_data
 def load_data_fs():
-    df = pd.read_csv('../data/df_simple_model_fs_streamlit.csv', index_col=0)
+    df = pd.read_csv('data/df_simple_model_fs_streamlit.csv', index_col=0)
     return df
 
 @st.cache_data
 def load_data_tw():
-    df = pd.read_csv('../data/df_simple_model_tw_streamlit.csv', index_col=0)
+    df = pd.read_csv('data/df_simple_model_tw_streamlit.csv', index_col=0)
     return df
 
 @st.cache_data
 def load_model(position):
     if position == 'Torwart':
-        return pickle.load(open('../models/simple-model-xgb-tw.pkl', 'rb'))
+        return pickle.load(open('models/simple-model-xgb-tw.pkl', 'rb'))
     else:
-        return pickle.load(open('../models/simple-model-xgb.pkl', 'rb'))
+        return pickle.load(open('models/simple-model-xgb.pkl', 'rb'))
 
 
 st.sidebar.markdown("# Talent Tracker")
