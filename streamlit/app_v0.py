@@ -256,12 +256,23 @@ elif page == "Modell Prediction":
 
     df_model = load_data()
 
+    # Get unique values from the "position_category" column
+    position_categories = df_model['PositionCategory'].unique()
+
+    # Dropdown for position_category
+    position_category = st.selectbox('Position Category', position_categories)
+
+    if position_category == "Torwart":
+        df_model_load = load_data_tw()
+    else:
+        df_model_load = load_data_fs()
+
     # Input fields
-    unique_clubs = df_model['Club'].unique()
+    unique_clubs = df_model_load['Club'].unique()
     selected_club = st.selectbox('Club', unique_clubs)
 
     # Auto-fill other fields based on club
-    selected_club_data = df_model[df_model['Club'] == selected_club].iloc[0]
+    selected_club_data = df_model_load[df_model_load['Club'] == selected_club].iloc[0]
 
     league_country = selected_club_data['LeagueCountry']
     st.text(league_country)
@@ -278,7 +289,7 @@ elif page == "Modell Prediction":
     active_international = st.selectbox('ActiveInternational', [0, 1])
     club_since = st.number_input('ClubSince (in days)', min_value=0, value=0)
 
-    unique_international_teams = df_model['InternationalTeam'].dropna().unique()
+    unique_international_teams = df_model_load['InternationalTeam'].dropna().unique()
     unique_international_teams = np.append(unique_international_teams, 'Kein Internationales Team')
     selected_international_team = st.selectbox('International Team', unique_international_teams, index=0)
     if selected_international_team == 'Kein Internationales Team':
@@ -286,29 +297,24 @@ elif page == "Modell Prediction":
 
     international_games = st.number_input('InternationalGames', min_value=0)
 
-    # Get unique values from the "position_category" column
-    position_categories = df_model['PositionCategory'].unique()
+    if position_category != "Torwart":
+        # Get unique values for nationality and position
+        unique_nationalities = df_model_load['Nationality'].dropna().unique()
+        unique_positions = df_model_load[df_model_load['PositionCategory'] == position_category]['Position'].unique()
 
-    # Dropdown for position_category
-    position_category = st.selectbox('Position Category', position_categories)
+        # Dropdown for nationality
+        nationality = st.selectbox('Nationality', unique_nationalities)
 
-    df_model_fs_calc = load_data_fs()
+        # Dropdown for position
+        position = st.selectbox('Position', unique_positions)
 
-    # Get unique values for nationality and position
-    unique_nationalities = df_model_fs_calc['Nationality'].dropna().unique()
-    unique_positions = df_model[df_model['PositionCategory'] == position_category]['Position'].unique()
+        # Get unique values for supplier
+        unique_suppliers = df_model_load['Supplier'].dropna().unique()
 
-    # Dropdown for nationality
-    nationality = st.selectbox('Nationality', unique_nationalities)
-
-    # Dropdown for position
-    position = st.selectbox('Position', unique_positions)
-
-    # Get unique values for supplier
-    unique_suppliers = df_model_fs_calc['Supplier'].dropna().unique()
-
-    # Dropdown for supplier
-    supplier = st.selectbox('Supplier', unique_suppliers)
+        # Dropdown for supplier
+        supplier = st.selectbox('Supplier', unique_suppliers)
+    else:
+        st.write()
 
     if st.button('Predict'):
         if position_category == "Torwart":
@@ -389,7 +395,10 @@ elif page == "Modell Prediction":
 
         # Pass input_data to the model for prediction
         prediction = model.predict(input_row_df)
-        st.write('Prediction in €:', prediction[0])
+        if prediction[0] < 10000:
+            st.write('Prediction in €:', 10000)
+        else:
+            st.write('Prediction in €:', prediction[0])
 
 
 elif page == "Impressum":
