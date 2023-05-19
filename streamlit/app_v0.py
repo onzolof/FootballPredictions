@@ -260,7 +260,7 @@ elif page == "Prediction":
     position_categories = df_model['PositionCategory'].unique()
 
     # Dropdown for position_category
-    position_category = st.selectbox('Position Category', position_categories)
+    position_category = st.selectbox('Position Kategorie', position_categories)
 
     if position_category == "Torwart":
         df_model_load = load_data_tw()
@@ -269,7 +269,7 @@ elif page == "Prediction":
 
     # Input fields
     unique_clubs = df_model_load['Club'].unique()
-    selected_club = st.selectbox('Club', unique_clubs)
+    selected_club = st.selectbox('Klub', unique_clubs)
 
     # Auto-fill other fields based on club
     selected_club_data = df_model_load[df_model_load['Club'] == selected_club].iloc[0]
@@ -283,36 +283,36 @@ elif page == "Prediction":
     national_league_level = selected_club_data['NationalLeagueLevel']
     st.text(national_league_level)
 
-    age = st.number_input('Age', min_value=15, max_value=50)
+    age = st.number_input('Alter', min_value=15, max_value=50)
 
-    former_international = st.selectbox('FormerInternational', [0, 1])
-    active_international = st.selectbox('ActiveInternational', [0, 1])
-    club_since = st.number_input('ClubSince (in days)', min_value=0, value=0)
+    former_international = st.selectbox('Ehemaliger Internationaler Spieler', [0, 1])
+    active_international = st.selectbox('Aktiver Internationaler Spieler', [0, 1])
+    club_since = st.number_input('Klub seit (in Tagen)', min_value=0, value=0)
 
     unique_international_teams = df_model_load['InternationalTeam'].unique()
-    selected_international_team = st.selectbox('International Team', unique_international_teams, index=0)
+    selected_international_team = st.selectbox('Internationales Team', unique_international_teams, index=0)
 
-    international_games = st.number_input('InternationalGames', min_value=0)
+    international_games = st.number_input('Anzahl Internationale Spiele', min_value=0)
 
     if position_category != "Torwart":
-        st.subheader("Input fields for field player")
+        st.subheader("Eingabefelder für Feldspieler")
         # Get unique values for nationality and position
         unique_nationalities = df_model_load['Nationality'].dropna().unique()
         unique_positions = df_model_load[df_model_load['PositionCategory'] == position_category]['Position'].unique()
 
         # Dropdown for nationality
-        nationality = st.selectbox('Nationality', unique_nationalities)
+        nationality = st.selectbox('Nationalität', unique_nationalities)
 
         # Dropdown for position
         position = st.selectbox('Position', unique_positions)
 
-        international_goals = st.number_input('InternationalGoals', min_value=0)
+        international_goals = st.number_input('Anzahl Internationale Tore', min_value=0)
 
         # Get unique values for supplier
         unique_suppliers = df_model_load['Supplier'].unique()
 
         # Dropdown for supplier
-        supplier = st.selectbox('Supplier', unique_suppliers)
+        supplier = st.selectbox('Sponsor', unique_suppliers)
     else:
         st.write()
 
