@@ -289,15 +289,13 @@ elif page == "Modell Prediction":
     active_international = st.selectbox('ActiveInternational', [0, 1])
     club_since = st.number_input('ClubSince (in days)', min_value=0, value=0)
 
-    unique_international_teams = df_model_load['InternationalTeam'].dropna().unique()
-    unique_international_teams = np.append(unique_international_teams, 'Kein Internationales Team')
+    unique_international_teams = df_model_load['InternationalTeam'].unique()
     selected_international_team = st.selectbox('International Team', unique_international_teams, index=0)
-    if selected_international_team == 'Kein Internationales Team':
-        selected_international_team = np.nan
 
     international_games = st.number_input('InternationalGames', min_value=0)
 
     if position_category != "Torwart":
+        st.subheader("Input fields for field player")
         # Get unique values for nationality and position
         unique_nationalities = df_model_load['Nationality'].dropna().unique()
         unique_positions = df_model_load[df_model_load['PositionCategory'] == position_category]['Position'].unique()
@@ -308,8 +306,10 @@ elif page == "Modell Prediction":
         # Dropdown for position
         position = st.selectbox('Position', unique_positions)
 
+        international_goals = st.number_input('InternationalGoals', min_value=0)
+
         # Get unique values for supplier
-        unique_suppliers = df_model_load['Supplier'].dropna().unique()
+        unique_suppliers = df_model_load['Supplier'].unique()
 
         # Dropdown for supplier
         supplier = st.selectbox('Supplier', unique_suppliers)
@@ -329,7 +329,7 @@ elif page == "Modell Prediction":
                 'ClubSince': [club_since, club_since],
                 'ActiveInternational': [active_international, active_international],
                 'FormerInternational': [former_international, active_international],
-                'InternationalGames': [0, 0],
+                'InternationalGames': [international_games, international_games],
                 'Trending': [1, 1],
             }
 
@@ -352,8 +352,8 @@ elif page == "Modell Prediction":
                 'InternationalTeam': [selected_international_team, selected_international_team],
                 'ActiveInternational': [active_international, active_international],
                 'FormerInternational': [former_international, active_international],
-                'InternationalGames': [0, 0],
-                'InternationalGoals': [0, 0],
+                'InternationalGames': [international_games, international_games],
+                'InternationalGoals': [international_goals, international_goals],
                 'Trending': [1, 1],
             }
 
