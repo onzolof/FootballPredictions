@@ -413,9 +413,7 @@ elif page == "Impressum ©":
     Dieses Projekt wurde im Rahmen des Kurses Methoden: 
     Big Data und Data Science der Universität St.Gallen erstellt.
     
-    The contents and materials available on this platform are copyright protected. 
-    All rights, including but not limited to copyright, in the content 
-    of this platform are owned and controlled by the project team 2023©.""")
+    ©2023 Universität St.Gallen""")
 
     # Displaying the team members
     st.subheader("Teammitglieder")
