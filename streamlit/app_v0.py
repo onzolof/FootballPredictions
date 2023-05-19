@@ -9,7 +9,7 @@ import numpy as np
 
 # Die App-Eigenschaften definieren
 st.set_page_config(
-    page_title="Fussballspieler Bewertung",  # Der Titel der Seite ist "Fussballspieler Bewertung"
+    page_title="Talent Tracker",
     page_icon="⚽",
     layout="wide"
 )
@@ -47,19 +47,19 @@ def load_model(position):
         return pickle.load(open('../models/simple-model-xgb.pkl', 'rb'))
 
 
-st.sidebar.markdown("# Fussballspieler Prognose")
+st.sidebar.markdown("# Talent Tracker")
 st.sidebar.markdown("___")
 
 # Füge eine Seitenauswahl hinzu
-page = st.sidebar.radio("Navigiere zu:", ("Hauptseite", "Metadaten",
-                                          "Modell", 'Modell Prediction', 'Impressum'))
+page = st.sidebar.radio("Navigiere zu:", ("Datenpool", "Deskriptive Analyse",
+                                          "Talentsuche", 'Prediction', 'Impressum'))
 
 st.sidebar.markdown("___")
 
-if page == "Hauptseite":
+if page == "Datenpool":
     # Titel der Streamlit-Seite
     st.title(
-        "Vorhersage der Unter- oder Überbewertung von Fussballspielern")
+        "Spieler Datenpool")
 
     # Daten laden
     df_clean = load_data()
@@ -104,8 +104,8 @@ if page == "Hauptseite":
     else:
         st.write("Keine Ligen ausgewählt.")
 
-elif page == "Metadaten":
-    st.title("Spieler Metadaten")
+elif page == "Deskriptive Analyse":
+    st.title("Deskriptive Analyse")
 
     df_meta = load_data()
 
@@ -167,8 +167,8 @@ elif page == "Metadaten":
     plt.title('Verteilung der Werte', fontsize=16)
     col4.pyplot(plt.gcf())
 
-elif page == "Modell":
-    st.title("Modell")
+elif page == "Talentsuche":
+    st.title("Talentsuche")
 
     df_model = load_data()
 
@@ -251,8 +251,8 @@ elif page == "Modell":
     # Zeige den Spieler in einem DataFrame an
     st.dataframe(top_player, width=1000)
 
-elif page == "Modell Prediction":
-    st.title("Modell Prediction")
+elif page == "Prediction":
+    st.title("Prediction")
 
     df_model = load_data()
 
@@ -335,14 +335,14 @@ elif page == "Modell Prediction":
 
             # Convert input data to DataFrame
             input_data_df = pd.DataFrame(input_data)
-            st.dataframe(input_data_df)
+
         else:
             # Input to DataFrame
             input_data = {
                 'LeagueCountry': [league_country, league_country],
                 'League': [league, league],
                 'NationalLeagueLevel': [national_league_level, national_league_level],
-                'Club': [selected_club, league],
+                'Club': [selected_club, selected_club],
                 'Age': [age, age],
                 'ClubSince': [club_since, club_since],
                 'Nationality': [nationality, nationality],
@@ -351,7 +351,7 @@ elif page == "Modell Prediction":
                 'Supplier': [supplier, supplier],
                 'InternationalTeam': [selected_international_team, selected_international_team],
                 'ActiveInternational': [active_international, active_international],
-                'FormerInternational': [former_international, active_international],
+                'FormerInternational': [former_international, former_international],
                 'InternationalGames': [international_games, international_games],
                 'InternationalGoals': [international_goals, international_goals],
                 'Trending': [1, 1],
@@ -359,7 +359,6 @@ elif page == "Modell Prediction":
 
             # Convert input data to DataFrame
             input_data_df = pd.DataFrame(input_data)
-            st.dataframe(input_data_df)
 
         # Ensure categorical variables are processed correctly
         if position_category == "Torwart":
@@ -387,18 +386,19 @@ elif page == "Modell Prediction":
         input_row_df = pd.DataFrame(input_row)
         input_row_df = input_row_df.drop('Value', axis=1)
         input_row_df.reset_index(drop=True, inplace=True)
-        input_row_df.to_csv('../data/new.csv')
-        st.dataframe(input_row_df)
 
         # Load the model based on the position category
         model = load_model(position_category)
 
         # Pass input_data to the model for prediction
         prediction = model.predict(input_row_df)
-        if prediction[0] < 10000:
-            st.write('Prediction in €:', 10000)
+        rounded_prediction = round(prediction[0])
+
+        if rounded_prediction < 10000:
+            st.write('Prediction:', "10'000 €")
         else:
-            st.write('Prediction in €:', prediction[0])
+            prediction_str = "{:,}".format(rounded_prediction).replace(",", "'")
+            st.write('Prediction:', prediction_str + ' €')
 
 
 elif page == "Impressum":
@@ -407,8 +407,10 @@ elif page == "Impressum":
     # Description of the project
     st.subheader("Projektbeschreibung")
     st.write("""Dieses Projekt ist eine interaktive Fussball-Analyse-Applikation, die mit Streamlit erstellt 
-    wurde. Sie ermöglicht es den Nutzern, detaillierte Spielerdaten aus verschiedenen Ligen zu analysieren sowie 
-    unter- und überbewertete Spieler zu identifizieren. Dieses Projekt wurde im Rahmen des Kurses Methoden: 
+    wurde. Als Grundlage wurden die Daten der Webseite Transfermarkt verwendet. Die Applikation ermöglicht es 
+    den Nutzern, detaillierte Spielerdaten aus verschiedenen Ligen zu analysieren. Zudem lassen sich
+    unter- und überbewertete Spieler identifizieren sowie Vorhersagen über den Wert neuer Spieler treffen. 
+    Dieses Projekt wurde im Rahmen des Kurses Methoden: 
     Big Data und Data Science der Universität St.Gallen erstellt.""")
 
     # Displaying the team members
