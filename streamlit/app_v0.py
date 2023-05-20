@@ -56,7 +56,6 @@ def load_model(position):
 
 
 # Navigationsleiste erstellen
-st.sidebar.markdown("# Talent Tracker")
 st.sidebar.image('https://i.postimg.cc/7hkz1G7p/123-removebg-preview.png')
 st.sidebar.markdown("___")
 
