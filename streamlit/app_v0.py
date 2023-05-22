@@ -286,17 +286,15 @@ elif page == "Prediction":
     # Automatisches Ausfüllen anderer Felder basierend auf dem Klub
     selected_club_data = df_model_load[df_model_load['Club'] == selected_club].iloc[0]
     league_country = selected_club_data['LeagueCountry']
-    st.text(league_country)
     league = selected_club_data['League']
-    st.text(league)
     national_league_level = selected_club_data['NationalLeagueLevel']
-    st.text(national_league_level)
+    st.text(league + ' (' +  league_country + ' - ' + national_league_level + ')')
 
     # Eingabefelder
     age = st.number_input('Alter', min_value=15, max_value=50)
-    former_international = st.selectbox('Ehemaliger Internationaler Spieler', [0, 1])
-    active_international = st.selectbox('Aktiver Internationaler Spieler', [0, 1])
-    club_since = st.number_input('Klub seit (in Tagen)', min_value=0, value=0)
+    former_international = st.checkbox('Ehemaliger Internationaler Spieler')
+    active_international = st.checkbox('Aktiver Internationaler Spieler')
+    club_since = st.number_input('Vertrag seit (in Tagen)', min_value=0, value=0)
 
     # Eindeutige internationale Teams festlegen
     unique_international_teams = df_model_load['InternationalTeam'].unique()
@@ -344,8 +342,8 @@ elif page == "Prediction":
                 'Club': [selected_club, league],
                 'Age': [age, age],
                 'ClubSince': [club_since, club_since],
-                'ActiveInternational': [active_international, active_international],
-                'FormerInternational': [former_international, active_international],
+                'ActiveInternational': [int(active_international), int(active_international)],
+                'FormerInternational': [int(former_international), int(active_international)],
                 'InternationalGames': [international_games, international_games],
                 'Trending': [1, 1],
             }
@@ -368,8 +366,8 @@ elif page == "Prediction":
                 'PositionCategory': [position_category, position_category],
                 'Supplier': [supplier, supplier],
                 'InternationalTeam': [selected_international_team, selected_international_team],
-                'ActiveInternational': [active_international, active_international],
-                'FormerInternational': [former_international, former_international],
+                'ActiveInternational': [int(active_international), int(active_international)],
+                'FormerInternational': [int(former_international), int(former_international)],
                 'InternationalGames': [international_games, international_games],
                 'InternationalGoals': [international_goals, international_goals],
                 'Trending': [1, 1],
@@ -411,14 +409,12 @@ elif page == "Prediction":
 
         # Übergabe an das Modell zur Vorhersage
         prediction = model.predict(input_row_df)
-        rounded_prediction = round(prediction[0])
+        rounded_prediction = round(max(prediction[0], 10000))
 
         # Vorhersage darstellen
-        if rounded_prediction < 10000:
-            st.write('Prediction:', "10'000 €")
-        else:
-            prediction_str = "{:,}".format(rounded_prediction).replace(",", "'")
-            st.write('Prediction:', prediction_str + ' €')
+        prediction_str = "{:,}".format(rounded_prediction).replace(",", "'")
+        prediction_text = 'Prediction: ' + prediction_str + ' €'
+        st.markdown(f'<p style="font-size: 18px;">{prediction_text}</p>', unsafe_allow_html=True)
 
 elif page == "Impressum ©":
     st.title("Impressum ©")
