@@ -56,7 +56,7 @@ def load_model(position):
 
 
 # Navigationsleiste erstellen
-st.sidebar.image('https://i.postimg.cc/7hkz1G7p/123-removebg-preview.png')
+st.sidebar.image('https://i.postimg.cc/CK7mGPm8/TT.png')
 st.sidebar.markdown("___")
 
 # Füge eine Seitenauswahl hinzu
