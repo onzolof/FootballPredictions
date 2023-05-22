@@ -15,16 +15,17 @@ def run():
     config = load_config()
     driver = get_driver(config)
     init_logger()
-    worker_id = sys.argv[1]
-    index_start = int(sys.argv[2].split('-')[0])
-    index_end = int(sys.argv[2].split('-')[1])
-    leagues = config['leagues'][index_start:index_end + 1]
-    timestamp = sys.argv[3]
-    do_scraping(driver, worker_id, timestamp, leagues, config['enable_instagram_scraping'])
-    driver.close()
+    worker_id = sys.argv[1]  # read worker id argument
+    index_start = int(sys.argv[2].split('-')[0])  # read start index from args
+    index_end = int(sys.argv[2].split('-')[1])  # read end index from args
+    leagues = config['leagues'][index_start:index_end + 1]  # select the leagues by the given indexes
+    timestamp = sys.argv[3]  # get timestamp from args
+    do_scraping(driver, worker_id, timestamp, leagues, config['enable_instagram_scraping']) # start scraping the given leagues
+    driver.close()  # terminate
 
 
 def do_scraping(driver, worker_id, timestamp, leagues, enable_insta_scraping):
+    # iterate over all clubs and its players in all the given leagues
     for league_link in leagues:
         clubs, league_country = get_clubs_of_league(driver, league_link)
         for club_link in clubs:
@@ -47,6 +48,7 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
 
     driver.get(player_link)
 
+    # read the player data from the players main page
     no_and_name = lookup.from_text_by_class('data-header__headline-wrapper')
     if no_and_name.startswith('#'):
         no, name = no_and_name.split(" ", 1)
@@ -100,6 +102,7 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
     player['international_games'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[1]'))
     player['international_goals'] = lookup.from_inner_text(xpath_international('Länderspiele/Tore:', 'a[2]'))
 
+    # read the overall performance quotes if available
     league_found = interactor.click(f"//*[@id='svelte-performance-data']/div/main/div/div[1]//div/img[@title='{player['league']}']/parent::div")
     if league_found:
         xpath_circle = lambda label: f"//*[normalize-space(text()) = '{label}']//parent::div/div[1]/span"
@@ -122,6 +125,7 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
     lookup_injury_image = lookup.from_attribute('//*[@class="verletzungsbox"]//div[1]/img', 'src')
     player['injury'] = '1' if lookup_injury_image == 'https://www.transfermarkt.ch/images/icons/verletzt.png' else '0'
 
+    # navigate to the performance data of the player and collect the performance data if available
     performance_data_link = lookup.from_attribute('//*[@id="svelte-performance-data"]/div/main/div/div[2]/a', 'href')
     has_extended_performance_data = False
     if performance_data_link and league_found:
@@ -179,6 +183,7 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
         player['minutes_per_goal'] = ''
         player['minutes'] = ''
 
+    # scrape the instagram account of the player if enabled
     if enable_insta_scraping:
         if player['instagram']:
             driver.get(player['instagram'])
@@ -192,7 +197,7 @@ def scrape_player(driver, player_link, player, enable_insta_scraping):
     return player
 
 
-def load_config():
+def load_config():  # read the scraping config
     with open("config.yaml", "r") as stream:
         try:
             return yaml.safe_load(stream)
@@ -200,14 +205,14 @@ def load_config():
             print(exc)
 
 
-def get_players_of_club(driver, club_link):
+def get_players_of_club(driver, club_link):  # scrape all players of a club
     driver.get(club_link)
     players = driver.find_elements(By.XPATH, "//div[@id='yw1']/table/tbody//tr/td[2]/table/tbody/tr/td[2]/a")
     players = list(map(lambda c: c.get_attribute("href"), players))
     return players
 
 
-def get_clubs_of_league(driver, league_link):
+def get_clubs_of_league(driver, league_link):  # scrape all clubs of a given league
     driver.get(league_link)
     clubs = driver.find_elements(By.XPATH, "//div[@id='yw1']/table/tbody//tr/td[3]/a")
     clubs = list(map(lambda c: c.get_attribute("href"), clubs))
@@ -216,7 +221,7 @@ def get_clubs_of_league(driver, league_link):
     return clubs, league_country
 
 
-def write_player(worker_id, timestamp, player):
+def write_player(worker_id, timestamp, player):  # write the scraped player data to a csv
     print(f"Scraped:\t{player['league']}\t{player['club']}\t{player['name']}")
     filepath = f"scraped_data/players_{timestamp}_{worker_id}.csv"
     exists = os.path.exists(filepath)
@@ -227,14 +232,14 @@ def write_player(worker_id, timestamp, player):
         w.writerow(player)
 
 
-def log_scraping_error(worker_id, timestamp, player_link, exception):
+def log_scraping_error(worker_id, timestamp, player_link, exception):  # log the failed player and the exception to a csv
     print(f"Error:\t{player_link}\t{str(exception)}")
     filepath = f"scraped_data/errors_{timestamp}_{worker_id}.csv"
     with open(filepath, 'a') as f:
         f.write(player_link + '\n')
 
 
-def init_logger():
+def init_logger():  # init a logger for selenium
     logging.basicConfig(filename="transfermarkt_scraper.log",
                         filemode='a',
                         format='%(asctime)s,%(msecs)03d %(name)s %(levelname)s %(message)s',
@@ -244,12 +249,12 @@ def init_logger():
     return logger
 
 
-def get_driver(config):
+def get_driver(config):  # initalize the selenium driver
     options = Options()
-    if not config['show_browser_ui']:
+    if not config['show_browser_ui']:  # hide ui if not necessary/enabled
         options.add_argument("--headless")
     driver = webdriver.Chrome('chromedriver.exe', options=options)
-    driver.implicitly_wait(config['driver_implicitly_wait'])
+    driver.implicitly_wait(config['driver_implicitly_wait'])  # define wait timeout
     driver.maximize_window()
     return driver
 
@@ -262,16 +267,16 @@ class HtmlLookup:
         return self._try(lambda driver: driver.find_element(By.XPATH, xpath),
                          lambda element: element.get_attribute(attribute))
 
-    def from_inner_text(self, xpath):
+    def from_inner_text(self, xpath):  # read the data from an inner text an select by xpath
         return self.from_attribute(xpath, 'innerText')
 
-    def from_text(self, xpath):
+    def from_text(self, xpath):  # read the data from a html element by xpath selection
         return self._try(lambda driver: driver.find_element(By.XPATH, xpath), lambda element: element.text)
 
-    def from_text_by_class(self, clazz):
+    def from_text_by_class(self, clazz):  # read the data from a html element by class name
         return self._try(lambda driver: driver.find_element(By.CLASS_NAME, clazz), lambda element: element.text)
 
-    def _try(self, find_element_function, extracting_function):
+    def _try(self, find_element_function, extracting_function):  # catch exceptions to make sure the scraping process does not crash
         try:
             element = find_element_function(self._driver)
             return self._clean(extracting_function(element))
@@ -279,7 +284,7 @@ class HtmlLookup:
             return ''
 
     @staticmethod
-    def _clean(string):
+    def _clean(string):  # make sure no leading or ending spaces are in the scraped data
         return string.replace('\n', '').strip() if string else ''
 
 
@@ -291,6 +296,7 @@ class Interactor:
     def click(self, xpath):
         try:
             element = self._driver.find_element(By.XPATH, xpath)
+            # execute the page click with javascript injection as a workaround, due to the fact that the selenium-api does not work for all clickable elements
             self._driver.execute_script("arguments[0].click();", element)
             return True
         except NoSuchElementException:
