@@ -75,5 +75,15 @@ Enthält Dateien im Zusammenhang mit der mit Streamlit erstellten Web-App.
 
 Link zur deployed Streamlit Web-App: https://onzolof-footballpredictions-streamlitapp-v0-3hmugi.streamlit.app/
 
+## Datenverarbeitungs-Prozess
+
+1. Daten werden gescraped und im Verzeichnis `scraping` abgelegt. Pro Scraping-Worker existiert ein Daten-File.
+2. Anschliessend werden die Datensätze im Notebook `data_cleansing.ipynb` zusammengefasst und um Text-Noise vom Scraping bereinigt. Das Resultat ist ein File im Verzeichnis `cleansed_data`.
+3. Mit dem Notebook `empty_values.ipynb` werden die Daten für den ML-Anwendungsfall vorverarbeitet und es resultiert das `df_clean.csv`.
+4. Im Anschluss wird pro Modell das jeweilige Preprocessing-Notebook ausgeführt. Entsprechend entstehen die Input-Daten für die Modelle im Verzeichnis `data`.
+5. In den jeweiligen Modell-Notebooks werden die einzelnen Modelle evaluiert und optimiert. Zum Schluss werden, in denselben Notebooks, die optimierten Modelle auf den Input-Datensatz angewandt und die Predictions der einzelnen Modelle werden in den Results-Files im Verzeichnis `data` abgelegt.
+6. Die einzelnen Resultate werden mit dem Notebook `model_prediction_full_merge.ipynb` zusammengefasst. Der Output wird ebenfalls ins Verzeichnis `data` exportiert.
+7. Die Performance der einzelnen Modelle kann nun im Notebook `performance_plots.ipynb` eingesehen werden.
+
 ## Hilfsmittel
 - OpenAI's ChatGPT für die Bereitstellung von Codierungshilfe, Dokumentation und Problemlösungsstrategien.
