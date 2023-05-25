@@ -1,4 +1,12 @@
 # Talent Tracker
+Dieses Projekt ist eine interaktive Fussball-Analyse-Applikation, die mit Streamlit erstellt wurde. Als Grundlage wurden die Daten der Webseite Transfermarkt verwendet. Die Applikation ermöglicht es den Nutzern, detaillierte Spielerdaten aus verschiedenen Ligen zu analysieren. Zudem lassen sich unter- und überbewertete Spieler identifizieren sowie Vorhersagen über den Wert neuer Spieler treffen. Dieses Projekt wurde im Rahmen des Kurses Methoden: Big Data und Data Science der Universität St.Gallen erstellt.
+
+## Projektmitglieder
+- Jonas Vogel
+- Marc Sieber
+- Stella Sun
+- Linda Fuchs
+- Eliane Elsässer
 
 ## Projektstruktur
 Das Projekt ist in mehrere Hauptordner unterteilt:
