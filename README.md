@@ -61,7 +61,6 @@ Enthält Dateien im Zusammenhang mit Daten-Scraping, -Bereinigung und -Verwaltun
 
 - `cleansed_data`: Verzeichnis mit bereinigten Daten aus dem Scraping.
 - `scraped_data`: Verzeichnis mit roh gescrapten Daten.
-- `Cheatsheet_Scrapy_Selenium-1.pdf`: Hilfsblatt für Scrapy und Selenium.
 - `chromedriver_mac`: Chrome-Treiber für Mac OS.
 - `config.yaml`: Konfigurationsdatei für den Scraping-Prozess.
 - `data_cleansing.ipynb`: Notebook zur Datenbereinigung.
