@@ -20,7 +20,7 @@ Das Projekt ist in mehrere Hauptordner unterteilt:
 ### `analysis`
 Enthält Notebooks und Skripte für Datenanalyse und Modellierung.
 
-- `Descriptive Analysis_V1.ipynb`: Deskriptive Analyse der Daten.
+- `Descriptive Analysis_V1.ipynb`: Deskriptive Analyse der Daten. ![](https://img.shields.io/badge/status-experimental-orange)
 - `data_analysis.ipynb`: Notebook mit erstem Versuch einer Datenanalyse.
 - `empty_values.ipynb`: Notebook zur Behandlung von empty values.
 - `extensive_model_data_preprocessing_fs.ipynb` und `extensive_model_data_preprocessing_tw.ipynb`: Daten-Vorverarbeitung für das extensive model.
