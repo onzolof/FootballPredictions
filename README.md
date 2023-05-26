@@ -20,8 +20,8 @@ Das Projekt ist in mehrere Hauptordner unterteilt:
 ### `analysis`
 Enthält Notebooks und Skripte für Datenanalyse und Modellierung.
 
-- `Descriptive Analysis_V1.ipynb`: Erste deskriptive Analyse der Daten.
-- `data_analysis.ipynb`: Notebook mit weiterer Datenanalyse.
+- `Descriptive Analysis_V1.ipynb`: Deskriptive Analyse der Daten. *(Experimental)*
+- `data_analysis.ipynb`: Notebook mit erstem Versuch einer Datenanalyse. *(Experimental)*
 - `empty_values.ipynb`: Notebook zur Behandlung von empty values.
 - `extensive_model_data_preprocessing_fs.ipynb` und `extensive_model_data_preprocessing_tw.ipynb`: Daten-Vorverarbeitung für das extensive model.
 - `extensive_model_fs.ipynb` und `extensive_model_tw.ipynb`: Notebooks mit den extensive models.
