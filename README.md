@@ -8,6 +8,10 @@ Machine-learning project that estimates **football player market values** (Trans
 | --- | --- |
 | ![Distribution of feet, positions, age, and market value](docs/screenshots/descriptive-analysis.png) | ![Filtered talent search with predicted vs market value](docs/screenshots/talent-search.png) |
 
+## Team
+
+Marc Sieber, Stella Sun, Linda Fuchs, Eliane Elsässer, Jonas Vogel 
+
 ## What it does
 
 1. **Scrape** player pages from Transfermarkt (Selenium workers, configurable via `scraping/config.yaml`)  
