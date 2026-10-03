@@ -1,88 +1,68 @@
-# Talent Tracker
-Dieses Projekt ist eine interaktive Fussball-Analyse-Applikation, die mit Streamlit erstellt wurde. Als Grundlage wurden die Daten der Webseite Transfermarkt verwendet. Die Applikation ermöglicht es den Nutzern, detaillierte Spielerdaten aus verschiedenen Ligen zu analysieren. Zudem lassen sich unter- und überbewertete Spieler identifizieren sowie Vorhersagen über den Wert neuer Spieler treffen. Dieses Projekt wurde im Rahmen des Kurses Methoden: Big Data und Data Science der Universität St.Gallen erstellt.
+# Football Predictions — Talent Tracker (XgBoost)
 
-## Projektmitglieder
-- Jonas Vogel
-- Marc Sieber
-- Stella Sun
-- Linda Fuchs
-- Eliane Elsässer
+Machine-learning project that estimates **football player market values** (Transfermarkt-style data) and highlights **under- and over-valued** players. Includes a **Streamlit** dashboard for exploration, descriptive analysis, talent search, and live predictions with position-specific **XGBoost** models.
 
-## Projektstruktur
-Das Projekt ist in mehrere Hauptordner unterteilt:
+## Overview
 
-- `analysis`
-- `data`
-- `models`
-- `scraping`
-- `streamlit`
+| Deskriptive Analyse | Talentsuche (undervalued players) |
+| --- | --- |
+| ![Distribution of feet, positions, age, and market value](docs/screenshots/descriptive-analysis.png) | ![Filtered talent search with predicted vs market value](docs/screenshots/talent-search.png) |
 
-### `analysis`
-Enthält Notebooks und Skripte für Datenanalyse und Modellierung.
+## What it does
 
-- `Descriptive Analysis_V1.ipynb`: Deskriptive Analyse der Daten. *(Experimental)*
-- `data_analysis.ipynb`: Notebook mit erstem Versuch einer Datenanalyse. *(Experimental)*
-- `empty_values.ipynb`: Notebook zur Behandlung von empty values.
-- `extensive_model_data_preprocessing_fs.ipynb` und `extensive_model_data_preprocessing_tw.ipynb`: Daten-Vorverarbeitung für das extensive model.
-- `extensive_model_fs.ipynb` und `extensive_model_tw.ipynb`: Notebooks mit den extensive models.
-- `feature_engineering.ipynb`: Notebook für Feature-Engineering.
-- `model_predictions_full_merge.ipynb`: Notebook, das die Modelle zusammenführt.
-- `performance-extensive-model-fs.csv` und `performance-extensive-model-tw.csv`: Leistung der extensive models mit unterschiedlichen Feature-Kombinationen.
-- `performance-simple-model-fs.csv` und `performance-simple-model-tw.csv`: Leistung der simple models mit unterschiedlichen Feature-Kombinationen.
-- `performance_plots.ipynb`: Notebook zur Erstellung von Leistungsdiagrammen.
-- `simple_model_data_preprocessing_fs.ipynb` und `simple_model_data_preprocessing_tw.ipynb`: Daten-Vorverarbeitung für die simple models.
-- `simple_model_fs.ipynb` und `simple_model_tw.ipynb`: Notebooks mit simple models.
-- `utils.py`: Funktionen, die im gesamten Projekt verwendet werden.
+1. **Scrape** player pages from Transfermarkt (Selenium workers, configurable via `scraping/config.yaml`)  
+2. **Clean & merge** scraped CSVs into modeling tables  
+3. **Train & evaluate** “simple” and “extensive” models (notebooks under `analysis/`)  
+4. **Serve** insights via Streamlit (`streamlit/app_v0.py`)  
 
-### `data`
-Enthält alle relevanten Datendateien, die während des Projekts verwendet und generiert wurden.
+Public demo (may be stale): [Streamlit Cloud app](https://onzolof-footballpredictions-streamlitapp-v0-3hmugi.streamlit.app/)
 
-- `df_clean.csv`: Datensatz, welcher für die Modelle vorverarbeitet wurde. Dieser beispielsweise keine Datumsformate mehr und es wurden einzelne Features hinzugefügt (PositionCategory, Cards & Trending). Gleichzeitig wurden Daten verworfen, die für das Training irrelevant sind, z.B. Link zum Instagram-Account.
-- `df_extensive_model_fs.csv` & `df_extensive_model_fs_unfiltered.csv`: Vorverarbeitete Daten für das extensive FS-Modell. Dieses File enthält X und y im Endzustand. Die Variante '...unfiltered' umfasst ausserdem die für das Training ausgeschlossenen Ausreisser Mbappe & Haaland.
-- `df_extensive_model_fs_results.csv`: Beinhaltet alle Predictions des extensive FS-Modells.
-- `df_extensive_model_tw.csv`: Vorverarbeitete Daten für das extensive TW-Modell. Dieses File enthält X und y im Endzustand.
-- `df_extensive_model_tw_results.csv`: Beinhaltet alle Predictions des extensive TW-Modells.
-- `df_model_full_merge.csv`: Kombinierter Datensatz aus `df_clean.csv` als Basis mit den Predictions aller Modelle.
-- `df_simple_model_fs.csv` & `df_simple_model_fs_unfiltered.csv`: Vorverarbeitete Daten für das einfache FS-Modell. Dieses File enthält X und y im Endzustand. Die Variante '...unfiltered' umfasst ausserdem die für das Training ausgeschlossenen Ausreisser Mbappe & Haaland.
-- `df_simple_model_fs_results.csv`: Beinhaltet alle Predictions des einfachen FS-Modells.
-- `df_simple_model_fs_streamlit.csv`: FS-Modell-Datengrundlage für die Streamlit-App für die Prediction auf dem einfachen Modell.
-- `df_simple_model_tw.csv`: Vorverarbeitete Daten für das einfache TW-Modell. Dieses File enthält X und y im Endzustand.
-- `df_simple_model_tw_results.csv`: Beinhaltet alle Predictions des einfachen TW-Modells.
-- `df_simple_model_tw_streamlit.csv`: TW-Modell-Datengrundlage für die Streamlit-App für die Prediction auf dem einfachen Modell.
+## Repository layout
 
-### `models`
-Speichert trainierte Maschinenlernmodelle für Vorhersagen.
+| Path | Purpose |
+|------|---------|
+| `scraping/` | `manager.py`, `worker.py`, raw `scraped_data/`, cleansing notebooks |
+| `analysis/` | Jupyter notebooks — EDA, preprocessing, training, performance CSVs |
+| `data/` | Processed CSVs and prediction outputs for the app |
+| `models/` | Pickled XGBoost models (`simple-model-xgb.pkl`, goalkeeper variant, extensive models) |
+| `streamlit/` | Dashboard entrypoint and slim `requirements.txt` |
 
-- `extensive-model-xgb-fs.pkl` und `extensive-model-xgb-tw.pkl`: Gespeicherte extensive models.
-- `simple-model-xgb-tw.pkl` und `simple-model-xgb.pkl`: Gespeicherte simple models.
+## Run the dashboard locally
 
-### `scraping`
-Enthält Dateien im Zusammenhang mit Daten-Scraping, -Bereinigung und -Verwaltung.
+Paths in `app_v0.py` are relative to the **repository root** (`data/`, `models/`).
 
-- `cleansed_data`: Verzeichnis mit bereinigten Daten aus dem Scraping.
-- `scraped_data`: Verzeichnis mit roh gescrapten Daten.
-- `chromedriver_mac`: Chrome-Treiber für Mac OS.
-- `config.yaml`: Konfigurationsdatei für den Scraping-Prozess.
-- `data_cleansing.ipynb`: Notebook zur Datenbereinigung.
-- `manager.py` und `worker.py`: Python-Skripte zum Scrapen der Daten von Transfermarkt. Durch Starten des manager.py werden die Scraping-Links auf mehrere Worker-Instanzen aufgeteilt.
+```bash
+cd FootballPredictions
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r streamlit/requirements.txt
+streamlit run streamlit/app_v0.py
+```
 
-### `streamlit`
-Enthält Dateien im Zusammenhang mit der mit Streamlit erstellten Web-App.
+Open [http://localhost:8501](http://localhost:8501).
 
-- `app_v0.py`: Haupt-Streamlit-App-Datei.
-- `requirements.txt`: Liste der Python-Pakete, die für das Deployment der Streamlit-App benötigt werden.
+Required artifacts (committed in this repo):
 
-Link zur deployed Streamlit Web-App: https://onzolof-footballpredictions-streamlitapp-v0-3hmugi.streamlit.app/
+- `data/df_model_full_merge.csv`, `df_simple_model_*_streamlit.csv`  
+- `models/*.pkl`  
 
-## Datenverarbeitungs-Prozess
+## Re-run the data pipeline (optional)
 
-1. Daten werden gescraped und im Verzeichnis `scraping` abgelegt. Pro Scraping-Worker existiert ein Daten-File.
-2. Anschliessend werden die Datensätze im Notebook `data_cleansing.ipynb` zusammengefasst und um Text-Noise vom Scraping bereinigt. Das Resultat ist ein File im Verzeichnis `cleansed_data`.
-3. Mit dem Notebook `empty_values.ipynb` werden die Daten für den ML-Anwendungsfall vorverarbeitet und es resultiert das `df_clean.csv`.
-4. Im Anschluss wird pro Modell das jeweilige Preprocessing-Notebook ausgeführt. Entsprechend entstehen die Input-Daten für die Modelle im Verzeichnis `data`.
-5. In den jeweiligen Modell-Notebooks werden die einzelnen Modelle evaluiert und optimiert. Zum Schluss werden, in denselben Notebooks, die optimierten Modelle auf den Input-Datensatz angewandt und die Predictions der einzelnen Modelle werden in den Results-Files im Verzeichnis `data` abgelegt.
-6. Die einzelnen Resultate werden mit dem Notebook `model_prediction_full_merge.ipynb` zusammengefasst. Der Output wird ebenfalls ins Verzeichnis `data` exportiert.
-7. Die Performance der einzelnen Modelle kann nun im Notebook `performance_plots.ipynb` eingesehen werden.
+Scraping is ** brittle** (site layout, `chromedriver`, legal/ToS). For portfolio purposes, rely on committed `data/` and `models/`.
 
-## Hilfsmittel
-- OpenAI's ChatGPT für die Bereitstellung von Codierungshilfe, Dokumentation und Problemlösungsstrategien.
+High-level steps documented in notebooks:
+
+1. `scraping/manager.py` → raw files in `scraping/scraped_data/`  
+2. `scraping/data_cleansing.ipynb` → cleansed tables  
+3. `analysis/empty_values.ipynb` → `data/df_clean.csv`  
+4. Preprocessing notebooks per model → `data/df_*_model_*.csv`  
+5. Model notebooks → `data/*_results.csv` and `models/*.pkl`  
+6. `analysis/model_predictions_full_merge.ipynb` → `df_model_full_merge.csv`  
+
+## Ethics & data
+
+Transfermarkt data was used for academic analysis. Do not use scrapers against third-party sites without respecting terms of service and robots rules. This repository is for demonstrating methodology, not for production scraping.
+
+## License
+
+[MIT License](LICENSE) — University of St.Gallen course project; Transfermarkt data subject to their terms of use.
