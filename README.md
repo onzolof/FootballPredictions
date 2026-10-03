@@ -4,9 +4,13 @@ Machine-learning project that estimates **football player market values** (Trans
 
 ## Overview
 
-| Deskriptive Analyse | Talentsuche (undervalued players) |
-| --- | --- |
-| ![Distribution of feet, positions, age, and market value](docs/screenshots/descriptive-analysis.png) | ![Filtered talent search with predicted vs market value](docs/screenshots/talent-search.png) |
+**Deskriptive Analyse** — distributions of foot preference, position, age, and market value:
+
+![Distribution of feet, positions, age, and market value](docs/screenshots/descriptive-analysis.png)
+
+**Talentsuche** — filters and players where predicted value exceeds market value:
+
+![Filtered talent search with predicted vs market value](docs/screenshots/talent-search.png)
 
 ## Team
 
