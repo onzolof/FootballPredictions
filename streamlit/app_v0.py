@@ -247,9 +247,9 @@ elif page == "Talentsuche":
 
         # Prüfen ob Bild vorhanden
         if pd.notna(player_image_url):
-            cols[i].image(player_image_url, caption=player_name, width="stretch")
+            cols[i].image(player_image_url, caption=player_name, use_column_width=True)
         else:
-            cols[i].image(default_image_url, caption=player_name, width="stretch")
+            cols[i].image(default_image_url, caption=player_name, use_column_width=True)
 
     # PercentDifferenceConsistent und Image entfernen
     top_player = top_player.drop(columns=['PercentDifferenceConsistent', 'Image'])
@@ -445,5 +445,5 @@ elif page == "Impressum ©":
     # Anzeige der Teammitglieder in einer einzigen Zeile
     cols = st.columns(5)
     for i, member in enumerate(team_members):
-        cols[i].image(member["image"], width="stretch")
+        cols[i].image(member["image"], use_column_width=True)
         cols[i].write(member["name"])
